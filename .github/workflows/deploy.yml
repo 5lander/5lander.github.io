@@ -23,6 +23,9 @@ jobs:
         run: node scripts/check-names.mjs
       - uses: withastro/action@v3
         # builds the site and uploads the Pages artifact from ./dist
+        with:
+          # Astro 7 requires Node >=22.12; the action defaults to Node 20 otherwise.
+          node-version: 22
 
   deploy:
     needs: build
