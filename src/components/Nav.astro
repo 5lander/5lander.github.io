@@ -33,13 +33,3 @@ const o = other(lang);
     </div>
   </div>
 </nav>
-<script>
-  // Flip the palette and remember the choice; the <head> script applies it on load.
-  const btn = document.querySelector('.themetoggle');
-  btn?.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-    const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-</script>

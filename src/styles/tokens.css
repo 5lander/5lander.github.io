@@ -462,30 +462,47 @@ a:active { color: oklch(0.38 0.13 252); }
 .max-720 { max-width: 720px; }
 
 /* =========================================================================
-   Motion — reveal on scroll + hero load-in.
-   Gated behind .js (set by the <head> script) so JS-off visitors see full
-   content, and behind prefers-reduced-motion so it's opt-out by default.
-   Only transform/opacity animate → stays on the compositor thread.
+   Motion — driven by GSAP (src/layouts/Base.astro <script>).
+   These rules only PRE-HIDE the animated elements so nothing flashes before
+   GSAP runs; GSAP's fromTo() writes inline opacity/transform that override
+   them. Gated behind .js (JS-off visitors see full content) and
+   prefers-reduced-motion (the reduced branch never pre-hides).
    ========================================================================= */
 @media (prefers-reduced-motion: no-preference) {
-  .js .reveal {
-    opacity: 0; transform: translateY(14px);
-    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
-    transition-delay: calc(var(--i, 0) * 60ms);
-    will-change: opacity, transform;
-  }
-  .js .reveal.in { opacity: 1; transform: none; }
-
-  .js .hero-copy > * { animation: hero-rise 0.7s cubic-bezier(0.2, 0.6, 0.2, 1) both; }
-  .js .hero-eyebrow { animation-delay: 0.05s; }
-  .js .hero h1 { animation-delay: 0.12s; }
-  .js .hero .lede { animation-delay: 0.2s; }
-  .js .hero-cta { animation-delay: 0.28s; }
-  .js .hero-code { animation: hero-fade 0.9s ease 0.15s both; }
-
-  @keyframes hero-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-  @keyframes hero-fade { from { opacity: 0; } to { opacity: 1; } }
+  .js .reveal,
+  .js .hero-copy > *,
+  .js .hero-code { opacity: 0; }
 }
+
+/* Scroll progress — GSAP scales it from the page scroll position. */
+.scroll-progress {
+  position: fixed; top: 0; left: 0; width: 100%; height: 2px; z-index: 60;
+  background: var(--accent); transform: scaleX(0); transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+/* Hero headline — per-word mask reveal (words wrapped by motion.ts). */
+.hero h1.split .word {
+  display: inline-block; overflow: hidden;
+  padding-bottom: 0.15em; margin-bottom: -0.15em;
+}
+.hero h1.split .word-in { display: inline-block; will-change: transform; }
+
+/* Project cards — cursor-tracked spotlight fed by --mx/--my from motion.ts. */
+.card { position: relative; overflow: hidden; }
+.card::after {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  opacity: 0; transition: opacity 0.35s ease;
+  background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), var(--accent-tint), transparent 62%);
+}
+.card:hover::after { opacity: 1; }
+.card > * { position: relative; z-index: 1; }
+
+/* Theme toggle — let motion.ts drive the circular View-Transition wipe
+   instead of the browser's default cross-fade. */
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+::view-transition-new(root) { z-index: 1; }
+::view-transition-old(root) { z-index: 0; }
 
 /* =========================================================================
    Breakpoints

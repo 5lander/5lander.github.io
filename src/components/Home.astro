@@ -98,8 +98,8 @@ const projects = [
   <div class="wrap">
     <p class="eyebrow">02 — {s.projects.eyebrow}</p>
     <div class="projects">
-      {projects.map((p, i) => (
-        <article class:list={['card', 'reveal', { 'is-link': !!p.link }]} style={`--i:${i}`}>
+      {projects.map((p) => (
+        <article class:list={['card', 'reveal', { 'is-link': !!p.link }]}>
           <div class="card-head">
             <h3 class="card-title">{p.title}</h3>
             <span class:list={['badge', p.badge.cls]}>{p.badge.label}</span>

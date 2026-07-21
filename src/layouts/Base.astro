@@ -70,6 +70,7 @@ const ogImage = `${site.domain}/og.png`;
     <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main">{s.nav.skip}</a>
     <Nav lang={lang} slug={slug} />
     <main id="main">
@@ -81,19 +82,7 @@ const ogImage = `${site.domain}/og.png`;
       try { localStorage.setItem('lang', lang); } catch (e) {}
     </script>
     <script>
-      // Reveal-on-scroll: add .in when an element enters the viewport, once.
-      const reveals = document.querySelectorAll('.reveal');
-      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduce || !('IntersectionObserver' in window)) {
-        reveals.forEach((el) => el.classList.add('in'));
-      } else {
-        const io = new IntersectionObserver((entries, obs) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
-          });
-        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
-        reveals.forEach((el) => io.observe(el));
-      }
+      import '../scripts/motion.ts';
     </script>
   </body>
 </html>
