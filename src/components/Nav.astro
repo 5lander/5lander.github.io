@@ -1,0 +1,26 @@
+---
+import { type Lang, other } from '../config';
+import { t } from '../i18n/strings';
+interface Props { lang: Lang; slug?: string; }
+const { lang, slug = '' } = Astro.props;
+const s = t(lang);
+const home = `/${lang}/`;
+const o = other(lang);
+---
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-name" href={home}>Lander Chicaiza</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href={`${home}#experience`}>{s.nav.experience}</a>
+        <a href={`${home}#projects`}>{s.nav.projects}</a>
+        <a href={`${home}#stack`}>{s.nav.stack}</a>
+        <a href={`${home}#contact`}>{s.nav.contact}</a>
+      </div>
+      <div class="langtoggle" role="group" aria-label="Language">
+        <a href={`/en/${slug}`} aria-current={lang === 'en' ? 'true' : 'false'} hreflang="en" lang="en">EN</a>
+        <a href={`/es/${slug}`} aria-current={lang === 'es' ? 'true' : 'false'} hreflang="es" lang="es">ES</a>
+      </div>
+    </div>
+  </div>
+</nav>

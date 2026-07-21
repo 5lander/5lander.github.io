@@ -1,0 +1,166 @@
+---
+import { type Lang } from '../config';
+import { t } from '../i18n/strings';
+import { archApps, boundedContexts } from '../data';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const s = t(lang);
+const n = s.noctis;
+const sriScope = lang === 'en' ? 'In progress' : 'En curso';
+---
+<!-- HEADER -->
+<header class="cs-head">
+  <div class="wrap">
+    <p class="cs-eyebrow">
+      <span class="lead"><span class="amber"></span>{n.head.personal}</span>
+      <span class="sep">·</span><span>{n.head.active}</span>
+      <span class="sep">·</span><span>2026</span>
+    </p>
+    <h1>{n.head.title}</h1>
+    <p class="cs-sub">{n.head.sub}</p>
+    <div class="cs-meta">
+      <div><div class="k">{n.head.roleK}</div><div class="v">{n.head.roleV}</div></div>
+      <div><div class="k">{n.head.stackK}</div><div class="v">{n.head.stackV}</div></div>
+      <div><div class="k">{n.head.repoK}</div><div class="v"><span class="privdot"></span>{n.head.repoV}</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- 01 CONTEXT & PRODUCT -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">{n.s1.eyebrow}</p>
+    <div class="two-col mb-lg">
+      <div>
+        <h2 class="h2">{n.s1.h2}</h2>
+        <p class="lede">{n.s1.p}</p>
+        <div class="pending-row"><span class="pending">◇ PENDIENTE</span><span>{n.s1.pending}</span></div>
+      </div>
+      <div class="sidecard">
+        <div><div class="k">{n.s1.servesK}</div><span class="pending">◇ PENDIENTE</span></div>
+        <hr />
+        <div><div class="k">{n.s1.sriK}</div><div class="v">{n.s1.sriScopeLabel} <b style="color:var(--accent-text)">{sriScope}</b></div></div>
+        <hr />
+        <div><div class="k">{n.s1.modelK}</div><div class="v">{n.s1.modelV}</div></div>
+      </div>
+    </div>
+
+    <div class="shots">
+      {n.s1.shots.map((sh, i) => (
+        <div class="shot">
+          <div class="shot-frame">
+            <div class="shot-bar"><span></span><span></span><span></span></div>
+            <div class="shot-body">
+              <span class="t">{sh.t}</span>
+              <span class="s">{i === 0 ? '1280 × 800 · ' : ''}{n.s1.dropImg}</span>
+            </div>
+          </div>
+          <div class="shot-cap">{sh.cap}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- 02 ARCHITECTURE -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">{n.s2.eyebrow}</p>
+    <h2 class="h2">{n.s2.h2}</h2>
+    <p class="lede mb-lg">{n.s2.p}</p>
+
+    <div class="diagram">
+      <div class="diag-lbl">{n.s2.appsLbl}</div>
+      <div class="diag-apps">
+        {archApps.map((a) => <span class="diag-app">{a}</span>)}
+        <span class="diag-app more">+3</span>
+      </div>
+      <div class="diag-arrow">↓</div>
+      <div class="diag-lbl">{n.s2.libsLbl}</div>
+      <div class="bc-grid">
+        {boundedContexts.map((bc) => (
+          <div class="bc">
+            <div class:list={['bc-name', bc.tone]}>{bc.name}</div>
+            <div class="bc-body">
+              {bc.layers.map((ly) => {
+                const cls = ly.kind === 'domain'
+                  ? (bc.tone === 'green' ? 'domain-green' : 'domain-blue')
+                  : 'plain';
+                return <div class:list={['layer', cls]}>{ly.main} <span class="sub">{ly.sub}</span></div>;
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="diag-arrow">↓</div>
+      <div class="db-bar">
+        <span class="name">PostgreSQL</span>
+        <span class="rule">Row-Level Security · deny-by-default</span>
+      </div>
+    </div>
+    <div class="pending-row"><span class="pending">◇ PENDIENTE</span><span>{n.s2.illustrative}</span></div>
+  </div>
+</section>
+
+<!-- 03 TENANT ISOLATION -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">{n.s3.eyebrow}</p>
+    <h2 class="h2">{n.s3.h2}</h2>
+    <p class="lede mb-lg">{n.s3.p}</p>
+
+    <div class="flow">
+      <div class="flow-node"><div class="t">{n.s3.n1t}</div><div class="s">{n.s3.n1s}</div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node"><div class="t">{n.s3.n2t}</div><div class="s">{n.s3.n2s}</div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node emph"><div class="t">{n.s3.n3t}</div><div class="s">{n.s3.n3s}</div></div>
+    </div>
+
+    <div class="code">
+<pre><span class="tk-kw">ALTER TABLE</span> orders <span class="tk-kw">ENABLE ROW LEVEL SECURITY</span>;
+<span class="tk-kw">ALTER TABLE</span> orders <span class="tk-kw">FORCE ROW LEVEL SECURITY</span>;
+
+<span class="tk-kw">CREATE POLICY</span> tenant_isolation <span class="tk-kw">ON</span> orders
+  <span class="tk-kw">USING</span> (tenant_id = current_setting(<span class="tk-str">'app.tenant_id'</span>)::uuid);
+<span class="tk-com">-- no matching policy → deny by default</span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- 04 EVIDENCE -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">{n.s4.eyebrow}</p>
+    <h2 class="h2 mb-lg">{n.s4.h2}</h2>
+    <div class="metrics">
+      {n.s4.metrics.map((m) => (
+        <div class="metric">
+          <div class="metric-num">{m.n}</div>
+          <div class="metric-label">{m.l}</div>
+          <div class="metric-note-t">{m.note}</div>
+        </div>
+      ))}
+      <div class="metric note"><div class="free">{n.s4.free}</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 DECISION RECORD -->
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+    <p class="eyebrow">{n.s5.eyebrow}</p>
+    <div class="adr">
+      <div>
+        <div class="adr-id">{n.s5.id}</div>
+        <div class="adr-title">{n.s5.title}</div>
+        <span class="adr-status">{n.s5.status}</span>
+      </div>
+      <div class="adr-body">
+        <div><div class="adr-k">{n.s5.decisionK}</div><p class="adr-v">{n.s5.decisionV}</p></div>
+        <div><div class="adr-k">{n.s5.contextK}</div><p class="adr-v">{n.s5.contextV}</p></div>
+        <div><div class="adr-k">{n.s5.consequenceK}</div><p class="adr-v">{n.s5.consequenceV}</p></div>
+      </div>
+    </div>
+  </div>
+</section>

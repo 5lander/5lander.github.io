@@ -1,0 +1,10 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Noctis from '../../../components/Noctis.astro';
+import { t } from '../../../i18n/strings';
+const lang = 'en';
+const s = t(lang);
+---
+<Base lang={lang} title={s.noctis.metaTitle} description={s.noctis.metaDesc} slug="noctis/">
+  <Noctis lang={lang} />
+</Base>

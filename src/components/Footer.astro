@@ -1,0 +1,15 @@
+---
+import { site, type Lang } from '../config';
+import { t } from '../i18n/strings';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const s = t(lang);
+const year = 2026;
+---
+<footer class="footer">
+  <div class="wrap">
+    <span>© {year} Lander Chicaiza</span>
+    <span>{s.footer.built}</span>
+    <a href={site.github}>{site.githubHandle}</a>
+  </div>
+</footer>

@@ -1,0 +1,32 @@
+---
+// Root: language dispatch. Static page → JS chooses /en/ or /es/.
+// Order: saved choice (localStorage) → navigator.language → English (x-default).
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lander Chicaiza — Full Stack Developer</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://5lander.github.io/en/" />
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var lang = 'en';
+        try {
+          var saved = localStorage.getItem('lang');
+          if (saved === 'en' || saved === 'es') lang = saved;
+          else if ((navigator.language || '').toLowerCase().indexOf('es') === 0) lang = 'es';
+        } catch (e) {}
+        location.replace('/' + lang + '/');
+      })();
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/en/" /></noscript>
+  </head>
+  <body>
+    <p style="font-family:system-ui,sans-serif;padding:2rem;">
+      Redirecting… <a href="/en/">English</a> · <a href="/es/">Español</a>
+    </p>
+  </body>
+</html>

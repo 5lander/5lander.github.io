@@ -1,0 +1,140 @@
+---
+import { site, type Lang } from '../config';
+import { t } from '../i18n/strings';
+import { stackRows, experienceChips } from '../data';
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const s = t(lang);
+
+const projects = [
+  {
+    title: 'Noctis Commerce',
+    badge: { cls: 'badge-accent', label: s.projects.caseStudy },
+    desc: s.projects.items.noctis,
+    stack: 'NestJS · Next.js 14 · PostgreSQL · Nx',
+    link: { href: `/${lang}/noctis/`, label: s.projects.readCase },
+  },
+  {
+    title: 'WeaponDetectionSystem',
+    badge: { cls: 'badge-signal', label: s.projects.oss },
+    desc: s.projects.items.weapon,
+    stack: 'Python · OpenCV · YOLO',
+    // Repo stays private until history remediation is done — no dead link.
+    link: site.weaponRepoPublic
+      ? { href: site.weaponRepoUrl, label: 'github.com/5lander/weaponDetectionSystem →' }
+      : null,
+    muted: site.weaponRepoPublic ? null : s.projects.releaseInProgress,
+  },
+  {
+    title: 'Ruta del Café',
+    badge: { cls: 'badge-signal', label: s.projects.oss },
+    desc: s.projects.items.cafe,
+    stack: 'Next.js · TypeScript · PostgreSQL',
+    link: { href: site.rutaDelCafeUrl, label: 'github.com/5lander/ProyectoRutaDelCafe →' },
+  },
+  {
+    title: s.projects.items.eventsTitle,
+    badge: { cls: 'badge-neutral', label: s.projects.private },
+    desc: s.projects.items.events,
+    stack: 'NestJS · Next.js · PostgreSQL',
+    link: null,
+    muted: s.projects.noPublicRepo,
+  },
+];
+---
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="hero-eyebrow">{s.hero.eyebrow}</p>
+    <h1>{s.hero.title}</h1>
+    <p class="lede">{s.hero.lede}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href={`mailto:${site.email}`}>{site.email}</a>
+      <a class="btn btn-ghost" href={site.github}>{site.githubHandle}</a>
+    </div>
+  </div>
+  <div class="hero-code">
+    <p class="code-cap">~/noctis-commerce · nx monorepo</p>
+    <pre style="font-size:13px;line-height:2;font-family:var(--font-mono);color:var(--code-fg);margin:0;white-space:pre;overflow-x:auto;"><span class="tk-dim">apps/</span>       <span class="tk-dim">7 deployables</span>
+<span class="tk-dim">libs/</span>       <span class="tk-dim">5 domain libs</span>
+
+  <span class="tk-ok">commerce</span>  <span class="tk-dim">pos · sri billing</span>
+  <span class="tk-ok">identity</span>  <span class="tk-dim">tenants · users</span>
+  <span class="tk-ok">auth</span>      <span class="tk-dim">rbac · 7 roles</span>
+
+<span class="tk-kw">tenancy</span>  row-level-security
+<span class="tk-kw">mode</span>     <span class="tk-str">deny-by-default</span></pre>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="wrap exp">
+    <div>
+      <p class="eyebrow">01 — {s.experience.eyebrow}</p>
+      <div class="exp-org">{s.experience.org}</div>
+      <div class="exp-when">{s.experience.when}</div>
+      <div class="exp-tag">{s.experience.tag}</div>
+    </div>
+    <div class="exp-list">
+      {s.experience.bullets.map((b) => (
+        <div class="exp-item"><span class="mark">↳</span><span>{b}</span></div>
+      ))}
+      <div class="chips" style="margin-top:8px;">
+        {experienceChips.map((c) => <span class="chip">{c}</span>)}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <p class="eyebrow">02 — {s.projects.eyebrow}</p>
+    <div class="projects">
+      {projects.map((p) => (
+        <article class:list={['card', { 'is-link': !!p.link }]}>
+          <div class="card-head">
+            <h3 class="card-title">{p.title}</h3>
+            <span class:list={['badge', p.badge.cls]}>{p.badge.label}</span>
+          </div>
+          <p class="card-desc">{p.desc}</p>
+          <div class="card-stack">{p.stack}</div>
+          {p.link
+            ? <div class="card-link"><a href={p.link.href}>{p.link.label}</a></div>
+            : <div class="card-muted"><span class="dot"></span>{p.muted}</div>}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="section">
+  <div class="wrap">
+    <p class="eyebrow">03 — {s.stack.eyebrow}</p>
+    <div class="stack">
+      {stackRows.map((row) => (
+        <div class="stack-row">
+          <div class="stack-label">{s.stack.rows[row.key]}</div>
+          <div class="chips">{row.chips.map((c) => <span class="chip">{c}</span>)}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="contact-eyebrow">04 — {s.contact.eyebrow}</p>
+    <div class="contact-inner">
+      <h2>{s.contact.title}</h2>
+      <div class="contact-links">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={site.linkedin}>{site.linkedinHandle}</a>
+        <a href={site.github}>{site.githubHandle}</a>
+      </div>
+    </div>
+  </div>
+</section>
