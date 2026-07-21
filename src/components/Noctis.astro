@@ -1,5 +1,5 @@
 ---
-import { type Lang } from '../config';
+import { site, type Lang } from '../config';
 import { t } from '../i18n/strings';
 import { archApps, boundedContexts } from '../data';
 interface Props { lang: Lang; }
@@ -69,11 +69,14 @@ const sriScope = lang === 'en' ? 'In progress' : 'En curso';
     <h2 class="h2">{n.s2.h2}</h2>
     <p class="lede mb-lg">{n.s2.p}</p>
 
+    {!site.monorepoNamesConfirmed && (
+      <div class="ph-banner"><b>{s.ph.badge}</b><span>{s.ph.diagram}</span></div>
+    )}
     <div class="diagram">
       <div class="diag-lbl">{n.s2.appsLbl}</div>
       <div class="diag-apps">
         {archApps.map((a) => <span class="diag-app">{a}</span>)}
-        <span class="diag-app more">+3</span>
+        <span class="diag-app more">+3 e2e</span>
       </div>
       <div class="diag-arrow">↓</div>
       <div class="diag-lbl">{n.s2.libsLbl}</div>
@@ -98,7 +101,6 @@ const sriScope = lang === 'en' ? 'In progress' : 'En curso';
         <span class="rule">Row-Level Security · deny-by-default</span>
       </div>
     </div>
-    <div class="pending-row"><span class="pending">◇ PENDIENTE</span><span>{n.s2.illustrative}</span></div>
   </div>
 </section>
 
@@ -118,12 +120,16 @@ const sriScope = lang === 'en' ? 'In progress' : 'En curso';
     </div>
 
     <div class="code">
-<pre><span class="tk-kw">ALTER TABLE</span> orders <span class="tk-kw">ENABLE ROW LEVEL SECURITY</span>;
-<span class="tk-kw">ALTER TABLE</span> orders <span class="tk-kw">FORCE ROW LEVEL SECURITY</span>;
+<pre><span class="tk-com">-- bind the tenant per transaction (tx-local, parameter-bound)</span>
+<span class="tk-kw">SELECT</span> set_config(<span class="tk-str">'app.current_tenant'</span>, $tenant, <span class="tk-kw">true</span>);
 
-<span class="tk-kw">CREATE POLICY</span> tenant_isolation <span class="tk-kw">ON</span> orders
-  <span class="tk-kw">USING</span> (tenant_id = current_setting(<span class="tk-str">'app.tenant_id'</span>)::uuid);
-<span class="tk-com">-- no matching policy → deny by default</span></pre>
+<span class="tk-kw">ALTER TABLE</span> commerce.products <span class="tk-kw">ENABLE ROW LEVEL SECURITY</span>;
+<span class="tk-kw">ALTER TABLE</span> commerce.products <span class="tk-kw">FORCE ROW LEVEL SECURITY</span>;
+
+<span class="tk-kw">CREATE POLICY</span> tenant_isolation <span class="tk-kw">ON</span> commerce.products
+  <span class="tk-kw">USING</span> (public.is_platform_admin()
+     <span class="tk-kw">OR</span> tenant_id = public.current_tenant_id());
+<span class="tk-com">-- unset GUC → current_tenant_id() IS NULL → deny by default</span></pre>
     </div>
   </div>
 </section>

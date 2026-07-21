@@ -1,32 +1,51 @@
 ---
-// Root: language dispatch. Static page → JS chooses /en/ or /es/.
-// Order: saved choice (localStorage) → navigator.language → English (x-default).
+// Root: deterministic redirect to /en/ (the x-default). No navigator.language
+// branching — hreflang routes es-speakers to /es/ from search, and the language
+// toggle persists a visitor's choice. The <head> carries full OG + hreflang so
+// link-preview scrapers (which don't run JS or follow redirects) get a correct
+// preview when the bare domain is shared, and crawlers see the alternates.
+import { site } from '../config';
+import { strings } from '../i18n/strings';
+
+const en = strings.en;
+const urlEn = `${site.domain}/en/`;
+const urlEs = `${site.domain}/es/`;
+const ogImage = `${site.domain}/og.png`;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lander Chicaiza — Full Stack Developer</title>
+    <meta http-equiv="refresh" content="0; url=/en/" />
+    <title>{en.homeMetaTitle}</title>
+    <meta name="description" content={en.homeMetaDesc} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="canonical" href="https://5lander.github.io/en/" />
+
+    <link rel="canonical" href={urlEn} />
     <meta name="robots" content="noindex" />
-    <script>
-      (function () {
-        var lang = 'en';
-        try {
-          var saved = localStorage.getItem('lang');
-          if (saved === 'en' || saved === 'es') lang = saved;
-          else if ((navigator.language || '').toLowerCase().indexOf('es') === 0) lang = 'es';
-        } catch (e) {}
-        location.replace('/' + lang + '/');
-      })();
-    </script>
-    <noscript><meta http-equiv="refresh" content="0; url=/en/" /></noscript>
+    <link rel="alternate" hreflang="en" href={urlEn} />
+    <link rel="alternate" hreflang="es" href={urlEs} />
+    <link rel="alternate" hreflang="x-default" href={urlEn} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lander Chicaiza" />
+    <meta property="og:title" content={en.homeMetaTitle} />
+    <meta property="og:description" content={en.homeMetaDesc} />
+    <meta property="og:url" content={urlEn} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_EC" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={en.homeMetaTitle} />
+    <meta name="twitter:description" content={en.homeMetaDesc} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
     <p style="font-family:system-ui,sans-serif;padding:2rem;">
-      Redirecting… <a href="/en/">English</a> · <a href="/es/">Español</a>
+      Redirecting to <a href="/en/">English</a> · <a href="/es/">Español</a>
     </p>
   </body>
 </html>

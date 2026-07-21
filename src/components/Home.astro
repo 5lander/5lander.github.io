@@ -18,7 +18,7 @@ const projects = [
     title: 'WeaponDetectionSystem',
     badge: { cls: 'badge-signal', label: s.projects.oss },
     desc: s.projects.items.weapon,
-    stack: 'Python · OpenCV · YOLO',
+    stack: 'Python · PyQt5 · YOLO · OpenCV · Django · PostgreSQL',
     // Repo stays private until history remediation is done — no dead link.
     link: site.weaponRepoPublic
       ? { href: site.weaponRepoUrl, label: 'github.com/5lander/weaponDetectionSystem →' }
@@ -29,14 +29,14 @@ const projects = [
     title: 'Ruta del Café',
     badge: { cls: 'badge-signal', label: s.projects.oss },
     desc: s.projects.items.cafe,
-    stack: 'Next.js · TypeScript · PostgreSQL',
+    stack: 'Python · Django · PostgreSQL · React · Next.js',
     link: { href: site.rutaDelCafeUrl, label: 'github.com/5lander/ProyectoRutaDelCafe →' },
   },
   {
     title: s.projects.items.eventsTitle,
     badge: { cls: 'badge-neutral', label: s.projects.private },
     desc: s.projects.items.events,
-    stack: 'NestJS · Next.js · PostgreSQL',
+    stack: 'Java · Spring Boot · PostgreSQL · Thymeleaf',
     link: null,
     muted: s.projects.noPublicRepo,
   },
@@ -54,13 +54,17 @@ const projects = [
     </div>
   </div>
   <div class="hero-code">
+    {!site.monorepoNamesConfirmed && (
+      <div class="ph-banner"><b>{s.ph.badge}</b><span>{s.ph.hero}</span></div>
+    )}
     <p class="code-cap">~/noctis-commerce · nx monorepo</p>
-    <pre style="font-size:13px;line-height:2;font-family:var(--font-mono);color:var(--code-fg);margin:0;white-space:pre;overflow-x:auto;"><span class="tk-dim">apps/</span>       <span class="tk-dim">7 deployables</span>
-<span class="tk-dim">libs/</span>       <span class="tk-dim">5 domain libs</span>
+    <pre style="font-size:13px;line-height:2;font-family:var(--font-mono);color:var(--code-fg);margin:0;white-space:pre;overflow-x:auto;"><span class="tk-dim">apps/</span>       <span class="tk-dim">4 deployable · 3 e2e</span>
+<span class="tk-dim">libs/</span>       <span class="tk-dim">12 libraries · 4 contexts</span>
 
-  <span class="tk-ok">commerce</span>  <span class="tk-dim">pos · sri billing</span>
-  <span class="tk-ok">identity</span>  <span class="tk-dim">tenants · users</span>
-  <span class="tk-ok">auth</span>      <span class="tk-dim">rbac · 7 roles</span>
+  <span class="tk-ok">commerce</span>  <span class="tk-dim">pos · sri · inventory</span>
+  <span class="tk-ok">identity</span>  <span class="tk-dim">tenants · users · rbac</span>
+  <span class="tk-ok">auth</span>      <span class="tk-dim">jwt · sessions</span>
+  <span class="tk-ok">hr</span>        <span class="tk-dim">employees</span>
 
 <span class="tk-kw">tenancy</span>  row-level-security
 <span class="tk-kw">mode</span>     <span class="tk-str">deny-by-default</span></pre>
@@ -73,7 +77,9 @@ const projects = [
     <div>
       <p class="eyebrow">01 — {s.experience.eyebrow}</p>
       <div class="exp-org">{s.experience.org}</div>
+      <div class="exp-role">{s.experience.role}</div>
       <div class="exp-when">{s.experience.when}</div>
+      <div class="exp-intern">{s.experience.intern}</div>
       <div class="exp-tag">{s.experience.tag}</div>
     </div>
     <div class="exp-list">

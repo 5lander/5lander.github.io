@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Guard — refuse to publish while monorepo names are placeholders
+        run: node scripts/check-names.mjs
       - uses: withastro/action@v3
         # builds the site and uploads the Pages artifact from ./dist
 

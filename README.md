@@ -54,8 +54,14 @@ The design is final; these placeholders need your input:
 1. **Noctis — business context** (section 01): intended user and the problem it targets.
 2. **Noctis — 3 screenshots**: POS (tablet), invoicing, inventory. Drop images into
    `public/` and wire them into `src/components/Noctis.astro` (frames are ready).
-3. **Noctis — real monorepo names**: `src/data.ts` `archApps`/`boundedContexts` are
-   illustrative — confirm the real app/lib names before publishing.
+3. ~~**Noctis — real monorepo names**~~ **✓ Done (2026-07-21).** `src/data.ts`, the
+   counts, the 4 bounded contexts, ADR-002 and the RLS SQL were verified against the
+   real `C:\Projects\Commerce` tree (apps/, libs/, nx.json, docs/architecture-decisions/)
+   and `monorepoNamesConfirmed` is now `true`. The `npm run check:names` guard (run first
+   in the deploy workflow) stays as a regression backstop. Evidence metrics verified:
+   1,600+ tests / 54 migrations / 19 REST controllers / 7 RBAC roles / 19 ADRs.
 4. **`weaponRepoPublic`** in `src/config.ts` is `false` (repo private until history
    remediation). Flip to `true` once the clean public repo exists to show the link.
-5. Confirm the **FISA Group** title/dates framing (portfolio shows `2023 — 2026`).
+
+> **FISA Group** — confirmed: *Customer Care Engineer*, Mar 2024 – Feb 2026, preceded by
+> an internship Jun 2023 – Jan 2024. Already reflected in `src/i18n/strings.ts`.
