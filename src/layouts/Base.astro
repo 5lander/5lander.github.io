@@ -5,7 +5,6 @@ import '@fontsource/ibm-plex-sans/latin-600.css';
 import '@fontsource/ibm-plex-sans/latin-700.css';
 import '@fontsource/ibm-plex-mono/latin-400.css';
 import '@fontsource/ibm-plex-mono/latin-500.css';
-import '@fontsource/ibm-plex-serif/latin-500.css';
 import '../styles/tokens.css';
 import { site, type Lang, other } from '../config';
 import { t } from '../i18n/strings';
@@ -27,6 +26,18 @@ const canonical = lang === 'en' ? urlEn : urlEs;
 const ogLocale = lang === 'en' ? 'en_US' : 'es_EC';
 const ogLocaleAlt = lang === 'en' ? 'es_EC' : 'en_US';
 const ogImage = `${site.domain}/og.png`;
+
+// Structured data — helps Google render a richer knowledge result for the person.
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Lander Chicaiza',
+  jobTitle: 'Full Stack Developer',
+  email: `mailto:${site.email}`,
+  url: site.domain,
+  sameAs: [site.github, site.linkedin],
+  address: { '@type': 'PostalAddress', addressLocality: 'Loja', addressCountry: 'EC' },
+};
 ---
 <!doctype html>
 <html lang={lang}>
@@ -68,6 +79,8 @@ const ogImage = `${site.domain}/og.png`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>

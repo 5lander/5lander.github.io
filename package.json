@@ -11,6 +11,7 @@
     "check:names": "node scripts/check-names.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "@fontsource/ibm-plex-mono": "^5.1.1",
     "@fontsource/ibm-plex-sans": "^5.1.1",
     "@fontsource/ibm-plex-serif": "^5.1.1",
