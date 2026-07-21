@@ -18,6 +18,7 @@ export const strings = {
       contact: 'Contact',
       caseStudy: 'case study',
       skip: 'Skip to content',
+      theme: 'Toggle light / dark theme',
     },
     hero: {
       eyebrow: 'FULL STACK DEVELOPER · LOJA, ECUADOR',
@@ -170,6 +171,7 @@ export const strings = {
       contact: 'Contacto',
       caseStudy: 'caso de estudio',
       skip: 'Saltar al contenido',
+      theme: 'Cambiar tema claro / oscuro',
     },
     hero: {
       eyebrow: 'FULL STACK DEVELOPER · LOJA, ECUADOR',

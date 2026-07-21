@@ -33,6 +33,18 @@ const ogImage = `${site.domain}/og.png`;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Set the theme before first paint to avoid a flash of the wrong palette. */}
+    <script is:inline>
+      (function () {
+        // Gate reveal animations behind .js so JS-disabled visitors see full content.
+        document.documentElement.classList.add('js');
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -67,6 +79,21 @@ const ogImage = `${site.domain}/og.png`;
     <script define:vars={{ lang }}>
       // Remember the last language the visitor read, for the root redirect.
       try { localStorage.setItem('lang', lang); } catch (e) {}
+    </script>
+    <script>
+      // Reveal-on-scroll: add .in when an element enters the viewport, once.
+      const reveals = document.querySelectorAll('.reveal');
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) {
+        reveals.forEach((el) => el.classList.add('in'));
+      } else {
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+          });
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+        reveals.forEach((el) => io.observe(el));
+      }
     </script>
   </body>
 </html>
