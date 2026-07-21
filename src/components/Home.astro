@@ -135,12 +135,53 @@ const projects = [
   <div class="wrap">
     <p class="contact-eyebrow">04 — {s.contact.eyebrow}</p>
     <div class="contact-inner reveal">
-      <h2>{s.contact.title}</h2>
-      <div class="contact-links">
-        <a href={`mailto:${site.email}`}>{site.email}</a>
-        <a href={site.linkedin}>{site.linkedinHandle}</a>
-        <a href={site.github}>{site.githubHandle}</a>
+      <div class="contact-lead">
+        <h2>{s.contact.title}</h2>
+        <div class="contact-links">
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <a href={site.linkedin}>{site.linkedinHandle}</a>
+          <a href={site.github}>{site.githubHandle}</a>
+        </div>
       </div>
+
+      {site.web3formsKey ? (
+        <form
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          novalidate
+          data-sending={s.contact.form.sending}
+          data-ok={s.contact.form.ok}
+          data-err-name={s.contact.form.errName}
+          data-err-email={s.contact.form.errEmail}
+          data-err-message={s.contact.form.errMessage}
+          data-err-send={s.contact.form.errSend}
+        >
+          <input type="hidden" name="access_key" value={site.web3formsKey} />
+          <input type="hidden" name="subject" value={s.contact.form.subject} />
+          <input type="hidden" name="from_name" value="Portfolio · Lander Chicaiza" />
+          {/* honeypot — bots tick this; humans never see it */}
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="field">
+            <label for="cf-name">{s.contact.form.name}</label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder={s.contact.form.namePlaceholder} />
+          </div>
+          <div class="field">
+            <label for="cf-email">{s.contact.form.email}</label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" placeholder={s.contact.form.emailPlaceholder} />
+          </div>
+          <div class="field">
+            <label for="cf-message">{s.contact.form.message}</label>
+            <textarea id="cf-message" name="message" rows="4" required placeholder={s.contact.form.messagePlaceholder}></textarea>
+          </div>
+
+          <button class="btn btn-form" type="submit">{s.contact.form.send}</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      ) : (
+        <p class="form-disabled">{s.contact.form.disabled}</p>
+      )}
     </div>
   </div>
 </section>

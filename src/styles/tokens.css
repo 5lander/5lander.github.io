@@ -336,11 +336,44 @@ a:active { color: oklch(0.38 0.13 252); }
 .contact { background: var(--code-bg); }
 .contact .wrap { padding-top: 84px; padding-bottom: 84px; }
 .contact-eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; color: oklch(0.7 0.09 155); margin-bottom: 24px; }
-.contact-inner { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 32px; }
+.contact-inner { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 40px 56px; }
+.contact-lead { flex: 1 1 300px; }
 .contact h2 { font-weight: 600; font-size: 34px; line-height: 1.2; letter-spacing: -0.02em; color: oklch(0.96 0.003 250); max-width: 22ch; }
-.contact-links { display: flex; flex-direction: column; gap: 12px; font-family: var(--font-mono); font-size: 14px; }
+.contact-links { display: flex; flex-direction: column; gap: 12px; font-family: var(--font-mono); font-size: 14px; margin-top: 28px; }
 .contact-links a { color: oklch(0.82 0.01 260); }
 .contact-links a:hover { color: oklch(0.95 0.01 260); }
+
+/* contact form — lives on the always-dark contact panel (both themes) */
+.contact-form { flex: 1 1 380px; max-width: 460px; display: flex; flex-direction: column; gap: 16px; }
+.contact-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.field { display: flex; flex-direction: column; gap: 7px; }
+.field label { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.03em; color: oklch(0.72 0.02 260); }
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-sans); font-size: 14.5px; color: oklch(0.94 0.005 260);
+  background: oklch(0.24 0.012 262); border: 1px solid oklch(0.34 0.012 262);
+  border-radius: var(--r-sm); padding: 11px 13px; width: 100%;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.contact-form textarea { resize: vertical; min-height: 96px; line-height: 1.5; }
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: oklch(0.55 0.015 260); }
+.contact-form input:hover,
+.contact-form textarea:hover { border-color: oklch(0.42 0.012 262); }
+.contact-form input:focus,
+.contact-form textarea:focus { outline: none; border-color: var(--accent); background: oklch(0.26 0.012 262); }
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible { outline: none; }
+
+.btn-form { align-self: flex-start; background: var(--accent); color: oklch(0.99 0 0); border: 0; cursor: pointer; }
+.btn-form:hover { background: oklch(0.62 0.13 252); }
+.btn-form:active { transform: translateY(1px); }
+.btn-form:disabled { opacity: 0.6; cursor: default; transform: none; }
+
+.form-status { font-family: var(--font-mono); font-size: 12.5px; line-height: 1.5; min-height: 1em; margin: 0; }
+.form-status[data-kind="ok"] { color: oklch(0.78 0.10 155); }
+.form-status[data-kind="err"] { color: oklch(0.80 0.12 62); }
+.form-disabled { font-family: var(--font-mono); font-size: 13px; line-height: 1.6; color: oklch(0.72 0.02 260); flex: 1 1 380px; max-width: 460px; }
 
 /* =========================================================================
    Footer

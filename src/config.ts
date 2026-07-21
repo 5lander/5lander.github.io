@@ -23,6 +23,12 @@ export const site = {
   monorepoNamesConfirmed: true,
 
   rutaDelCafeUrl: 'https://github.com/5lander/ProyectoRutaDelCafe',
+
+  // Contact form → Web3Forms (static-friendly, no backend). This access key is
+  // PUBLIC by design (it only routes submissions to Lander's inbox); safe to ship
+  // in client code. Get it at web3forms.com with slanderodriguez@gmail.com, paste
+  // here, then confirm the verification email once. Empty string → form disabled.
+  web3formsKey: 'ceb3ec22-851b-4cd3-92c9-d6dd0091cbcd',
 } as const;
 
 export type Lang = 'en' | 'es';
