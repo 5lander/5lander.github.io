@@ -34,10 +34,10 @@ const sriScope = lang === 'en' ? 'In progress' : 'En curso';
       <div>
         <h2 class="h2">{n.s1.h2}</h2>
         <p class="lede">{n.s1.p}</p>
-        <div class="pending-row"><span class="pending">◇ PENDIENTE</span><span>{n.s1.pending}</span></div>
+        <p class="s1-who">{n.s1.who}</p>
       </div>
       <div class="sidecard">
-        <div><div class="k">{n.s1.servesK}</div><span class="pending">◇ PENDIENTE</span></div>
+        <div><div class="k">{n.s1.servesK}</div><div class="v">{n.s1.servesV}</div></div>
         <hr />
         <div><div class="k">{n.s1.sriK}</div><div class="v">{n.s1.sriScopeLabel} <b style="color:var(--accent-text)">{sriScope}</b></div></div>
         <hr />
@@ -45,14 +45,52 @@ const sriScope = lang === 'en' ? 'In progress' : 'En curso';
       </div>
     </div>
 
+    {/* Schematic UI mockups — on-brand wireframes, not screenshots of a shipped
+        product. Swap for blurred real captures once the UI is presentable. */}
     <div class="shots">
       {n.s1.shots.map((sh, i) => (
         <div class="shot">
           <div class="shot-frame">
-            <div class="shot-bar"><span></span><span></span><span></span></div>
-            <div class="shot-body">
-              <span class="t">{sh.t}</span>
-              <span class="s">{i === 0 ? '1280 × 800 · ' : ''}{n.s1.dropImg}</span>
+            <div class="shot-bar"><span></span><span></span><span></span><em class="shot-tab">{sh.t}</em></div>
+            <div class="shot-body mock">
+              {i === 0 && (
+                <div class="m-pos">
+                  <div class="m-grid">
+                    {Array.from({ length: 6 }).map(() => (
+                      <div class="m-tile"><span class="m-cap"></span><span class="m-bar w55"></span><span class="m-bar w35"></span></div>
+                    ))}
+                  </div>
+                  <div class="m-cart">
+                    <div class="m-line"><span class="m-bar w55"></span><span class="m-bar w20"></span></div>
+                    <div class="m-line"><span class="m-bar w45"></span><span class="m-bar w20"></span></div>
+                    <div class="m-line"><span class="m-bar w65"></span><span class="m-bar w20"></span></div>
+                    <div class="m-total"><span>Total</span><b>$ ——</b></div>
+                    <div class="m-btn">{lang === 'es' ? 'Cobrar' : 'Charge'}</div>
+                  </div>
+                </div>
+              )}
+              {i === 1 && (
+                <div class="m-doc">
+                  <div class="m-doc-head"><span class="m-logo"></span><span class="m-bar w35"></span></div>
+                  <div class="m-doc-rows">
+                    <div class="m-drow"><span class="m-bar w65"></span><span class="m-bar w20"></span></div>
+                    <div class="m-drow"><span class="m-bar w45"></span><span class="m-bar w20"></span></div>
+                    <div class="m-drow"><span class="m-bar w55"></span><span class="m-bar w20"></span></div>
+                    <div class="m-drow"><span class="m-bar w45"></span><span class="m-bar w20"></span></div>
+                  </div>
+                  <div class="m-doc-tot"><span class="m-bar w35"></span><b>$ ——</b></div>
+                  <div class="m-chip">SRI ✓</div>
+                </div>
+              )}
+              {i === 2 && (
+                <div class="m-tbl">
+                  <div class="m-trow m-thead"><span class="m-bar w45"></span><span class="m-bar w20"></span><span class="m-hdot"></span></div>
+                  <div class="m-trow"><span class="m-bar w55"></span><b class="m-num">128</b><span class="m-dot ok"></span></div>
+                  <div class="m-trow"><span class="m-bar w45"></span><b class="m-num">34</b><span class="m-dot ok"></span></div>
+                  <div class="m-trow"><span class="m-bar w65"></span><b class="m-num">6</b><span class="m-dot warn"></span></div>
+                  <div class="m-trow"><span class="m-bar w45"></span><b class="m-num">0</b><span class="m-dot low"></span></div>
+                </div>
+              )}
             </div>
           </div>
           <div class="shot-cap">{sh.cap}</div>
