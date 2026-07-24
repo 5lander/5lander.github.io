@@ -21,9 +21,9 @@ export const strings = {
       theme: 'Toggle light / dark theme',
     },
     hero: {
-      eyebrow: 'FULL STACK DEVELOPER · LOJA, ECUADOR',
-      title: 'I design, build and ship complete systems — from the domain model to the AWS deploy.',
-      lede: 'Three years of backend, two of frontend, and two years running banking platforms in production.',
+      eyebrow: 'FULL STACK DEVELOPER · BACKEND & CLOUD · LOJA, ECUADOR',
+      title: 'Complete systems — designed, built and run, from the domain model to production.',
+      lede: 'Nearly three years building and supporting production software — resolving critical incidents on live banking platforms and designing a multi-tenant SaaS end to end.',
     },
     experience: {
       eyebrow: 'EXPERIENCE',
@@ -33,9 +33,11 @@ export const strings = {
       intern: 'Preceded by an internship · Jun 2023 — Jan 2024',
       tag: 'Banking software · Production',
       bullets: [
-        'Support and development on banking platforms live in production, on Java and Spring Boot.',
-        'Coordinated deployments with bank teams across Linux servers on AWS and Azure.',
-        'Incident resolution and enhancements on systems with real users and uptime constraints.',
+        'Resolved incidents on banking platforms in production — from business queries to definitive root-cause fixes — owning the full cycle: analysis, patch development, testing and hand-off to QA.',
+        'Handled live production outages in direct contact with bank clients: joining real-time calls, isolating the failure from logs and coordinating service recovery under pressure.',
+        'Administered development and QA servers over SSH/SFTP and executed clean production releases, validating my own patches and those of colleagues before every deployment.',
+        'Worked extensively with Oracle PL/SQL — production queries, triggers and core-banking packages — to diagnose and correct issues at the data level.',
+        'Developed AI models that classify recurring incidents from the real ticket history, reducing diagnosis time.',
       ],
     },
     projects: {
@@ -48,7 +50,7 @@ export const strings = {
       caseStudy: 'Case study',
       items: {
         noctis: 'Multi-tenant SaaS for SMB commerce — POS, SRI e-invoicing and inventory. A personal project in active development.',
-        weapon: 'Real-time weapon detection over video using a trained computer-vision model.',
+        weapon: 'Real-time detection over IP-camera video with a computer-vision model trained from scratch — automatic email and SMS alerts, with captures stored in AWS S3.',
         cafe: "A guide to Ecuador's coffee route — producers, origins and tasting notes.",
         events: 'End-to-end event management — registration, scheduling and attendee control.',
         eventsTitle: 'Event Management System',
@@ -126,14 +128,14 @@ export const strings = {
       s2: {
         eyebrow: '02 — ARCHITECTURE',
         h2: 'Clean Architecture in an Nx monorepo',
-        p: 'Four deployable apps and twelve libraries, split across four bounded contexts — identity, auth, commerce and hr. Dependencies point inward: the domain knows nothing about the framework.',
+        p: 'Four deployable apps and thirteen libraries, split across four bounded contexts — identity, auth, commerce and hr. Dependencies point inward: the domain layer knows nothing about the framework. The data model spans 49 Prisma models and 56 forward-only migrations.',
         appsLbl: 'apps/ · 4 deployable + 3 e2e',
-        libsLbl: 'libs/ · 12 libraries · 4 bounded contexts',
+        libsLbl: 'libs/ · 13 libraries · 4 bounded contexts',
       },
       s3: {
         eyebrow: '03 — TENANT ISOLATION',
         h2: 'Isolation at the database, not the application.',
-        p: "Every request binds its tenant per transaction; PostgreSQL RLS filters each row before it leaves the database. Deny-by-default means an unset tenant returns nothing — not another tenant's data.",
+        p: "Every request binds its tenant per transaction; PostgreSQL RLS — 37 deny-by-default policies across 36 tables — filters each row before it leaves the database. An unset tenant returns nothing, not another tenant's data.",
         n1t: 'request', n1s: 'JWT → RequestContext',
         n2t: 'set_config', n2s: 'app.current_tenant · per tx',
         n3t: 'tenant_isolation', n3s: 'deny-by-default',
@@ -142,11 +144,11 @@ export const strings = {
         eyebrow: '04 — EVIDENCE',
         h2: 'The numbers, with what they mean.',
         metrics: [
-          { n: '1,600+', l: 'Automated tests', note: 'Across 259 spec files — domain, REST and e2e layers, run in CI on every commit.' },
-          { n: '54', l: 'Versioned migrations', note: 'Schema evolves forward-only; every change is reproducible.' },
+          { n: '~2,000', l: 'Automated test cases', note: 'Unit tests per layer, API E2E against a real PostgreSQL under the restricted runtime role, and Playwright UI E2E — all running in CI.' },
+          { n: '37', l: 'RLS policies', note: 'Deny-by-default Row-Level Security over 36 tables, verified by an E2E suite that runs under the same restricted role.' },
+          { n: '86', l: 'REST endpoints', note: 'Exposed by 21 controllers, split by bounded context — each behind a permission guard.' },
+          { n: '75', l: 'Atomic permissions', note: 'Fail-closed RBAC across 14 modules — 7 role templates copied per tenant, with resolution cached in Redis.' },
           { n: '19', l: 'Decision records', note: 'Non-obvious choices written down with their trade-offs.' },
-          { n: '19', l: 'REST controllers', note: 'The HTTP surface, split by bounded context.' },
-          { n: '7', l: 'RBAC roles', note: 'Access is role-scoped, enforced from gateway to row.' },
         ],
         free: 'Current state of a project in active development — a snapshot of the codebase, not a final result.',
       },
@@ -172,7 +174,7 @@ export const strings = {
       homeEs: '→ Inicio',
     },
     homeMetaTitle: 'Lander Chicaiza — Full Stack Developer',
-    homeMetaDesc: 'Full Stack Developer in Loja, Ecuador. I design, build and ship complete systems — from the domain model to the AWS deploy. Java · Spring Boot · NestJS · Next.js · PostgreSQL · AWS.',
+    homeMetaDesc: 'Full Stack Developer in Loja, Ecuador. Complete systems — designed, built and run, from the domain model to production. Java · Spring Boot · NestJS · Next.js · PostgreSQL · AWS.',
   },
 
   es: {
@@ -192,9 +194,9 @@ export const strings = {
       theme: 'Cambiar tema claro / oscuro',
     },
     hero: {
-      eyebrow: 'FULL STACK DEVELOPER · LOJA, ECUADOR',
-      title: 'Diseño, construyo y despliego sistemas completos — del modelo de dominio al deploy en AWS.',
-      lede: 'Tres años de backend, dos de frontend, y dos años operando plataformas bancarias en producción.',
+      eyebrow: 'FULL STACK DEVELOPER · BACKEND & CLOUD · LOJA, ECUADOR',
+      title: 'Diseño, construyo y opero sistemas completos — del modelo de dominio a producción.',
+      lede: 'Casi tres años construyendo y sosteniendo software en producción — resolviendo incidencias críticas en plataformas bancarias reales y diseñando un SaaS multi-tenant de punta a punta.',
     },
     experience: {
       eyebrow: 'EXPERIENCIA',
@@ -204,9 +206,11 @@ export const strings = {
       intern: 'Precedido de pasantía · Jun 2023 — Ene 2024',
       tag: 'Software bancario · Producción',
       bullets: [
-        'Soporte y desarrollo sobre plataformas bancarias en producción, en Java y Spring Boot.',
-        'Despliegues coordinados con equipos de bancos sobre servidores Linux en AWS y Azure.',
-        'Resolución de incidentes y mejoras sobre sistemas con usuarios reales y exigencias de disponibilidad.',
+        'Resolví incidencias en plataformas bancarias en producción — de consultas de negocio a correcciones definitivas de raíz — gestionando el ciclo completo: análisis, desarrollo del parche, pruebas y pase a QA.',
+        'Gestioné caídas de producción en vivo con trato directo al cliente: reuniones en tiempo real, aislamiento de la falla desde los logs y coordinación de la recuperación del servicio bajo presión.',
+        'Administré servidores de desarrollo y QA vía SSH/SFTP y ejecuté pases a producción limpios, validando mis parches y los de compañeros antes de cada liberación.',
+        'Trabajé Oracle a fondo con PL/SQL — consultas sobre producción, triggers y packages del core bancario — para diagnosticar y corregir a nivel de datos.',
+        'Desarrollé modelos de IA que clasifican incidencias frecuentes a partir del histórico real, reduciendo el tiempo de diagnóstico.',
       ],
     },
     projects: {
@@ -219,7 +223,7 @@ export const strings = {
       caseStudy: 'Caso de estudio',
       items: {
         noctis: 'SaaS multi-tenant de gestión comercial para PYMEs — POS, facturación electrónica SRI e inventario. Proyecto personal en desarrollo activo.',
-        weapon: 'Detección de armas en tiempo real sobre video con un modelo de visión por computador entrenado.',
+        weapon: 'Detección en tiempo real sobre video de cámaras IP con un modelo de visión entrenado desde cero — alertas automáticas por email y SMS, con capturas guardadas en AWS S3.',
         cafe: 'Una guía de la ruta del café de Ecuador — productores, orígenes y notas de cata.',
         events: 'Gestión de eventos de extremo a extremo — registro, agenda y control de asistentes.',
         eventsTitle: 'Sistema de Gestión de Eventos',
@@ -297,14 +301,14 @@ export const strings = {
       s2: {
         eyebrow: '02 — ARQUITECTURA',
         h2: 'Clean Architecture en un monorepo Nx',
-        p: 'Cuatro apps desplegables y doce librerías, repartidas en cuatro bounded contexts — identity, auth, commerce y hr. Las dependencias apuntan hacia adentro: el dominio no sabe nada del framework.',
+        p: 'Cuatro apps desplegables y trece librerías, repartidas en cuatro bounded contexts — identity, auth, commerce y hr. Las dependencias apuntan hacia adentro: el dominio no sabe nada del framework. El modelo de datos abarca 49 modelos Prisma y 56 migraciones solo hacia adelante.',
         appsLbl: 'apps/ · 4 desplegables + 3 e2e',
-        libsLbl: 'libs/ · 12 librerías · 4 bounded contexts',
+        libsLbl: 'libs/ · 13 librerías · 4 bounded contexts',
       },
       s3: {
         eyebrow: '03 — AISLAMIENTO DE TENANTS',
         h2: 'Aislamiento en la base de datos, no en la aplicación.',
-        p: 'Cada request fija su tenant por transacción; la RLS de PostgreSQL filtra cada fila antes de salir de la base. Deny-by-default significa que un tenant sin fijar devuelve nada — no los datos de otro.',
+        p: 'Cada request fija su tenant por transacción; la RLS de PostgreSQL — 37 políticas deny-by-default sobre 36 tablas — filtra cada fila antes de salir de la base. Un tenant sin fijar devuelve nada, no los datos de otro.',
         n1t: 'request', n1s: 'JWT → RequestContext',
         n2t: 'set_config', n2s: 'app.current_tenant · por tx',
         n3t: 'tenant_isolation', n3s: 'deny-by-default',
@@ -313,11 +317,11 @@ export const strings = {
         eyebrow: '04 — EVIDENCIA',
         h2: 'Los números, con lo que significan.',
         metrics: [
-          { n: '1,600+', l: 'Tests automatizados', note: 'En 259 archivos spec — dominio, REST y e2e; corren en CI en cada commit.' },
-          { n: '54', l: 'Migraciones versionadas', note: 'El esquema evoluciona solo hacia adelante; cada cambio es reproducible.' },
+          { n: '~2,000', l: 'Casos de test', note: 'Unit por capa, E2E de API contra PostgreSQL real bajo el rol restringido y E2E de UI con Playwright — todo corre en CI.' },
+          { n: '37', l: 'Políticas RLS', note: 'Row-Level Security deny-by-default sobre 36 tablas, verificada por una suite E2E que corre bajo el mismo rol restringido.' },
+          { n: '86', l: 'Endpoints REST', note: 'Expuestos en 21 controladores, divididos por bounded context — cada uno detrás de un guard de permisos.' },
+          { n: '75', l: 'Permisos atómicos', note: 'RBAC fail-closed en 14 módulos — 7 plantillas de rol copiadas por tenant, con resolución cacheada en Redis.' },
           { n: '19', l: 'Decision records', note: 'Decisiones no obvias escritas con sus trade-offs.' },
-          { n: '19', l: 'Controladores REST', note: 'La superficie HTTP, dividida por bounded context.' },
-          { n: '7', l: 'Roles RBAC', note: 'El acceso es por rol, aplicado del gateway a la fila.' },
         ],
         free: 'Estado actual de un proyecto en desarrollo activo — una foto del código, no un resultado final.',
       },
@@ -343,7 +347,7 @@ export const strings = {
       homeEs: '→ Home',
     },
     homeMetaTitle: 'Lander Chicaiza — Full Stack Developer',
-    homeMetaDesc: 'Desarrollador Full Stack en Loja, Ecuador. Diseño, construyo y despliego sistemas completos — del modelo de dominio al deploy en AWS. Java · Spring Boot · NestJS · Next.js · PostgreSQL · AWS.',
+    homeMetaDesc: 'Desarrollador Full Stack en Loja, Ecuador. Diseño, construyo y opero sistemas completos — del modelo de dominio a producción. Java · Spring Boot · NestJS · Next.js · PostgreSQL · AWS.',
   },
 } as const;
 
