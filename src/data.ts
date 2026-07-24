@@ -1,15 +1,16 @@
 // Language-neutral data (technology names, diagram labels). Copy lives in i18n/strings.ts.
-// Names verified against the real Nx monorepo tree (apps/, libs/, nx.json) on 2026-07-21.
+// Names verified against the real Nx monorepo tree (apps/, libs/, nx.json) on 2026-07-21;
+// counts re-verified 2026-07-22 (13 libs, 21 controllers, 49 models, 56 migrations).
 
 export const stackRows = [
-  { key: 'backend', chips: ['Java', 'Spring Boot', 'NestJS', 'Node.js', 'Python', 'Django'] },
-  { key: 'frontend', chips: ['Next.js 14', 'React', 'TypeScript', 'Tailwind', 'shadcn/ui', 'TanStack Query', 'Zustand'] },
-  { key: 'data', chips: ['PostgreSQL · RLS', 'Oracle DB', 'MySQL', 'Redis', 'Prisma'] },
-  { key: 'cloud', chips: ['AWS', 'Azure', 'Vercel', 'Docker', 'Jenkins', 'Nginx', 'Linux'] },
+  { key: 'backend', chips: ['Java', 'Spring Boot', 'NestJS', 'Node.js', 'Python', 'Django', 'BullMQ', 'Zod'] },
+  { key: 'frontend', chips: ['Next.js 14', 'React', 'TypeScript', 'Tailwind', 'shadcn/ui', 'TanStack Query'] },
+  { key: 'data', chips: ['PostgreSQL · RLS', 'Oracle · PL/SQL', 'MySQL', 'Redis', 'Prisma'] },
+  { key: 'cloud', chips: ['AWS', 'Azure', 'Vercel', 'Cloudflare R2', 'Docker', 'Jenkins', 'Nginx', 'Linux'] },
   { key: 'testing', chips: ['Jest', 'Playwright', 'E2E', 'JWT', 'argon2id', 'RBAC'] },
 ] as const;
 
-export const experienceChips = ['Java', 'Spring Boot', 'Linux', 'AWS', 'Azure'] as const;
+export const experienceChips = ['Java', 'Spring Boot', 'Oracle PL/SQL', 'Camunda', 'AWS', 'Azure', 'Jenkins'] as const;
 
 // The 4 deployable apps (apps/api, apps/commerce, apps/backoffice, apps/web).
 // Plus 3 e2e suites (api-e2e, web-e2e, platform-e2e) — rendered as the "+3 e2e" chip.
