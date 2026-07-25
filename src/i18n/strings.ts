@@ -108,6 +108,10 @@ export const strings = {
         repoV: 'Private — architecture shown here',
         dsK: 'DESIGN SYSTEM',
         dsV: 'View it live →',
+        flowK: 'HOW IT WORKS',
+        flowV: 'Login → shell walkthrough →',
+        posK: 'CASHIER ROLE',
+        posV: 'Open the POS →',
       },
       s1: {
         eyebrow: '01 — CONTEXT & PRODUCT',
@@ -283,6 +287,10 @@ export const strings = {
         repoV: 'Privado — arquitectura mostrada aquí',
         dsK: 'SISTEMA DE DISEÑO',
         dsV: 'Verlo en vivo →',
+        flowK: 'CÓMO FUNCIONA',
+        flowV: 'Recorrido login → shell →',
+        posK: 'ROL DE CAJERO',
+        posV: 'Abrir el POS →',
       },
       s1: {
         eyebrow: '01 — CONTEXTO Y PRODUCTO',
