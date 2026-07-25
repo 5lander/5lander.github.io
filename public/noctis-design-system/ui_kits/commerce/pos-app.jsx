@@ -150,11 +150,11 @@ function PosApp() {
     <div data-mode={mode} data-density={density} style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'hsl(var(--surface-sunken))', color: 'hsl(var(--text-primary))', fontFamily: 'var(--font-ui)', ...accentVars }}>
       <PrototypeBar tenantId={tenantId} onChangeTenant={onChangeTenant} searchState={searchState} onChangeSearch={setSearchState} cartDemo={cartDemo} onChangeCart={onChangeCart} tenant={tenant} density={density} onChangeDensity={setDensity} autoDensity={autoDensity} />
       <div style={{ flex: 1, minHeight: 0 }}>
-        <window.PosShell tenant={tenant} mode={mode} onToggleMode={() => setMode((m) => m === 'light' ? 'dark' : 'light')} onExit={() => setExited(true)}>
+        <window.PosShell tenant={tenant} mode={mode} onToggleMode={() => setMode((m) => m === 'light' ? 'dark' : 'light')} onExit={() => { window.location.href = '../../index.html'; }}>
           {exited
             ? <div style={{ flex: 1, minWidth: 0 }}><ExitedScreen onBack={() => setExited(false)} /></div>
             : <>
-                <window.ProductSearch searchState={searchState} onAdd={onAdd} onAddGeneric={openGeneric} onRetry={() => setSearchState('data')} onExit={() => setExited(true)} flash={flash} />
+                <window.ProductSearch searchState={searchState} onAdd={onAdd} onAddGeneric={openGeneric} onRetry={() => setSearchState('data')} onExit={() => { window.location.href = '../../index.html'; }} flash={flash} />
                 <window.Cart lines={lines} customer={customer}
                   onOpenQty={setQtyLine} onStep={onStep} onRemove={onRemove} onSaveProduct={onSaveProduct}
                   onConsumidorFinal={consumidorFinal} onOpenPicker={() => setPickerOpen(true)} onCobrar={onCobrar} />

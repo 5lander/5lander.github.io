@@ -163,7 +163,7 @@ function CommerceApp() {
             <window.CommerceShell
               tenant={tenant} empresa={empresaId} profile={profile} mode={mode}
               onToggleMode={() => setMode((m) => (m === 'light' ? 'dark' : 'light'))}
-              onLogout={() => setSignedOut(true)}
+              onLogout={() => { window.location.href = '../../index.html'; }}
               activeModule={activeModule} onNavigate={onNavigate}
               onChangeCompany={onChangeCompany}
               collapsed={collapsed} onToggleCollapse={() => setCollapsed((c) => !c)}
