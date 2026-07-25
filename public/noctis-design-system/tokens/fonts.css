@@ -1,0 +1,3 @@
+/* Noctis — tipografía del sistema. Una sola familia UI (Inter) + mono (IBM Plex Mono).
+   SIN serif. Cargadas desde Google Fonts (coincidencia exacta, no sustituciones). */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');

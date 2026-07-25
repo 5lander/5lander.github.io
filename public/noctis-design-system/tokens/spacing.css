@@ -1,0 +1,70 @@
+/* ============================================================================
+   NOCTIS · ESPACIADO base 4 · RADIOS · EJE DENSIDAD (4º eje, ortogonal a modo/marca).
+   La densidad cambia tamaños y hit targets — NO colores, familia tipográfica ni radios.
+   Base = comfortable (back-office). Override completo en [data-density="touch"].
+   ============================================================================ */
+:root{
+  /* espaciado — base 4 */
+  --space-1:4px;  --space-2:8px;  --space-3:12px; --space-4:16px; --space-5:20px;
+  --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px; --space-16:64px;
+
+  /* radios — 8 control · 12 card · 16 surface · full pill */
+  --radius-control:8px;
+  --radius-card:12px;
+  --radius-surface:16px;
+  --radius-pill:999px;
+
+  /* EJE DENSIDAD — comfortable (back-office) */
+  --control-h:36px;
+  --control-h-sm:30px;
+  --row-h:40px;
+  --hit-min:36px;
+  --pad-x:12px;
+  --gap:8px;
+  --font-body:14px;
+  --tap-scale:1; /* @kind other */
+
+  /* EJE DENSIDAD · superficies POS (promovidos desde px hardcodeados de las pieles).
+     Un tamaño que cambia con la densidad vive acá, no como ternario en la piel. */
+  --pos-header:54px;    /* alto de la barra POS */
+  --pos-chip:32px;      /* caja de ícono del context-chip (empresa/cajero) */
+  --pos-action:38px;    /* botón de acción del chrome POS · chip "No vendible" */
+  --pos-tap-sm:34px;    /* stepper · botón cantidad · limpiar búsqueda */
+  --pos-tap-lg:48px;    /* Cobrar · filas del picker · Consumidor Final en picker */
+  --pos-field:44px;     /* alto del campo de búsqueda */
+  --pos-field-sm:44px;  /* botones de la barra de cliente · input del picker */
+  --pos-field-pl:44px;  /* inset izq. del campo de búsqueda (deja pasar el ícono) */
+  --pos-field-px:14px;  /* padding horizontal del campo de búsqueda */
+  --pos-row-py:10px;    /* padding vertical de la fila de resultado */
+  --pos-row-px:12px;    /* padding horizontal de la fila de resultado */
+  --pos-cart-w:404px;   /* ancho de la columna de carrito */
+  --pos-ico:18px;       /* glifo de ícono en superficie táctil (papelera) */
+  --kp-key:56px;        /* tecla del NumericKeypad */
+}
+
+[data-density="touch"]{
+  /* táctil-POS (cajero bajo presión, tablet, dedos) */
+  --control-h:48px;
+  --control-h-sm:44px;
+  --row-h:56px;
+  --hit-min:48px;
+  --pad-x:16px;
+  --gap:12px;
+  --font-body:16px;
+
+  /* superficies POS — táctil (cajero, tablet, dedos) */
+  --pos-header:64px;
+  --pos-chip:36px;
+  --pos-action:48px;
+  --pos-tap-sm:44px;
+  --pos-tap-lg:60px;
+  --pos-field:56px;
+  --pos-field-sm:52px;
+  --pos-field-pl:50px;
+  --pos-field-px:16px;
+  --pos-row-py:12px;
+  --pos-row-px:14px;
+  --pos-cart-w:452px;
+  --pos-ico:20px;
+  --kp-key:64px;
+}
