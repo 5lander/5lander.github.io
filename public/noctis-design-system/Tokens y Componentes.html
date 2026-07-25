@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noctis · Tokens y Componentes</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="./_ds_bundle.js"></script>
+<style>
+  html,body{margin:0;}
+  body{background:hsl(240 12% 94%);font-family:var(--font-ui);color:hsl(var(--text-primary));}
+  [data-mode="dark"] body,body.__darkroot{background:hsl(240 6% 7%);}
+  #root{max-width:1160px;margin:0 auto;padding:40px 32px 72px;}
+  .page-head{margin:0 0 4px;font:var(--type-display-weight) var(--type-display-size)/var(--type-display-lh) var(--font-ui);letter-spacing:var(--type-display-tracking);color:hsl(240 6% 12%);}
+  .page-sub{margin:0 0 32px;font-size:14px;color:hsl(240 4% 40%);max-width:60ch;}
+  a{color:hsl(var(--link));}a:hover{color:hsl(var(--link));text-decoration:underline;}
+</style>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#0f0f12">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0f0f12"/>
+    <rect x="120" y="150" width="440" height="500" rx="24" fill="#f7f7fa"/>
+    <rect x="640" y="150" width="440" height="500" rx="24" fill="#1c1c22"/>
+    <rect x="170" y="210" width="180" height="26" rx="6" fill="#c9c9d2"/>
+    <rect x="170" y="270" width="340" height="120" rx="12" fill="#e6e6ec"/>
+    <rect x="690" y="210" width="180" height="26" rx="6" fill="#3a3a44"/>
+    <rect x="690" y="270" width="340" height="120" rx="12" fill="#26262e"/>
+    <circle cx="360" cy="560" r="26" fill="#0f0f12"/>
+    <circle cx="880" cy="560" r="26" fill="#f7f7fa"/>
+  </svg>
+</template>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const NS = window.NoctisCommerceDesignSystem_4dfd35;
+const { Button, Input, Badge, Table, MoneyDisplay } = NS;
+
+/* ---- swatch de token de color ---- */
+function Swatch({ token, label, ring }) {
+  return (
+    <div style={{display:'flex',flexDirection:'column',gap:6}}>
+      <div style={{
+        height:44,borderRadius:8,
+        background:`hsl(var(${token}))`,
+        border:'1px solid hsl(var(--border-subtle))',
+        boxShadow: ring ? 'inset 0 0 0 2px hsl(var(--surface-raised)), inset 0 0 0 4px hsl(var('+token+'))' : 'none'
+      }}/>
+      <div style={{lineHeight:1.3}}>
+        <div style={{font:'500 11px/1.2 var(--font-ui)',color:'hsl(var(--text-primary))'}}>{label}</div>
+        <code style={{font:'400 10px/1.3 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{token}</code>
+      </div>
+    </div>
+  );
+}
+
+function TokenGroup({ title, tokens }) {
+  return (
+    <div style={{marginBottom:20}}>
+      <div style={{font:'600 10px/1 var(--font-ui)',letterSpacing:'.08em',textTransform:'uppercase',color:'hsl(var(--text-tertiary))',marginBottom:10}}>{title}</div>
+      <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(96px,1fr))',gap:12}}>
+        {tokens.map(t => <Swatch key={t[0]} token={t[0]} label={t[1]}/>)}
+      </div>
+    </div>
+  );
+}
+
+/* ---- la tarjeta demo: botón primario + input con error + badge + tabla ---- */
+function DemoCard() {
+  const stat = { display:'flex',flexDirection:'column',gap:26 };
+  return (
+    <div style={{
+      background:'hsl(var(--surface-raised))',
+      border:'1px solid hsl(var(--border-subtle))',
+      borderRadius:'var(--radius-card)',
+      overflow:'hidden'
+    }}>
+      <div style={{
+        display:'flex',alignItems:'center',justifyContent:'space-between',gap:12,
+        padding:'14px 18px',borderBottom:'1px solid hsl(var(--border-subtle))',
+        background:'hsl(var(--surface-sunken))'
+      }}>
+        <span style={{font:'600 11px/1 var(--font-ui)',letterSpacing:'.06em',textTransform:'uppercase',color:'hsl(var(--text-secondary))'}}>Orden de compra · OC-1043</span>
+        <Badge tone="warning" dot>Por vencer</Badge>
+      </div>
+      <div style={{padding:18, ...stat}}>
+        <Input
+          label="Correo del proveedor"
+          defaultValue="compras@nortec"
+          error="Ingresa un correo válido (falta el dominio)."
+        />
+        <div style={{display:'flex',flexWrap:'wrap',gap:8,alignItems:'center'}}>
+          <Badge tone="success" dot>Activa</Badge>
+          <Badge tone="info">En tránsito</Badge>
+          <Badge tone="danger">Vencido</Badge>
+          <Badge tone="terminal">Anulado</Badge>
+        </div>
+        <Table
+          columns={[
+            {key:'e',label:'Estado'},
+            {key:'p',label:'Producto'},
+            {key:'s',label:'Stock',numeric:true},
+            {key:'pr',label:'Subtotal',numeric:true},
+          ]}
+          rows={[
+            {e:<Badge tone="success" dot>Activa</Badge>,p:'Cuaderno universitario',s:'128',pr:<MoneyDisplay value={313.60} size="sm"/>},
+            {e:<Badge tone="info">En tránsito</Badge>,p:'Esferográfico BIC',s:'1.204',pr:<MoneyDisplay value={421.40} size="sm"/>},
+            {e:<Badge tone="neutral">Borrador</Badge>,p:'Marcador permanente',s:'0',pr:<MoneyDisplay value={null} size="sm"/>},
+          ]}
+          footNote="3 de 18 líneas"
+          minWidth={360}
+        />
+        <div style={{display:'flex',gap:8,justifyContent:'flex-end'}}>
+          <Button variant="ghost">Cancelar</Button>
+          <Button variant="primary">Confirmar orden</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Panel({ dark }) {
+  const surfaces = [
+    ['--surface-base','Base'],['--surface-raised','Raised'],
+    ['--surface-sunken','Sunken'],['--border-strong','Border']
+  ];
+  const text = [
+    ['--text-primary','Primary'],['--text-secondary','Secondary'],
+    ['--text-tertiary','Tertiary'],['--text-disabled','Disabled']
+  ];
+  const semantic = [
+    ['--success-fg','Success'],['--warning-fg','Warning'],
+    ['--danger-fg','Danger'],['--info-fg','Info'],
+    ['--brand-primary','Brand'],['--focus-ring','Focus']
+  ];
+  return (
+    <section {...(dark ? {'data-mode':'dark'} : {})} style={{
+      flex:'1 1 460px',minWidth:0,
+      background:'hsl(var(--surface-base))',
+      border:'1px solid hsl(var(--border-subtle))',
+      borderRadius:'var(--radius-surface)',
+      padding:24,
+      boxShadow:'var(--shadow-overlay)'
+    }}>
+      <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:20}}>
+        <span style={{width:10,height:10,borderRadius:'50%',background:dark?'hsl(240 8% 90%)':'hsl(240 6% 12%)',border:'1px solid hsl(var(--border-strong))'}}/>
+        <h2 style={{margin:0,font:'600 15px/1 var(--font-ui)',color:'hsl(var(--text-primary))'}}>{dark?'Modo oscuro':'Modo claro'}</h2>
+        <code style={{marginLeft:'auto',font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{dark?'[data-mode="dark"]':':root'}</code>
+      </div>
+      <TokenGroup title="Superficies · Bordes" tokens={surfaces}/>
+      <TokenGroup title="Texto" tokens={text}/>
+      <TokenGroup title="Semánticos · Marca" tokens={semantic}/>
+      <div style={{height:1,background:'hsl(var(--border-subtle))',margin:'6px 0 20px'}}/>
+      <DemoCard/>
+    </section>
+  );
+}
+
+/* ---- escala fija (independiente del modo) ---- */
+function FixedRow() {
+  const type = [
+    ['Display','40 / 44 · 600'],['H1','24 / 30 · 600'],['H2','20 / 26 · 600'],
+    ['Body','14 / 20 · 400'],['Label','13 / 16 · 500'],['Caption','12 / 16 · 400']
+  ];
+  const space = [['1','4'],['2','8'],['3','12'],['4','16'],['6','24'],['8','32']];
+  const radii = [['control','8'],['card','12'],['surface','16'],['pill','999']];
+  const cell = {background:'hsl(var(--surface-raised))',border:'1px solid hsl(var(--border-subtle))',borderRadius:12,padding:'16px 18px',flex:'1 1 300px'};
+  const cap = {font:'600 10px/1 var(--font-ui)',letterSpacing:'.08em',textTransform:'uppercase',color:'hsl(var(--text-tertiary))',marginBottom:12};
+  return (
+    <div style={{display:'flex',flexWrap:'wrap',gap:16,marginBottom:28}}>
+      <div style={cell}>
+        <div style={cap}>Tipografía · Inter</div>
+        <div style={{display:'flex',flexDirection:'column',gap:7}}>
+          {type.map(([n,v])=>(
+            <div key={n} style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',gap:12}}>
+              <span style={{fontWeight:n==='Body'||n==='Caption'?400:600,fontSize:n==='Display'?18:14,color:'hsl(var(--text-primary))'}}>{n}</span>
+              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{v}</code>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={cell}>
+        <div style={cap}>Espaciado · base 4</div>
+        <div style={{display:'flex',flexDirection:'column',gap:8}}>
+          {space.map(([k,px])=>(
+            <div key={k} style={{display:'flex',alignItems:'center',gap:10}}>
+              <div style={{width:`${px}px`,height:14,background:'hsl(var(--brand-primary))',borderRadius:3,opacity:.85,flex:'none'}}/>
+              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>space-{k} · {px}px</code>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={cell}>
+        <div style={cap}>Radios</div>
+        <div style={{display:'flex',flexDirection:'column',gap:9}}>
+          {radii.map(([n,px])=>(
+            <div key={n} style={{display:'flex',alignItems:'center',gap:10}}>
+              <div style={{width:26,height:26,background:'hsl(var(--surface-sunken))',border:'1px solid hsl(var(--border-strong))',borderRadius:n==='pill'?999:parseInt(px),flex:'none'}}/>
+              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{n} · {px==='999'?'pill':px+'px'}</code>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <h1 className="page-head">Tokens y Componentes</h1>
+      <p className="page-sub">Núcleo Noctis Commerce. Los mismos componentes leen tokens semánticos por rol; el modo se cambia solo con <code style={{fontFamily:'var(--font-mono)',fontSize:12}}>[data-mode]</code>.</p>
+      <FixedRow/>
+      <div style={{display:'flex',flexWrap:'wrap',gap:24,alignItems:'flex-start'}}>
+        <Panel dark={false}/>
+        <Panel dark={true}/>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

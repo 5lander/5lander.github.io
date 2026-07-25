@@ -1,0 +1,51 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Feedback" subtitle="Alert · Toast · Spinner · Skeleton · EmptyState" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:hsl(var(--surface-base));font-family:var(--font-ui);}.grp{font:600 11px/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:hsl(var(--text-tertiary));margin:0 0 8px;}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const { Alert, Toast, Spinner, Skeleton, EmptyState, Button } = window.NoctisCommerceDesignSystem_4dfd35;
+function Demo(){
+  return (
+    <div>
+      <div className="grp">Alert (inline)</div>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:10,marginBottom:18}}>
+        <Alert tone="info"><b>Info.</b> Buscador client-side por ahora.</Alert>
+        <Alert tone="success"><b>Listo.</b> Stock actualizado.</Alert>
+        <Alert tone="warning"><b>Atención.</b> El certificado vence en 30 días.</Alert>
+        <Alert tone="danger"><b>No autorizado.</b> No puede anular ventas.</Alert>
+      </div>
+      <div className="grp">Toast · Spinner</div>
+      <div className="row">
+        <Toast autoDismiss={0}>Invitación reenviada a agustina@aguilar.ec</Toast>
+        <span style={{display:'inline-flex',alignItems:'center',gap:10}}><Spinner/><span style={{fontSize:12,color:'hsl(var(--text-tertiary))'}}>Gate de permiso</span></span>
+      </div>
+      <div style={{display:'flex',gap:20,flexWrap:'wrap',alignItems:'flex-start'}}>
+        <div style={{flex:'0 0 240px'}}>
+          <div className="grp">Skeleton</div>
+          <Skeleton variant="block" height={44} style={{marginBottom:10}}/>
+          <Skeleton variant="line" width="90%" style={{marginBottom:7}}/>
+          <Skeleton variant="line" width="70%" style={{marginBottom:7}}/>
+          <Skeleton variant="line" width="50%"/>
+        </div>
+        <div style={{flex:'0 0 300px'}}>
+          <div className="grp">EmptyState</div>
+          <EmptyState title="Aún no hay productos" description="Cree el primero para empezar el catálogo." action={<Button variant="primary" style={{height:32}}>Nuevo producto</Button>}/>
+        </div>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

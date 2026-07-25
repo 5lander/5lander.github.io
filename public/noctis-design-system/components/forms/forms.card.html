@@ -1,0 +1,61 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Forms" subtitle="Button · Input · Select · Combobox · DatePicker · Switch · Checkbox" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:hsl(var(--surface-base));font-family:var(--font-ui);}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin-bottom:16px;}.grp{font:600 11px/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:hsl(var(--text-tertiary));margin:0 0 8px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const { Button, Input, Select, Combobox, DatePicker, Switch, Checkbox } = window.NoctisCommerceDesignSystem_4dfd35;
+function Demo(){
+  const [cliente,setCliente]=React.useState('');
+  const [fecha,setFecha]=React.useState(new Date(2026,2,14));
+  const [on,setOn]=React.useState(true);
+  const [chk,setChk]=React.useState(true);
+  return (
+    <div>
+      <div className="grp">Button</div>
+      <div className="row">
+        <Button variant="primary">Guardar cambios</Button>
+        <Button variant="secondary">Cancelar</Button>
+        <Button variant="ghost">Ver detalle</Button>
+        <Button variant="danger">Anular venta</Button>
+        <Button variant="primary" loading>Emitiendo…</Button>
+        <Button variant="primary" disabled>Deshabilitado</Button>
+        <Button variant="danger-ghost" size="sm">Descontinuar</Button>
+      </div>
+      <div className="grp">Input</div>
+      <div className="row" style={{alignItems:'flex-start'}}>
+        <div style={{width:220}}><Input label="Nombre del producto" defaultValue="Cuaderno universitario" helper="Se muestra tal cual en catálogo."/></div>
+        <div style={{width:180}}><Input label="RUC / Cédula" defaultValue="17900123" error="Dígito verificador inválido."/></div>
+        <div style={{width:150}}><Input label="Categoría" defaultValue="No editable" disabled/></div>
+      </div>
+      <div className="grp">Select · Combobox · DatePicker</div>
+      <div className="row" style={{alignItems:'flex-start'}}>
+        <div style={{width:180}}><Select options={['Todos','Activo','Descontinuado']} defaultValue="Todos"/></div>
+        <div style={{width:280}}><Combobox value={cliente} onChange={setCliente} placeholder="Seleccione un cliente…" searchPlaceholder="Buscar por nombre o identificación…" options={[{value:'cf',label:'Consumidor Final',meta:'· un toque',accent:true},{value:'ag',label:'Librería Aguilar S.A.',meta:'RUC 1790012345001'},{value:'mm',label:'María Méndez Rueda',meta:'CI 1712345678'}]}/></div>
+        <DatePicker value={fecha} onChange={setFecha}/>
+      </div>
+      <div className="grp">Switch · Checkbox tri-estado</div>
+      <div className="row" style={{gap:22,alignItems:'center'}}>
+        <Switch checked={on} onChange={setOn} label="Emisión electrónica" helper="Activa los comprobantes ante el SRI." id="sw-sri"/>
+        <Switch checked={false} onChange={()=>{}} label="Bloqueado" disabled id="sw-off"/>
+        <Switch checked size="sm" onChange={()=>{}} aria-label="Compacto encendido"/>
+        <Checkbox checked={chk} onChange={setChk} label="Todas las sucursales" id="cb-all"/>
+        <Checkbox indeterminate onChange={()=>{}} label="Algunas seleccionadas" id="cb-mix"/>
+        <Checkbox checked={false} disabled onChange={()=>{}} label="No disponible" id="cb-dis"/>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

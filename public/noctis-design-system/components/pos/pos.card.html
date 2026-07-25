@@ -1,0 +1,35 @@
+<!-- @dsCard group="Components" viewport="700x420" name="POS — NumericKeypad" subtitle="Teclado numérico táctil 3×4, teclas 64×64" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:hsl(var(--surface-base));font-family:var(--font-ui);}</style>
+</head>
+<body>
+<div data-density="touch" id="root"></div>
+<script type="text/babel" data-presets="react">
+const { NumericKeypad } = window.NoctisCommerceDesignSystem_4dfd35;
+function Demo(){
+  const [v,setV]=React.useState('1250');
+  return (
+    <div style={{display:'flex',gap:24,alignItems:'flex-start'}}>
+      <NumericKeypad value={v} onChange={setV}/>
+      <ul style={{margin:0,paddingLeft:18,fontSize:13,color:'hsl(var(--text-secondary))',lineHeight:1.8,maxWidth:'34ch'}}>
+        <li>Teclas 64×64 (≥60 exigido), gap 8.</li>
+        <li>Al presionar: scale(.96) + fondo de marca.</li>
+        <li>focus-visible con anillo; teclado físico.</li>
+        <li>C limpia · ⌫ borra (con aria-label).</li>
+        <li>Cantidad, precio y cobro en el POS.</li>
+      </ul>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>
