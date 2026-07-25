@@ -137,7 +137,7 @@ function BackofficeApp() {
           <window.BackofficeShell
             staff={staff} mode={mode}
             onToggleMode={() => setMode((m) => (m === 'light' ? 'dark' : 'light'))}
-            onLogout={() => guardedNav(() => setSignedOut(true))}
+            onLogout={() => guardedNav(() => { window.location.href = '../../index.html'; })}
             activeModule={activeModule} onNavigate={onNavigate}
             collapsed={collapsed} onToggleCollapse={() => setCollapsed((c) => !c)}
           >

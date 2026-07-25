@@ -124,7 +124,7 @@ function CoreApp() {
     <div data-mode={mode} style={{ minHeight: '100vh', background: 'hsl(var(--surface-base))', color: 'hsl(var(--text-primary))', fontFamily: 'var(--font-ui)', ...wrapperStyle }}>
       {screen === 'login' && <LoginScreen onLogin={() => setScreen('workspace')} />}
       {screen === 'workspace' && <WorkspaceScreen onPick={(id) => { setTenantId(id); setScreen('products'); }} />}
-      {screen === 'products' && <ProductsScreen tenant={tenant} mode={mode} onToggleMode={() => setMode(m => m === 'light' ? 'dark' : 'light')} onLogout={() => setScreen('login')} />}
+      {screen === 'products' && <ProductsScreen tenant={tenant} mode={mode} onToggleMode={() => setMode(m => m === 'light' ? 'dark' : 'light')} onLogout={() => { window.location.href = '../../index.html'; }} />}
     </div>
   );
 }
