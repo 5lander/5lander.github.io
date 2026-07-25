@@ -3,224 +3,221 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noctis · Tokens y Componentes</title>
+<title>Noctis · Sistema de diseño</title>
 <link rel="stylesheet" href="./styles.css">
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script src="./_ds_bundle.js"></script>
 <style>
   html,body{margin:0;}
-  body{background:hsl(240 12% 94%);font-family:var(--font-ui);color:hsl(var(--text-primary));}
-  [data-mode="dark"] body,body.__darkroot{background:hsl(240 6% 7%);}
-  #root{max-width:1160px;margin:0 auto;padding:40px 32px 72px;}
-  .page-head{margin:0 0 4px;font:var(--type-display-weight) var(--type-display-size)/var(--type-display-lh) var(--font-ui);letter-spacing:var(--type-display-tracking);color:hsl(240 6% 12%);}
-  .page-sub{margin:0 0 32px;font-size:14px;color:hsl(240 4% 40%);max-width:60ch;}
-  a{color:hsl(var(--link));}a:hover{color:hsl(var(--link));text-decoration:underline;}
+  body{
+    background:hsl(var(--surface-sunken));
+    font-family:var(--font-ui);
+    color:hsl(var(--text-primary));
+  }
+  .wrap{max-width:1160px;margin:0 auto;padding:48px 32px 80px;}
+  .kicker{
+    font-size:12px;font-weight:var(--fw-semibold);letter-spacing:.14em;
+    color:hsl(var(--text-tertiary));margin:0 0 10px;
+  }
+  h1{
+    margin:0 0 6px;
+    font:var(--type-display-weight) var(--type-display-size)/var(--type-display-lh) var(--font-ui);
+    letter-spacing:var(--type-display-tracking);
+  }
+  .sub{margin:0 0 12px;font-size:14px;line-height:20px;color:hsl(var(--text-secondary));max-width:64ch;}
+  .backlink{font-size:13px;}
+  a{color:hsl(var(--link));text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .section{margin-top:52px;}
+  .section-h{
+    margin:0 0 4px;font-size:12px;font-weight:var(--fw-semibold);
+    letter-spacing:.14em;color:hsl(var(--text-tertiary));
+  }
+  .section-sub{margin:0 0 18px;font-size:13px;color:hsl(var(--text-tertiary));}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;}
+  .card{
+    display:block;background:hsl(var(--surface-base));
+    border:1px solid hsl(var(--border-subtle));border-radius:12px;
+    padding:16px 18px;color:inherit;
+  }
+  .card:hover{border-color:hsl(var(--border-strong));text-decoration:none;}
+  .card b{
+    display:block;font-size:14px;font-weight:var(--fw-semibold);
+    line-height:18px;margin-bottom:5px;color:hsl(var(--text-primary));
+  }
+  .card span{display:block;font-size:12.5px;line-height:17px;color:hsl(var(--text-tertiary));}
+  .card em{
+    display:inline-block;font-style:normal;margin-top:10px;
+    font-size:11px;font-weight:var(--fw-medium);letter-spacing:.06em;
+    color:hsl(var(--text-secondary));
+    border:1px solid hsl(var(--border-subtle));border-radius:999px;padding:2px 9px;
+  }
+  .apps .card{padding:20px;}
+  .apps .card b{font-size:15px;}
+  .note{margin:14px 0 0;font-size:12px;color:hsl(var(--text-tertiary));}
 </style>
 </head>
 <body>
-<template id="__bundler_thumbnail" data-bg-color="#0f0f12">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#0f0f12"/>
-    <rect x="120" y="150" width="440" height="500" rx="24" fill="#f7f7fa"/>
-    <rect x="640" y="150" width="440" height="500" rx="24" fill="#1c1c22"/>
-    <rect x="170" y="210" width="180" height="26" rx="6" fill="#c9c9d2"/>
-    <rect x="170" y="270" width="340" height="120" rx="12" fill="#e6e6ec"/>
-    <rect x="690" y="210" width="180" height="26" rx="6" fill="#3a3a44"/>
-    <rect x="690" y="270" width="340" height="120" rx="12" fill="#26262e"/>
-    <circle cx="360" cy="560" r="26" fill="#0f0f12"/>
-    <circle cx="880" cy="560" r="26" fill="#f7f7fa"/>
-  </svg>
-</template>
-<div id="root"></div>
-<script type="text/babel" data-presets="react">
-const NS = window.NoctisCommerceDesignSystem_4dfd35;
-const { Button, Input, Badge, Table, MoneyDisplay } = NS;
+<div class="wrap">
+  <p class="kicker">NOCTIS COMMERCE</p>
+  <h1>Sistema de diseño</h1>
+  <p class="sub">
+    Núcleo visual compartido por las apps <b style="font-weight:600">commerce</b> (POS, facturación,
+    inventario) y <b style="font-weight:600">backoffice</b> (administración de plataforma).
+    Todo lo de abajo es estático y navegable: prototipos de pantallas, tokens, foundations y componentes.
+  </p>
+  <p class="backlink"><a href="/es/noctis/">‹ Volver al caso de estudio</a></p>
 
-/* ---- swatch de token de color ---- */
-function Swatch({ token, label, ring }) {
-  return (
-    <div style={{display:'flex',flexDirection:'column',gap:6}}>
-      <div style={{
-        height:44,borderRadius:8,
-        background:`hsl(var(${token}))`,
-        border:'1px solid hsl(var(--border-subtle))',
-        boxShadow: ring ? 'inset 0 0 0 2px hsl(var(--surface-raised)), inset 0 0 0 4px hsl(var('+token+'))' : 'none'
-      }}/>
-      <div style={{lineHeight:1.3}}>
-        <div style={{font:'500 11px/1.2 var(--font-ui)',color:'hsl(var(--text-primary))'}}>{label}</div>
-        <code style={{font:'400 10px/1.3 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{token}</code>
-      </div>
+  <div class="section apps">
+    <p class="section-h">LA APP POR DENTRO</p>
+    <p class="section-sub">Prototipos de pantalla completa · pensados para verse en escritorio</p>
+    <div class="grid">
+      <a class="card" href="ui_kits/commerce/pos.html">
+        <b>POS · ambiente de venta</b>
+        <span>Shell POS pantalla completa, doble densidad autodetectada por puntero (desktop + táctil), carrito y catálogo.</span>
+        <em>commerce</em>
+      </a>
+      <a class="card" href="ui_kits/commerce/pos-b.html">
+        <b>POS · cobro y cierre</b>
+        <span>Continúa el «Cobrar» del ambiente de venta: cobro sobre Sheet, efectivo funcional y slots de otros medios.</span>
+        <em>commerce</em>
+      </a>
+      <a class="card" href="ui_kits/commerce/index.html">
+        <b>Shell + Productos</b>
+        <span>La piel de la app themeable por tenant: shell, dashboard y el módulo Productos con sus variantes.</span>
+        <em>commerce</em>
+      </a>
+      <a class="card" href="ui_kits/backoffice/index.html">
+        <b>Backoffice · Shell + Tenants + Catálogo</b>
+        <span>Piel platform-admin no temeable: marca Noctis fija, árbol de entitlements y catálogo append-only.</span>
+        <em>backoffice</em>
+      </a>
+      <a class="card" href="ui_kits/core/index.html">
+        <b>Pantallas compartidas</b>
+        <span>Login → Selección de espacio → Shell, en recorrido click-through.</span>
+        <em>core</em>
+      </a>
+      <a class="card" href="templates/login-noctis/LoginNoctis.dc.html">
+        <b>Login · momento negro</b>
+        <span>La única pantalla sin tenant: negro y plata, marca de casa.</span>
+        <em>template</em>
+      </a>
+      <a class="card" href="uploads/Nucleo%20Noctis.dc.html">
+        <b>Núcleo aprobado</b>
+        <span>El Design Component original del que se extrajo todo el sistema, verbatim.</span>
+        <em>fuente de verdad</em>
+      </a>
     </div>
-  );
-}
+  </div>
 
-function TokenGroup({ title, tokens }) {
-  return (
-    <div style={{marginBottom:20}}>
-      <div style={{font:'600 10px/1 var(--font-ui)',letterSpacing:'.08em',textTransform:'uppercase',color:'hsl(var(--text-tertiary))',marginBottom:10}}>{title}</div>
-      <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(96px,1fr))',gap:12}}>
-        {tokens.map(t => <Swatch key={t[0]} token={t[0]} label={t[1]}/>)}
-      </div>
+  <div class="section">
+    <p class="section-h">TOKENS Y COMPONENTES</p>
+    <p class="section-sub">Los mismos componentes leen tokens semánticos por rol; el modo cambia solo con [data-mode]</p>
+    <div class="grid">
+      <a class="card" href="Tokens%20y%20Componentes.html">
+        <b>Tokens y componentes · hub</b>
+        <span>Tipografía, espaciado, radios, superficies y semánticos, en claro y oscuro lado a lado.</span>
+      </a>
+      <a class="card" href="components/forms/forms.card.html">
+        <b>Forms</b>
+        <span>Button · Input · Select · Combobox · DatePicker · Switch · Checkbox</span>
+      </a>
+      <a class="card" href="components/data-display/data-display.card.html">
+        <b>Data display</b>
+        <span>Badge · MoneyDisplay · Table · Timeline</span>
+      </a>
+      <a class="card" href="components/feedback/feedback.card.html">
+        <b>Feedback</b>
+        <span>Alert · Toast · Spinner · Skeleton · EmptyState</span>
+      </a>
+      <a class="card" href="components/layout/layout.card.html">
+        <b>Layout</b>
+        <span>Card · Wordmark · Shell — superficie, marca de casa y esqueleto de app</span>
+      </a>
+      <a class="card" href="components/navigation/navigation.card.html">
+        <b>Navigation</b>
+        <span>Tabs · ModeToggle</span>
+      </a>
+      <a class="card" href="components/overlay/overlay.card.html">
+        <b>Overlay</b>
+        <span>Sheet — único primitivo de overlay: panel / bottom-sheet</span>
+      </a>
+      <a class="card" href="components/pos/pos.card.html">
+        <b>POS</b>
+        <span>NumericKeypad — teclado numérico táctil 3×4, teclas 64×64</span>
+      </a>
+      <a class="card" href="components/iconography/iconography.card.html">
+        <b>Iconografía</b>
+        <span>Set de módulos (Lucide), un solo peso · mapa módulo→ícono compartido</span>
+      </a>
     </div>
-  );
-}
+  </div>
 
-/* ---- la tarjeta demo: botón primario + input con error + badge + tabla ---- */
-function DemoCard() {
-  const stat = { display:'flex',flexDirection:'column',gap:26 };
-  return (
-    <div style={{
-      background:'hsl(var(--surface-raised))',
-      border:'1px solid hsl(var(--border-subtle))',
-      borderRadius:'var(--radius-card)',
-      overflow:'hidden'
-    }}>
-      <div style={{
-        display:'flex',alignItems:'center',justifyContent:'space-between',gap:12,
-        padding:'14px 18px',borderBottom:'1px solid hsl(var(--border-subtle))',
-        background:'hsl(var(--surface-sunken))'
-      }}>
-        <span style={{font:'600 11px/1 var(--font-ui)',letterSpacing:'.06em',textTransform:'uppercase',color:'hsl(var(--text-secondary))'}}>Orden de compra · OC-1043</span>
-        <Badge tone="warning" dot>Por vencer</Badge>
-      </div>
-      <div style={{padding:18, ...stat}}>
-        <Input
-          label="Correo del proveedor"
-          defaultValue="compras@nortec"
-          error="Ingresa un correo válido (falta el dominio)."
-        />
-        <div style={{display:'flex',flexWrap:'wrap',gap:8,alignItems:'center'}}>
-          <Badge tone="success" dot>Activa</Badge>
-          <Badge tone="info">En tránsito</Badge>
-          <Badge tone="danger">Vencido</Badge>
-          <Badge tone="terminal">Anulado</Badge>
-        </div>
-        <Table
-          columns={[
-            {key:'e',label:'Estado'},
-            {key:'p',label:'Producto'},
-            {key:'s',label:'Stock',numeric:true},
-            {key:'pr',label:'Subtotal',numeric:true},
-          ]}
-          rows={[
-            {e:<Badge tone="success" dot>Activa</Badge>,p:'Cuaderno universitario',s:'128',pr:<MoneyDisplay value={313.60} size="sm"/>},
-            {e:<Badge tone="info">En tránsito</Badge>,p:'Esferográfico BIC',s:'1.204',pr:<MoneyDisplay value={421.40} size="sm"/>},
-            {e:<Badge tone="neutral">Borrador</Badge>,p:'Marcador permanente',s:'0',pr:<MoneyDisplay value={null} size="sm"/>},
-          ]}
-          footNote="3 de 18 líneas"
-          minWidth={360}
-        />
-        <div style={{display:'flex',gap:8,justifyContent:'flex-end'}}>
-          <Button variant="ghost">Cancelar</Button>
-          <Button variant="primary">Confirmar orden</Button>
-        </div>
-      </div>
+  <div class="section">
+    <p class="section-h">FOUNDATIONS</p>
+    <p class="section-sub">Los tres ejes ortogonales — modo, marca, tipografía — más densidad</p>
+    <div class="grid">
+      <a class="card" href="foundations/color-surfaces-light.html">
+        <b>Superficies · claro</b>
+        <span>Grises fríos casi neutros (hue 240), croma ~0.</span>
+      </a>
+      <a class="card" href="foundations/color-surfaces-dark.html">
+        <b>Superficies · oscuro</b>
+        <span>Mismo eje de modo, remapeado — surface-sunken es negro puro.</span>
+      </a>
+      <a class="card" href="foundations/color-text.html">
+        <b>Texto · roles y contraste</b>
+        <span>Estable ante el tenant, variable ante el modo · AA/AAA declarado.</span>
+      </a>
+      <a class="card" href="foundations/color-semantic.html">
+        <b>Semánticos</b>
+        <span>Por rol, nunca por hex · fg / bg / border remapeados por modo.</span>
+      </a>
+      <a class="card" href="foundations/color-accent-clamp.html">
+        <b>Acento del tenant · el clamp</b>
+        <span>Par {primary, foreground} inyectado · casa / violeta / teal / oro.</span>
+      </a>
+      <a class="card" href="foundations/color-focus-link.html">
+        <b>Foco y enlace</b>
+        <span>Foco azul de sistema · link semántico (no es el acento).</span>
+      </a>
+      <a class="card" href="foundations/type-headings.html">
+        <b>Escala display / encabezados</b>
+        <span>Inter · escala 1.25 sobre base 14 · tracking apretado en títulos.</span>
+      </a>
+      <a class="card" href="foundations/type-body.html">
+        <b>Cuerpo / label / caption</b>
+        <span>Un peso preciso por nivel · sin serif en el producto.</span>
+      </a>
+      <a class="card" href="foundations/type-mono.html">
+        <b>Mono y números tabulares</b>
+        <span>IBM Plex Mono para códigos e IDs · tabular-nums en montos y tablas.</span>
+      </a>
+      <a class="card" href="foundations/spacing-scale.html">
+        <b>Escala de espaciado</b>
+        <span>Base 4 · 4·8·12·16·20·24·32·40·48·64.</span>
+      </a>
+      <a class="card" href="foundations/spacing-radii.html">
+        <b>Radios</b>
+        <span>8 control · 12 card · 16 surface · full pill.</span>
+      </a>
+      <a class="card" href="foundations/spacing-density.html">
+        <b>Densidad · cuarto eje</b>
+        <span>Back-office (36) ↔ táctil-POS (48) · cambia tamaños, no color ni radios.</span>
+      </a>
+      <a class="card" href="foundations/spacing-elevation.html">
+        <b>Elevación · borde vs sombra</b>
+        <span>Plano = borde fino · solo lo flotante recibe sombra.</span>
+      </a>
+      <a class="card" href="foundations/brand-wordmark.html">
+        <b>Wordmark de plataforma</b>
+        <span>Mark grafito + punto de plata · distinto del logo del tenant.</span>
+      </a>
+      <a class="card" href="foundations/brand-night.html">
+        <b>Momento negro</b>
+        <span>Negro y plata · solo sin tenant: login, set-password, estados vacíos.</span>
+      </a>
     </div>
-  );
-}
-
-function Panel({ dark }) {
-  const surfaces = [
-    ['--surface-base','Base'],['--surface-raised','Raised'],
-    ['--surface-sunken','Sunken'],['--border-strong','Border']
-  ];
-  const text = [
-    ['--text-primary','Primary'],['--text-secondary','Secondary'],
-    ['--text-tertiary','Tertiary'],['--text-disabled','Disabled']
-  ];
-  const semantic = [
-    ['--success-fg','Success'],['--warning-fg','Warning'],
-    ['--danger-fg','Danger'],['--info-fg','Info'],
-    ['--brand-primary','Brand'],['--focus-ring','Focus']
-  ];
-  return (
-    <section {...(dark ? {'data-mode':'dark'} : {})} style={{
-      flex:'1 1 460px',minWidth:0,
-      background:'hsl(var(--surface-base))',
-      border:'1px solid hsl(var(--border-subtle))',
-      borderRadius:'var(--radius-surface)',
-      padding:24,
-      boxShadow:'var(--shadow-overlay)'
-    }}>
-      <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:20}}>
-        <span style={{width:10,height:10,borderRadius:'50%',background:dark?'hsl(240 8% 90%)':'hsl(240 6% 12%)',border:'1px solid hsl(var(--border-strong))'}}/>
-        <h2 style={{margin:0,font:'600 15px/1 var(--font-ui)',color:'hsl(var(--text-primary))'}}>{dark?'Modo oscuro':'Modo claro'}</h2>
-        <code style={{marginLeft:'auto',font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{dark?'[data-mode="dark"]':':root'}</code>
-      </div>
-      <TokenGroup title="Superficies · Bordes" tokens={surfaces}/>
-      <TokenGroup title="Texto" tokens={text}/>
-      <TokenGroup title="Semánticos · Marca" tokens={semantic}/>
-      <div style={{height:1,background:'hsl(var(--border-subtle))',margin:'6px 0 20px'}}/>
-      <DemoCard/>
-    </section>
-  );
-}
-
-/* ---- escala fija (independiente del modo) ---- */
-function FixedRow() {
-  const type = [
-    ['Display','40 / 44 · 600'],['H1','24 / 30 · 600'],['H2','20 / 26 · 600'],
-    ['Body','14 / 20 · 400'],['Label','13 / 16 · 500'],['Caption','12 / 16 · 400']
-  ];
-  const space = [['1','4'],['2','8'],['3','12'],['4','16'],['6','24'],['8','32']];
-  const radii = [['control','8'],['card','12'],['surface','16'],['pill','999']];
-  const cell = {background:'hsl(var(--surface-raised))',border:'1px solid hsl(var(--border-subtle))',borderRadius:12,padding:'16px 18px',flex:'1 1 300px'};
-  const cap = {font:'600 10px/1 var(--font-ui)',letterSpacing:'.08em',textTransform:'uppercase',color:'hsl(var(--text-tertiary))',marginBottom:12};
-  return (
-    <div style={{display:'flex',flexWrap:'wrap',gap:16,marginBottom:28}}>
-      <div style={cell}>
-        <div style={cap}>Tipografía · Inter</div>
-        <div style={{display:'flex',flexDirection:'column',gap:7}}>
-          {type.map(([n,v])=>(
-            <div key={n} style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',gap:12}}>
-              <span style={{fontWeight:n==='Body'||n==='Caption'?400:600,fontSize:n==='Display'?18:14,color:'hsl(var(--text-primary))'}}>{n}</span>
-              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{v}</code>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div style={cell}>
-        <div style={cap}>Espaciado · base 4</div>
-        <div style={{display:'flex',flexDirection:'column',gap:8}}>
-          {space.map(([k,px])=>(
-            <div key={k} style={{display:'flex',alignItems:'center',gap:10}}>
-              <div style={{width:`${px}px`,height:14,background:'hsl(var(--brand-primary))',borderRadius:3,opacity:.85,flex:'none'}}/>
-              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>space-{k} · {px}px</code>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div style={cell}>
-        <div style={cap}>Radios</div>
-        <div style={{display:'flex',flexDirection:'column',gap:9}}>
-          {radii.map(([n,px])=>(
-            <div key={n} style={{display:'flex',alignItems:'center',gap:10}}>
-              <div style={{width:26,height:26,background:'hsl(var(--surface-sunken))',border:'1px solid hsl(var(--border-strong))',borderRadius:n==='pill'?999:parseInt(px),flex:'none'}}/>
-              <code style={{font:'400 11px/1 var(--font-mono)',color:'hsl(var(--text-tertiary))'}}>{n} · {px==='999'?'pill':px+'px'}</code>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div>
-      <h1 className="page-head">Tokens y Componentes</h1>
-      <p className="page-sub">Núcleo Noctis Commerce. Los mismos componentes leen tokens semánticos por rol; el modo se cambia solo con <code style={{fontFamily:'var(--font-mono)',fontSize:12}}>[data-mode]</code>.</p>
-      <FixedRow/>
-      <div style={{display:'flex',flexWrap:'wrap',gap:24,alignItems:'flex-start'}}>
-        <Panel dark={false}/>
-        <Panel dark={true}/>
-      </div>
-    </div>
-  );
-}
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
-</script>
+    <p class="note">Prototipos estáticos del sistema de diseño de Noctis Commerce — un proyecto personal en desarrollo activo.</p>
+  </div>
+</div>
 </body>
 </html>
