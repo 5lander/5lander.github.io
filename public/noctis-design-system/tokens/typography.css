@@ -1,0 +1,25 @@
+/* ============================================================================
+   NOCTIS · EJE TIPOGRAFÍA — una sola familia, disciplinada. Fija: ni el modo ni
+   el tenant la tocan. Sin serif; el premium viene de la restricción. Números
+   tabulares en montos/tablas/kardex. Escala tipo 1.25 sobre base 14.
+   ============================================================================ */
+:root{
+  --font-ui:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* pesos */
+  --fw-regular:400; /* @kind font */
+  --fw-medium:500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:700; /* @kind font */
+
+  /* niveles — size / line-height / weight / tracking */
+  --type-display-size:40px;   --type-display-lh:44px;   --type-display-weight:600;  --type-display-tracking:-.02em;
+  --type-h1-size:24px;        --type-h1-lh:30px;        --type-h1-weight:600;       --type-h1-tracking:-.015em;
+  --type-h2-size:20px;        --type-h2-lh:26px;        --type-h2-weight:600;
+  --type-h3-size:16px;        --type-h3-lh:22px;        --type-h3-weight:600;
+  --type-body-size:14px;      --type-body-lh:20px;      --type-body-weight:400;
+  --type-label-size:13px;     --type-label-lh:16px;     --type-label-weight:500;
+  --type-caption-size:12px;   --type-caption-lh:16px;   --type-caption-weight:400;
+  --type-mono-size:13px;
+}
