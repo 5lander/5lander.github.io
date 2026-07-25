@@ -1,0 +1,27 @@
+/* ============================================================================
+   NOCTIS COMMERCE — punto de entrada de CSS global. Solo @import.
+   Núcleo compartido entre commerce y backoffice. Tokens semánticos por rol en
+   hsl(var(--…)); tres ejes ortogonales (MODO · MARCA · TIPOGRAFÍA) + DENSIDAD.
+   ============================================================================ */
+@import url('./tokens/fonts.css');
+@import url('./tokens/colors.css');
+@import url('./tokens/typography.css');
+@import url('./tokens/spacing.css');
+
+/* reset mínimo + tipografía por defecto */
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:hsl(var(--surface-base));
+  color:hsl(var(--text-primary));
+  font-family:var(--font-ui);
+  font-size:var(--font-body);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:hsl(var(--link));text-decoration:none;}
+a:hover{color:hsl(var(--link));text-decoration:underline;}
+
+/* animaciones del núcleo */
+@keyframes noctis-spin{to{transform:rotate(360deg);}}
+@keyframes noctis-shimmer{0%{background-position:-160% 0;}100%{background-position:160% 0;}}

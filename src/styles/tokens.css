@@ -415,7 +415,7 @@ a:active { color: oklch(0.38 0.13 252); }
 .cs-eyebrow .sep { color: oklch(0.75 0.006 250); }
 .cs-head h1 { font-weight: 700; font-size: 52px; line-height: 1.1; letter-spacing: -0.03em; }
 .cs-sub { font-size: 20px; line-height: 1.5; color: var(--ink-body); margin-top: 20px; max-width: 62ch; }
-.cs-meta { display: grid; grid-template-columns: repeat(3, max-content); gap: 56px; margin-top: 40px; }
+.cs-meta { display: grid; grid-template-columns: repeat(3, max-content); gap: 28px 56px; margin-top: 40px; }
 .cs-meta .k { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint); letter-spacing: 0.04em; margin-bottom: 8px; }
 .cs-meta .v { font-size: 15px; color: var(--ink-strong); display: flex; align-items: center; gap: 8px; }
 .cs-meta .privdot { width: 7px; height: 7px; border-radius: 50%; background: oklch(0.7 0.09 60); }

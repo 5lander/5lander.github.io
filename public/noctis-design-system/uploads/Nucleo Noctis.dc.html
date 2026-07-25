@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#1C1C1E">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#1C1C1E"/>
+    <rect x="470" y="300" width="180" height="180" rx="44" fill="#E5E5EA"/>
+    <circle cx="560" cy="390" r="46" fill="#1C1C1E"/>
+    <rect x="700" y="352" width="230" height="30" rx="8" fill="#F5F5F7"/>
+    <rect x="700" y="402" width="150" height="22" rx="7" fill="#8E8E93"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#dcdce0;}
+  a{color:hsl(var(--link));text-decoration:none;}
+  a:hover{color:hsl(var(--link));text-decoration:underline;}
+  /* ===== EJE MODO — paleta ESTABLE, neutra fría (croma ~0). No la toca el tenant. ===== */
+  .noctis{
+    /* superficies — grises fríos casi neutros (hue 240) */
+    --surface-base:240 20% 99%; --surface-raised:0 0% 100%; --surface-sunken:240 12% 96%; --surface-overlay:0 0% 100%;
+    --border-subtle:240 11% 91%; --border-strong:240 8% 83%;
+    /* texto — estable respecto al TENANT, variable respecto al MODO. Nunca negro puro. */
+    --text-primary:240 6% 12%; --text-secondary:240 3% 32%; --text-tertiary:240 4% 40%; --text-disabled:240 4% 70%;
+    /* foco — azul de sistema */
+    --focus-ring:211 100% 50%;
+    /* semánticos PUROS (energía de colores de sistema) */
+    --success-fg:146 72% 30%; --success-bg:146 55% 95%; --success-border:146 40% 82%; --success-foreground:0 0% 100%;
+    --warning-fg:30 100% 34%; --warning-bg:36 100% 95%; --warning-border:36 85% 82%;
+    --danger-fg:4 90% 43%;   --danger-bg:5 100% 96%;  --danger-border:5 85% 87%; --danger-foreground:0 0% 100%;
+    --info-fg:211 100% 41%;  --info-bg:211 100% 96%;  --info-border:211 90% 85%;
+    --link:211 100% 41%;
+    /* ===== EJE MARCA — acento QUIRÚRGICO. El tenant inyecta el PAR {primary, foreground} calculado por el clamp; jamás primary solo. Estos valores son el FALLBACK DE CASA (sin tenant), no un token de modo. ===== */
+    --brand-primary:240 6% 12%;          /* grafito near-black (fallback de casa) */
+    --brand-foreground:0 0% 100%;        /* blanco: pareja del grafito de casa por la regla del clamp */
+    /* ===== EJE DENSIDAD — comfortable (back-office). Ver [data-density=touch]. ===== */
+    --control-h:36px; --control-h-sm:30px; --row-h:40px; --hit-min:36px; --pad-x:12px; --gap:8px; --font-body:14px; --tap-scale:1;
+    /* elevación: borde para lo plano; sombra difusa poco tintada solo para lo flotante */
+    --shadow-overlay:0 8px 30px -8px hsl(240 6% 10% / .16), 0 2px 8px -4px hsl(240 6% 10% / .10);
+    color-scheme:light;
+  }
+  .noctis[data-mode="dark"]{
+    --surface-base:240 6% 11%; --surface-raised:240 4% 18%; --surface-sunken:0 0% 0%; --surface-overlay:240 4% 20%;
+    --border-subtle:240 3% 22%; --border-strong:240 2% 30%;
+    --text-primary:240 12% 96%; --text-secondary:240 3% 69%; --text-tertiary:240 4% 64%; --text-disabled:240 2% 39%;
+    --focus-ring:211 100% 60%;
+    --success-fg:145 63% 55%; --success-bg:145 40% 13%; --success-border:145 30% 26%; --success-foreground:240 6% 10%;
+    --warning-fg:38 100% 55%; --warning-bg:38 55% 13%; --warning-border:38 45% 28%;
+    --danger-fg:4 100% 64%;  --danger-bg:4 50% 15%;   --danger-border:4 45% 30%; --danger-foreground:240 6% 10%;
+    --info-fg:211 100% 60%;  --info-bg:211 60% 15%;   --info-border:211 50% 30%;
+    --link:211 100% 66%;
+    --brand-primary:240 8% 90%;          /* plata (fallback de casa en oscuro) */
+    --brand-foreground:240 6% 12%;       /* near-black: pareja de la plata de casa por la regla del clamp */
+    --shadow-overlay:0 10px 34px -8px hsl(0 0% 0% / .55), 0 2px 10px -4px hsl(0 0% 0% / .45);
+    color-scheme:dark;
+  }
+  .noctis[data-density="touch"]{
+    --control-h:48px; --control-h-sm:44px; --row-h:56px; --hit-min:48px; --pad-x:16px; --gap:12px; --font-body:16px;
+  }
+  @keyframes noctis-spin{to{transform:rotate(360deg);}}
+  @keyframes noctis-shimmer{0%{background-position:-160% 0;}100%{background-position:160% 0;}}
+</style>
+</helmet>
+
+<div class="noctis" data-mode="{{ mode }}" data-density="{{ density }}" style="{{ wrapperStyle }}">
+  <div style="min-height:100vh;background:hsl(var(--surface-base));color:hsl(var(--text-primary));font-family:Inter,system-ui,sans-serif;font-size:var(--font-body);line-height:1.5;transition:background .2s,color .2s;">
+
+    <!-- ===================== TOOLBAR (control global de los 3 ejes) ===================== -->
+    <div style="position:sticky;top:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:12px 24px;background:hsl(var(--surface-overlay)/.86);backdrop-filter:blur(10px);border-bottom:1px solid hsl(var(--border-subtle));">
+      <div style="display:flex;align-items:center;gap:10px;margin-right:auto;">
+        <div style="width:26px;height:26px;border-radius:7px;background:hsl(var(--text-primary));display:grid;place-items:center;">
+          <div style="width:9px;height:9px;border-radius:50%;background:hsl(var(--surface-raised));"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;line-height:1.1;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.02em;font-weight:600;font-size:15px;">Noctis Commerce</span>
+          <span style="font-size:11px;color:hsl(var(--text-tertiary));letter-spacing:.02em;">Núcleo del sistema · contrato compartido</span>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:hsl(var(--text-tertiary));text-transform:uppercase;letter-spacing:.06em;">Modo</span>
+        <div style="display:flex;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));border-radius:8px;padding:2px;">
+          <button onClick="{{ setLight }}" aria-pressed="{{ modeLight }}" style="{{ segLight }}">Claro</button>
+          <button onClick="{{ setDark }}" aria-pressed="{{ modeDark }}" style="{{ segDark }}">Oscuro</button>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:hsl(var(--text-tertiary));text-transform:uppercase;letter-spacing:.06em;">Densidad</span>
+        <div style="display:flex;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));border-radius:8px;padding:2px;">
+          <button onClick="{{ setComf }}" aria-pressed="{{ densComf }}" style="{{ segComf }}">Back-office</button>
+          <button onClick="{{ setTouch }}" aria-pressed="{{ densTouch }}" style="{{ segTouch }}">Táctil</button>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:hsl(var(--text-tertiary));text-transform:uppercase;letter-spacing:.06em;">Acento tenant</span>
+        <div style="display:flex;gap:4px;">
+          <button onClick="{{ setCasa }}" aria-label="Sin color, default de casa" title="Casa (grafito/plata)" style="{{ swCasa }}"></button>
+          <button onClick="{{ setBlue }}" aria-label="Acento violeta" title="Violeta" style="{{ swBlue }}"></button>
+          <button onClick="{{ setGreen }}" aria-label="Acento teal" title="Teal" style="{{ swGreen }}"></button>
+          <button onClick="{{ setAmber }}" aria-label="Acento oro" title="Oro" style="{{ swAmber }}"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== HERO / ORTOGONALIDAD ===================== -->
+    <section style="max-width:1120px;margin:0 auto;padding:56px 24px 8px;">
+      <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:hsl(var(--text-tertiary));font-weight:600;">Encargo 1 de 3 · núcleo compartido</div>
+      <h1 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.08;margin:14px 0 0;max-width:16ch;">El contrato que heredan commerce y backoffice</h1>
+      <p style="max-width:64ch;color:hsl(var(--text-secondary));font-size:16px;margin:16px 0 0;">Este documento funda el primitivo, no dibuja ninguna app. Todo valor sale de una escala declarada; cada componente vive en sus dos modos. Use la barra superior: al cambiar modo, densidad o marca, nada se rediseña — solo se remapean variables.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:28px;">
+        <div style="background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;">
+          <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:hsl(var(--text-tertiary));">Eje 1 · Modo</div>
+          <div style="font-weight:600;margin:6px 0 4px;">Claro / Oscuro</div>
+          <p style="margin:0;font-size:13px;color:hsl(var(--text-secondary));">Superficies + color de texto. Preferencia del <b>usuario</b>. Ambos completos en el MVP.</p>
+        </div>
+        <div style="background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;">
+          <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:hsl(var(--text-tertiary));">Eje 2 · Marca</div>
+          <div style="font-weight:600;margin:6px 0 4px;">Acento del tenant</div>
+          <p style="margin:0;font-size:13px;color:hsl(var(--text-secondary));">Solo un acento quirúrgico. Inyectado en runtime. <b>No</b> pinta chrome, superficies, cuerpo ni tipografía.</p>
+        </div>
+        <div style="background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;">
+          <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:hsl(var(--text-tertiary));">Eje 3 · Tipografía</div>
+          <div style="font-weight:600;margin:6px 0 4px;">Fija siempre</div>
+          <p style="margin:0;font-size:13px;color:hsl(var(--text-secondary));">Ni el modo ni el tenant la tocan. Una sola familia: Inter, con números tabulares.</p>
+        </div>
+        <div style="background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;">
+          <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:hsl(var(--text-tertiary));">Eje 4 · Densidad</div>
+          <div style="font-weight:600;margin:6px 0 4px;">Back-office / Táctil</div>
+          <p style="margin:0;font-size:13px;color:hsl(var(--text-secondary));">Ortogonal a los otros tres. Cambia tamaños y hit targets, no colores ni familia.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;padding:14px 16px;border:1px dashed hsl(var(--border-strong));border-radius:10px;background:hsl(var(--surface-sunken));font-size:13px;color:hsl(var(--text-secondary));">
+        <b style="color:hsl(var(--text-primary));">Sutileza que no se colapsa:</b> el texto es <b>estable respecto al tenant</b> pero <b>variable respecto al modo</b>. «El tenant no toca el texto» no significa «el texto es el mismo color en claro y oscuro». Son ejes independientes.
+      </div>
+    </section>
+
+    <main id="secciones" style="max-width:1120px;margin:0 auto;padding:8px 24px 96px;">
+
+      <!-- ============================================================ §1 TOKENS ============================================================ -->
+      <section id="tokens" style="margin-top:44px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§1</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Tokens</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">Tres capas ortogonales de color + tipografía fija + escalas</span>
+        </div>
+
+        <!-- 1.A — EJE MODO: dos paletas completas + ratios AA -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 4px;">1.A · Eje MODO — superficies + texto, en ambos modos</h3>
+        <p style="margin:0 0 16px;color:hsl(var(--text-secondary));font-size:13px;max-width:70ch;">Paleta <b>estable</b>: no la toca el tenant. Ambos modos van completos en el MVP — los tokens night dejan de estar sin consumidor. Cada par texto/fondo declara su ratio de contraste y cumple AA en los dos modos.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;">
+
+          <!-- CLARO -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;background:hsl(var(--surface-sunken));border-bottom:1px solid hsl(var(--border-subtle));font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-secondary));">Modo claro (day)</div>
+            <div style="padding:12px 14px;display:flex;flex-direction:column;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:11px;">
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#FCFCFD;border:1px solid #E5E5EA;flex:none;"></span><div><div style="font-weight:500;">surface-base</div><div style="color:hsl(var(--text-tertiary));">240 20% 99%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#FFFFFF;border:1px solid #E5E5EA;flex:none;"></span><div><div style="font-weight:500;">surface-raised</div><div style="color:hsl(var(--text-tertiary));">0 0% 100%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#F5F5F7;border:1px solid #E5E5EA;flex:none;"></span><div><div style="font-weight:500;">surface-sunken</div><div style="color:hsl(var(--text-tertiary));">240 12% 96%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#D2D2D7;flex:none;"></span><div><div style="font-weight:500;">border-subtle / strong</div><div style="color:hsl(var(--text-tertiary));">240 11% 91% · 240 8% 83%</div></div></div>
+              <div style="height:1px;background:hsl(var(--border-subtle));margin:3px 0;"></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#FCFCFD;border:1px solid #E5E5EA;display:grid;place-items:center;color:#1C1C1E;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-primary</div><div style="color:hsl(var(--text-tertiary));">240 6% 12% · <b style="color:hsl(var(--success-fg));">16.9:1 AAA</b></div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#FCFCFD;border:1px solid #E5E5EA;display:grid;place-items:center;color:#48484A;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-secondary</div><div style="color:hsl(var(--text-tertiary));">240 3% 32% · <b style="color:hsl(var(--success-fg));">8.6:1 AAA</b></div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#FCFCFD;border:1px solid #E5E5EA;display:grid;place-items:center;color:#5E5E63;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-tertiary</div><div style="color:hsl(var(--text-tertiary));">240 4% 40% · <b style="color:hsl(var(--success-fg));">5.6:1 AA</b></div></div></div>
+            </div>
+          </div>
+
+          <!-- OSCURO -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:#1C1C1E;">
+            <div style="padding:10px 14px;background:#2C2C2E;border-bottom:1px solid #38383A;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#AEAEB2;">Modo oscuro (night)</div>
+            <div style="padding:12px 14px;display:flex;flex-direction:column;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#F5F5F7;">
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#1C1C1E;border:1px solid #38383A;flex:none;"></span><div><div style="font-weight:500;">surface-base</div><div style="color:#8E8E93;">240 6% 11%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#2C2C2E;border:1px solid #38383A;flex:none;"></span><div><div style="font-weight:500;">surface-raised</div><div style="color:#8E8E93;">240 4% 18%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#000000;border:1px solid #38383A;flex:none;"></span><div><div style="font-weight:500;">surface-sunken</div><div style="color:#8E8E93;">0 0% 0%</div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#48484A;flex:none;"></span><div><div style="font-weight:500;">border-subtle / strong</div><div style="color:#8E8E93;">240 3% 22% · 240 2% 30%</div></div></div>
+              <div style="height:1px;background:#38383A;margin:3px 0;"></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#1C1C1E;border:1px solid #38383A;display:grid;place-items:center;color:#F5F5F7;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-primary</div><div style="color:#8E8E93;">240 12% 96% · <b style="color:#57D98A;">16.1:1 AAA</b></div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#1C1C1E;border:1px solid #38383A;display:grid;place-items:center;color:#AEAEB2;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-secondary</div><div style="color:#8E8E93;">240 3% 69% · <b style="color:#57D98A;">7.6:1 AAA</b></div></div></div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="width:34px;height:34px;border-radius:7px;background:#1C1C1E;border:1px solid #38383A;display:grid;place-items:center;color:#9E9EA6;font-weight:700;flex:none;">Aa</span><div><div style="font-weight:500;">text-tertiary</div><div style="color:#8E8E93;">240 4% 64% · <b style="color:#57D98A;">5.6:1 AA</b></div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.A semánticos -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 4px;">Semánticos — éxito / atención / peligro / info</h3>
+        <p style="margin:0 0 14px;color:hsl(var(--text-secondary));font-size:13px;max-width:70ch;">Nombrados por rol, nunca por hex. Cada uno con foreground, tinte de fondo y borde, remapeados por modo. Se muestran en el modo activo — cambie el toggle para verlos en el otro.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:10px;padding:12px 14px;"><div style="width:20px;height:20px;border-radius:6px;background:hsl(var(--success-fg));margin-bottom:8px;"></div><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">Éxito</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:2px;">--success-*</div></div>
+          <div style="border:1px solid hsl(var(--warning-border));background:hsl(var(--warning-bg));border-radius:10px;padding:12px 14px;"><div style="width:20px;height:20px;border-radius:6px;background:hsl(var(--warning-fg));margin-bottom:8px;"></div><div style="font-weight:600;font-size:13px;color:hsl(var(--warning-fg));">Atención</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:2px;">--warning-*</div></div>
+          <div style="border:1px solid hsl(var(--danger-border));background:hsl(var(--danger-bg));border-radius:10px;padding:12px 14px;"><div style="width:20px;height:20px;border-radius:6px;background:hsl(var(--danger-fg));margin-bottom:8px;"></div><div style="font-weight:600;font-size:13px;color:hsl(var(--danger-fg));">Peligro</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:2px;">--danger-*</div></div>
+          <div style="border:1px solid hsl(var(--info-border));background:hsl(var(--info-bg));border-radius:10px;padding:12px 14px;"><div style="width:20px;height:20px;border-radius:6px;background:hsl(var(--info-fg));margin-bottom:8px;"></div><div style="font-weight:600;font-size:13px;color:hsl(var(--info-fg));">Info</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:2px;">--info-*</div></div>
+        </div>
+
+        <!-- 1.B — EJE MARCA -->
+        <h3 style="font-size:15px;font-weight:600;margin:32px 0 4px;">1.B · Eje MARCA — acento quirúrgico del tenant</h3>
+        <p style="margin:0 0 14px;color:hsl(var(--text-secondary));font-size:13px;max-width:76ch;">El chrome (topbar, sidebar, footer) es <b>siempre neutro de casa</b> Noctis. El tenant inyecta el <b>par</b> <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">--brand-primary</code> + <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">--brand-foreground</code> (calculados juntos por el clamp; <b>jamás primary solo</b>), y su acento aparece <b>únicamente</b> en cuatro lugares: botón primario, estado activo de nav, focus ring y selección (checkbox/radio/fila). Nada más. No hay <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">--brand-secondary</code>: el chrome no usa color inyectable, así que no queda ningún texto de casa sobre un color sin garantía. Sin tenant, el fallback es grafito/plata de casa (su propio par). Cambie el selector «Acento tenant» arriba: solo esos cuatro puntos se re-pintan.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;border-bottom:1px solid hsl(var(--border-subtle));display:flex;align-items:center;gap:8px;">
+              <div style="width:18px;height:18px;border-radius:5px;background:hsl(var(--text-primary));"></div>
+              <span style="font-weight:600;font-size:13px;">Chrome — neutro de casa</span>
+              <span style="margin-left:auto;font-size:11px;color:hsl(var(--text-tertiary));">sin acento</span>
+            </div>
+            <div style="padding:14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+              <button style="height:36px;padding:0 16px;border:none;border-radius:10px;background:hsl(var(--brand-primary));color:hsl(var(--brand-foreground));font:600 13px/1 Inter;cursor:pointer;">Botón primario</button>
+              <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;background:hsl(var(--brand-primary)/.12);color:hsl(var(--text-primary));font-size:12px;font-weight:600;"><span style="width:14px;height:14px;border-radius:4px;background:hsl(var(--brand-primary));"></span>Nav activo</span>
+              <span style="width:34px;height:22px;border-radius:6px;border:2px solid hsl(var(--focus-ring));box-shadow:0 0 0 3px hsl(var(--focus-ring)/.3);display:inline-block;"></span>
+              <span style="width:18px;height:18px;border-radius:5px;background:hsl(var(--brand-primary));display:inline-grid;place-items:center;color:hsl(var(--brand-foreground));font-size:11px;">✓</span>
+            </div>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:14px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:13px;margin-bottom:8px;">Dónde vive el acento — y dónde no</div>
+            <ul style="margin:0;padding-left:18px;font-size:12.5px;color:hsl(var(--text-secondary));line-height:1.7;">
+              <li><b>Sí:</b> botón primario, nav activo, focus ring, selección.</li>
+              <li><b>No:</b> topbar, sidebar, footer, superficies, cuerpo, tipografía, montos, íconos sueltos.</li>
+              <li>Links usan <code style="font-family:'IBM Plex Mono',monospace;">--link</code> (semántico), no el acento.</li>
+              <li>backoffice fija el acento Noctis; la estructura ya queda lista (Prompt 3).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- clamp -->
+        <div style="margin-top:14px;border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px 18px;background:hsl(var(--surface-sunken));">
+          <div style="font-weight:600;font-size:14px;margin-bottom:6px;">Clamp de curaduría del acento <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— lista de chequeo del onboarding (la marca es seed-curada por un humano)</span></div>
+          <p style="margin:0 0 12px;font-size:13px;color:hsl(var(--text-secondary));max-width:82ch;">El sistema corre <b>dos lenguajes de color</b> con significados distintos que <b>no deben poder fusionarse</b>: el <b>semántico</b> (estado — éxito, atención, peligro, info) y el de <b>marca</b> (identidad del tenant). El usuario debe poder distinguir «esto indica éxito» de «esto es el color de mi empresa». Por eso el acento se acota en brillo, saturación <b>y matiz</b>. Al elegir el color de cada cliente en el onboarding se verifican las tres dimensiones — esta es la lista de chequeo:</p>
+          <ol style="margin:0 0 12px;padding-left:20px;font-size:12.5px;color:hsl(var(--text-secondary));line-height:1.75;">
+            <li><b>Luminancia</b> — OKLCH <code style="font-family:'IBM Plex Mono',monospace;">L ∈ [0,45 – 0,82]</code> <span style="color:hsl(var(--text-tertiary));">(≈ luminancia relativa 0,14 – 0,63).</span></li>
+            <li><b>Croma</b> — OKLCH <code style="font-family:'IBM Plex Mono',monospace;">croma ≤ 0,12</code> <span style="color:hsl(var(--text-tertiary));">(acento sobrio, nunca fluorescente).</span></li>
+            <li><b>Matiz</b> — medido en <b>hue OKLCH</b> (perceptualmente uniforme; el hue HSL no lo es): <code style="font-family:'IBM Plex Mono',monospace;">Δhue ≥ 25°</code> respecto del <b>foreground semántico</b> (<code style="font-family:'IBM Plex Mono',monospace;">--*-fg</code>) en <b>ambos modos</b>, contado desde el borde más cercano del rango. <b>Se mide solo contra los <code style="font-family:'IBM Plex Mono',monospace;">-fg</code></b>, no contra <code style="font-family:'IBM Plex Mono',monospace;">-bg</code>/<code style="font-family:'IBM Plex Mono',monospace;">-border</code>: esos son lavados casi blancos (L OKLCH 95–96% en claro) que no compiten perceptualmente con un acento saturado — un tinte pálido nunca se confunde con una identidad de marca. Rangos <code style="font-family:'IBM Plex Mono',monospace;">-fg</code> reservados (ambos modos) en hue OKLCH: peligro <code style="font-family:'IBM Plex Mono',monospace;">28–30°</code> · atención <code style="font-family:'IBM Plex Mono',monospace;">54–73°</code> · éxito <code style="font-family:'IBM Plex Mono',monospace;">152–154°</code> · info/link/foco <code style="font-family:'IBM Plex Mono',monospace;">252–257°</code>. <span style="color:hsl(var(--text-tertiary));">Así una pill de marca no se lee como estado y un botón de marca nunca se confunde con una acción destructiva.</span></li>
+          </ol>
+          <p style="margin:0 0 12px;font-size:12px;color:hsl(var(--text-tertiary));max-width:82ch;"><b>Por qué OKLCH y no HSL:</b> 20° de HSL no valen lo mismo en toda la rueda — en la banda naranja se separan, en azul-violeta se comprimen a colores hermanos. En hue OKLCH un umbral plano es real en cualquier banda. Y los semánticos se mueven con el modo (éxito 146→145, atención 30→38 en HSL), por eso se reserva el rango de ambos modos, no un punto. Caso concreto: el índigo HSL 232 despejaba info/link por 21° en HSL pero solo <b>11°</b> en OKLCH (dos azules hermanos) — por eso Aguilar pasó a <b>violeta</b> (36° OKLCH).</p>
+          <p style="margin:0 0 12px;font-size:12px;color:hsl(var(--text-tertiary));max-width:82ch;"><b>Por qué 25° y no 20 ni 30:</b> el ojo nombra con fiabilidad ~10 familias cromáticas básicas alrededor de la rueda, así que una familia mide ≈36° en hue OKLCH (perceptualmente parejo). Cruzar el límite entre dos familias pide ≈18° (media familia); 20° dejaría al acento rozando la misma familia del semántico en el peor caso. <b>25° = ese límite categórico (≈18°) + ~7° de colchón</b>, garantizando que el acento se lea como <b>otra familia</b> de color, no como una variante del estado. 30° no aporta —los propios semánticos ya distan &gt;25° entre sí— y empezaría a recortar familias enteras del catálogo curable sin ganancia perceptual. No es un número mágico: es media categoría cromática más margen.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;margin-bottom:10px;">
+            <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));">L ∈ [0,45 – 0,82]</span>
+            <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));">croma ≤ 0,12</span>
+            <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-raised));border:1px solid hsl(var(--border-subtle));">hue OKLCH · solo -fg · Δ ≥ 25°</span>
+          </div>
+          <div style="margin-bottom:10px;padding:12px 14px;border:1px solid hsl(var(--border-subtle));border-radius:10px;background:hsl(var(--surface-raised));">
+            <div style="font-size:12px;font-weight:600;margin-bottom:8px;">Ventanas de hue permitidas <span style="font-weight:400;color:hsl(var(--text-tertiary));">— el complemento de los rangos <code style="font-family:'IBM Plex Mono',monospace;">-fg</code> ±25°. Curar un acento nuevo es una <b>ojeada a tres ventanas</b>, no cuatro cálculos de distancia (que es donde se cuela el error).</span></div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+              <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));">98–127° · <b>oro</b> 101,9°</span>
+              <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));">179–227° · <b>teal</b> 202°</span>
+              <span style="padding:6px 10px;border-radius:8px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));">282–3° · <b>violeta</b> 293°</span>
+            </div>
+            <p style="margin:8px 0 0;font-size:11.5px;color:hsl(var(--text-tertiary));line-height:1.6;">Los tres tenants de demo caen <b>uno por ventana</b>. Nota: el oro está a <b>~4°</b> del borde inferior de su ventana (98°) — cumple, pero un acento nuevo conviene curarlo hacia el centro (~110°) para tener margen; el oro se mantiene aquí por ser el caso que demuestra el <code style="font-family:'IBM Plex Mono',monospace;">--brand-foreground</code> near-black.</p>
+          </div>
+          <p style="margin:0;font-size:12.5px;color:hsl(var(--text-secondary));max-width:82ch;"><b>Regla del foreground condicional:</b> el único texto sobre el acento es el label del botón primario, garantizado por un <code style="font-family:'IBM Plex Mono',monospace;">--brand-foreground</code> <b>condicional</b> (no fijo): si la luminancia relativa del acento &lt; 0,18 → near-white; si ≥ 0,18 → near-black. El umbral 0,18 es justo donde blanco-sobre-acento cruza 4,5:1, y por encima la tinta-sobre-acento ya supera 4,5:1 — así ambos lados dan AA. La curaduría además evita la banda estrecha 0,15–0,22 para dejar AA holgado. El acento y su foreground se inyectan juntos (seed-curada); no se derivan shades. (Corrección del review: un foreground de tinta <b>fijo</b> daba ~3,8:1 en el piso del rango; por eso pasa a condicional. Y la equivalencia quedó consistente: OKLCH L 0,45 ≈ luminancia relativa 0,14, no 0,20.)</p>
+        </div>
+
+        <!-- 1.C — TIPOGRAFÍA -->
+        <h3 style="font-size:15px;font-weight:600;margin:32px 0 4px;">1.C · Eje TIPOGRAFÍA — una sola familia, disciplinada</h3>
+        <p style="margin:0 0 14px;color:hsl(var(--text-secondary));font-size:13px;max-width:78ch;"><b>Inter</b> gobierna todo — tablas, chrome, formularios, login, empty states. <b>Sin Fraunces en el producto:</b> el premium tipográfico viene de la restricción, no de un serif. Un peso preciso por nivel, tracking ligeramente apretado en títulos y <b>números tabulares</b> (<code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">tabular-nums</code>) en montos, tablas y kardex para que las columnas alineen. Escala tipo 1.25 sobre base 14.</p>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;">
+          <div style="display:grid;grid-template-columns:1fr;">
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-family:Inter,sans-serif;letter-spacing:-.02em;font-weight:600;font-size:40px;line-height:1;">Display 40</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">display · Inter 40/44 · 600 · tracking -.02em</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-weight:500;font-size:28px;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.01em;">$1.234.567,89</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">números tabulares · montos/tablas/kardex</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-weight:600;font-size:24px;line-height:1;">Encabezado H1</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">h1 · Inter 24/30 · 600</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-weight:600;font-size:20px;line-height:1;">Encabezado H2</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">h2 · Inter 20/26 · 600</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-weight:600;font-size:16px;line-height:1;">Encabezado H3</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">h3 · Inter 16/22 · 600</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-size:14px;line-height:1;">Cuerpo — texto operativo por defecto (usted)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">body · Inter 14/20 · 400</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-size:13px;font-weight:500;line-height:1;">Label / campo de formulario</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">label · Inter 13/16 · 500</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));"><span style="font-size:12px;color:hsl(var(--text-tertiary));line-height:1;">Caption / texto auxiliar</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">caption · Inter 12/16 · 400</span></div>
+            <div style="display:flex;align-items:baseline;gap:16px;padding:14px 18px;background:hsl(var(--surface-raised));"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;">RUC 1790012345001</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">mono · IBM Plex Mono · codes/montos/IDs</span></div>
+          </div>
+        </div>
+
+        <!-- 1.D — ESPACIADO / RADIOS / ELEVACIÓN -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:28px;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px 18px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:12px;">Espaciado — base 4</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;align-items:center;gap:10px;"><span style="height:12px;width:4px;background:hsl(var(--brand-primary));"></span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">4 · 8 · 12 · 16 · 20 · 24 · 32 · 40 · 48 · 64</span></div>
+              <div style="display:flex;gap:6px;align-items:flex-end;">
+                <span style="width:4px;height:16px;background:hsl(var(--brand-primary)/.5);border-radius:2px;"></span>
+                <span style="width:8px;height:22px;background:hsl(var(--brand-primary)/.55);border-radius:2px;"></span>
+                <span style="width:12px;height:28px;background:hsl(var(--brand-primary)/.6);border-radius:2px;"></span>
+                <span style="width:16px;height:34px;background:hsl(var(--brand-primary)/.7);border-radius:2px;"></span>
+                <span style="width:24px;height:44px;background:hsl(var(--brand-primary)/.85);border-radius:2px;"></span>
+                <span style="width:32px;height:54px;background:hsl(var(--brand-primary));border-radius:2px;"></span>
+              </div>
+            </div>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px 18px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:12px;">Radios — 8 / 12 / 16 + pill</div>
+            <div style="display:flex;gap:12px;align-items:flex-end;">
+              <div style="text-align:center;"><div style="width:52px;height:52px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-strong));border-radius:8px;"></div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:4px;">8 control</div></div>
+              <div style="text-align:center;"><div style="width:52px;height:52px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-strong));border-radius:12px;"></div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:4px;">12 card</div></div>
+              <div style="text-align:center;"><div style="width:52px;height:52px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-strong));border-radius:16px;"></div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:4px;">16 surface</div></div>
+              <div style="text-align:center;"><div style="width:52px;height:28px;background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-strong));border-radius:999px;"></div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:hsl(var(--text-tertiary));margin-top:4px;">full pill</div></div>
+            </div>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px 18px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:6px;">Elevación — borde, no sombra</div>
+            <p style="margin:0 0 12px;font-size:12px;color:hsl(var(--text-secondary));">La casa prefiere bordes finos. <b>Se mantiene</b>: superficies planas = borde. Única excepción: capas <b>flotantes</b> (overlay, toast, popover de combobox) reciben <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;">--shadow-overlay</code>.</p>
+            <div style="display:flex;gap:12px;">
+              <div style="flex:1;height:46px;border-radius:10px;background:hsl(var(--surface-base));border:1px solid hsl(var(--border-subtle));display:grid;place-items:center;font-size:11px;color:hsl(var(--text-tertiary));">plana · borde</div>
+              <div style="flex:1;height:46px;border-radius:10px;background:hsl(var(--surface-overlay));box-shadow:var(--shadow-overlay);display:grid;place-items:center;font-size:11px;color:hsl(var(--text-tertiary));">flotante · sombra</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ §5 IDENTIDAD NOCTIS ============================================================ -->
+      <section id="identidad" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§5</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Identidad Noctis</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">La marca de plataforma — distinta del color del tenant (§1)</span>
+        </div>
+        <p style="margin:16px 0;color:hsl(var(--text-secondary));font-size:13px;max-width:80ch;">El <b>eje 1</b> es el acento variable del tenant. Esta es la identidad de la <b>plataforma</b>, reinterpretada: el «Noctis» ahora es el <b>negro y plata</b> del hardware de gama alta — sobrio, preciso, caro por lo que saca, no por lo que agrega. Aparece <b>solo donde no hay tenant</b>: login, set-password, select-workspace, empty states, default sin color, logo y footer. Dentro de la herramienta de trabajo, cero editorial.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;">
+          <!-- logo lockup -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));border-bottom:1px solid hsl(var(--border-subtle));">Logo de plataforma</div>
+            <div style="padding:22px;display:flex;flex-direction:column;gap:16px;align-items:center;">
+              <div style="display:flex;align-items:center;gap:10px;">
+                <div style="width:34px;height:34px;border-radius:9px;background:#1C1C1E;display:grid;place-items:center;">
+                  <div style="width:12px;height:12px;border-radius:50%;background:#E5E5EA;"></div>
+                </div>
+                <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:19px;color:hsl(var(--text-primary));">Noctis Commerce</span>
+              </div>
+              <span style="font-size:11px;color:hsl(var(--text-tertiary));text-align:center;max-width:24ch;">Marca de casa. El slot de logo del shell admite además un logo de <b>tenant</b> variable.</span>
+            </div>
+          </div>
+          <!-- momento nocturno (login / no-tenant) -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;grid-column:span 2;min-width:280px;">
+            <div style="padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));border-bottom:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-raised));">Momento negro — solo sin marca de tenant (login, default)</div>
+            <div style="position:relative;padding:34px 22px;background:linear-gradient(150deg,#000 0%,#1C1C1E 60%,#2C2C2E 100%);overflow:hidden;">
+              <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 85% -20%, rgba(255,255,255,.08), transparent 60%);"></div>
+              <div style="position:relative;">
+                <div style="display:inline-flex;align-items:center;gap:8px;">
+                  <div style="width:24px;height:24px;border-radius:6px;background:#E5E5EA;display:grid;place-items:center;"><div style="width:8px;height:8px;border-radius:50%;background:#1C1C1E;"></div></div>
+                  <span style="color:#F5F5F7;font-size:14px;font-weight:600;letter-spacing:-.02em;">Noctis Commerce</span>
+                </div>
+                <div style="font-weight:500;font-size:26px;color:#F5F5F7;margin-top:16px;letter-spacing:-.01em;">Bienvenido de nuevo</div>
+                <p style="margin:6px 0 0;color:#AEAEB2;font-size:13px;max-width:46ch;">La identidad Noctis es negro y plata — disciplina de hardware de gama alta. Silenciosa y precisa; se apaga en cuanto entra el tenant.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:12px;padding:12px 16px;border:1px dashed hsl(var(--border-strong));border-radius:10px;font-size:12.5px;color:hsl(var(--text-secondary));">
+          <b style="color:hsl(var(--text-primary));">Regla de dosis:</b> negro grafito + plata + wordmark = solo login, set-password, select-workspace, empty states y el default sin color de tenant. Dentro del shell: superficies neutras frías, chrome de casa, y el acento del tenant reservado a botón / nav-activo / foco / selección. Cero ilustración, cero dorado, cero estrellas — lo disciplinado lee más caro.
+        </div>
+      </section>
+
+      <!-- ============================================================ §2 DENSIDAD ============================================================ -->
+      <section id="densidad" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§2</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Densidad</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">Cuarto eje, ortogonal a modo y marca</span>
+        </div>
+        <p style="margin:16px 0;color:hsl(var(--text-secondary));font-size:13px;max-width:80ch;">Dos modos. <b>Back-office</b> (tablas de trabajo diario, densidad alta) y <b>táctil-POS</b> (cajero bajo presión, tablet, dedos). Cambian tamaños; <b>no</b> cambian colores, familia tipográfica ni radios. Use el toggle «Densidad» de la barra para ver los controles de abajo escalar en vivo.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;font-size:12.5px;">
+          <div style="padding:12px 16px;background:hsl(var(--surface-sunken));font-weight:600;border-bottom:1px solid hsl(var(--border-subtle));">Back-office (comfortable)</div>
+          <div style="padding:12px 16px;background:hsl(var(--surface-sunken));font-weight:600;border-bottom:1px solid hsl(var(--border-subtle));border-left:1px solid hsl(var(--border-subtle));">Táctil-POS (touch)</div>
+          <div style="padding:10px 16px;border-bottom:1px solid hsl(var(--border-subtle));color:hsl(var(--text-secondary));">control-h 36 · hit-min 36 · pad 12</div>
+          <div style="padding:10px 16px;border-bottom:1px solid hsl(var(--border-subtle));border-left:1px solid hsl(var(--border-subtle));color:hsl(var(--text-secondary));">control-h 48 · hit-min 48 (rec) · pad 16</div>
+          <div style="padding:10px 16px;border-bottom:1px solid hsl(var(--border-subtle));color:hsl(var(--text-secondary));">body 14 · row-h 40 · gap 8</div>
+          <div style="padding:10px 16px;border-bottom:1px solid hsl(var(--border-subtle));border-left:1px solid hsl(var(--border-subtle));color:hsl(var(--text-secondary));">body 16 · row-h 56 · gap ≥8 (12)</div>
+          <div style="padding:10px 16px;color:hsl(var(--text-secondary));">Ratón + teclado, sesiones largas</div>
+          <div style="padding:10px 16px;border-left:1px solid hsl(var(--border-subtle));color:hsl(var(--text-secondary));">Dedos, feedback táctil (scale+color), keypad propio</div>
+        </div>
+
+        <div style="margin-top:12px;padding:10px 14px;font-size:12.5px;color:hsl(var(--text-secondary));background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));border-radius:10px;">
+          <b style="color:hsl(var(--text-primary));">Constante:</b> familia tipográfica, paleta, radios, semánticos y marca. <b style="color:hsl(var(--text-primary));">Variable:</b> paddings, hit targets, altura de control/fila, tamaño de cuerpo (14↔16), presencia del keypad. Cada valor sale de <code style="font-family:'IBM Plex Mono',monospace;">--control-h / --hit-min / --pad-x / --gap / --font-body</code>.
+        </div>
+
+        <!-- NumericKeypad — componente del núcleo -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 4px;">NumericKeypad <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— componente del núcleo (se funda acá aunque el POS se dibuje en commerce)</span></h3>
+        <p style="margin:0 0 14px;color:hsl(var(--text-secondary));font-size:13px;max-width:78ch;">Teclas ≥ 60×60, layout 3×4, no depende del teclado del sistema, soporta teclado físico. Feedback táctil inmediato: scale + color al presionar.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:16px;padding:18px;background:hsl(var(--surface-raised));width:264px;">
+            <div style="background:hsl(var(--surface-sunken));border:1px solid hsl(var(--border-subtle));border-radius:10px;padding:12px 14px;text-align:right;font-variant-numeric:tabular-nums;font-feature-settings:'tnum';font-size:26px;font-weight:600;margin-bottom:14px;overflow:hidden;">{{ kp }}</div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+              <button onClick="{{ k1 }}" style="{{ keyStyle }}">1</button>
+              <button onClick="{{ k2 }}" style="{{ keyStyle }}">2</button>
+              <button onClick="{{ k3 }}" style="{{ keyStyle }}">3</button>
+              <button onClick="{{ k4 }}" style="{{ keyStyle }}">4</button>
+              <button onClick="{{ k5 }}" style="{{ keyStyle }}">5</button>
+              <button onClick="{{ k6 }}" style="{{ keyStyle }}">6</button>
+              <button onClick="{{ k7 }}" style="{{ keyStyle }}">7</button>
+              <button onClick="{{ k8 }}" style="{{ keyStyle }}">8</button>
+              <button onClick="{{ k9 }}" style="{{ keyStyle }}">9</button>
+              <button onClick="{{ kC }}" style="{{ keyAltStyle }}">C</button>
+              <button onClick="{{ k0 }}" style="{{ keyStyle }}">0</button>
+              <button onClick="{{ kDel }}" aria-label="Borrar" style="{{ keyAltStyle }}">⌫</button>
+            </div>
+          </div>
+          <ul style="margin:0;padding-left:18px;font-size:13px;color:hsl(var(--text-secondary));line-height:1.8;max-width:40ch;">
+            <li>Teclas de <b>64×64</b> (≥60 exigido), gap 8.</li>
+            <li>Al presionar: <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">scale(.96)</code> + fondo marca — feedback inmediato.</li>
+            <li><code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">focus-visible</code> con anillo; navegable por teclado físico.</li>
+            <li>C limpia, ⌫ borra con <code style="font-family:'IBM Plex Mono',monospace;font-size:12px;">aria-label</code>.</li>
+            <li>Sirve para cantidad, precio y cobro en el POS.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================================ §3 FAMILIA DE COMPONENTES ============================================================ -->
+      <section id="componentes" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§3</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Familia de componentes</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">Estados completos · ambos modos (use el toggle)</span>
+        </div>
+        <p style="margin:16px 0;color:hsl(var(--text-secondary));font-size:13px;max-width:80ch;">Cada componente consume los tokens fundados — cero valores mágicos. Todos se renderizan en el modo y densidad activos: cambie los toggles de arriba y ninguno se rompe. Ninguno se entrega solo en su estado feliz.</p>
+
+        <!-- BUTTON -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">Button <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— primitivo reexpresado · primary usa el acento del tenant</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));">
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+            <button style="{{ btnPrimary }}" style-hover="filter:brightness(.93)" style-focus="outline:2px solid hsl(var(--focus-ring));outline-offset:2px">Guardar cambios</button>
+            <button style="{{ btnSecondary }}" style-hover="background:hsl(var(--surface-sunken))" style-focus="outline:2px solid hsl(var(--focus-ring));outline-offset:2px">Cancelar</button>
+            <button style="{{ btnGhost }}" style-hover="background:hsl(var(--surface-sunken))">Ver detalle</button>
+            <button style="{{ btnDanger }}" style-hover="filter:brightness(.93)">Anular venta</button>
+          </div>
+          <div style="height:1px;background:hsl(var(--border-subtle));margin:16px 0;"></div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+            <button disabled style="{{ btnPrimary }};opacity:.45;cursor:not-allowed;">Deshabilitado</button>
+            <button style="{{ btnPrimary }};cursor:progress;"><span style="width:14px;height:14px;border:2px solid hsl(var(--brand-foreground)/.4);border-top-color:hsl(var(--brand-foreground));border-radius:50%;display:inline-block;animation:noctis-spin .7s linear infinite;"></span>Emitiendo…</button>
+            <span style="font-size:12px;color:hsl(var(--text-tertiary));">Estados: default · hover · active · <b>focus-visible</b> (anillo) · disabled · loading</span>
+          </div>
+        </div>
+
+        <!-- INPUT -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">Input <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— error por campo + banner root (RHF+Zod)</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+          <div><label style="{{ lbl }}">Nombre del producto</label><input value="Cuaderno universitario" style="{{ inp }}" style-focus="border-color:hsl(var(--focus-ring));outline:2px solid hsl(var(--focus-ring)/.4);outline-offset:0"><div style="{{ helper }}">Se muestra tal cual en catálogo.</div></div>
+          <div><label style="{{ lbl }}">RUC / Cédula</label><input value="17900123" style="{{ inpError }}"><div style="{{ errText }}">Dígito verificador inválido.</div></div>
+          <div><label style="{{ lbl }}">Categoría</label><input value="No editable" disabled style="{{ inp }};opacity:.5;cursor:not-allowed;background:hsl(var(--surface-sunken));"><div style="{{ helper }}">Deshabilitado.</div></div>
+        </div>
+
+        <!-- ALERT -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">Alert <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— role=alert · el feedback inline vive acá dentro de la Card</span></h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;">
+          <div role="status" style="{{ alertInfo }}"><b>Info.</b> El buscador de esta lista es client-side por ahora.</div>
+          <div role="status" style="{{ alertSuccess }}"><b>Listo.</b> Transferencia recibida y stock actualizado.</div>
+          <div role="alert" style="{{ alertWarning }}"><b>Atención.</b> El certificado vence en 30 días.</div>
+          <div role="alert" style="{{ alertDanger }}"><b>No autorizado.</b> No tiene permiso para anular ventas.</div>
+        </div>
+
+        <!-- BADGE / STATUSPILL -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">Badge / StatusPill</h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+          <span style="{{ pillNeutral }}">Borrador</span>
+          <span style="{{ pillSuccess }}">● Activa</span>
+          <span style="{{ pillInfo }}">En tránsito</span>
+          <span style="{{ pillWarning }}">Por vencer</span>
+          <span style="{{ pillDanger }}">Vencido</span>
+          <span style="{{ pillTerminal }}">Anulado</span>
+          <span style="{{ pillBrand }}">Predeterminada</span>
+          <span style="font-size:12px;color:hsl(var(--text-tertiary));margin-left:6px;">Predeterminada usa la marca; el resto son semánticos (estables).</span>
+        </div>
+
+        <!-- MONEYDISPLAY -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">MoneyDisplay <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— $1.234,56 · alineado a la derecha · «sin precio» ≠ $0</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));display:flex;flex-wrap:wrap;gap:28px;align-items:flex-end;font-variant-numeric:tabular-nums;font-feature-settings:'tnum';">
+          <div style="text-align:right;"><div style="font-size:11px;color:hsl(var(--text-tertiary));font-family:Inter;">Subtotal</div><div style="font-size:20px;font-weight:500;">$1.234,56</div></div>
+          <div style="text-align:right;"><div style="font-size:11px;color:hsl(var(--text-tertiary));font-family:Inter;">IVA 15%</div><div style="font-size:20px;font-weight:500;">$185,18</div></div>
+          <div style="text-align:right;"><div style="font-size:11px;color:hsl(var(--text-tertiary));font-family:Inter;">Total</div><div style="font-size:26px;font-weight:600;color:hsl(var(--text-primary));">$1.419,74</div></div>
+          <div style="text-align:right;"><div style="font-size:11px;color:hsl(var(--text-tertiary));font-family:Inter;">Negativo</div><div style="font-size:20px;font-weight:500;color:hsl(var(--danger-fg));">−$52,00</div></div>
+          <div style="text-align:right;"><div style="font-size:11px;color:hsl(var(--text-tertiary));font-family:Inter;">Precio ausente</div><div style="font-size:14px;font-weight:600;color:hsl(var(--warning-fg));font-family:Inter;padding:4px 8px;border:1px dashed hsl(var(--warning-border));border-radius:6px;">Sin precio</div></div>
+        </div>
+
+        <!-- TABLE -->
+        <h3 style="font-size:15px;font-weight:600;margin:24px 0 10px;">Table <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— caso de estrés · keyset «Cargar más» · confirm inline 2 pasos</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+          <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:var(--font-body);min-width:640px;">
+            <thead><tr style="background:hsl(var(--surface-sunken));text-align:left;">
+              <th style="{{ th }}">Estado</th><th style="{{ th }}">Producto</th><th style="{{ th }}">Categoría</th>
+              <th style="{{ thNum }}">Stock</th><th style="{{ thNum }}">Precio</th><th style="{{ th }};text-align:right;">Acciones</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-top:1px solid hsl(var(--border-subtle));"><td style="{{ td }}"><span style="{{ pillSuccess }}">● Activa</span></td><td style="{{ td }}">Cuaderno universitario 100h</td><td style="{{ td }};color:hsl(var(--text-secondary));">Papelería</td><td style="{{ tdNum }}">128</td><td style="{{ tdNum }}">$2,45</td><td style="{{ td }};text-align:right;"><button style="{{ btnGhostSm }}">Editar</button></td></tr>
+              <tr style="border-top:1px solid hsl(var(--border-subtle));"><td style="{{ td }}"><span style="{{ pillSuccess }}">● Activa</span></td><td style="{{ td }}">Esferográfico azul BIC</td><td style="{{ td }};color:hsl(var(--text-secondary));">Escritura</td><td style="{{ tdNum }}">1.204</td><td style="{{ tdNum }}">$0,35</td>
+                <td style="{{ td }};text-align:right;">
+                  <sc-if value="{{ armed }}" hint-placeholder-val="{{ false }}">
+                    <span style="display:inline-flex;gap:6px;align-items:center;"><span style="font-size:12px;color:hsl(var(--danger-fg));">¿Descontinuar?</span><button onClick="{{ cancelArm }}" style="{{ btnGhostSm }}">Cancelar</button><button style="{{ btnDangerSm }}">Confirmar</button></span>
+                  </sc-if>
+                  <sc-if value="{{ notArmed }}" hint-placeholder-val="{{ true }}">
+                    <button onClick="{{ arm }}" style="{{ btnDangerGhostSm }}">Descontinuar</button>
+                  </sc-if>
+                </td></tr>
+              <tr style="border-top:1px solid hsl(var(--border-subtle));"><td style="{{ td }}"><span style="{{ pillNeutral }}">Borrador</span></td><td style="{{ td }}">Marcador permanente negro</td><td style="{{ td }};color:hsl(var(--text-secondary));">Escritura</td><td style="{{ tdNum }}">0</td><td style="{{ td }};text-align:right;"><span style="font-size:12px;font-weight:600;color:hsl(var(--warning-fg));">Sin precio</span></td><td style="{{ td }};text-align:right;"><button style="{{ btnGhostSm }}">Editar</button></td></tr>
+              <!-- fila cargando (skeleton) -->
+              <tr style="border-top:1px solid hsl(var(--border-subtle));"><td style="{{ td }}"><span style="{{ skPill }}"></span></td><td style="{{ td }}"><span style="{{ skLine }};width:70%"></span></td><td style="{{ td }}"><span style="{{ skLine }};width:50%"></span></td><td style="{{ tdNum }}"><span style="{{ skLine }};width:30px;margin-left:auto;display:block"></span></td><td style="{{ tdNum }}"><span style="{{ skLine }};width:44px;margin-left:auto;display:block"></span></td><td style="{{ td }}"><span style="{{ skLine }};width:44px;margin-left:auto;display:block"></span></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-raised));">
+            <span style="font-size:12px;color:hsl(var(--text-tertiary));">Orden cronológico · sin números de página, total ni salto</span>
+            <button style="{{ btnSecondary }};height:34px;">Cargar más</button>
+          </div>
+        </div>
+        <p style="margin:10px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">Números a la derecha en mono; pills de estado por fila; acciones por fila con nombre accesible; el kardex hereda esto sumando <b>saldo corrido</b> entre páginas. Responsive: scroll horizontal con primera columna de contexto (sin reordenar columnas — el orden es por id).</p>
+
+        <!-- SELECT / COMBOBOX + pickers -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">Select / Combobox <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— funda la familia de pickers (producto→variante, bodega, cliente) que reemplaza los UUID crudos</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;">
+          <div style="width:320px;max-width:100%;position:relative;">
+            <label style="{{ lbl }}">Cliente <span style="font-weight:400;color:hsl(var(--text-tertiary));">(picker con búsqueda)</span></label>
+            <button onClick="{{ toggleCombo }}" aria-haspopup="listbox" aria-expanded="{{ comboOpen }}" style="width:100%;height:var(--control-h);padding:0 12px;border-radius:8px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:{{ comboColor }};font:400 var(--font-body)/1 Inter;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+              <span>{{ comboSel }}</span><span style="color:hsl(var(--text-tertiary));">▾</span>
+            </button>
+            <sc-if value="{{ comboOpen }}" hint-placeholder-val="{{ false }}">
+              <div role="listbox" style="position:absolute;z-index:20;left:0;right:0;margin-top:6px;background:hsl(var(--surface-overlay));border:1px solid hsl(var(--border-subtle));border-radius:10px;box-shadow:var(--shadow-overlay);overflow:hidden;">
+                <div style="padding:8px;border-bottom:1px solid hsl(var(--border-subtle));"><input placeholder="Buscar por nombre o identificación…" style="{{ inp }};height:34px;"></div>
+                <button onClick="{{ pickConsumidor }}" style="{{ comboOpt }};color:hsl(var(--brand-primary));font-weight:600;">Consumidor Final <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:11px;">· un toque</span></button>
+                <button onClick="{{ pickAguilar }}" style="{{ comboOpt }}">Librería Aguilar S.A. <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">RUC 1790012345001</span></button>
+                <button onClick="{{ pickMendez }}" style="{{ comboOpt }}">María Méndez Rueda <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--text-tertiary));">CI 1712345678</span></button>
+              </div>
+            </sc-if>
+            <div style="{{ helper }}">display_name en español — nunca el UUID.</div>
+          </div>
+          <div style="width:220px;max-width:100%;">
+            <label style="{{ lbl }}">Estado <span style="font-weight:400;color:hsl(var(--text-tertiary));">(select simple)</span></label>
+            <div style="position:relative;">
+              <select style="{{ inp }};appearance:none;padding-right:32px;cursor:pointer;"><option>Todos</option><option>Activo</option><option>Descontinuado</option></select>
+              <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:hsl(var(--text-tertiary));pointer-events:none;">▾</span>
+            </div>
+            <div style="{{ helper }}">En táctil, el select chico escala a bottom-sheet (§ overlay).</div>
+          </div>
+        </div>
+
+        <!-- DATEPICKER -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">DatePicker es-EC <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— DD/MM/YYYY · lunes primero</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));">
+          <div style="width:280px;max-width:100%;position:relative;">
+            <label style="{{ lbl }}">Fecha del movimiento</label>
+            <button onClick="{{ toggleDate }}" style="width:100%;height:var(--control-h);padding:0 12px;border-radius:8px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:hsl(var(--text-primary));font-family:'IBM Plex Mono',monospace;font-size:var(--font-body);display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+              <span>{{ dateSel }}</span><span style="color:hsl(var(--text-tertiary));">▦</span>
+            </button>
+            <sc-if value="{{ dateOpen }}" hint-placeholder-val="{{ false }}">
+              <div style="position:absolute;z-index:20;margin-top:6px;background:hsl(var(--surface-overlay));border:1px solid hsl(var(--border-subtle));border-radius:12px;box-shadow:var(--shadow-overlay);padding:12px;width:260px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;"><button style="{{ btnGhostSm }}">‹</button><span style="font-weight:600;font-size:13px;">Marzo 2026</span><button style="{{ btnGhostSm }}">›</button></div>
+                <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center;font-size:11px;color:hsl(var(--text-tertiary));margin-bottom:4px;"><span>Lu</span><span>Ma</span><span>Mi</span><span>Ju</span><span>Vi</span><span>Sá</span><span>Do</span></div>
+                <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center;font-size:12px;">
+                  <button style="{{ dayStyle }}">9</button><button style="{{ dayStyle }}">10</button><button style="{{ dayStyle }}">11</button><button onClick="{{ pickD12 }}" style="{{ dayStyle }}">12</button><button style="{{ dayStyle }}">13</button><button onClick="{{ pickD14 }}" style="{{ daySelStyle }}">14</button><button style="{{ dayStyle }}">15</button>
+                  <button style="{{ dayStyle }}">16</button><button style="{{ dayStyle }}">17</button><button style="{{ dayStyle }}">18</button><button style="{{ dayStyle }}">19</button><button onClick="{{ pickD20 }}" style="{{ dayStyle }}">20</button><button style="{{ dayStyle }}">21</button><button style="{{ dayStyle }}">22</button>
+                </div>
+              </div>
+            </sc-if>
+            <div style="{{ helper }}">Hora 24h · TZ Guayaquil en campos con hora.</div>
+          </div>
+        </div>
+
+        <!-- TABS -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">Tabs</h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+          <div role="tablist" style="display:flex;gap:2px;border-bottom:1px solid hsl(var(--border-subtle));padding:0 8px;">
+            <button role="tab" aria-selected="{{ tabVariantes }}" onClick="{{ setTabV }}" style="{{ tabVStyle }}">Variantes</button>
+            <button role="tab" aria-selected="{{ tabCodigos }}" onClick="{{ setTabC }}" style="{{ tabCStyle }}">Códigos de barras</button>
+            <button role="tab" aria-selected="{{ tabPrecios }}" onClick="{{ setTabP }}" style="{{ tabPStyle }}">Precios</button>
+          </div>
+          <div style="padding:18px;font-size:13px;color:hsl(var(--text-secondary));">
+            <sc-if value="{{ tabVariantes }}" hint-placeholder-val="{{ true }}"><div>Sección <b>Variantes</b> embebida — lista keyset con CTAs gated por permiso.</div></sc-if>
+            <sc-if value="{{ tabCodigos }}" hint-placeholder-val="{{ false }}"><div>Sección <b>Códigos</b> — pill de primario, confirm inline de 2 pasos por fila.</div></sc-if>
+            <sc-if value="{{ tabPrecios }}" hint-placeholder-val="{{ false }}"><div>Sección <b>Precios</b> — escalas por cantidad con edición inline en la fila.</div></sc-if>
+          </div>
+        </div>
+
+        <!-- TIMELINE / STEPPER -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">Timeline / Stepper de estados <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— draft → in_transit → received · cancelled terminal lateral</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:20px 22px;background:hsl(var(--surface-raised));display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start;">
+          <div style="display:flex;flex-direction:column;gap:0;">
+            <div style="display:flex;gap:12px;"><div style="display:flex;flex-direction:column;align-items:center;"><div style="width:22px;height:22px;border-radius:50%;background:hsl(var(--success-fg));color:hsl(var(--success-foreground));display:grid;place-items:center;font-size:12px;">✓</div><div style="width:2px;height:34px;background:hsl(var(--success-fg));"></div></div><div style="padding-top:1px;"><div style="font-weight:600;font-size:13px;">Borrador creado</div><div style="font-size:12px;color:hsl(var(--text-tertiary));font-family:'IBM Plex Mono',monospace;">12/03/2026 09:14</div></div></div>
+            <div style="display:flex;gap:12px;"><div style="display:flex;flex-direction:column;align-items:center;"><div style="width:22px;height:22px;border-radius:50%;background:hsl(var(--success-fg));color:hsl(var(--success-foreground));display:grid;place-items:center;font-size:12px;">✓</div><div style="width:2px;height:34px;background:hsl(var(--border-strong));"></div></div><div style="padding-top:1px;"><div style="font-weight:600;font-size:13px;">Despachada · en tránsito</div><div style="font-size:12px;color:hsl(var(--text-tertiary));font-family:'IBM Plex Mono',monospace;">12/03/2026 11:02</div></div></div>
+            <div style="display:flex;gap:12px;"><div style="display:flex;flex-direction:column;align-items:center;"><div style="width:22px;height:22px;border-radius:50%;background:hsl(var(--surface-base));border:2px solid hsl(var(--border-strong));"></div></div><div style="padding-top:1px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--text-tertiary));">Recibida</div><div style="font-size:12px;color:hsl(var(--text-tertiary));">pendiente</div></div></div>
+          </div>
+          <div style="align-self:center;">
+            <div style="font-size:11px;color:hsl(var(--text-tertiary));margin-bottom:6px;">Terminal alterno</div>
+            <span style="{{ pillDanger }}">Cancelada</span>
+          </div>
+        </div>
+
+        <!-- SKELETON / SPINNER / MODE TOGGLE / CARD -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:10px;">Skeleton</div>
+            <span style="{{ skBlock }};height:44px;margin-bottom:10px;"></span>
+            <span style="{{ skLine }};width:90%;margin-bottom:7px;"></span>
+            <span style="{{ skLine }};width:70%;margin-bottom:7px;"></span>
+            <span style="{{ skLine }};width:50%;"></span>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:10px;">Spinner <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:11px;">role=status</span></div>
+            <div style="display:flex;align-items:center;gap:14px;padding:14px 0;"><span style="width:26px;height:26px;border:3px solid hsl(var(--border-strong));border-top-color:hsl(var(--brand-primary));border-radius:50%;display:inline-block;animation:noctis-spin .7s linear infinite;"></span><span style="font-size:12px;color:hsl(var(--text-tertiary));">Gate de permiso / acción puntual</span></div>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;margin-bottom:10px;">Toggle de modo <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:11px;">— vive en el chrome</span></div>
+            <button onClick="{{ toggleMode }}" role="switch" aria-checked="{{ modeDark }}" aria-label="Cambiar modo claro/oscuro" style="display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 6px 0 14px;border-radius:999px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:hsl(var(--text-secondary));font:500 12px/1 Inter;cursor:pointer;">
+              <span>{{ modeLabel }}</span>
+              <span style="width:26px;height:26px;border-radius:50%;background:hsl(var(--brand-primary));color:hsl(var(--brand-foreground));display:grid;place-items:center;font-size:13px;">{{ modeIcon }}</span>
+            </button>
+            <div style="{{ helper }}">Preferencia de usuario, persistida. Aplica a ambas apps.</div>
+          </div>
+        </div>
+
+        <!-- DECISIONES DE SISTEMA: Toast / Overlay -->
+        <h3 style="font-size:15px;font-weight:600;margin:32px 0 10px;">Dos decisiones de sistema</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;">Feedback — <span style="color:hsl(var(--text-primary));">inline por defecto + Toast acotado</span></div>
+            <p style="margin:8px 0 12px;font-size:12.5px;color:hsl(var(--text-secondary));">Se consagra el inline (Alert dentro de la Card, error por campo). Entra un Toast <b>solo</b> para confirmaciones de éxito de acciones cuyo resultado <b>no está en pantalla</b> (p.ej. «Invitación reenviada»). Reglas duras:</p>
+            <ul style="margin:0;padding-left:18px;font-size:12.5px;color:hsl(var(--text-secondary));line-height:1.7;">
+              <li><b>Error → siempre inline</b>, nunca toast (no debe poder perderse).</li>
+              <li>Toast solo éxito efímero, autodismiss 4 s, apilable, con <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;">role=status</code>.</li>
+              <li>Prohibido en el POS: allí la confirmación va en superficie grande.</li>
+            </ul>
+            <div style="margin-top:12px;display:inline-flex;align-items:center;gap:10px;background:hsl(var(--surface-overlay));border:1px solid hsl(var(--border-subtle));border-left:3px solid hsl(var(--success-fg));border-radius:10px;padding:10px 14px;box-shadow:var(--shadow-overlay);"><span style="color:hsl(var(--success-fg));">✓</span><span style="font-size:13px;">Invitación reenviada a agustina@aguilar.ec</span></div>
+          </div>
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;padding:18px;background:hsl(var(--surface-raised));">
+            <div style="font-weight:600;font-size:14px;">Overlays — <span style="color:hsl(var(--text-primary));">Sheet nuevo, con reglas; confirm destructivo sigue inline</span></div>
+            <p style="margin:8px 0 12px;font-size:12.5px;color:hsl(var(--text-secondary));">El POS pide superficies grandes, así que el sistema <b>sí</b> incorpora un primitivo de overlay —el <b>Sheet</b>— como propuesta fundada, no default silencioso. Reglas:</p>
+            <ul style="margin:0;padding-left:18px;font-size:12.5px;color:hsl(var(--text-secondary));line-height:1.7;">
+              <li><b>Sheet</b> = bottom-sheet/fullscreen en táctil, panel centrado en desktop. Solo para flujos multi-paso o de foco (cobro POS, crear admin).</li>
+              <li>Acciones <b>destructivas</b> siguen con <b>confirm inline de 2 pasos</b> en la propia fila/Card — no se mudan a dialog.</li>
+              <li>Todo Sheet: foco atrapado, cierre con Esc, <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;">role=dialog</code> + <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;">aria-modal</code>, scrim.</li>
+              <li>El modal artesanal de backoffice se absorbe en este primitivo.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ §4 KIT DE ESTADOS ============================================================ -->
+      <section id="estados" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§4</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Kit de estados</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">vacío · cargando · error · 403 — en tres alcances</span>
+        </div>
+        <p style="margin:16px 0;color:hsl(var(--text-secondary));font-size:13px;max-width:80ch;">Un solo kit, aplicado a <b>página completa</b>, <b>sección embebida en Card</b> y <b>fila de tabla</b>. Reglas de carga:</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+          <div style="flex:1;min-width:240px;border:1px solid hsl(var(--border-subtle));border-radius:10px;padding:12px 14px;background:hsl(var(--surface-raised));font-size:12.5px;color:hsl(var(--text-secondary));"><b style="color:hsl(var(--text-primary));">Skeleton</b> cuando se conoce la forma y hay layout que preservar: listas, tablas, detalle. Evita el salto de contenido.</div>
+          <div style="flex:1;min-width:240px;border:1px solid hsl(var(--border-subtle));border-radius:10px;padding:12px 14px;background:hsl(var(--surface-raised));font-size:12.5px;color:hsl(var(--text-secondary));"><b style="color:hsl(var(--text-primary));">Spinner</b> para acción puntual sin layout: gate de permiso, botón en <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;">loading</code>, submit. Nunca para reemplazar una tabla entera.</div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;">
+          <!-- PÁGINA -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));border-bottom:1px solid hsl(var(--border-subtle));">Alcance · Página completa</div>
+            <div style="padding:16px;display:flex;flex-direction:column;gap:14px;">
+              <div style="text-align:center;padding:16px 10px;border:1px dashed hsl(var(--border-strong));border-radius:10px;">
+                <div style="width:40px;height:40px;margin:0 auto 8px;border-radius:11px;background:hsl(var(--text-primary));display:grid;place-items:center;"><div style="width:12px;height:12px;border-radius:50%;background:hsl(var(--surface-raised));"></div></div>
+                <div style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:17px;font-weight:500;">Aún no hay productos</div>
+                <div style="font-size:12px;color:hsl(var(--text-tertiary));margin:4px 0 10px;">Cree el primero para empezar el catálogo.</div>
+                <button style="{{ btnPrimary }};height:32px;">Nuevo producto</button>
+                <div style="font-size:10px;color:hsl(var(--text-tertiary));margin-top:8px;text-transform:uppercase;letter-spacing:.06em;">vacío · EmptyState (marca de casa)</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:7px;"><span style="{{ skLine }};width:40%;height:16px;"></span><span style="{{ skBlock }};height:90px;"></span><div style="font-size:10px;color:hsl(var(--text-tertiary));text-transform:uppercase;letter-spacing:.06em;">cargando · Skeleton de página</div></div>
+            </div>
+          </div>
+
+          <!-- SECCIÓN -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));border-bottom:1px solid hsl(var(--border-subtle));">Alcance · Sección en Card</div>
+            <div style="padding:16px;display:flex;flex-direction:column;gap:14px;">
+              <div style="border:1px solid hsl(var(--danger-border));background:hsl(var(--danger-bg));border-radius:10px;padding:12px 14px;">
+                <div style="font-size:13px;font-weight:600;color:hsl(var(--danger-fg));">No se pudo cargar la sección</div>
+                <div style="font-size:12px;color:hsl(var(--danger-fg));opacity:.85;margin:3px 0 10px;">Intente nuevamente. Si persiste, comparta el código con soporte.</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;">
+                  <code style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:hsl(var(--danger-fg));">errorId: 8F3A-2C71</code>
+                  <button style="{{ btnDangerSm }}">Reintentar</button>
+                </div>
+                <div style="font-size:10px;color:hsl(var(--text-tertiary));margin-top:8px;text-transform:uppercase;letter-spacing:.06em;">error · errorId visible + reintento</div>
+              </div>
+              <div style="border:1px solid hsl(var(--border-subtle));border-radius:10px;padding:14px;text-align:center;">
+                <div style="font-size:12px;color:hsl(var(--text-secondary));">Esta sección no está disponible con su permiso.</div>
+                <div style="font-size:10px;color:hsl(var(--text-tertiary));margin-top:8px;text-transform:uppercase;letter-spacing:.06em;">403 · sección oculta con aviso neutral</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FILA -->
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:12px;overflow:hidden;background:hsl(var(--surface-raised));">
+            <div style="padding:10px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));border-bottom:1px solid hsl(var(--border-subtle));">Alcance · Fila de tabla</div>
+            <div style="padding:0;">
+              <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid hsl(var(--border-subtle));"><span style="{{ skLine }};width:120px;"></span><span style="{{ skLine }};width:60px;margin-left:auto;"></span><span style="font-size:10px;color:hsl(var(--text-tertiary));text-transform:uppercase;letter-spacing:.05em;">cargando</span></div>
+              <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid hsl(var(--border-subtle));color:hsl(var(--danger-fg));font-size:12.5px;"><span>⚠ No se pudo actualizar esta fila.</span><button style="{{ btnDangerGhostSm }};margin-left:auto;">Reintentar</button></div>
+              <div style="padding:22px 14px;text-align:center;font-size:12.5px;color:hsl(var(--text-tertiary));">Sin resultados para este filtro.<div style="font-size:10px;margin-top:6px;text-transform:uppercase;letter-spacing:.06em;">vacío · fila única</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ PANTALLAS DE NÚCLEO ============================================================ -->
+      <section id="pantallas" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">§</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Pantallas compartidas</h2>
+          <span style="color:hsl(var(--text-tertiary));font-size:13px;">núcleo · las heredan ambas apps</span>
+        </div>
+
+        <!-- LOGIN + SET-PASSWORD -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:20px;">
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:14px;overflow:hidden;">
+            <div style="padding:9px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));">Login (compartido)</div>
+            <div style="display:grid;grid-template-columns:1fr;">
+              <div style="position:relative;padding:22px;background:linear-gradient(150deg,#000 0%,#1C1C1E 65%,#2C2C2E 100%);overflow:hidden;">
+                <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 90% -20%, rgba(255,255,255,.07), transparent 60%);"></div>
+                <div style="position:relative;display:inline-flex;align-items:center;gap:8px;"><div style="width:26px;height:26px;border-radius:7px;background:#E5E5EA;display:grid;place-items:center;"><div style="width:9px;height:9px;border-radius:50%;background:#1C1C1E;"></div></div><span style="font-weight:600;color:#F5F5F7;font-size:16px;letter-spacing:-.02em;">Noctis Commerce</span></div>
+                <div style="position:relative;font-size:19px;color:#F5F5F7;margin-top:12px;letter-spacing:-.01em;font-weight:500;">Inicie sesión</div>
+              </div>
+              <div style="padding:18px;background:hsl(var(--surface-raised));display:flex;flex-direction:column;gap:12px;">
+                <div><label style="{{ lbl }}">Correo</label><input value="agustina@aguilar.ec" style="{{ inp }}"></div>
+                <div><label style="{{ lbl }}">Contraseña</label><input type="password" value="········" style="{{ inp }}"></div>
+                <button style="{{ btnPrimary }};width:100%;">Ingresar</button>
+                <span style="font-size:11px;color:hsl(var(--text-tertiary));">Hueco conocido: «olvidé mi clave» no existe en el roadmap — se señala, no se inventa.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid hsl(var(--border-subtle));border-radius:14px;overflow:hidden;">
+            <div style="padding:9px 14px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--text-tertiary));background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));">Set-password · requisitos en vivo</div>
+            <div style="padding:18px;background:hsl(var(--surface-raised));display:flex;flex-direction:column;gap:12px;">
+              <div><label style="{{ lbl }}">Cree su contraseña</label><input type="text" value="{{ pwd }}" onInput="{{ onPwd }}" placeholder="Escriba para ver los requisitos…" style="{{ inp }}"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:12px 14px;background:hsl(var(--surface-sunken));border-radius:10px;">
+                <span style="{{ reqLen }}">{{ reqLenMark }} Mínimo 10 caracteres</span>
+                <span style="{{ reqNum }}">{{ reqNumMark }} Un número</span>
+                <span style="{{ reqUp }}">{{ reqUpMark }} Una mayúscula</span>
+                <span style="{{ reqLo }}">{{ reqLoMark }} Una minúscula</span>
+              </div>
+              <div><label style="{{ lbl }}">Confirme la contraseña</label><input type="password" style="{{ inp }}"></div>
+              <button style="{{ btnPrimary }};width:100%;">Activar cuenta</button>
+              <span style="font-size:11px;color:hsl(var(--text-tertiary));">Sin token o token inválido → estado de error, nunca 404.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SELECT-WORKSPACE -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">select-workspace <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— cards por acceso (tenant × producto)</span></h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;">
+          <button style="text-align:left;border:1px solid hsl(var(--border-strong));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));cursor:pointer;" style-hover="border-color:hsl(var(--brand-primary))">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:8px;background:hsl(var(--text-primary));color:hsl(var(--surface-raised));display:grid;place-items:center;font-weight:700;font-size:13px;">LA</div><span style="{{ pillNeutral }}">commerce</span></div>
+            <div style="font-weight:600;font-size:14px;">Librería Aguilar S.A.</div>
+            <div style="font-size:12px;color:hsl(var(--text-tertiary));">Administrador · 5 sucursales</div>
+          </button>
+          <button style="text-align:left;border:1px solid hsl(var(--border-strong));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));cursor:pointer;" style-hover="border-color:hsl(var(--brand-primary))">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:8px;background:hsl(var(--text-primary));color:hsl(var(--surface-raised));display:grid;place-items:center;font-weight:700;font-size:13px;">FS</div><span style="{{ pillNeutral }}">commerce</span></div>
+            <div style="font-weight:600;font-size:14px;">Farmacia San Rafael</div>
+            <div style="font-size:12px;color:hsl(var(--text-tertiary));">Contador · multi-empresa</div>
+          </button>
+          <button style="text-align:left;border:1px solid hsl(var(--border-strong));border-radius:12px;padding:16px;background:hsl(var(--surface-raised));cursor:pointer;" style-hover="border-color:hsl(var(--brand-primary))">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><div style="width:30px;height:30px;border-radius:8px;background:hsl(var(--text-primary));color:hsl(var(--surface-raised));display:grid;place-items:center;font-weight:700;font-size:12px;">◆</div><span style="{{ pillNeutral }}">backoffice</span></div>
+            <div style="font-weight:600;font-size:14px;">Noctis · Plataforma</div>
+            <div style="font-size:12px;color:hsl(var(--text-tertiary));">Platform Admin</div>
+          </button>
+        </div>
+
+        <!-- SHELL SKELETON -->
+        <h3 style="font-size:15px;font-weight:600;margin:28px 0 10px;">Shell primitivo <span style="font-weight:400;color:hsl(var(--text-tertiary));font-size:12px;">— topbar + sidebar · slots que ambas apps llenan distinto</span></h3>
+        <div style="border:1px solid hsl(var(--border-subtle));border-radius:14px;overflow:hidden;">
+          <!-- topbar -->
+          <div style="display:flex;align-items:center;gap:14px;padding:0 16px;height:56px;background:hsl(var(--surface-raised));border-bottom:1px solid hsl(var(--border-subtle));">
+            <div style="display:flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:8px;background:hsl(var(--surface-sunken));"><div style="width:24px;height:24px;border-radius:6px;background:hsl(var(--text-primary));"></div><span style="color:hsl(var(--text-secondary));font-size:12px;font-weight:600;">slot: logo tenant</span></div>
+            <span style="color:hsl(var(--text-tertiary));font-size:11px;">[ slot: CompanySelector · commerce ]</span>
+            <div style="margin-left:auto;display:flex;align-items:center;gap:12px;">
+              <span style="color:hsl(var(--text-secondary));font-size:12px;">agustina@aguilar.ec · Aguilar · commerce</span>
+              <button onClick="{{ toggleMode }}" aria-label="Cambiar modo" style="width:32px;height:32px;border-radius:8px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:hsl(var(--text-secondary));cursor:pointer;">{{ modeIcon }}</button>
+              <button style="height:30px;padding:0 12px;border-radius:8px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:hsl(var(--text-secondary));font-size:12px;cursor:pointer;">Salir</button>
+            </div>
+          </div>
+          <div style="display:flex;min-height:230px;">
+            <!-- sidebar -->
+            <div style="width:210px;flex:none;background:hsl(var(--surface-sunken));border-right:1px solid hsl(var(--border-subtle));padding:12px 10px;display:flex;flex-direction:column;gap:2px;">
+              <div style="font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:hsl(var(--text-tertiary));padding:6px 8px;">Vender</div>
+              <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:hsl(var(--brand-primary));color:hsl(var(--brand-foreground));font-size:13px;font-weight:600;">Productos</div>
+              <div style="display:flex;flex-direction:column;">
+                <div style="display:flex;align-items:center;gap:8px;padding:6px 10px 6px 22px;font-size:12px;color:hsl(var(--text-secondary));">Madre</div>
+                <div style="display:flex;align-items:center;gap:8px;padding:6px 10px 6px 22px;font-size:12px;color:hsl(var(--text-secondary));">Variantes</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;color:hsl(var(--text-secondary));font-size:13px;">Precios</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;color:hsl(var(--text-tertiary));font-size:13px;">POS <span style="font-size:10px;padding:1px 7px;border-radius:999px;background:hsl(var(--surface-base));border:1px solid hsl(var(--border-subtle));">Pronto</span></div>
+              <div style="margin-top:auto;font-size:10px;color:hsl(var(--text-tertiary));padding:6px 8px;">≡ colapsable a íconos</div>
+            </div>
+            <!-- content -->
+            <div style="flex:1;padding:16px 18px;background:hsl(var(--surface-base));">
+              <div style="font-size:12px;color:hsl(var(--text-tertiary));margin-bottom:4px;">Productos › Variantes</div>
+              <div style="font-size:11px;color:hsl(var(--text-tertiary));background:hsl(var(--surface-sunken));border:1px dashed hsl(var(--border-strong));border-radius:8px;padding:8px 10px;display:inline-block;">Decisión: <b style="color:hsl(var(--text-primary));">breadcrumbs</b> en jerarquías profundas (‹módulo › submódulo›); <b style="color:hsl(var(--text-primary));">← back-link</b> solo en detalle→edición de un nivel.</div>
+              <div style="margin-top:14px;display:flex;flex-direction:column;gap:8px;"><span style="{{ skLine }};width:50%;height:16px;"></span><span style="{{ skBlock }};height:70px;"></span></div>
+            </div>
+          </div>
+          <div style="padding:10px 16px;border-top:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-raised));display:flex;justify-content:space-between;font-size:11px;color:hsl(var(--text-tertiary));"><span>slot footer · línea legal del tenant</span><span style="font-weight:500;color:hsl(var(--text-secondary));">Powered by Noctis Commerce</span></div>
+        </div>
+        <p style="margin:10px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">El núcleo define el <b>esqueleto y los slots</b>; el chrome específico (CompanySelector, slot de branch, sidebar-por-permisos vs fija) es <b>piel</b> de cada app — no se llena acá.</p>
+      </section>
+
+      <!-- ============================================================ VERIFICACIÓN ============================================================ -->
+      <section id="verificacion" style="margin-top:56px;scroll-margin-top:80px;">
+        <div style="display:flex;align-items:baseline;gap:12px;border-bottom:2px solid hsl(var(--text-primary));padding-bottom:10px;">
+          <span style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-size:13px;color:hsl(var(--text-tertiary));font-weight:600;">✓</span>
+          <h2 style="font-family:Inter,sans-serif;letter-spacing:-.015em;font-weight:600;font-size:28px;margin:0;">Verificación de cierre</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:18px;">
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:12px;padding:14px 16px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">a · Tres ejes ortogonales</div><p style="margin:6px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">El texto varía por modo (claro↔oscuro) pero no por tenant; la marca solo pinta chrome/acento, nunca superficies ni cuerpo. Densidad es un cuarto eje independiente.</p></div>
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:12px;padding:14px 16px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">b · Ambos modos completos</div><p style="margin:6px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">Claro y oscuro definidos y consumidos; todo componente se re-pinta con el toggle sin romperse.</p></div>
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:12px;padding:14px 16px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">c · AA + clamp condicional</div><p style="margin:6px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">Paleta estable con ratios declarados (≥4,5:1) en ambos modos. El acento es un par primary+foreground inyectado: clamp condicional con umbral 0,18 (OKLCH L 0,45 ≈ luminancia relativa 0,14, croma ≤0,12) — foreground near-white bajo 0,18, near-black por encima.</p></div>
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:12px;padding:14px 16px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">d · Ningún estado feliz solo</div><p style="margin:6px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">Cada componente lleva hover/focus/disabled/loading según aplique; kit vacío/cargando/error/403 en tres alcances.</p></div>
+          <div style="border:1px solid hsl(var(--success-border));background:hsl(var(--success-bg));border-radius:12px;padding:14px 16px;"><div style="font-weight:600;font-size:13px;color:hsl(var(--success-fg));">e · Sin piel de app</div><p style="margin:6px 0 0;font-size:12.5px;color:hsl(var(--text-secondary));">No se dibujó POS, kardex, entitlement tree ni chrome específico; nada marcado «ambiguo». Solo el primitivo compartido.</p></div>
+        </div>
+      </section>
+</main>
+
+    <!-- FOOTER de plataforma (constante del núcleo) -->
+    <footer style="border-top:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-raised));">
+      <div style="max-width:1120px;margin:0 auto;padding:20px 24px;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;font-size:12px;color:hsl(var(--text-tertiary));">
+        <span>© 2026 Noctis · subsidiaria de Meridian Holding. Todos los derechos reservados.</span>
+        <span style="font-weight:500;color:hsl(var(--text-secondary));">Powered by Noctis Commerce</span>
+      </div>
+    </footer>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1180,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { mode:'light', density:'comfortable', brand:'casa', kp:'', pwd:'',
+            armRow:null, comboOpen:false, comboSel:'', tab:'variantes', dateOpen:false, dateSel:'14/03/2026' };
+  brands = {
+    casa:  { label:'Casa (sin color)', primary:null,         fg:null },
+    blue:  { label:'Violeta',          primary:'262 60% 42%', fg:'0 0% 100%' },
+    green: { label:'Teal',             primary:'184 72% 26%', fg:'0 0% 100%' },
+    amber: { label:'Oro',              primary:'54 85% 46%',  fg:'240 6% 12%' },
+  };
+  seg(active){
+    return `appearance:none;border:none;cursor:pointer;font:500 12px/1 Inter,sans-serif;padding:6px 12px;border-radius:6px;`
+      + (active
+        ? `background:hsl(var(--surface-raised));color:hsl(var(--text-primary));box-shadow:0 1px 2px hsl(230 40% 20% / .12);`
+        : `background:transparent;color:hsl(var(--text-tertiary));`);
+  }
+  sw(key){
+    const active = this.state.brand===key;
+    const c = this.brands[key].primary;
+    const bg = c ? `background:hsl(${c});` : `background:linear-gradient(135deg,#1D1D1F 0 50%,#E3E3E8 50% 100%);`;
+    return `width:24px;height:24px;border-radius:6px;cursor:pointer;${bg}`
+      + (active ? `outline:2px solid hsl(var(--text-primary));outline-offset:2px;border:2px solid hsl(var(--surface-raised));`
+                : `border:2px solid hsl(var(--surface-raised));`);
+  }
+  renderVals(){
+    const s=this.state, b=this.brands[s.brand];
+    const set=(patch)=>()=>this.setState(patch);
+    const kp=(k)=>()=>this.setState(x=>({kp: k==='C' ? '' : k==='del' ? String(x.kp).slice(0,-1) : (String(x.kp).replace(/^0$/,'')+k).slice(0,9)}));
+    return {
+      mode:s.mode, density:s.density,
+      wrapperStyle: b.primary ? `--brand-primary:${b.primary};--brand-foreground:${b.fg};` : '',
+      brandName:b.label,
+      modeLight:s.mode==='light', modeDark:s.mode==='dark',
+      densComf:s.density==='comfortable', densTouch:s.density==='touch',
+      segLight:this.seg(s.mode==='light'), segDark:this.seg(s.mode==='dark'),
+      segComf:this.seg(s.density==='comfortable'), segTouch:this.seg(s.density==='touch'),
+      swCasa:this.sw('casa'), swBlue:this.sw('blue'), swGreen:this.sw('green'), swAmber:this.sw('amber'),
+      setLight:set({mode:'light'}), setDark:set({mode:'dark'}),
+      setComf:set({density:'comfortable'}), setTouch:set({density:'touch'}),
+      setCasa:set({brand:'casa'}), setBlue:set({brand:'blue'}), setGreen:set({brand:'green'}), setAmber:set({brand:'amber'}),
+      kp:s.kp || '0',
+      keyStyle:`height:64px;min-width:64px;border-radius:12px;border:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-base));color:hsl(var(--text-primary));font:500 22px/1 Inter,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer;transition:transform .06s,background .06s;`,
+      keyAltStyle:`height:64px;min-width:64px;border-radius:12px;border:1px solid hsl(var(--border-subtle));background:hsl(var(--surface-sunken));color:hsl(var(--text-secondary));font:500 20px/1 Inter,sans-serif;cursor:pointer;transition:transform .06s,background .06s;`,
+      k0:kp('0'),k1:kp('1'),k2:kp('2'),k3:kp('3'),k4:kp('4'),k5:kp('5'),k6:kp('6'),k7:kp('7'),k8:kp('8'),k9:kp('9'),
+      kC:kp('C'),kDel:kp('del'),
+      pwd:s.pwd,
+      onPwd:(e)=>this.setState({pwd:e.target.value}),
+      pwLen: s.pwd.length>=10,
+      pwUp: /[A-Z]/.test(s.pwd),
+      pwLo: /[a-z]/.test(s.pwd),
+      pwNum: /[0-9]/.test(s.pwd),
+      reqLen:this.req(s.pwd.length>=10), reqUp:this.req(/[A-Z]/.test(s.pwd)),
+      reqLo:this.req(/[a-z]/.test(s.pwd)), reqNum:this.req(/[0-9]/.test(s.pwd)),
+      reqLenMark:s.pwd.length>=10?'✓':'○', reqUpMark:/[A-Z]/.test(s.pwd)?'✓':'○',
+      reqLoMark:/[a-z]/.test(s.pwd)?'✓':'○', reqNumMark:/[0-9]/.test(s.pwd)?'✓':'○',
+      // Table 2-step inline confirm
+      armed: s.armRow==='r2',
+      arm: set({armRow:'r2'}),
+      cancelArm: set({armRow:null}),
+      // Combobox
+      comboOpen:s.comboOpen, comboSel:s.comboSel || 'Seleccione un cliente…',
+      hasCombo: !!s.comboSel,
+      toggleCombo: ()=>this.setState(x=>({comboOpen:!x.comboOpen})),
+      pickAguilar: set({comboSel:'Librería Aguilar S.A.', comboOpen:false}),
+      pickConsumidor: set({comboSel:'Consumidor Final', comboOpen:false}),
+      pickMendez: set({comboSel:'María Méndez Rueda', comboOpen:false}),
+      // Tabs
+      tab:s.tab,
+      tabVariantes:s.tab==='variantes', tabCodigos:s.tab==='codigos', tabPrecios:s.tab==='precios',
+      setTabV:set({tab:'variantes'}), setTabC:set({tab:'codigos'}), setTabP:set({tab:'precios'}),
+      // DatePicker
+      dateOpen:s.dateOpen, dateSel:s.dateSel,
+      toggleDate:()=>this.setState(x=>({dateOpen:!x.dateOpen})),
+      pickD12:set({dateSel:'12/03/2026',dateOpen:false}),
+      pickD14:set({dateSel:'14/03/2026',dateOpen:false}),
+      pickD20:set({dateSel:'20/03/2026',dateOpen:false}),
+      notArmed: s.armRow!=='r2',
+      comboColor: s.comboSel ? 'hsl(var(--text-primary))' : 'hsl(var(--text-tertiary))',
+      comboOpt:`display:block;width:100%;text-align:left;padding:10px 12px;border:none;background:transparent;color:hsl(var(--text-primary));font:400 13px/1.3 Inter,sans-serif;cursor:pointer;`,
+      dayStyle:`height:32px;border:none;border-radius:7px;background:transparent;color:hsl(var(--text-primary));font:400 12px/1 Inter,sans-serif;cursor:pointer;`,
+      daySelStyle:`height:32px;border:none;border-radius:7px;background:hsl(var(--brand-primary));color:hsl(var(--brand-foreground));font:600 12px/1 Inter,sans-serif;cursor:pointer;`,
+      tabVStyle:this.tabS(s.tab==='variantes'),
+      tabCStyle:this.tabS(s.tab==='codigos'),
+      tabPStyle:this.tabS(s.tab==='precios'),
+      modeLabel: s.mode==='light' ? 'Claro' : 'Oscuro',
+      modeIcon: s.mode==='light' ? '☀' : '☾',
+      ...this.styles(),
+    };
+  }
+  req(met){
+    return `display:flex;align-items:center;gap:8px;font-size:12.5px;`
+      + (met ? `color:hsl(var(--success-fg));` : `color:hsl(var(--text-tertiary));`);
+  }
+  tabS(active){
+    return `appearance:none;border:none;background:transparent;cursor:pointer;padding:12px 14px;font:500 13px/1 Inter,sans-serif;`
+      + (active
+         ? `color:hsl(var(--brand-primary));border-bottom:2px solid hsl(var(--brand-primary));`
+         : `color:hsl(var(--text-tertiary));border-bottom:2px solid transparent;`);
+  }
+  styles(){
+    const btn=`height:var(--control-h);padding:0 16px;border-radius:10px;font:600 13px/1 Inter,sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;`;
+    const sm=`height:var(--control-h-sm);padding:0 10px;border-radius:8px;font:500 12px/1 Inter,sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;`;
+    const alert=`padding:12px 14px;border-radius:10px;font-size:13px;border:1px solid;line-height:1.45;`;
+    const pill=`display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid;white-space:nowrap;`;
+    const shimmer=`background:linear-gradient(90deg,hsl(var(--surface-sunken)) 25%,hsl(var(--border-subtle)) 37%,hsl(var(--surface-sunken)) 63%);background-size:280% 100%;animation:noctis-shimmer 1.4s infinite;`;
+    return {
+      btnPrimary:btn+`background:hsl(var(--brand-primary));color:hsl(var(--brand-foreground));border:none;`,
+      btnSecondary:btn+`background:hsl(var(--surface-raised));color:hsl(var(--text-primary));border:1px solid hsl(var(--border-strong));`,
+      btnGhost:btn+`background:transparent;color:hsl(var(--text-secondary));border:1px solid transparent;`,
+      btnDanger:btn+`background:hsl(var(--danger-fg));color:hsl(var(--danger-foreground));border:none;`,
+      btnGhostSm:sm+`background:transparent;color:hsl(var(--text-secondary));border:1px solid hsl(var(--border-subtle));`,
+      btnDangerGhostSm:sm+`background:transparent;color:hsl(var(--danger-fg));border:1px solid hsl(var(--danger-border));`,
+      btnDangerSm:sm+`background:hsl(var(--danger-fg));color:hsl(var(--danger-foreground));border:none;font-weight:600;`,
+      lbl:`display:block;font-size:13px;font-weight:500;margin-bottom:6px;color:hsl(var(--text-primary));`,
+      inp:`width:100%;height:var(--control-h);padding:0 12px;border-radius:10px;border:1px solid hsl(var(--border-strong));background:hsl(var(--surface-base));color:hsl(var(--text-primary));font:400 var(--font-body)/1 Inter,sans-serif;`,
+      inpError:`width:100%;height:var(--control-h);padding:0 12px;border-radius:10px;border:1px solid hsl(var(--danger-fg));background:hsl(var(--surface-base));color:hsl(var(--text-primary));font:400 var(--font-body)/1 Inter,sans-serif;`,
+      helper:`font-size:12px;color:hsl(var(--text-tertiary));margin-top:5px;`,
+      errText:`font-size:12px;color:hsl(var(--danger-fg));margin-top:5px;`,
+      alertInfo:alert+`background:hsl(var(--info-bg));border-color:hsl(var(--info-border));color:hsl(var(--info-fg));`,
+      alertSuccess:alert+`background:hsl(var(--success-bg));border-color:hsl(var(--success-border));color:hsl(var(--success-fg));`,
+      alertWarning:alert+`background:hsl(var(--warning-bg));border-color:hsl(var(--warning-border));color:hsl(var(--warning-fg));`,
+      alertDanger:alert+`background:hsl(var(--danger-bg));border-color:hsl(var(--danger-border));color:hsl(var(--danger-fg));`,
+      pillNeutral:pill+`background:hsl(var(--surface-sunken));border-color:hsl(var(--border-strong));color:hsl(var(--text-secondary));`,
+      pillSuccess:pill+`background:hsl(var(--success-bg));border-color:hsl(var(--success-border));color:hsl(var(--success-fg));`,
+      pillInfo:pill+`background:hsl(var(--info-bg));border-color:hsl(var(--info-border));color:hsl(var(--info-fg));`,
+      pillWarning:pill+`background:hsl(var(--warning-bg));border-color:hsl(var(--warning-border));color:hsl(var(--warning-fg));`,
+      pillDanger:pill+`background:hsl(var(--danger-bg));border-color:hsl(var(--danger-border));color:hsl(var(--danger-fg));`,
+      pillTerminal:pill+`background:transparent;border-color:hsl(var(--border-strong));color:hsl(var(--text-tertiary));`,
+      pillBrand:pill+`background:hsl(var(--brand-primary));border-color:transparent;color:hsl(var(--brand-foreground));`,
+      th:`padding:11px 14px;font-size:12px;font-weight:600;color:hsl(var(--text-secondary));white-space:nowrap;`,
+      thNum:`padding:11px 14px;font-size:12px;font-weight:600;color:hsl(var(--text-secondary));white-space:nowrap;text-align:right;`,
+      td:`padding:0 14px;height:var(--row-h);`,
+      tdNum:`padding:0 14px;height:var(--row-h);text-align:right;font-variant-numeric:tabular-nums;font-feature-settings:'tnum';`,
+      skPill:`display:inline-block;width:64px;height:20px;border-radius:999px;${shimmer}`,
+      skLine:`display:inline-block;height:12px;border-radius:4px;${shimmer}`,
+      skBlock:`display:block;border-radius:8px;${shimmer}`,
+    };
+  }
+}
+</script>
+</body>
+</html>

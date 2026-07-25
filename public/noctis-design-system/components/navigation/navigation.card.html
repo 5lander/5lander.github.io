@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Navigation" subtitle="Tabs · ModeToggle" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:20px;background:hsl(var(--surface-base));font-family:var(--font-ui);}.grp{font:600 11px/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;color:hsl(var(--text-tertiary));margin:0 0 8px;}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const { Tabs, ModeToggle, Card } = window.NoctisCommerceDesignSystem_4dfd35;
+function Demo(){
+  const [tab,setTab]=React.useState('variantes');
+  const [mode,setMode]=React.useState('light');
+  return (
+    <div>
+      <div className="grp">Tabs</div>
+      <div style={{border:'1px solid hsl(var(--border-subtle))',borderRadius:12,overflow:'hidden',background:'hsl(var(--surface-raised))',marginBottom:20}}>
+        <Tabs value={tab} onChange={setTab} tabs={[{id:'variantes',label:'Variantes'},{id:'codigos',label:'Códigos de barras'},{id:'precios',label:'Precios'}]}/>
+        <div style={{padding:16,fontSize:13,color:'hsl(var(--text-secondary))'}}>Sección activa: <b style={{color:'hsl(var(--text-primary))'}}>{tab}</b></div>
+      </div>
+      <div className="grp">ModeToggle</div>
+      <div style={{display:'flex',gap:12,alignItems:'center'}}>
+        <ModeToggle mode={mode} onToggle={()=>setMode(m=>m==='light'?'dark':'light')}/>
+        <ModeToggle mode={mode} onToggle={()=>setMode(m=>m==='light'?'dark':'light')} shape="icon"/>
+        <span style={{fontSize:12,color:'hsl(var(--text-tertiary))'}}>El estado no cambia los tokens aquí — el consumidor refleja el modo en [data-mode].</span>
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>

@@ -106,6 +106,8 @@ export const strings = {
         stackV: 'NestJS · Next.js 14 · PostgreSQL · Nx',
         repoK: 'REPOSITORY',
         repoV: 'Private — architecture shown here',
+        dsK: 'DESIGN SYSTEM',
+        dsV: 'View it live →',
       },
       s1: {
         eyebrow: '01 — CONTEXT & PRODUCT',
@@ -279,6 +281,8 @@ export const strings = {
         stackV: 'NestJS · Next.js 14 · PostgreSQL · Nx',
         repoK: 'REPOSITORIO',
         repoV: 'Privado — arquitectura mostrada aquí',
+        dsK: 'SISTEMA DE DISEÑO',
+        dsV: 'Verlo en vivo →',
       },
       s1: {
         eyebrow: '01 — CONTEXTO Y PRODUCTO',
