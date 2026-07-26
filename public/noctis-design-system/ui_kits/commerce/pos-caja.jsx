@@ -44,7 +44,12 @@ const CJ_ICON_PATHS = {
   'user-round': '<circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>',
   'delete': '<path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/>',
 };
-function CjIcon({ name, size = 20, strokeWidth = 2, title, style, ...rest }) {
+/* Ver la nota en pos-kit.jsx/KIcon: `...rest` en el patrón de parámetros genera un
+   `const _excluded` global y choca con el de los otros archivos del kit. */
+function CjIcon(props) {
+  const { name, size = 20, strokeWidth = 2, title, style } = props;
+  const rest = Object.assign({}, props);
+  delete rest.name; delete rest.size; delete rest.strokeWidth; delete rest.title; delete rest.style;
   const core = window.PosIcon ? window.PosIcon({ name, size, strokeWidth, title, style, ...rest }) : null;
   if (core) return core;
   const inner = CJ_ICON_PATHS[name];

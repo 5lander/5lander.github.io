@@ -22,7 +22,13 @@ const POS_ICON_PATHS = {
 
 /* Icon del POS: usa el del núcleo; si devuelve null (glifo aún no en el bundle),
    cae al path local con la misma API (name, size, strokeWidth, title, style). */
-function KIcon({ name, size = 20, strokeWidth = 2, title, style, ...rest }) {
+/* Sin `...rest` en el patrón de parámetros: Babel-en-el-navegador lo compila a un
+   helper `const _excluded` en scope global, y dos archivos que lo declaren chocan
+   con «Identifier '_excluded' has already been declared» — el segundo no se ejecuta. */
+function KIcon(props) {
+  const { name, size = 20, strokeWidth = 2, title, style } = props;
+  const rest = Object.assign({}, props);
+  delete rest.name; delete rest.size; delete rest.strokeWidth; delete rest.title; delete rest.style;
   const core = CoreIcon ? CoreIcon({ name, size, strokeWidth, title, style, ...rest }) : null;
   if (core) return core;
   const inner = POS_ICON_PATHS[name];

@@ -47,7 +47,12 @@ const CK_ICON_PATHS = {
   'receipt': '<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/>',
   'plus-circle': '<circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/>',
 };
-function CkIcon({ name, size = 20, strokeWidth = 2, title, style, ...rest }) {
+/* Ver la nota en pos-kit.jsx/KIcon: `...rest` en el patrón de parámetros genera un
+   `const _excluded` global y choca con el de los otros archivos del kit. */
+function CkIcon(props) {
+  const { name, size = 20, strokeWidth = 2, title, style } = props;
+  const rest = Object.assign({}, props);
+  delete rest.name; delete rest.size; delete rest.strokeWidth; delete rest.title; delete rest.style;
   const core = window.PosIcon ? window.PosIcon({ name, size, strokeWidth, title, style, ...rest }) : null;
   if (core) return core;
   const inner = CK_ICON_PATHS[name];
