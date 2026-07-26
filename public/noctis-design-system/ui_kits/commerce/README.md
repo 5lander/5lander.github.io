@@ -1,74 +1,69 @@
-# UI kit — commerce (Shell + Productos)
+# UI kit — commerce (Demo navegable)
 
 Piel de la app **commerce** sobre el núcleo Noctis. Consume los tokens y componentes
-del sistema (`window.NoctisCommerceDesignSystem_4dfd35`) **sin redefinir nada**:
-cero tokens nuevos, cero colores/tipografías inventados. Corte acotado a propósito:
-**SHELL + módulo PRODUCTOS**. No dibuja POS, Clientes, Precios, Inventario ni Facturación.
+del sistema (`window.NoctisCommerceDesignSystem_4dfd35`) **sin redefinir nada**: cero
+tokens nuevos, cero colores/tipografías inventados.
+
+La única app viva —y el único card `@dsCard` del kit— es **`demo.html`**: una sola SPA
+navegable para clientes PYME (**Login → Elegir workspace → Shell**). Reconcilia los cortes
+previos (Shell+Productos, POS-a/POS-b/POS-c) en un solo flujo. Las builds anteriores se
+conservan como referencia en **`_historico/`** (ya no son cards ni se cargan).
 
 ## Qué distingue a commerce
 - **Themeable por tenant.** El acento del tenant viaja como par `{--brand-primary,
-  --brand-foreground}` curado por el clamp de curaduría de tres dimensiones —luminancia
-  (L ∈ [0,45–0,82]; < 0,18 → foreground near-white, ≥ 0,18 → near-black), croma (≤ 0,12) y
-  matiz en **hue OKLCH** (perceptualmente uniforme, no HSL): Δhue ≥ 25° del **foreground
-  (`-fg`)** de cada semántico en ambos modos (peligro 28–30°, atención 54–73°, éxito
-  152–154°, info/link/foco 252–257°; los `-bg`/`-border` son lavados casi blancos que no
-  compiten). Ventanas de hue permitidas: 98–127° (oro) · 179–227° (teal) · 282–3° (violeta),
-  para que marca y estado no se confundan— y aparece SOLO en
-  cuatro puntos: botón primario, nav activo, foco y selección. El resto del chrome es
-  neutro de casa. Tres tenants demuestran el par: Aguilar (violeta, fg blanco), San Rafael
-  (teal, fg blanco), El Rincón (oro, **fg near-black** — el caso del clamp).
-- **Modo claro/oscuro** como preferencia de usuario, en el chrome. Ambos completos.
+  --brand-foreground}` curado por el clamp de tres dimensiones —luminancia (< 0,18 →
+  foreground near-white; ≥ 0,18 → near-black), croma (≤ 0,12) y matiz en **hue OKLCH**
+  con Δhue ≥ 25° de cada semántico— y aparece SOLO en cuatro puntos: botón primario, nav
+  activo, foco y selección. El resto del chrome es neutro de casa. Tres tenants demuestran
+  el par: Aguilar (violeta, fg blanco), San Rafael (teal, fg blanco), El Rincón (oro, **fg
+  near-black** — el caso del clamp).
+- **Modo claro/oscuro** completo y **doble densidad** (Desktop / Táctil) para la venta.
+- **Un solo universo de producto:** el catálogo vendible del POS se DERIVA de los productos
+  madre ACTIVOS. Lo que muestra Productos es exactamente lo que vende el POS.
 
-## Flujo (`index.html`)
-Click-through de shell + Productos. La **barra de Prototipo** superior (andamiaje tipo
-Storybook — no es chrome de la app) recorre los ejes y estados:
-- **Tenant** → cambia el acento en vivo (par primary+foreground).
-- **Perfil** (admin · bodeguero · vendedor · cajero · contador) → gating en tres capas:
-  sidebar (módulo visible con ≥1 permiso) → sección (fail-closed: bounce a /dashboard al
-  perder el permiso) → CTA (se ocultan, no se deshabilitan). Bodeguero/admin editan;
-  vendedor/cajero solo lectura.
-- **Estado** de la lista o de la sección embebida: datos · cargando (Skeleton) · vacío
-  (EmptyState) · error (errorId + reintento) · 403.
+## Flujo (`demo.html`)
+La **barra de Prototipo** superior (andamiaje tipo Storybook — no es chrome de la app)
+recorre los ejes: **Tenant** (acento en vivo), **Perfil** (gating en 3 capas: sidebar →
+sección → CTA), **Densidad**, **Turno de caja**, **Estado** de Productos y **Escritura**
+(éxito/falla del cobro y del cierre).
 
-### Pantallas
-- **Dashboard** — placeholder digno (bienvenida + accesos), sin KPIs falsos (Fase 2).
-- **/productos** — Table (estado · nombre · categoría · creado), filtro de estado
-  server-side + búsqueda por nombre client-side (deuda señalada) + "Cargar más" keyset.
-- **/productos/nuevo · /[id]/editar** — form (nombre · categoría por **Combobox**, nunca
-  UUID · IVA · descripción); error por campo + banner root (Alert) para el 404 de categoría.
-- **/productos/[id]** — detalle madre + Descontinuar (confirm inline 2 pasos; 409 si
-  terminal) + **VariantsSection** embebida (lista keyset, no el picker en cascada).
-- **/productos/[id]/variantes** — CRUD de variante + **BarcodesSection**: pill "primario",
-  editar / fijar-primario / eliminar con confirm inline 2 pasos por fila, y **tres 409
-  diferenciados**: duplicado → banner root; carrera de primario y borrar-el-primario →
-  Alert por fila.
-- **barcodes/nuevo · editar** — alta/edición simple (código, etiqueta).
+### Módulos
+- **POS** (Vender) — **modo inmersivo** del shell: entrada automática; «Salir de venta»
+  recupera las barras SIN cancelar la venta (el carrito sobrevive con LiveSalePill + badge
+  «En curso»). Área de venta = búsqueda (izquierda) + carrito/pago (columna par, no
+  sidebar); el ancho del área se capa en monitores anchos para no estirarse de más. El
+  **IVA lo aplica el negocio** (config de empresa/tenant), no la línea. **Cliente:**
+  Consumidor Final de un toque (camino rápido) + picker de registrados **con alta inline**
+  —el POS crea el cliente en el mismo Sheet (identificación es-EC, nombre, celular, correo,
+  dirección; validación por campo) y lo deja como cliente activo de la venta.
+- **Productos** — módulo completo: lista (4 estados + 403) → detalle madre → variante →
+  código de barras. El form de producto NO pide IVA (es config de negocio, no atributo por
+  producto). Categoría por Combobox (nunca UUID); Descontinuar con confirm inline 2 pasos.
+- **Contabilidad** — Cierre de caja (abrir/cerrar turno, arqueo, diferencia).
+- **Resto de módulos** — visibles pero «Pronto» (informativos): el hueco se señala, no se
+  inventa.
 
 ## Restricciones aplicadas
-Sin Dialog (destructivas = confirm inline 2 pasos) · display_name en español, nunca UUID ·
-keyset sin números de página · formatos es-EC (DD/MM/YYYY, $1.234,56) · sin emoji · AA en
-ambos modos, focus-visible, aria-labels.
+Solo tokens (`hsl(var(--…))`), cero tokens/colores nuevos · acento quirúrgico en 4 puntos ·
+sin Dialog (destructivas y overlays = Sheet del núcleo / confirm inline 2 pasos) ·
+display_name en español, nunca UUID · keyset sin números de página · formatos es-EC
+(usted, DD/MM/YYYY, $1.234,56) · sin emoji · densidad táctil en el POS · AA en ambos modos,
+focus-visible, aria-labels.
 
-## Iconografía (decisión de sistema, repuesta)
-El sidebar usa el componente `Icon` del núcleo (Lucide, line, un peso) por id de módulo, en vista
-expandida y colapsada — el mismo set y mapa que heredará backoffice (Productos = package, Precios
-= tag, Clientes = users, Facturación SRI = file-text…). Se descartó el monograma por inicial:
-con ~12 módulos las iniciales colisionan (Productos/Precios = P; Clientes/Compras/Contabilidad =
-C), lo que rompe la orientación justo al colapsar. El Shell primitivo del núcleo es display-only;
-commerce replica su contrato visual y lo extiende con la interacción que el prototipo necesita
-(nav clickable/colapsable, CompanySelector, slot de branch reservado).
-
-## A mirar en v3 (no acción ahora)
-- **Ancho del Sheet centrado (~520px).** El primitivo Sheet del núcleo topa el modo centrado
-  en `min(520px, …)`. Alcanza para el cobro efectivo actual (POS-b). Si en v3 el cobro
-  multi-método (Deuna/QR, tarjeta) crece en ancho, revisar ahí el techo del Sheet. No se
-  amplía ahora: sería sobre-diseño por un caso que todavía no existe.
-
-## Archivos
-- `index.html` — monta `window.CommerceApp` sobre el bundle del sistema.
-- `data.js` — tenants, perfiles/permisos, nav, categorías, productos, variantes, códigos.
-- `kit.jsx` — gating, confirm inline 2 pasos, y los cuatro estados del kit.
-- `shell.jsx` — CommerceShell, CompanySelector, sidebar por permisos, Dashboard.
+## Archivos (raíz de `commerce`)
+- `demo.html` — monta la SPA sobre el bundle del sistema (**único card**).
+- `data.js` — `window.CommerceData` (tenants·perfiles·nav·catálogo madre·variantes·códigos)
+  Y `window.PosData` (catálogo vendible·carrito·clientes·IVA de negocio) sobre las mismas
+  estructuras.
+- `kit.jsx` — gating, confirm inline 2 pasos, los cuatro estados del kit.
+- `pos-kit.jsx`, `pos-search.jsx`, `pos-customer.jsx`, `pos-cart.jsx`, `pos-checkout.jsx`,
+  `pos-caja.jsx` — el ambiente de venta y el cierre de caja.
 - `productos.jsx` — lista · form · detalle madre · VariantsSection.
 - `variantes.jsx` — variante (nuevo/detalle/editar) · BarcodesSection · form de código.
-- `app.jsx` — orquestador, router de vistas y barra de Prototipo.
+- `demo-app.jsx` — orquestador, router de módulos y barra de Prototipo.
+
+## Histórico (`_historico/`, referencia — no cards)
+`index.html` + `app.jsx` + `shell.jsx` (corte Shell+Productos); `pos.html`/`pos-app.jsx`,
+`pos-b.html`/`pos-b-app.jsx`, `pos-c.html`/`pos-c-app.jsx`, `pos-shell.jsx` (cortes POS
+pre-unificación); `pos-data.js` (redundante: `data.js` ya expone `PosData`). Reconciliados
+dentro de `demo.html`; se conservan sin marcador `@dsCard`.

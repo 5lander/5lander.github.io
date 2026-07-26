@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"NoctisCommerceDesignSystem_4dfd35","components":[{"name":"Badge","sourcePath":"components/data-display/Badge.jsx"},{"name":"MoneyDisplay","sourcePath":"components/data-display/MoneyDisplay.jsx"},{"name":"Table","sourcePath":"components/data-display/Table.jsx"},{"name":"Timeline","sourcePath":"components/data-display/Timeline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"EmptyState","sourcePath":"components/feedback/EmptyState.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Button","sourcePath":"components/forms/Button.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Combobox","sourcePath":"components/forms/Combobox.jsx"},{"name":"DatePicker","sourcePath":"components/forms/DatePicker.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Icon","sourcePath":"components/iconography/Icon.jsx"},{"name":"Card","sourcePath":"components/layout/Card.jsx"},{"name":"Shell","sourcePath":"components/layout/Shell.jsx"},{"name":"Wordmark","sourcePath":"components/layout/Wordmark.jsx"},{"name":"ModeToggle","sourcePath":"components/navigation/ModeToggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Sheet","sourcePath":"components/overlay/Sheet.jsx"},{"name":"NumericKeypad","sourcePath":"components/pos/NumericKeypad.jsx"}],"sourceHashes":{"components/data-display/Badge.jsx":"25a7fb1b64e3","components/data-display/MoneyDisplay.jsx":"2f4dae46688b","components/data-display/Table.jsx":"8c720d16d915","components/data-display/Timeline.jsx":"c3ac3b773de9","components/feedback/Alert.jsx":"8a6e89ba316f","components/feedback/EmptyState.jsx":"3c7a9301b2bd","components/feedback/Skeleton.jsx":"04d65fae5c90","components/feedback/Spinner.jsx":"b64ec7ae6b47","components/feedback/Toast.jsx":"45441bedd9bb","components/forms/Button.jsx":"78701d750c48","components/forms/Checkbox.jsx":"1ed8440def87","components/forms/Combobox.jsx":"19a57ec336a1","components/forms/DatePicker.jsx":"f90957b0b3cb","components/forms/Input.jsx":"e6a42c15214e","components/forms/Select.jsx":"39c61256924f","components/forms/Switch.jsx":"905a663a35d0","components/iconography/Icon.jsx":"7b918685602e","components/layout/Card.jsx":"36be9be38d56","components/layout/Shell.jsx":"e9b77765c65b","components/layout/Wordmark.jsx":"f2888ae0a58c","components/navigation/ModeToggle.jsx":"cecea0559d66","components/navigation/Tabs.jsx":"7944b66d11ea","components/overlay/Sheet.jsx":"3ae3491d73e9","components/pos/NumericKeypad.jsx":"a61f123f6cd0","ui_kits/backoffice/app.jsx":"6a475aa30d38","ui_kits/backoffice/catalogo.jsx":"9e5cc0771c64","ui_kits/backoffice/data.js":"878a1d654355","ui_kits/backoffice/kit.jsx":"0612013ffc6b","ui_kits/backoffice/shell.jsx":"26ce4bd7de01","ui_kits/backoffice/tenants.jsx":"2e244e678674","ui_kits/commerce/app.jsx":"46aa37ca69a1","ui_kits/commerce/data.js":"6bd2aa21e1c0","ui_kits/commerce/kit.jsx":"9cb7ca50ca8c","ui_kits/commerce/pos-app.jsx":"fbb53bf2a46f","ui_kits/commerce/pos-b-app.jsx":"08f6dedcf1ab","ui_kits/commerce/pos-cart.jsx":"5c0928d81589","ui_kits/commerce/pos-checkout.jsx":"4b0961a2a1f6","ui_kits/commerce/pos-customer.jsx":"37b279c70f76","ui_kits/commerce/pos-data.js":"4c2ce1da3f1f","ui_kits/commerce/pos-kit.jsx":"7427558ed197","ui_kits/commerce/pos-search.jsx":"c75329f32845","ui_kits/commerce/pos-shell.jsx":"b5a9b9237f30","ui_kits/commerce/productos.jsx":"756db1e07e54","ui_kits/commerce/shell.jsx":"94a8a4828fb0","ui_kits/commerce/variantes.jsx":"68b0cdd925be","ui_kits/core/screens.jsx":"4d57c180e6e1"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"NoctisCommerceDesignSystem_4dfd35","components":[{"name":"Badge","sourcePath":"components/data-display/Badge.jsx"},{"name":"MoneyDisplay","sourcePath":"components/data-display/MoneyDisplay.jsx"},{"name":"Table","sourcePath":"components/data-display/Table.jsx"},{"name":"Timeline","sourcePath":"components/data-display/Timeline.jsx"},{"name":"Alert","sourcePath":"components/feedback/Alert.jsx"},{"name":"EmptyState","sourcePath":"components/feedback/EmptyState.jsx"},{"name":"Skeleton","sourcePath":"components/feedback/Skeleton.jsx"},{"name":"Spinner","sourcePath":"components/feedback/Spinner.jsx"},{"name":"Toast","sourcePath":"components/feedback/Toast.jsx"},{"name":"Button","sourcePath":"components/forms/Button.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Combobox","sourcePath":"components/forms/Combobox.jsx"},{"name":"DatePicker","sourcePath":"components/forms/DatePicker.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"Switch","sourcePath":"components/forms/Switch.jsx"},{"name":"Icon","sourcePath":"components/iconography/Icon.jsx"},{"name":"Card","sourcePath":"components/layout/Card.jsx"},{"name":"Shell","sourcePath":"components/layout/Shell.jsx"},{"name":"Wordmark","sourcePath":"components/layout/Wordmark.jsx"},{"name":"ModeToggle","sourcePath":"components/navigation/ModeToggle.jsx"},{"name":"Tabs","sourcePath":"components/navigation/Tabs.jsx"},{"name":"Sheet","sourcePath":"components/overlay/Sheet.jsx"},{"name":"NumericKeypad","sourcePath":"components/pos/NumericKeypad.jsx"}],"sourceHashes":{"components/data-display/Badge.jsx":"25a7fb1b64e3","components/data-display/MoneyDisplay.jsx":"2f4dae46688b","components/data-display/Table.jsx":"8c720d16d915","components/data-display/Timeline.jsx":"c3ac3b773de9","components/feedback/Alert.jsx":"8a6e89ba316f","components/feedback/EmptyState.jsx":"3c7a9301b2bd","components/feedback/Skeleton.jsx":"04d65fae5c90","components/feedback/Spinner.jsx":"b64ec7ae6b47","components/feedback/Toast.jsx":"45441bedd9bb","components/forms/Button.jsx":"78701d750c48","components/forms/Checkbox.jsx":"1ed8440def87","components/forms/Combobox.jsx":"19a57ec336a1","components/forms/DatePicker.jsx":"f90957b0b3cb","components/forms/Input.jsx":"e6a42c15214e","components/forms/Select.jsx":"39c61256924f","components/forms/Switch.jsx":"905a663a35d0","components/iconography/Icon.jsx":"7b918685602e","components/layout/Card.jsx":"36be9be38d56","components/layout/Shell.jsx":"e9b77765c65b","components/layout/Wordmark.jsx":"f2888ae0a58c","components/navigation/ModeToggle.jsx":"cecea0559d66","components/navigation/Tabs.jsx":"7944b66d11ea","components/overlay/Sheet.jsx":"3ae3491d73e9","components/pos/NumericKeypad.jsx":"a61f123f6cd0","ui_kits/backoffice/app.jsx":"6a475aa30d38","ui_kits/backoffice/catalogo.jsx":"9e5cc0771c64","ui_kits/backoffice/data.js":"878a1d654355","ui_kits/backoffice/kit.jsx":"0612013ffc6b","ui_kits/backoffice/shell.jsx":"26ce4bd7de01","ui_kits/backoffice/tenants.jsx":"2e244e678674","ui_kits/commerce/_historico/app.jsx":"46aa37ca69a1","ui_kits/commerce/_historico/pos-app.jsx":"fbb53bf2a46f","ui_kits/commerce/_historico/pos-b-app.jsx":"08f6dedcf1ab","ui_kits/commerce/_historico/pos-c-app.jsx":"aae42173bd51","ui_kits/commerce/_historico/pos-data.js":"4c2ce1da3f1f","ui_kits/commerce/_historico/pos-shell.jsx":"b5a9b9237f30","ui_kits/commerce/_historico/shell.jsx":"94a8a4828fb0","ui_kits/commerce/client-form.jsx":"14c57ca7ca7e","ui_kits/commerce/clientes.jsx":"9f3a2da3ffe7","ui_kits/commerce/data.js":"580e294c342a","ui_kits/commerce/demo-app.jsx":"642f387a0eb5","ui_kits/commerce/kit.jsx":"9cb7ca50ca8c","ui_kits/commerce/pos-caja.jsx":"c8044888cf62","ui_kits/commerce/pos-cart.jsx":"5c0928d81589","ui_kits/commerce/pos-checkout.jsx":"4b0961a2a1f6","ui_kits/commerce/pos-customer.jsx":"6e585956394d","ui_kits/commerce/pos-kit.jsx":"7427558ed197","ui_kits/commerce/pos-search.jsx":"c75329f32845","ui_kits/commerce/productos.jsx":"a64df2c6311e","ui_kits/commerce/variantes.jsx":"68b0cdd925be","ui_kits/core/screens.jsx":"4d57c180e6e1"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -5215,7 +5215,7 @@ Object.assign(window, {
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/backoffice/tenants.jsx", error: String((e && e.message) || e) }); }
 
-// ui_kits/commerce/app.jsx
+// ui_kits/commerce/_historico/app.jsx
 try { (() => {
 /* Noctis · commerce — ORQUESTADOR del prototipo. Router de vistas, ejes en vivo
    (MODO por usuario, MARCA por tenant como par {primary,foreground}), gating en
@@ -5799,779 +5799,9 @@ function PrototypeBar({
 }
 window.CommerceApp = CommerceApp;
 ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(CommerceApp, null));
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/app.jsx", error: String((e && e.message) || e) }); }
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/app.jsx", error: String((e && e.message) || e) }); }
 
-// ui_kits/commerce/data.js
-try { (() => {
-/* Noctis · commerce — datos mock del prototipo. Solo shell + Productos.
-   display_name en español siempre; el UUID/code nunca se muestra en la UI. */
-(function () {
-  /* Tenants: cada acento viaja como PAR {primary, foreground} curado por el clamp de
-     curaduría de 3 dim (luminancia · croma · hue OKLCH ≥ 25° del -fg de cada semántico
-     en ambos modos: peligro 28–30, atención 54–73, éxito 152–154, info/link 252–257;
-     -bg/-border son lavados casi blancos que no compiten → ventanas 98–127/179–227/282–3).
-     Nunca se inyecta primary sin foreground. */
-  const TENANTS = {
-    aguilar: {
-      id: 'aguilar',
-      name: 'Librería Aguilar',
-      legal: 'Librería Aguilar S.A. · RUC 1790012345001',
-      initials: 'LA',
-      product: 'commerce',
-      // violeta (hue OKLCH 293°, Δ36° de info/link): luminancia < 0,18 → foreground near-white
-      accent: '262 60% 42%',
-      fg: '0 0% 100%',
-      accentName: 'Violeta corporativo',
-      empresas: [{
-        id: 'e1',
-        name: 'Librería Aguilar S.A.',
-        legal: 'Librería Aguilar S.A. · RUC 1790012345001'
-      }, {
-        id: 'e2',
-        name: 'Distribuidora Aguilar Cía. Ltda.',
-        legal: 'Distribuidora Aguilar Cía. Ltda. · RUC 1791122334001'
-      }]
-    },
-    sanrafael: {
-      id: 'sanrafael',
-      name: 'Farmacia San Rafael',
-      legal: 'Farmacia San Rafael · RUC 0990554433001',
-      initials: 'FS',
-      product: 'commerce',
-      // teal (hue OKLCH 202°, Δ48° de éxito): luminancia < 0,18 → foreground near-white
-      accent: '184 72% 26%',
-      fg: '0 0% 100%',
-      accentName: 'Teal salud',
-      empresas: [{
-        id: 'e1',
-        name: 'Farmacia San Rafael',
-        legal: 'Farmacia San Rafael · RUC 0990554433001'
-      }]
-    },
-    rincon: {
-      id: 'rincon',
-      name: 'El Rincón Ferretero',
-      legal: 'El Rincón Ferretero Cía. Ltda. · RUC 1792233445001',
-      initials: 'RF',
-      product: 'commerce',
-      // oro (hue OKLCH 102°, Δ29° de atención en ambos modos): luminancia >= 0,18 → foreground near-BLACK (el par lo demuestra)
-      accent: '54 85% 46%',
-      fg: '240 6% 12%',
-      accentName: 'Oro (foreground near-black)',
-      empresas: [{
-        id: 'e1',
-        name: 'El Rincón Ferretero — Matriz',
-        legal: 'El Rincón Ferretero Cía. Ltda. · RUC 1792233445001'
-      }, {
-        id: 'e2',
-        name: 'El Rincón — Sucursal Sur',
-        legal: 'El Rincón Ferretero Cía. Ltda. · RUC 1792233445001'
-      }]
-    }
-  };
-
-  /* Perfiles y sus permisos EFECTIVOS. El sidebar muestra un módulo solo si el
-     usuario tiene >= 1 permiso bajo él; las CTA se ocultan (no se deshabilitan). */
-  const PROFILES = {
-    admin: {
-      label: 'Administrador',
-      email: 'agustina@aguilar.ec',
-      perms: ['productos.read', 'productos.write', 'categorias', 'inventario', 'compras', 'precios', 'facturacion', 'clientes', 'ventas', 'pos', 'reportes', 'config.empresa', 'config.usuarios']
-    },
-    bodeguero: {
-      label: 'Bodeguero',
-      email: 'bodega@aguilar.ec',
-      perms: ['productos.read', 'productos.write', 'categorias', 'inventario', 'compras']
-    },
-    vendedor: {
-      label: 'Vendedor',
-      email: 'ventas@aguilar.ec',
-      perms: ['productos.read', 'ventas', 'pos', 'clientes']
-    },
-    cajero: {
-      label: 'Cajero',
-      email: 'caja@aguilar.ec',
-      perms: ['ventas', 'pos']
-    },
-    contador: {
-      label: 'Contador',
-      email: 'contable@aguilar.ec',
-      perms: ['precios', 'facturacion', 'reportes', 'clientes']
-    }
-  };
-
-  /* Estructura de navegación por afinidad. `built` marca lo realmente construido
-     en este corte (solo Productos); el resto es visible-pero-Pronto si hay permiso. */
-  const NAV = [{
-    section: 'Vender',
-    items: [{
-      id: 'pos',
-      label: 'POS',
-      perm: 'pos',
-      built: false
-    }, {
-      id: 'ventas',
-      label: 'Ventas',
-      perm: 'ventas',
-      built: false
-    }]
-  }, {
-    section: 'Catálogo',
-    items: [{
-      id: 'productos',
-      label: 'Productos',
-      perm: 'productos.read',
-      built: true,
-      children: [{
-        id: 'productos',
-        label: 'Todos'
-      }]
-    }, {
-      id: 'categorias',
-      label: 'Categorías',
-      perm: 'categorias',
-      built: false
-    }]
-  }, {
-    section: 'Suministro',
-    items: [{
-      id: 'inventario',
-      label: 'Inventario',
-      perm: 'inventario',
-      built: false
-    }, {
-      id: 'compras',
-      label: 'Compras',
-      perm: 'compras',
-      built: false
-    }]
-  }, {
-    section: 'Dinero',
-    items: [{
-      id: 'precios',
-      label: 'Precios',
-      perm: 'precios',
-      built: false
-    }, {
-      id: 'facturacion',
-      label: 'Facturación',
-      perm: 'facturacion',
-      built: false
-    }, {
-      id: 'clientes',
-      label: 'Clientes',
-      perm: 'clientes',
-      built: false
-    }]
-  }, {
-    section: 'Gestión',
-    items: [{
-      id: 'reportes',
-      label: 'Reportes',
-      perm: 'reportes',
-      built: false
-    }]
-  }, {
-    section: 'Configuración',
-    items: [{
-      id: 'config.empresa',
-      label: 'Empresa',
-      perm: 'config.empresa',
-      built: false
-    }, {
-      id: 'config.usuarios',
-      label: 'Usuarios',
-      perm: 'config.usuarios',
-      built: false
-    }]
-  }];
-  const CATEGORIAS = [{
-    value: 'c-pap',
-    label: 'Papelería',
-    meta: '18 productos'
-  }, {
-    value: 'c-esc',
-    label: 'Escritura',
-    meta: '42 productos'
-  }, {
-    value: 'c-ofi',
-    label: 'Oficina',
-    meta: '9 productos'
-  }, {
-    value: 'c-esc2',
-    label: 'Escolar',
-    meta: '31 productos'
-  }, {
-    value: 'c-art',
-    label: 'Arte y manualidades',
-    meta: '12 productos'
-  }, {
-    value: 'c-tec',
-    label: 'Tecnología',
-    meta: '7 productos'
-  }];
-
-  /* Productos (madre). estado: activo | borrador | descontinuado (terminal).
-     'in_transit' es un estado de TRANSFERENCIA DE INVENTARIO (otro módulo) — nunca de producto. */
-  const PRODUCTS = [{
-    id: 'p1',
-    nombre: 'Cuaderno universitario 100 hojas',
-    categoria: 'c-pap',
-    categoriaLabel: 'Papelería',
-    iva: '15',
-    estado: 'activo',
-    creado: '04/03/2026',
-    descripcion: 'Cuaderno cosido, cuadros 1 cm, tapa dura.'
-  }, {
-    id: 'p2',
-    nombre: 'Esferográfico azul punta media',
-    categoria: 'c-esc',
-    categoriaLabel: 'Escritura',
-    iva: '15',
-    estado: 'activo',
-    creado: '11/02/2026',
-    descripcion: 'Tinta de secado rápido, cuerpo hexagonal.'
-  }, {
-    id: 'p3',
-    nombre: 'Marcador permanente negro',
-    categoria: 'c-esc',
-    categoriaLabel: 'Escritura',
-    iva: '15',
-    estado: 'borrador',
-    creado: '19/06/2026',
-    descripcion: ''
-  }, {
-    id: 'p4',
-    nombre: 'Resma papel bond A4 75 g',
-    categoria: 'c-pap',
-    categoriaLabel: 'Papelería',
-    iva: '15',
-    estado: 'activo',
-    creado: '28/05/2026',
-    descripcion: '500 hojas, blancura 96%.'
-  }, {
-    id: 'p5',
-    nombre: 'Carpeta archivador palanca oficio',
-    categoria: 'c-ofi',
-    categoriaLabel: 'Oficina',
-    iva: '15',
-    estado: 'activo',
-    creado: '02/01/2026',
-    descripcion: 'Lomo 7 cm, cartón forrado.'
-  }, {
-    id: 'p6',
-    nombre: 'Caja de grapas 26/6',
-    categoria: 'c-ofi',
-    categoriaLabel: 'Oficina',
-    iva: '15',
-    estado: 'descontinuado',
-    creado: '15/11/2025',
-    descripcion: 'Caja x 5.000 unidades.'
-  }, {
-    id: 'p7',
-    nombre: 'Set 12 lápices de colores',
-    categoria: 'c-art',
-    categoriaLabel: 'Arte y manualidades',
-    iva: '15',
-    estado: 'activo',
-    creado: '21/04/2026',
-    descripcion: 'Mina resistente, colores vivos.'
-  }, {
-    id: 'p8',
-    nombre: 'Corrector líquido 20 ml',
-    categoria: 'c-esc',
-    categoriaLabel: 'Escritura',
-    iva: '15',
-    estado: 'activo',
-    creado: '09/03/2026',
-    descripcion: 'Aplicador de punta metálica.'
-  }];
-
-  /* Variantes por producto (madre). */
-  const VARIANTS = {
-    p1: [{
-      id: 'v1',
-      nombre: 'Cuadros',
-      sku: 'CUA-100-CUAD',
-      atributos: 'Rayado: cuadros · Color tapa: azul',
-      creado: '04/03/2026'
-    }, {
-      id: 'v2',
-      nombre: 'Líneas',
-      sku: 'CUA-100-LIN',
-      atributos: 'Rayado: líneas · Color tapa: rojo',
-      creado: '04/03/2026'
-    }, {
-      id: 'v3',
-      nombre: 'Cuadros grande',
-      sku: 'CUA-100-CUAD-G',
-      atributos: 'Rayado: cuadros 1 cm · Color tapa: verde',
-      creado: '06/03/2026'
-    }],
-    p2: [{
-      id: 'v4',
-      nombre: 'Azul',
-      sku: 'ESF-PM-AZ',
-      atributos: 'Color tinta: azul',
-      creado: '11/02/2026'
-    }, {
-      id: 'v5',
-      nombre: 'Negro',
-      sku: 'ESF-PM-NE',
-      atributos: 'Color tinta: negro',
-      creado: '11/02/2026'
-    }],
-    p7: [{
-      id: 'v6',
-      nombre: 'Estuche cartón',
-      sku: 'LAP-12-CART',
-      atributos: 'Empaque: cartón',
-      creado: '21/04/2026'
-    }]
-  };
-
-  /* Códigos de barras por variante. primary = código primario. */
-  const BARCODES = {
-    v1: [{
-      id: 'b1',
-      codigo: '7861234567890',
-      etiqueta: 'EAN caja',
-      primary: true
-    }, {
-      id: 'b2',
-      codigo: '7861234500017',
-      etiqueta: 'EAN unidad',
-      primary: false
-    }],
-    v4: [{
-      id: 'b3',
-      codigo: '7862220001114',
-      etiqueta: 'EAN unidad',
-      primary: true
-    }],
-    v5: []
-  };
-  const IVA_OPTIONS = [{
-    value: '0',
-    label: 'IVA 0%'
-  }, {
-    value: '5',
-    label: 'IVA 5%'
-  }, {
-    value: '15',
-    label: 'IVA 15%'
-  }];
-  const ESTADO_META = {
-    activo: {
-      tone: 'success',
-      dot: true,
-      label: 'Activo'
-    },
-    borrador: {
-      tone: 'neutral',
-      dot: false,
-      label: 'Borrador'
-    },
-    descontinuado: {
-      tone: 'terminal',
-      dot: false,
-      label: 'Descontinuado'
-    }
-  };
-  window.CommerceData = {
-    TENANTS,
-    PROFILES,
-    NAV,
-    CATEGORIAS,
-    PRODUCTS,
-    VARIANTS,
-    BARCODES,
-    IVA_OPTIONS,
-    ESTADO_META
-  };
-})();
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/data.js", error: String((e && e.message) || e) }); }
-
-// ui_kits/commerce/kit.jsx
-try { (() => {
-/* Noctis · commerce — kit compartido del prototipo: helpers de gating, confirm
-   inline de 2 pasos, y los CUATRO estados por pantalla (vacío · cargando · error
-   · 403) construidos SOBRE los primitivos del núcleo. No reimplementa primitivos. */
-const NS = window.NoctisCommerceDesignSystem_4dfd35;
-const {
-  Button,
-  Badge,
-  Card,
-  Alert,
-  EmptyState,
-  Skeleton,
-  Spinner,
-  Table
-} = NS;
-
-/* ── gating ───────────────────────────────────────────────────────────────
-   Tres capas: sidebar (módulo con >=1 permiso) → sección (fail-closed: bounce a
-   /dashboard) → pantalla/CTA (ocultar, no deshabilitar). */
-const can = (profile, perm) => !perm || profile.perms.includes(perm);
-
-/* ── micro-label de sección (VENDER, MODO) — mayúsculas + tracking ─────────── */
-function MicroLabel({
-  children,
-  style
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      textTransform: 'uppercase',
-      letterSpacing: '.09em',
-      color: 'hsl(var(--text-tertiary))',
-      fontWeight: 600,
-      ...style
-    }
-  }, children);
-}
-
-/* ── breadcrumb ───────────────────────────────────────────────────────────── */
-function Crumbs({
-  items
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 6,
-      fontSize: 12,
-      color: 'hsl(var(--text-tertiary))',
-      marginBottom: 10,
-      flexWrap: 'wrap'
-    }
-  }, items.map((c, i) => /*#__PURE__*/React.createElement(React.Fragment, {
-    key: i
-  }, i > 0 && /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true"
-  }, "\u203A"), c.onClick ? /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: c.onClick,
-    style: {
-      border: 0,
-      background: 'none',
-      padding: 0,
-      cursor: 'pointer',
-      color: 'hsl(var(--link))',
-      font: 'inherit'
-    }
-  }, c.label) : /*#__PURE__*/React.createElement("span", {
-    style: i === items.length - 1 ? {
-      color: 'hsl(var(--text-secondary))'
-    } : undefined
-  }, c.label))));
-}
-
-/* ── encabezado de página ─────────────────────────────────────────────────── */
-function PageHeader({
-  title,
-  meta,
-  actions
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'flex-start',
-      justifyContent: 'space-between',
-      gap: 16,
-      marginBottom: 16,
-      flexWrap: 'wrap'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement("h1", {
-    style: {
-      font: '600 24px/30px var(--font-ui)',
-      letterSpacing: '-.015em',
-      margin: 0
-    }
-  }, title), meta && /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 6,
-      display: 'flex',
-      alignItems: 'center',
-      gap: 10,
-      flexWrap: 'wrap',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 13
-    }
-  }, meta)), actions && /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      gap: 8,
-      flexShrink: 0
-    }
-  }, actions));
-}
-
-/* ── confirm inline de 2 pasos (destructivas) — NUNCA Dialog ────────────────
-   Paso 1: botón peligro-fantasma. Paso 2 (armado): pregunta + confirmar/cancelar
-   en la misma fila/Card. `pending` muestra spinner en confirmar. */
-function ConfirmInline({
-  label,
-  question,
-  confirmLabel = 'Confirmar',
-  onConfirm,
-  pending,
-  size = 'sm',
-  tone = 'danger',
-  compact
-}) {
-  const [armed, setArmed] = React.useState(false);
-  if (!armed) {
-    return /*#__PURE__*/React.createElement(Button, {
-      variant: tone === 'danger' ? 'danger-ghost' : 'ghost',
-      size: size,
-      onClick: () => setArmed(true)
-    }, label);
-  }
-  return /*#__PURE__*/React.createElement("div", {
-    role: "group",
-    "aria-label": question,
-    style: {
-      display: 'inline-flex',
-      alignItems: 'center',
-      gap: 8,
-      flexWrap: 'wrap'
-    }
-  }, !compact && /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 12,
-      color: 'hsl(var(--text-secondary))'
-    }
-  }, question), /*#__PURE__*/React.createElement(Button, {
-    variant: tone === 'danger' ? 'danger' : 'primary',
-    size: size,
-    loading: pending,
-    onClick: () => onConfirm && onConfirm(() => setArmed(false))
-  }, confirmLabel), /*#__PURE__*/React.createElement(Button, {
-    variant: "ghost",
-    size: size,
-    disabled: pending,
-    onClick: () => setArmed(false)
-  }, "Cancelar"));
-}
-
-/* ── KIT DE ESTADOS ─────────────────────────────────────────────────────────
-   Cargando: Skeleton para listas/tablas. */
-function TableSkeleton({
-  columns,
-  rows = 5
-}) {
-  const skRows = Array.from({
-    length: rows
-  }, () => Object.fromEntries(columns.map(c => [c.key, /*#__PURE__*/React.createElement(Skeleton, {
-    variant: c.pill ? 'pill' : 'line',
-    width: c.w || '80%'
-  })])));
-  return /*#__PURE__*/React.createElement(Table, {
-    columns: columns,
-    rows: skRows,
-    footNote: /*#__PURE__*/React.createElement("span", {
-      style: {
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 8
-      }
-    }, /*#__PURE__*/React.createElement(Spinner, {
-      size: "sm"
-    }), " Cargando\u2026")
-  });
-}
-
-/* Error con errorId visible + reintento. El error NUNCA va por toast. */
-function ErrorState({
-  errorId = 'ERR-7F3A2',
-  onRetry,
-  context = 'la sección'
-}) {
-  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement(Alert, {
-    tone: "danger"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 600,
-      marginBottom: 4
-    }
-  }, "No se pudo cargar ", context), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 13
-    }
-  }, "Intente nuevamente. Si persiste, comparta el c\xF3digo con soporte."), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 12,
-      marginTop: 12,
-      flexWrap: 'wrap'
-    }
-  }, /*#__PURE__*/React.createElement(Button, {
-    variant: "secondary",
-    size: "sm",
-    onClick: onRetry
-  }, "Reintentar"), /*#__PURE__*/React.createElement("code", {
-    style: {
-      fontFamily: 'var(--font-mono)',
-      fontSize: 12,
-      color: 'hsl(var(--text-tertiary))'
-    }
-  }, "errorId: ", errorId))));
-}
-
-/* 403 sin permiso — se ESCONDE lo no permitido; a nivel sección hace fail-closed. */
-function ForbiddenState({
-  onHome,
-  resource = 'esta sección'
-}) {
-  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '28px 8px',
-      textAlign: 'center',
-      maxWidth: 420,
-      margin: '0 auto'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 40,
-      height: 40,
-      borderRadius: 10,
-      margin: '0 auto 14px',
-      display: 'grid',
-      placeItems: 'center',
-      background: 'hsl(var(--surface-sunken))',
-      border: '1px solid hsl(var(--border-strong))',
-      color: 'hsl(var(--text-tertiary))',
-      fontSize: 18
-    },
-    "aria-hidden": "true"
-  }, "\u26A0"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      font: '600 16px/22px var(--font-ui)'
-    }
-  }, "No tiene permiso para ver ", resource), /*#__PURE__*/React.createElement("p", {
-    style: {
-      margin: '6px 0 16px',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 13
-    }
-  }, "Su perfil no incluye este acceso. Si cree que es un error, solic\xEDtelo a un administrador de su empresa."), /*#__PURE__*/React.createElement(Button, {
-    variant: "secondary",
-    size: "sm",
-    onClick: onHome
-  }, "Volver al inicio")));
-}
-
-/* Vacío con la marca de casa. */
-function ListEmpty({
-  title,
-  description,
-  action
-}) {
-  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '20px 8px'
-    }
-  }, /*#__PURE__*/React.createElement(EmptyState, {
-    title: title,
-    description: description,
-    action: action
-  })));
-}
-
-/* Overlay de gate/submit (spinner puntual sin layout). */
-function GateOverlay({
-  text
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      position: 'absolute',
-      inset: 0,
-      display: 'grid',
-      placeItems: 'center',
-      background: 'hsl(var(--surface-base) / .72)',
-      backdropFilter: 'blur(2px)',
-      zIndex: 20
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 12
-    }
-  }, /*#__PURE__*/React.createElement(Spinner, {
-    size: "lg"
-  }), /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 13,
-      color: 'hsl(var(--text-secondary))'
-    }
-  }, text)));
-}
-
-/* Segmented control genérico (toolbar de prototipo + selector de estado demo). */
-function Segmented({
-  value,
-  onChange,
-  options,
-  ariaLabel
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    role: "radiogroup",
-    "aria-label": ariaLabel,
-    style: {
-      display: 'inline-flex',
-      gap: 2,
-      padding: 2,
-      borderRadius: 8,
-      background: 'hsl(var(--surface-sunken))',
-      border: '1px solid hsl(var(--border-subtle))'
-    }
-  }, options.map(o => {
-    const active = o.value === value;
-    return /*#__PURE__*/React.createElement("button", {
-      key: o.value,
-      type: "button",
-      role: "radio",
-      "aria-checked": active,
-      onClick: () => onChange(o.value),
-      style: {
-        border: 0,
-        cursor: 'pointer',
-        borderRadius: 6,
-        padding: '5px 10px',
-        fontSize: 12,
-        fontWeight: active ? 600 : 500,
-        fontFamily: 'var(--font-ui)',
-        background: active ? 'hsl(var(--surface-raised))' : 'transparent',
-        color: active ? 'hsl(var(--text-primary))' : 'hsl(var(--text-secondary))',
-        boxShadow: active ? '0 1px 2px hsl(240 6% 10% / .08)' : 'none'
-      }
-    }, o.label);
-  }));
-}
-Object.assign(window, {
-  CanPerm: can,
-  MicroLabel,
-  Crumbs,
-  PageHeader,
-  ConfirmInline,
-  TableSkeleton,
-  ErrorState,
-  ForbiddenState,
-  ListEmpty,
-  GateOverlay,
-  Segmented
-});
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/kit.jsx", error: String((e && e.message) || e) }); }
-
-// ui_kits/commerce/pos-app.jsx
+// ui_kits/commerce/_historico/pos-app.jsx
 try { (() => {
 /* Noctis · commerce POS-a — ORQUESTADOR del ambiente de venta. Monta el shell POS
    pantalla completa con el split búsqueda | carrito, mantiene el carrito y el cliente,
@@ -7040,9 +6270,9 @@ function PosApp() {
 }
 window.PosApp = PosApp;
 ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(PosApp, null));
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-app.jsx", error: String((e && e.message) || e) }); }
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/pos-app.jsx", error: String((e && e.message) || e) }); }
 
-// ui_kits/commerce/pos-b-app.jsx
+// ui_kits/commerce/_historico/pos-b-app.jsx
 try { (() => {
 /* Noctis · commerce POS-b — ORQUESTADOR del cobro. Reusa TAL CUAL el ambiente de venta
    de POS-a (shell + búsqueda + carrito + cliente + kit + datos): NO lo rediseña. Lo único
@@ -7577,7 +6807,8381 @@ function PosBApp() {
 }
 window.PosBApp = PosBApp;
 ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(PosBApp, null));
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-b-app.jsx", error: String((e && e.message) || e) }); }
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/pos-b-app.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/_historico/pos-c-app.jsx
+try { (() => {
+/* Noctis · commerce — POS INMERSIVO + CAJA. Corrige la arquitectura anterior: el POS
+   deja de ser una ISLA de pantalla completa aislada y pasa a ser un MODO INMERSIVO del
+   shell administrativo normal. Es UN shell con un modo de foco, no dos shells.
+
+   CAMBIO 1 — El POS vive en la sidebar bajo "Vender", como Productos. Al abrirlo entra
+   AUTOMÁTICAMENTE en modo inmersivo (sidebar y topbar se COLAPSAN para foco total en la
+   venta). "Salir de venta" RECUPERA las barras sin cerrar el POS: el carrito SOBREVIVE.
+   Fuera del modo inmersivo, un indicador muestra que hay una venta en curso esperando.
+   El contenido de venta (búsqueda/carrito/cliente/cobro de POS-a/POS-b) es IDÉNTICO.
+
+   CAMBIO 2 — Nace el módulo CONTABILIDAD con el submódulo Cierre de caja (apertura +
+   cierre). El cierre es un hecho contable, no un paso de la venta: por eso vive acá y no
+   bajo Vender. Gating de tres capas: la CAJERA ve Contabilidad pero solo el submódulo
+   Cierre de caja; el resto queda oculto por permisos. Un admin vería todo.
+
+   Consume el design system Noctis SIN redefinir tokens: reusa el bundle, los --pos-* y
+   los componentes tal cual; cero tokens/colores nuevos. La marca del tenant es acento
+   quirúrgico (primary/activo/foco/selección); el chrome es neutro de casa. */
+const CNS = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  Icon: CIcon,
+  Toast: CToast,
+  Button: CBtn,
+  Wordmark: CWord
+} = CNS;
+const CPD = window.PosData;
+const CD = window.CommerceData;
+
+/* Permisos de caja/contabilidad, sumados a los efectivos del perfil base. La CAJERA
+   suma solo 'caja' (verá únicamente Cierre de caja); admin/contador ven el módulo entero. */
+const CAJA_PERMS = {
+  admin: ['caja', 'conta.balance', 'conta.asientos', 'conta.mayor'],
+  bodeguero: [],
+  vendedor: [],
+  cajero: ['caja'],
+  contador: ['caja', 'conta.balance', 'conta.asientos', 'conta.mayor']
+};
+
+/* NAV del shell integrado. POS pasa a construido bajo "Vender"; nace Contabilidad bajo
+   "Finanzas". `anyPerm` = módulo visible con ≥1 permiso efectivo de su familia. */
+const NAV = [{
+  section: 'Vender',
+  items: [{
+    id: 'pos',
+    label: 'POS',
+    perm: 'pos',
+    built: true
+  }, {
+    id: 'ventas',
+    label: 'Ventas',
+    perm: 'ventas',
+    built: false
+  }]
+}, {
+  section: 'Catálogo',
+  items: [{
+    id: 'productos',
+    label: 'Productos',
+    perm: 'productos.read',
+    built: true
+  }, {
+    id: 'categorias',
+    label: 'Categorías',
+    perm: 'categorias',
+    built: false
+  }]
+}, {
+  section: 'Finanzas',
+  items: [{
+    id: 'contabilidad',
+    label: 'Contabilidad',
+    anyPerm: ['caja', 'conta.balance', 'conta.asientos', 'conta.mayor'],
+    built: true
+  }]
+}];
+const SEED_TURNO = {
+  seq: 'T-001-042',
+  fondo: 50.00,
+  aperturaHora: '08:12',
+  ventasEfectivo: 428.75,
+  ventasCount: 23,
+  esperado: 478.75
+};
+const centsNum = cents => parseInt(cents || '0', 10) / 100;
+
+/* Segmented oscuro de la barra de prototipo (andamiaje tipo Storybook, no chrome). */
+function Seg({
+  value,
+  onChange,
+  options,
+  ariaLabel
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    role: "radiogroup",
+    "aria-label": ariaLabel,
+    style: {
+      display: 'inline-flex',
+      gap: 2,
+      padding: 2,
+      borderRadius: 9,
+      background: '#161619',
+      border: '1px solid #2A2A2E'
+    }
+  }, options.map(o => {
+    const active = o.value === value;
+    return /*#__PURE__*/React.createElement("button", {
+      key: o.value,
+      type: "button",
+      role: "radio",
+      "aria-checked": active,
+      onClick: () => onChange(o.value),
+      style: {
+        border: 0,
+        cursor: 'pointer',
+        borderRadius: 7,
+        padding: '6px 11px',
+        fontSize: 12,
+        fontWeight: active ? 600 : 500,
+        fontFamily: 'var(--font-ui)',
+        minHeight: 32,
+        background: active ? '#F5F5F7' : 'transparent',
+        color: active ? '#0A0A0B' : '#AEAEB2'
+      }
+    }, o.label);
+  }));
+}
+function PrototypeBar(p) {
+  return /*#__PURE__*/React.createElement("div", {
+    "data-mode": "dark",
+    style: {
+      flex: 'none',
+      background: '#0A0A0B',
+      borderBottom: '1px solid #26262A',
+      color: '#F5F5F7'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '10px 16px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 8,
+      height: 8,
+      borderRadius: 999,
+      background: '#8E8E93'
+    },
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: '#AEAEB2'
+    }
+  }, "Prototipo \xB7 POS inmersivo + Caja")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Tenant"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Tenant",
+    value: p.tenantId,
+    onChange: p.onChangeTenant,
+    options: [{
+      value: 'aguilar',
+      label: 'Aguilar'
+    }, {
+      value: 'sanrafael',
+      label: 'San Rafael'
+    }, {
+      value: 'rincon',
+      label: 'El Rincón'
+    }]
+  }), /*#__PURE__*/React.createElement("span", {
+    title: 'Acento: ' + p.tenant.accentName,
+    style: {
+      width: 16,
+      height: 16,
+      borderRadius: 5,
+      background: 'hsl(' + p.tenant.accent + ')',
+      border: '1px solid rgba(255,255,255,.2)'
+    },
+    "aria-hidden": "true"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Perfil"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Perfil",
+    value: p.profileKey,
+    onChange: p.onChangeProfile,
+    options: [{
+      value: 'admin',
+      label: 'Admin'
+    }, {
+      value: 'vendedor',
+      label: 'Vendedor'
+    }, {
+      value: 'cajero',
+      label: 'Cajera'
+    }, {
+      value: 'contador',
+      label: 'Contador'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Densidad venta"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Densidad de la venta",
+    value: p.density,
+    onChange: p.onChangeDensity,
+    options: [{
+      value: 'comfortable',
+      label: 'Desktop'
+    }, {
+      value: 'touch',
+      label: 'Táctil'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Turno de caja"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Estado del turno de caja",
+    value: p.cajaPreset,
+    onChange: p.onChangeCajaPreset,
+    options: [{
+      value: 'sin',
+      label: 'Sin turno'
+    }, {
+      value: 'abierto',
+      label: 'Turno abierto'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      marginLeft: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Escritura"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Resultado de la escritura (cobro / cierre)",
+    value: p.outcome,
+    onChange: p.onChangeOutcome,
+    options: [{
+      value: 'success',
+      label: 'Éxito'
+    }, {
+      value: 'fail',
+      label: 'Falla'
+    }]
+  }))));
+}
+
+/* Chip de contexto (empresa/sucursal, cajera) — neutro de casa. */
+function CtxChip({
+  icon,
+  primary,
+  secondary,
+  small
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 9,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: small ? 28 : 32,
+      height: small ? 28 : 32,
+      flex: 'none',
+      borderRadius: 9,
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))',
+      color: 'hsl(var(--text-secondary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: icon,
+    size: 18
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      minWidth: 0,
+      lineHeight: 1.25
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: 'hsl(var(--text-primary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, primary), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11.5,
+      color: 'hsl(var(--text-tertiary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, secondary)));
+}
+
+/* Píldora "venta en curso" — visible en CUALQUIER pantalla fuera del modo inmersivo
+   cuando el POS tiene un carrito vivo. Un clic vuelve a la venta con el carrito intacto:
+   salir a consultar algo nunca pierde la venta a medio armar. */
+function LiveSalePill({
+  count,
+  total,
+  onResume
+}) {
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    "aria-label": 'Volver a la venta en curso · ' + count + ' ítems · ' + total,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 10,
+      height: 38,
+      padding: '0 8px 0 12px',
+      borderRadius: 999,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--brand-primary))',
+      background: 'hsl(var(--brand-primary) / .1)',
+      color: 'hsl(var(--text-primary))',
+      font: '500 13px var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 7
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'relative',
+      display: 'inline-flex'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 17,
+    style: {
+      color: 'hsl(var(--brand-primary))'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: -3,
+      right: -4,
+      width: 7,
+      height: 7,
+      borderRadius: 999,
+      background: 'hsl(var(--brand-primary))'
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 600
+    }
+  }, "Venta en curso"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\xB7 ", count, " ", count === 1 ? 'ítem' : 'ítems', " \xB7 ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontVariantNumeric: 'tabular-nums'
+    }
+  }, total))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 4,
+      height: 28,
+      padding: '0 10px',
+      borderRadius: 999,
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      fontWeight: 600,
+      fontSize: 12
+    }
+  }, "Volver", /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 14
+  })));
+}
+
+/* Ítem de sidebar. Construido = <button> navegable; "Pronto" = informativo (sin foco/href).
+   El POS con carrito vivo muestra un punto de acento + rótulo "en curso". */
+function NavItem({
+  item,
+  active,
+  collapsed,
+  onClick,
+  live
+}) {
+  const disabled = !item.built;
+  const base = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 10,
+    width: '100%',
+    textAlign: 'left',
+    border: 0,
+    padding: collapsed ? 8 : '8px 10px',
+    borderRadius: 8,
+    font: '500 13px var(--font-ui)',
+    justifyContent: collapsed ? 'center' : 'space-between',
+    background: active ? 'hsl(var(--brand-primary))' : 'transparent',
+    color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-secondary))'
+  };
+  const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'relative',
+      display: 'inline-flex',
+      flex: 'none'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    module: item.id,
+    size: 20
+  }), (live || collapsed && disabled) && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: -3,
+      right: -3,
+      width: 7,
+      height: 7,
+      borderRadius: 999,
+      background: live ? 'hsl(var(--brand-primary))' : active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))',
+      boxShadow: '0 0 0 2px ' + (active ? 'hsl(var(--brand-primary))' : 'hsl(var(--surface-sunken))')
+    }
+  })), !collapsed && /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, item.label)), !collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 500,
+      padding: '1px 7px',
+      borderRadius: 999,
+      background: 'hsl(var(--surface-base))',
+      border: '1px solid hsl(var(--border-subtle))',
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Pronto"), !collapsed && live && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 600,
+      padding: '1px 7px',
+      borderRadius: 999,
+      background: active ? 'hsl(var(--brand-foreground) / .2)' : 'hsl(var(--brand-primary) / .14)',
+      color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--brand-primary))'
+    }
+  }, "En curso"));
+  if (disabled) return /*#__PURE__*/React.createElement("div", {
+    title: collapsed ? item.label + ' · Pronto' : undefined,
+    style: {
+      ...base,
+      cursor: 'default',
+      position: 'relative'
+    }
+  }, inner);
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onClick,
+    title: collapsed ? item.label : undefined,
+    "aria-current": active ? 'page' : undefined,
+    "aria-label": collapsed ? item.label : undefined,
+    style: {
+      ...base,
+      cursor: 'pointer',
+      position: 'relative'
+    }
+  }, inner);
+}
+function Sidebar({
+  profile,
+  active,
+  collapsed,
+  onToggle,
+  onNavigate,
+  liveCart
+}) {
+  const {
+    CanPerm
+  } = window;
+  const visibleItem = it => it.anyPerm ? it.anyPerm.some(pp => CanPerm(profile, pp)) : CanPerm(profile, it.perm);
+  const groups = NAV.map(g => ({
+    ...g,
+    items: g.items.filter(visibleItem)
+  })).filter(g => g.items.length);
+  const {
+    MicroLabel: ML
+  } = window;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: collapsed ? 60 : 216,
+      flex: 'none',
+      background: 'hsl(var(--surface-sunken))',
+      borderRight: '1px solid hsl(var(--border-subtle))',
+      display: 'flex',
+      flexDirection: 'column',
+      transition: 'width .16s ease'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: 'auto',
+      padding: collapsed ? '10px 8px' : '12px 10px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, groups.map((g, gi) => /*#__PURE__*/React.createElement("div", {
+    key: gi,
+    style: {
+      marginBottom: 6
+    }
+  }, !collapsed && /*#__PURE__*/React.createElement(ML, {
+    style: {
+      padding: '8px 8px 4px'
+    }
+  }, g.section), collapsed && gi > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 1,
+      background: 'hsl(var(--border-subtle))',
+      margin: '6px 6px'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, g.items.map(it => /*#__PURE__*/React.createElement(NavItem, {
+    key: it.id,
+    item: it,
+    collapsed: collapsed,
+    active: active === it.id,
+    onClick: () => onNavigate(it),
+    live: it.id === 'pos' && liveCart
+  })))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : 10,
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    title: "Slot de sucursal \u2014 reservado para POS/Caja",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      padding: collapsed ? 8 : '8px 10px',
+      borderRadius: 8,
+      border: '1px dashed hsl(var(--border-strong))',
+      color: 'hsl(var(--text-disabled))',
+      fontSize: 12
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "store",
+    size: 20,
+    style: {
+      flex: 'none',
+      opacity: .7
+    }
+  }), !collapsed && /*#__PURE__*/React.createElement("span", null, "Sucursal \xB7 reservado"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : '8px 10px',
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggle,
+    "aria-label": collapsed ? 'Expandir menú' : 'Colapsar menú',
+    "aria-pressed": collapsed,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      width: '100%',
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      borderRadius: 8,
+      padding: collapsed ? 7 : '7px 10px',
+      cursor: 'pointer',
+      fontSize: 12,
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: collapsed ? 'chevrons-right' : 'chevrons-left',
+    size: 16
+  }), !collapsed && 'Colapsar')));
+}
+
+/* Barra superior del shell NORMAL (chrome neutro de casa). Aloja la píldora de venta en
+   curso cuando corresponde. */
+function TopBar({
+  tenant,
+  profile,
+  mode,
+  onToggleMode,
+  liveCart,
+  cartCount,
+  cartTotal,
+  onResume,
+  onLogout
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 14,
+      padding: '0 14px',
+      height: 56,
+      flex: 'none',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 28,
+      height: 28,
+      borderRadius: 8,
+      flex: 'none',
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 11
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 14,
+      fontWeight: 600,
+      letterSpacing: '-.01em',
+      whiteSpace: 'nowrap'
+    }
+  }, tenant.name)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 26,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "store",
+    primary: tenant.empresa,
+    secondary: tenant.sucursal,
+    small: true
+  }), liveCart && /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 6
+    }
+  }, /*#__PURE__*/React.createElement(LiveSalePill, {
+    count: cartCount,
+    total: cartTotal,
+    onResume: onResume
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'right',
+      lineHeight: 1.3
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-primary))',
+      fontWeight: 500
+    }
+  }, tenant.cajero.nombre), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, profile.label)), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 14
+    }
+  }, mode === 'dark' ? '☾' : '☀'), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onLogout,
+    style: {
+      height: 32,
+      padding: '0 12px',
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 12,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, "Salir")));
+}
+
+/* Barra del MODO INMERSIVO — mínima, orientada a la venta. "Salir de venta" RECUPERA las
+   barras (no cierra el POS). El chrome de módulos/breadcrumbs está colapsado. */
+function ImmersiveBar({
+  tenant,
+  mode,
+  onToggleMode,
+  onExitSale
+}) {
+  return /*#__PURE__*/React.createElement("header", {
+    style: {
+      flex: 'none',
+      height: 'var(--pos-header)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '0 16px',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onExitSale,
+    className: "pos-btn",
+    "aria-label": "Salir de venta y recuperar las barras del panel",
+    style: {
+      height: 'var(--pos-action)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '0 14px',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 14,
+      fontWeight: 500,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-left",
+    size: 20
+  }), "Salir de venta"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 32,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      flex: 'none',
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 12
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 15,
+      fontWeight: 600,
+      whiteSpace: 'nowrap'
+    }
+  }, tenant.name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 600,
+      letterSpacing: '.08em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '2px 8px'
+    }
+  }, "Venta")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 32,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "store",
+    primary: tenant.empresa,
+    secondary: tenant.sucursal
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "user-round",
+    primary: tenant.cajero.nombre,
+    secondary: tenant.cajero.rol
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    className: "pos-btn",
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 'var(--pos-action)',
+      height: 'var(--pos-action)',
+      flex: 'none',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 18,
+      display: 'grid',
+      placeItems: 'center'
+    }
+  }, mode === 'dark' ? '☾' : '☀')));
+}
+
+/* Pantalla del POS en modo NORMAL (barras visibles). Se llega acá al "Salir de venta":
+   el POS sigue abierto como módulo y esta pantalla muestra el estado de la venta —en
+   curso (reanudar / cobrar) o sin venta (empezar)—. La venta NO se cancela al salir. */
+function PosResume({
+  tenant,
+  lines,
+  totals,
+  customer,
+  onResume,
+  onCobrar,
+  onDescartar
+}) {
+  const alive = lines.length > 0;
+  const count = lines.reduce((s, l) => s + l.qty, 0);
+  const fmt = window.cajaFmtEC;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 720
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "Vender \xB7 POS"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, "Punto de venta"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 0 0',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '58ch'
+    }
+  }, "El POS abre en modo inmersivo para foco total en la venta. Saliste de la venta pero el POS sigue abierto \u2014 ", alive ? 'tu carrito quedó intacto, esperando.' : 'no hay ninguna venta en curso.')), alive ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '20px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--brand-primary) / .4)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 46,
+      height: 46,
+      borderRadius: 12,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--brand-primary) / .12)',
+      color: 'hsl(var(--brand-primary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 24
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 17px/1.2 var(--font-ui)'
+    }
+  }, "Venta en curso"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, count, " ", count === 1 ? 'ítem' : 'ítems', " \xB7 ", lines.length, " ", lines.length === 1 ? 'línea' : 'líneas', " \xB7 ", customer.nombre)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      textTransform: 'uppercase',
+      letterSpacing: '.06em',
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Total"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '700 22px/1 var(--font-ui)',
+      fontVariantNumeric: 'tabular-nums'
+    }
+  }, fmt(totals.total)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    style: {
+      flex: '1 1 200px',
+      height: 48,
+      borderRadius: 12,
+      border: 0,
+      cursor: 'pointer',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      font: '600 15px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 18
+  }), "Volver a la venta"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onCobrar,
+    className: "pos-btn",
+    style: {
+      flex: '0 1 auto',
+      height: 48,
+      padding: '0 18px',
+      borderRadius: 12,
+      border: '1px solid hsl(var(--border-strong))',
+      cursor: 'pointer',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-primary))',
+      font: '500 15px var(--font-ui)'
+    }
+  }, "Ir a cobrar"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onDescartar,
+    className: "pos-btn",
+    style: {
+      flex: '0 1 auto',
+      height: 48,
+      padding: '0 16px',
+      borderRadius: 12,
+      border: '1px solid hsl(var(--border-subtle))',
+      cursor: 'pointer',
+      background: 'transparent',
+      color: 'hsl(var(--text-tertiary))',
+      font: '500 14px var(--font-ui)'
+    }
+  }, "Descartar")), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '14px 0 0',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      lineHeight: 1.5
+    }
+  }, "Perder una venta a medio armar por salir a consultar es el peor caso \u2014 por eso el carrito sobrevive a la salida.")) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '28px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))',
+      textAlign: 'center',
+      maxWidth: 460
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 60,
+      height: 60,
+      borderRadius: 16,
+      margin: '0 auto 16px',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-strong))',
+      color: 'hsl(var(--text-tertiary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 28
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 18px/1.3 var(--font-ui)'
+    }
+  }, "Empez\xE1 una venta"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '6px 0 18px',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      lineHeight: 1.5
+    }
+  }, "Entr\xE1 al modo inmersivo para buscar o escanear productos con foco total. Las barras se recuperan cuando salgas."), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    style: {
+      minWidth: 220,
+      height: 48,
+      borderRadius: 12,
+      border: 0,
+      cursor: 'pointer',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      font: '600 15px var(--font-ui)',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 18
+  }), "Entrar a vender")));
+}
+
+/* Consulta de catálogo (solo lectura) — una "otra pantalla" a la que la cajera/vendedor
+   sale mientras la venta sigue viva. Demuestra que salir a consultar no pierde el carrito. */
+function CatalogConsult() {
+  const fmt = window.cajaFmtEC;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 860
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "Cat\xE1logo"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, "Productos"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 0 0',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '58ch'
+    }
+  }, "Consulta de precios de lista. Pod\xE9s salir del modo inmersivo a mirar esto sin perder la venta en curso \u2014 el detalle y el alta son otro corte del cat\xE1logo.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      borderRadius: 14,
+      border: '1px solid hsl(var(--border-subtle))',
+      overflow: 'hidden',
+      background: 'hsl(var(--surface-raised))'
+    }
+  }, CPD.CATALOG.map((v, i) => {
+    const sinPrecio = v.precio == null;
+    return /*#__PURE__*/React.createElement("div", {
+      key: v.id,
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        gap: 14,
+        padding: '13px 16px',
+        borderTop: i ? '1px solid hsl(var(--border-subtle))' : 0
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        flex: 1,
+        minWidth: 0
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 14.5,
+        fontWeight: 600,
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis'
+      }
+    }, v.producto), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontSize: 12.5,
+        color: 'hsl(var(--text-secondary))'
+      }
+    }, v.variante)), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 12,
+        color: 'hsl(var(--text-tertiary))',
+        flex: 'none'
+      }
+    }, v.sku), /*#__PURE__*/React.createElement("span", {
+      style: {
+        flex: 'none',
+        minWidth: 90,
+        textAlign: 'right'
+      }
+    }, sinPrecio ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 12,
+        fontWeight: 500,
+        color: 'hsl(var(--warning-fg))'
+      }
+    }, "Sin precio") : /*#__PURE__*/React.createElement("span", {
+      style: {
+        font: '600 15px var(--font-ui)',
+        fontVariantNumeric: 'tabular-nums'
+      }
+    }, fmt(v.precio))));
+  })));
+}
+function ProntoView({
+  label
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 520
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "M\xF3dulo"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: '0 0 8px'
+    }
+  }, label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '24px 20px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
+      fontSize: 12,
+      fontWeight: 600,
+      letterSpacing: '.06em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '3px 10px',
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement(window.CajaIcon, {
+    name: "clock",
+    size: 13
+  }), "Pronto"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13,
+      maxWidth: '48ch',
+      marginInline: 'auto'
+    }
+  }, "Ten\xE9s permiso para ", /*#__PURE__*/React.createElement("b", null, label), ", pero este m\xF3dulo a\xFAn no se construye en este corte. El hueco se se\xF1ala, no se inventa.")));
+}
+function PosCApp() {
+  const [mode, setMode] = React.useState('light');
+  const autoDensity = React.useRef(window.detectDensity()).current;
+  const [density, setDensity] = React.useState(autoDensity);
+  const [tenantId, setTenantId] = React.useState('aguilar');
+  const [profileKey, setProfileKey] = React.useState('cajero');
+  const [collapsed, setCollapsed] = React.useState(false);
+  const [activeModule, setActiveModule] = React.useState('pos');
+  const [immersive, setImmersive] = React.useState(true);
+  const [contaView, setContaView] = React.useState('index');
+  const [toast, setToast] = React.useState(null);
+  const [outcome, setOutcome] = React.useState('success');
+
+  // ── Venta (contenido idéntico a POS-a/POS-b) ──────────────────────────────────
+  const [lines, setLines] = React.useState(() => CPD.INITIAL_CART.filter(l => !CPD.needsPrice(CPD.lineView(l))));
+  const [customer, setCustomer] = React.useState(CPD.CONSUMIDOR_FINAL);
+  const [qtyLine, setQtyLine] = React.useState(null);
+  const [genericDraft, setGenericDraft] = React.useState(null);
+  const [pickerOpen, setPickerOpen] = React.useState(false);
+  const [flash, setFlash] = React.useState(null);
+  const [checkoutOpen, setCheckoutOpen] = React.useState(false);
+  const [phase, setPhase] = React.useState('idle');
+  const [received, setReceived] = React.useState('');
+  const [closedSale, setClosedSale] = React.useState(null);
+  const [errorId, setErrorId] = React.useState('ERR-POS-7F09');
+  const flashTimer = React.useRef(null);
+  const seq = React.useRef(100);
+  const compSeq = React.useRef(101);
+  const writeTimer = React.useRef(null);
+
+  // ── Caja (Contabilidad) ────────────────────────────────────────────────────────
+  const [cajaPreset, setCajaPreset] = React.useState('sin');
+  const [cajaTurno, setCajaTurno] = React.useState(null);
+  const [cajaPhase, setCajaPhase] = React.useState('idle');
+  const [contado, setContado] = React.useState('');
+  const [fondo, setFondo] = React.useState('5000');
+  const [cajaClosed, setCajaClosed] = React.useState(null);
+  const [cajaErrorId, setCajaErrorId] = React.useState('ERR-CAJA-3B1');
+  const cajaTimer = React.useRef(null);
+  const tenant = CPD.TENANTS[tenantId];
+  const profile = {
+    ...CD.PROFILES[profileKey],
+    perms: [...CD.PROFILES[profileKey].perms, ...(CAJA_PERMS[profileKey] || [])]
+  };
+  const {
+    CanPerm
+  } = window;
+  const totals = window.posTotals(lines);
+  const cartAlive = lines.length > 0 && !closedSale;
+  const doFlash = msg => {
+    setFlash(msg);
+    if (flashTimer.current) clearTimeout(flashTimer.current);
+    flashTimer.current = setTimeout(() => setFlash(null), 2600);
+  };
+
+  // Navegación: POS entra AUTOMÁTICAMENTE en inmersivo; el resto vive en el shell normal.
+  const onNavigate = item => {
+    if (!item.built) {
+      setActiveModule(item.id);
+      setImmersive(false);
+      return;
+    }
+    if (item.id === 'pos') {
+      setActiveModule('pos');
+      setImmersive(true);
+      return;
+    }
+    if (item.id === 'contabilidad') {
+      setActiveModule('contabilidad');
+      setContaView('index');
+      setImmersive(false);
+      return;
+    }
+    setActiveModule(item.id);
+    setImmersive(false);
+  };
+  const exitSale = () => setImmersive(false); // recupera barras, NO cierra el POS
+  const resumeSale = () => {
+    setActiveModule('pos');
+    setImmersive(true);
+  };
+
+  // Handlers de venta (idénticos a POS-b)
+  const onAdd = item => {
+    setLines(prev => {
+      const ex = prev.find(l => l.ref === item.id);
+      if (ex) return prev.map(l => l.ref === item.id ? {
+        ...l,
+        qty: l.qty + 1
+      } : l);
+      return [...prev, {
+        key: 'l' + ++seq.current,
+        ref: item.id,
+        qty: 1
+      }];
+    });
+    doFlash((item.precio == null ? 'Agregado (sin precio, bloquea el cobro): ' : 'Agregado: ') + item.variante);
+  };
+  const onStep = (line, d) => setLines(prev => prev.map(l => l.key === line.key ? {
+    ...l,
+    qty: Math.max(1, l.qty + d)
+  } : l));
+  const onRemove = line => setLines(prev => prev.filter(l => l.key !== line.key));
+  const commitQty = n => {
+    setLines(prev => prev.map(l => l.key === qtyLine.key ? {
+      ...l,
+      qty: n
+    } : l));
+    setQtyLine(null);
+  };
+  const openGeneric = desc => setGenericDraft({
+    desc
+  });
+  const commitGeneric = data => {
+    setLines(prev => [...prev, {
+      key: 'l' + ++seq.current,
+      generic: true,
+      desc: data.desc,
+      precio: data.precio,
+      iva: data.iva,
+      qty: data.qty
+    }]);
+    setGenericDraft(null);
+    doFlash((data.precio === 0 ? 'Ítem rápido agregado (precio en cero, bloquea el cobro): ' : 'Ítem rápido agregado: ') + data.desc);
+  };
+  const onSaveProduct = line => setToast('Abriría el alta de producto con «' + line.desc + '» precargado. Es otro corte: la venta se registra igual.');
+  const pickCustomer = c => {
+    setCustomer(c);
+    setPickerOpen(false);
+  };
+  const consumidorFinal = () => {
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setPickerOpen(false);
+  };
+  const isBlocked = () => lines.length === 0 || lines.some(l => CPD.needsPrice(CPD.lineView(l)));
+  const onCobrar = () => {
+    if (isBlocked()) return;
+    setActiveModule('pos');
+    setImmersive(true);
+    setReceived('');
+    setPhase('idle');
+    setCheckoutOpen(true);
+  };
+  const runWrite = () => {
+    if (phase === 'processing') return;
+    setPhase('processing');
+    if (writeTimer.current) clearTimeout(writeTimer.current);
+    writeTimer.current = setTimeout(() => {
+      if (outcome === 'fail') {
+        setErrorId('ERR-POS-' + (7000 + Math.floor(Math.random() * 900)).toString(16).toUpperCase());
+        setPhase('error');
+        return;
+      }
+      const recv = parseInt(received || '0', 10) / 100;
+      const n = compSeq.current++;
+      setClosedSale({
+        secuencial: '001-001-' + String(n).padStart(9, '0'),
+        total: totals.total,
+        received: recv,
+        change: recv - totals.total,
+        customer: customer.nombre
+      });
+      setCheckoutOpen(false);
+      setPhase('idle');
+    }, 1500);
+  };
+  const cancelCheckout = () => {
+    if (phase === 'processing') return;
+    setCheckoutOpen(false);
+    setPhase('idle');
+  };
+  const newSale = () => {
+    setClosedSale(null);
+    setLines([]);
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setReceived('');
+    setPhase('idle');
+  };
+  const discardSale = () => {
+    setLines([]);
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setReceived('');
+    setToast('Venta descartada. El carrito quedó vacío.');
+  };
+  const onPrint = () => setToast('Ver / imprimir comprobante es fast-follow (depende del driver/servidor de impresora). La venta ya quedó registrada con su secuencial.');
+
+  // Caja: preset del prototipo siembra el turno abierto (con ventas resueltas) o lo cierra.
+  const applyCajaPreset = v => {
+    setCajaPreset(v);
+    setCajaClosed(null);
+    setCajaPhase('idle');
+    setContado('');
+    setCajaTurno(v === 'abierto' ? {
+      ...SEED_TURNO
+    } : null);
+  };
+  const abrirCaja = () => {
+    if (cajaPhase === 'processing') return;
+    setCajaPhase('processing');
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+    cajaTimer.current = setTimeout(() => {
+      setCajaTurno({
+        seq: SEED_TURNO.seq,
+        fondo: centsNum(fondo),
+        aperturaHora: '08:12',
+        ventasEfectivo: 0,
+        ventasCount: 0,
+        esperado: centsNum(fondo)
+      });
+      setCajaPhase('idle');
+      setContado('');
+    }, 1400);
+  };
+  const cerrarCaja = () => {
+    if (cajaPhase === 'processing') return;
+    setCajaPhase('processing');
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+    cajaTimer.current = setTimeout(() => {
+      if (outcome === 'fail') {
+        setCajaErrorId('ERR-CAJA-' + (3000 + Math.floor(Math.random() * 900)).toString(16).toUpperCase());
+        setCajaPhase('error');
+        return;
+      }
+      const cont = centsNum(contado);
+      setCajaClosed({
+        ...cajaTurno,
+        contado: cont,
+        diff: cont - cajaTurno.esperado,
+        cierreHora: '20:47'
+      });
+      setCajaTurno(null);
+      setCajaPhase('idle');
+    }, 1500);
+  };
+  const nuevoTurno = () => {
+    setCajaClosed(null);
+    setCajaTurno(null);
+    setCajaPhase('idle');
+    setContado('');
+    setFondo('5000');
+    setCajaPreset('sin');
+  };
+  const openCaja = () => setContaView('caja');
+
+  // Gating capa 2 (fail-closed): al cambiar de perfil, si el módulo activo dejó de ser
+  // visible, rebota al primer módulo visible; si el POS deja de ser accesible, sale del
+  // modo inmersivo (un contador no vende).
+  const moduleVisible = (id, prof) => {
+    const it = NAV.flatMap(g => g.items).find(i => i.id === id);
+    if (!it) return false;
+    return it.anyPerm ? it.anyPerm.some(pp => CanPerm(prof, pp)) : CanPerm(prof, it.perm);
+  };
+  const onChangeProfile = k => {
+    const nextProfile = {
+      ...CD.PROFILES[k],
+      perms: [...CD.PROFILES[k].perms, ...(CAJA_PERMS[k] || [])]
+    };
+    setProfileKey(k);
+    if (!moduleVisible('pos', nextProfile)) setImmersive(false);
+    if (!moduleVisible(activeModule, nextProfile)) {
+      const first = NAV.flatMap(g => g.items).filter(i => i.built).find(i => moduleVisible(i.id, nextProfile));
+      if (first) {
+        setActiveModule(first.id);
+        if (first.id === 'pos') setImmersive(true);else setImmersive(false);
+      }
+    }
+  };
+  React.useEffect(() => {
+    if (density !== 'comfortable' || !immersive) return;
+    const onKey = e => {
+      if (e.key !== 'F2') return;
+      e.preventDefault();
+      if (!checkoutOpen && !closedSale && !isBlocked()) onCobrar();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [density, immersive, lines, checkoutOpen, closedSale]);
+  React.useEffect(() => () => {
+    if (writeTimer.current) clearTimeout(writeTimer.current);
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+  }, []);
+
+  // Contenido del shell NORMAL por módulo activo.
+  let content;
+  if (activeModule === 'pos') content = /*#__PURE__*/React.createElement(PosResume, {
+    tenant: tenant,
+    lines: lines,
+    totals: totals,
+    customer: customer,
+    onResume: resumeSale,
+    onCobrar: onCobrar,
+    onDescartar: discardSale
+  });else if (activeModule === 'productos') content = /*#__PURE__*/React.createElement(CatalogConsult, null);else if (activeModule === 'contabilidad') content = contaView === 'index' ? /*#__PURE__*/React.createElement(window.ContabilidadIndex, {
+    profile: profile,
+    onOpenCaja: openCaja
+  }) : /*#__PURE__*/React.createElement(window.CajaScreen, {
+    tenant: tenant,
+    cajero: tenant.cajero,
+    turno: cajaTurno,
+    closed: cajaClosed,
+    phase: cajaPhase,
+    errorId: cajaErrorId,
+    contado: contado,
+    onContado: setContado,
+    fondo: fondo,
+    onFondo: setFondo,
+    hora: "08:12",
+    onAbrir: abrirCaja,
+    onCerrar: cerrarCaja,
+    onRetry: cerrarCaja,
+    onNuevoTurno: nuevoTurno,
+    onBack: () => setContaView('index')
+  });else content = /*#__PURE__*/React.createElement(ProntoView, {
+    label: activeModule === 'ventas' ? 'Ventas' : 'Categorías'
+  });
+  const accentVars = {
+    '--brand-primary': tenant.accent,
+    '--brand-foreground': tenant.fg
+  };
+  const ventaContent = closedSale ? /*#__PURE__*/React.createElement(window.SaleClosedScreen, {
+    sale: closedSale,
+    onNewSale: newSale,
+    onPrint: onPrint,
+    density: density
+  }) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(window.ProductSearch, {
+    searchState: "data",
+    onAdd: onAdd,
+    onAddGeneric: openGeneric,
+    onRetry: () => {},
+    onExit: exitSale,
+    flash: flash
+  }), /*#__PURE__*/React.createElement(window.Cart, {
+    lines: lines,
+    customer: customer,
+    onOpenQty: setQtyLine,
+    onStep: onStep,
+    onRemove: onRemove,
+    onSaveProduct: onSaveProduct,
+    onConsumidorFinal: consumidorFinal,
+    onOpenPicker: () => setPickerOpen(true),
+    onCobrar: onCobrar
+  }));
+  return /*#__PURE__*/React.createElement(window.PosDensityCtx.Provider, {
+    value: density
+  }, /*#__PURE__*/React.createElement("div", {
+    "data-mode": mode,
+    "data-density": density,
+    style: {
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      background: 'hsl(var(--surface-sunken))',
+      color: 'hsl(var(--text-primary))',
+      fontFamily: 'var(--font-ui)',
+      ...accentVars
+    }
+  }, /*#__PURE__*/React.createElement(PrototypeBar, {
+    tenantId: tenantId,
+    onChangeTenant: setTenantId,
+    profileKey: profileKey,
+    onChangeProfile: onChangeProfile,
+    density: density,
+    onChangeDensity: setDensity,
+    cajaPreset: cajaPreset,
+    onChangeCajaPreset: applyCajaPreset,
+    outcome: outcome,
+    onChangeOutcome: setOutcome,
+    tenant: tenant
+  }), immersive ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, /*#__PURE__*/React.createElement(ImmersiveBar, {
+    tenant: tenant,
+    mode: mode,
+    onToggleMode: () => setMode(m => m === 'light' ? 'dark' : 'light'),
+    onExitSale: exitSale
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex'
+    }
+  }, ventaContent)) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, /*#__PURE__*/React.createElement(TopBar, {
+    tenant: tenant,
+    profile: profile,
+    mode: mode,
+    onToggleMode: () => setMode(m => m === 'light' ? 'dark' : 'light'),
+    liveCart: cartAlive,
+    cartCount: lines.reduce((s, l) => s + l.qty, 0),
+    cartTotal: window.cajaFmtEC(totals.total),
+    onResume: resumeSale,
+    onLogout: () => setToast('Cerrar sesión está fuera de este corte.')
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex'
+    }
+  }, /*#__PURE__*/React.createElement(Sidebar, {
+    profile: profile,
+    active: activeModule,
+    collapsed: collapsed,
+    onToggle: () => setCollapsed(c => !c),
+    onNavigate: onNavigate,
+    liveCart: cartAlive
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0,
+      overflow: 'auto',
+      background: 'hsl(var(--surface-base))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1120,
+      margin: '0 auto',
+      padding: '24px 28px 48px'
+    }
+  }, content)))), /*#__PURE__*/React.createElement(window.QtySheet, {
+    line: qtyLine,
+    onClose: () => setQtyLine(null),
+    onCommit: commitQty
+  }), /*#__PURE__*/React.createElement(window.GenericItemSheet, {
+    draft: genericDraft,
+    ivaDefault: tenant.ivaDefault,
+    onClose: () => setGenericDraft(null),
+    onCommit: commitGeneric
+  }), /*#__PURE__*/React.createElement(window.ClientPicker, {
+    open: pickerOpen,
+    onClose: () => setPickerOpen(false),
+    onPick: pickCustomer,
+    onConsumidorFinal: consumidorFinal,
+    activeId: customer.id
+  }), /*#__PURE__*/React.createElement(window.CheckoutSheet, {
+    open: checkoutOpen,
+    phase: phase,
+    totals: totals,
+    received: received,
+    onReceived: setReceived,
+    onConfirm: runWrite,
+    onRetry: runWrite,
+    onCancel: cancelCheckout,
+    errorId: errorId,
+    density: density
+  }), toast && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'fixed',
+      left: 0,
+      right: 0,
+      bottom: 22,
+      display: 'flex',
+      justifyContent: 'center',
+      zIndex: 90,
+      pointerEvents: 'none'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      pointerEvents: 'auto',
+      maxWidth: 520,
+      margin: '0 16px'
+    }
+  }, /*#__PURE__*/React.createElement(CToast, {
+    onDismiss: () => setToast(null)
+  }, toast)))));
+}
+window.PosCApp = PosCApp;
+ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(PosCApp, null));
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/pos-c-app.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/_historico/pos-data.js
+try { (() => {
+/* Noctis · commerce POS-a — datos mock del AMBIENTE DE VENTA. Solo lo que POS-a
+   necesita: contexto (tenant/empresa/sucursal/cajero), catálogo buscable, carrito
+   inicial y clientes. display_name en español SIEMPRE; el UUID/SKU nunca es el
+   identificador visual principal. Los montos son numbers que "vienen del backend";
+   el cliente los RENDEREA (MoneyDisplay), no es la fuente de verdad del precio. */
+(function () {
+  /* Tenants — el acento viaja como PAR {primary, foreground}, igual que en el resto
+     de commerce. En el POS el catálogo es el mismo (papelería): el tenant solo mueve
+     el acento quirúrgico; no hay catálogos por rubro en este corte. */
+  const TENANTS = {
+    aguilar: {
+      id: 'aguilar',
+      name: 'Librería Aguilar',
+      initials: 'LA',
+      empresa: 'Librería Aguilar S.A.',
+      sucursal: 'Matriz — Av. Amazonas',
+      cajero: {
+        nombre: 'Agustina Cando',
+        rol: 'Cajera'
+      },
+      accent: '262 60% 42%',
+      fg: '0 0% 100%',
+      accentName: 'Violeta corporativo',
+      ivaDefault: 15
+    },
+    sanrafael: {
+      id: 'sanrafael',
+      name: 'Farmacia San Rafael',
+      initials: 'FS',
+      empresa: 'Farmacia San Rafael',
+      sucursal: 'Local Centro — Guayaquil',
+      cajero: {
+        nombre: 'Marcos Peñafiel',
+        rol: 'Cajero'
+      },
+      accent: '184 72% 26%',
+      fg: '0 0% 100%',
+      accentName: 'Teal salud',
+      ivaDefault: 15
+    },
+    rincon: {
+      id: 'rincon',
+      name: 'El Rincón Ferretero',
+      initials: 'RF',
+      empresa: 'El Rincón Ferretero Cía. Ltda.',
+      sucursal: 'Sucursal Sur — Quito',
+      cajero: {
+        nombre: 'Luis Tenesaca',
+        rol: 'Cajero'
+      },
+      accent: '54 85% 46%',
+      fg: '240 6% 12%',
+      accentName: 'Oro (foreground near-black)',
+      ivaDefault: 15
+    }
+  };
+
+  /* Tarifas de IVA vigentes en Ecuador para el selector de la línea genérica. La
+     línea NACE con el default del perfil fiscal del tenant; es corregible por línea
+     (farmacia: medicamento 0% / perfume 15%). */
+  const IVA_TARIFFS = [0, 5, 15];
+
+  /* Catálogo buscable (variantes vendibles). `precio` es number|null:
+     null = la variante NO tiene precio en la lista de precios aplicable → estado
+     SIN PRECIO, que BLOQUEA la línea (null NUNCA es $0). `iva` en % para el render
+     de totales (que en producción también vendría resuelto del backend). */
+  const CATALOG = [{
+    id: 'v1',
+    producto: 'Cuaderno universitario 100 hojas',
+    variante: 'Cuadros · tapa azul',
+    sku: 'CUA-100-CUAD',
+    barcode: '7861234567890',
+    precio: 2.15,
+    iva: 15
+  }, {
+    id: 'v2',
+    producto: 'Cuaderno universitario 100 hojas',
+    variante: 'Líneas · tapa roja',
+    sku: 'CUA-100-LIN',
+    barcode: '7861234500017',
+    precio: 2.15,
+    iva: 15
+  }, {
+    id: 'v3',
+    producto: 'Esferográfico punta media',
+    variante: 'Azul',
+    sku: 'ESF-PM-AZ',
+    barcode: '7862220001114',
+    precio: 0.45,
+    iva: 15
+  }, {
+    id: 'v4',
+    producto: 'Esferográfico punta media',
+    variante: 'Negro',
+    sku: 'ESF-PM-NE',
+    barcode: '7862220001121',
+    precio: 0.45,
+    iva: 15
+  }, {
+    id: 'v5',
+    producto: 'Resma papel bond A4 75 g',
+    variante: '500 hojas · blancura 96%',
+    sku: 'RES-A4-75',
+    barcode: '7863330045008',
+    precio: 4.80,
+    iva: 15
+  }, {
+    id: 'v6',
+    producto: 'Marcador permanente',
+    variante: 'Negro',
+    sku: 'MPE-NE',
+    barcode: '7864440012306',
+    precio: null,
+    iva: 15
+  }, {
+    id: 'v7',
+    producto: 'Set 12 lápices de colores',
+    variante: 'Estuche cartón',
+    sku: 'LAP-12-CART',
+    barcode: '7865550098702',
+    precio: 3.90,
+    iva: 15
+  }, {
+    id: 'v8',
+    producto: 'Corrector líquido 20 ml',
+    variante: 'Punta metálica',
+    sku: 'COR-20',
+    barcode: '7866660033401',
+    precio: 1.25,
+    iva: 15
+  }, {
+    id: 'v9',
+    producto: 'Carpeta archivador palanca',
+    variante: 'Oficio · lomo 7 cm',
+    sku: 'CAR-PAL-OF',
+    barcode: '7867770021109',
+    precio: 2.60,
+    iva: 15
+  }, {
+    id: 'v10',
+    producto: 'Grapadora metálica',
+    variante: 'Media · 20 hojas',
+    sku: 'GRA-MET-M',
+    barcode: '7868880076503',
+    precio: 5.35,
+    iva: 15
+  }];
+
+  /* Carrito inicial de demo. Incluye a propósito una línea SIN PRECIO (v6) para
+     mostrar el estado bloqueante. `qty` es lo único editable en POS-a (por keypad). */
+  const INITIAL_CART = [{
+    key: 'l1',
+    ref: 'v1',
+    qty: 2
+  }, {
+    key: 'l2',
+    ref: 'v3',
+    qty: 3
+  }, {
+    key: 'l3',
+    ref: 'v6',
+    qty: 1
+  } // SIN PRECIO — bloquea el avance a cobro
+  ];
+
+  /* Consumidor Final: convención fiscal EC (cédula 9999999999999). Es el caso
+     mayoritario en una PYME — su botón es el camino de UN TOQUE. */
+  const CONSUMIDOR_FINAL = {
+    id: 'cf',
+    nombre: 'Consumidor Final',
+    doc: '9999999999999',
+    docTipo: 'Cédula',
+    final: true
+  };
+
+  /* Clientes registrados (camino secundario, por picker). */
+  const CLIENTES = [{
+    id: 'c1',
+    nombre: 'María Fernanda Loor',
+    doc: '1312445566',
+    docTipo: 'Cédula'
+  }, {
+    id: 'c2',
+    nombre: 'Comercial El Sol Cía. Ltda.',
+    doc: '1391234567001',
+    docTipo: 'RUC'
+  }, {
+    id: 'c3',
+    nombre: 'Juan Carlos Vera',
+    doc: '0912233445',
+    docTipo: 'Cédula'
+  }, {
+    id: 'c4',
+    nombre: 'Distribuidora Andina S.A.',
+    doc: '1790055443001',
+    docTipo: 'RUC'
+  }, {
+    id: 'c5',
+    nombre: 'Rosa Elena Chávez',
+    doc: '1719988776',
+    docTipo: 'Cédula'
+  }];
+  const byId = id => CATALOG.find(v => v.id === id);
+
+  /* Vista unificada de una línea del carrito (catálogo o genérica). El carrito y los
+     totales consumen SIEMPRE esto, para que ambos tipos convivan sin ramas duplicadas.
+     · catálogo: identidad de variante (desc + sub + sku/barcode), precio/iva de lista.
+     · genérica: descripción libre, sin SKU ni stock, precio/iva definidos al crearla. */
+  const lineView = line => {
+    if (line.generic) return {
+      generic: true,
+      desc: line.desc,
+      sub: null,
+      sku: null,
+      barcode: null,
+      precio: line.precio,
+      iva: line.iva,
+      qty: line.qty
+    };
+    const v = byId(line.ref);
+    return {
+      generic: false,
+      desc: v.variante,
+      sub: v.producto,
+      sku: v.sku,
+      barcode: v.barcode,
+      precio: v.precio,
+      iva: v.iva,
+      qty: line.qty
+    };
+  };
+
+  /* Regla unificada de precio a resolver antes de cobrar:
+     · catálogo: precio null (SIN PRECIO en la lista) — null NUNCA es $0.
+     · genérica: precio en cero — el cajero debe asignarle un precio.
+     Ambos bloquean el cobro; se distinguen sólo en el copy. */
+  const needsPrice = view => view.precio == null || view.precio === 0;
+  window.PosData = {
+    TENANTS,
+    CATALOG,
+    INITIAL_CART,
+    CONSUMIDOR_FINAL,
+    CLIENTES,
+    IVA_TARIFFS,
+    byId,
+    lineView,
+    needsPrice
+  };
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/pos-data.js", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/_historico/pos-shell.jsx
+try { (() => {
+/* Noctis · commerce POS-a — SHELL POS. Contexto de PANTALLA COMPLETA que REEMPLAZA
+   el shell administrativo (topbar + sidebar de módulos + breadcrumbs + footer): un
+   cajero clavado en una sola tarea no usa la navegación de módulos. Barra superior
+   mínima, orientada a la tarea, con identidad discreta: logo pequeño, empresa ·
+   sucursal activa, cajero, y salida clara del POS. SIN sidebar de módulos, SIN
+   breadcrumbs. La marca del tenant sigue siendo acento quirúrgico; el chrome es
+   neutro de casa. */
+const SHIcon = window.PosIcon;
+
+/* Logo pequeño del tenant (chip neutro de casa, NO usa el acento — la marca es
+   quirúrgica y vive en primary/activo/foco/selección del contenido). */
+function PosBrand({
+  tenant
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      flex: 'none',
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 12,
+      letterSpacing: '.02em'
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 15,
+      fontWeight: 600,
+      letterSpacing: '-.01em',
+      whiteSpace: 'nowrap'
+    }
+  }, tenant.name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 600,
+      letterSpacing: '.08em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '2px 8px'
+    }
+  }, "POS")));
+}
+function ContextChip({
+  icon,
+  primary,
+  secondary
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 'var(--pos-chip)',
+      height: 'var(--pos-chip)',
+      flex: 'none',
+      borderRadius: 9,
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))',
+      color: 'hsl(var(--text-secondary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(SHIcon, {
+    name: icon,
+    size: 20
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      minWidth: 0,
+      lineHeight: 1.25
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: 'hsl(var(--text-primary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, primary), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, secondary)));
+}
+function PosShell({
+  tenant,
+  mode,
+  onToggleMode,
+  onExit,
+  children
+}) {
+  const modeIcon = mode === 'dark' ? '☾' : '☀';
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      background: 'hsl(var(--surface-sunken))',
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("header", {
+    style: {
+      flex: 'none',
+      height: 'var(--pos-header)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '0 16px',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement(PosBrand, {
+    tenant: tenant
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 32,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement(ContextChip, {
+    icon: "store",
+    primary: tenant.empresa,
+    secondary: tenant.sucursal
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(ContextChip, {
+    icon: "user-round",
+    primary: tenant.cajero.nombre,
+    secondary: tenant.cajero.rol
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    className: "pos-btn",
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 'var(--pos-action)',
+      height: 'var(--pos-action)',
+      flex: 'none',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 18,
+      display: 'grid',
+      placeItems: 'center'
+    }
+  }, modeIcon), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onExit,
+    className: "pos-btn",
+    "aria-label": "Salir del POS",
+    style: {
+      height: 'var(--pos-action)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '0 14px',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 14,
+      fontWeight: 500,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(SHIcon, {
+    name: "log-out",
+    size: 20
+  }), "Salir del POS"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex'
+    }
+  }, children));
+}
+window.PosShell = PosShell;
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/pos-shell.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/_historico/shell.jsx
+try { (() => {
+/* Noctis · commerce — SHELL. Viste los slots que el núcleo dejó abiertos: logo
+   del tenant (fallback a Noctis), CompanySelector, sidebar POR PERMISOS colapsable,
+   slot de branch reservado, footer legal. Chrome SIEMPRE neutro de casa; el acento
+   del tenant aparece solo en el ítem de nav activo (los otros 3 puntos —primary,
+   foco, selección— viven en el contenido). Réplica del contrato visual del Shell
+   primitivo, extendida con la interacción que el prototipo necesita. */
+const {
+  Wordmark: SWordmark,
+  Badge: SBadge,
+  Icon: SIcon
+} = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  MicroLabel: ML
+} = window;
+
+/* Logo del tenant (variable) con fallback al logo de casa Noctis. */
+function TenantLogo({
+  tenant
+}) {
+  if (!tenant) return /*#__PURE__*/React.createElement(SWordmark, {
+    size: "sm"
+  });
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 26,
+      height: 26,
+      borderRadius: 7,
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 11,
+      letterSpacing: '.02em'
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 13,
+      fontWeight: 600,
+      letterSpacing: '-.01em'
+    }
+  }, tenant.name));
+}
+
+/* CompanySelector — VISIBLE solo con >1 empresa. Cambiar empresa limpia el estado
+   y vuelve a /dashboard (transición manejada por el orquestador). */
+function CompanySelector({
+  empresas,
+  value,
+  onChange
+}) {
+  const [open, setOpen] = React.useState(false);
+  const ref = React.useRef(null);
+  React.useEffect(() => {
+    if (!open) return;
+    const h = e => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener('mousedown', h);
+    return () => document.removeEventListener('mousedown', h);
+  }, [open]);
+  if (!empresas || empresas.length < 2) return null; // con una sola empresa es invisible
+  const current = empresas.find(e => e.id === value) || empresas[0];
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => setOpen(o => !o),
+    "aria-haspopup": "listbox",
+    "aria-expanded": open,
+    "aria-label": "Cambiar de empresa",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      height: 32,
+      padding: '0 10px',
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-primary))',
+      cursor: 'pointer',
+      font: '500 12px var(--font-ui)',
+      maxWidth: 220
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, current.name), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\u25BE")), open && /*#__PURE__*/React.createElement("div", {
+    role: "listbox",
+    style: {
+      position: 'absolute',
+      top: 38,
+      left: 0,
+      minWidth: 260,
+      padding: 6,
+      borderRadius: 12,
+      background: 'hsl(var(--surface-overlay))',
+      border: '1px solid hsl(var(--border-subtle))',
+      boxShadow: 'var(--shadow-overlay)',
+      zIndex: 40
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '4px 8px 8px'
+    }
+  }, /*#__PURE__*/React.createElement(ML, null, "Empresa")), empresas.map(e => {
+    const active = e.id === value;
+    return /*#__PURE__*/React.createElement("button", {
+      key: e.id,
+      role: "option",
+      "aria-selected": active,
+      onClick: () => {
+        setOpen(false);
+        if (!active) onChange(e.id);
+      },
+      style: {
+        display: 'flex',
+        width: '100%',
+        alignItems: 'center',
+        gap: 8,
+        textAlign: 'left',
+        border: 0,
+        cursor: 'pointer',
+        padding: '8px 10px',
+        borderRadius: 8,
+        background: active ? 'hsl(var(--surface-sunken))' : 'transparent',
+        color: 'hsl(var(--text-primary))',
+        font: 'inherit'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      "aria-hidden": "true",
+      style: {
+        width: 14,
+        color: active ? 'hsl(var(--brand-primary))' : 'transparent'
+      }
+    }, "\u2713"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'flex',
+        flexDirection: 'column'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 13,
+        fontWeight: active ? 600 : 500
+      }
+    }, e.name), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 11,
+        color: 'hsl(var(--text-tertiary))',
+        fontFamily: 'var(--font-mono)'
+      }
+    }, e.legal.split('·')[1]?.trim())));
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '8px 10px 4px',
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))',
+      borderTop: '1px solid hsl(var(--border-subtle))',
+      marginTop: 4
+    }
+  }, "Al cambiar de empresa se limpia el estado y vuelve al inicio.")));
+}
+
+/* Ítem de sidebar. Ícono Lucide del sistema por id de módulo (mismo set que backoffice).
+   Decisión declarada: los módulos "Pronto" (no construidos) son INFORMATIVOS PUROS —no un control
+   deshabilitado ni un link con handler nulo—: se renderizan como <div> sin href/ruta, sin onClick,
+   sin foco (no tabbable) y sin aria-disabled. El estado viaja en texto sr-only siempre presente +
+   title, así se percibe sin vista y en ambos modos. Solo los construidos son <button> navegable. */
+function NavItem({
+  item,
+  active,
+  collapsed,
+  onClick,
+  profile
+}) {
+  const disabled = !item.built; // visible-pero-Pronto (informativo)
+  const srName = item.label + ' · Pronto (módulo por construir)';
+  const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'relative',
+      display: 'inline-flex',
+      flex: 'none',
+      opacity: collapsed && disabled ? .5 : 1
+    }
+  }, /*#__PURE__*/React.createElement(SIcon, {
+    module: item.id,
+    size: 20,
+    style: {
+      flex: 'none'
+    }
+  }), collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: -2,
+      right: -2,
+      width: 6,
+      height: 6,
+      borderRadius: 999,
+      background: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))',
+      boxShadow: '0 0 0 2px ' + (active ? 'hsl(var(--brand-primary))' : 'hsl(var(--surface-sunken))')
+    }
+  })), !collapsed && /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, item.label), collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      width: 1,
+      height: 1,
+      padding: 0,
+      margin: -1,
+      overflow: 'hidden',
+      clip: 'rect(0 0 0 0)',
+      whiteSpace: 'nowrap',
+      border: 0
+    }
+  }, srName)), !collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 500,
+      padding: '1px 7px',
+      borderRadius: 999,
+      background: active ? 'hsl(var(--brand-foreground) / .2)' : 'hsl(var(--surface-base))',
+      border: active ? 0 : '1px solid hsl(var(--border-subtle))',
+      color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))'
+    }
+  }, "Pronto"));
+  const baseStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 10,
+    width: '100%',
+    textAlign: 'left',
+    border: 0,
+    padding: collapsed ? 8 : '8px 10px',
+    borderRadius: 8,
+    font: '500 13px var(--font-ui)',
+    justifyContent: collapsed ? 'center' : 'space-between',
+    background: active ? 'hsl(var(--brand-primary))' : 'transparent',
+    color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-secondary))'
+  };
+  if (disabled) {
+    return /*#__PURE__*/React.createElement("div", {
+      title: collapsed ? item.label + ' · Pronto' : undefined,
+      style: {
+        ...baseStyle,
+        cursor: 'default',
+        position: 'relative'
+      }
+    }, inner);
+  }
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onClick,
+    title: collapsed ? item.label : undefined,
+    "aria-current": active ? 'page' : undefined,
+    "aria-label": collapsed ? item.label : undefined,
+    style: {
+      ...baseStyle,
+      cursor: 'pointer',
+      position: 'relative'
+    }
+  }, inner);
+}
+function Sidebar({
+  nav,
+  profile,
+  active,
+  collapsed,
+  onToggle,
+  onNavigate
+}) {
+  const {
+    CanPerm
+  } = window;
+  // gating capa 1: módulo visible solo con >=1 permiso efectivo
+  const groups = nav.map(g => ({
+    ...g,
+    items: g.items.filter(it => CanPerm(profile, it.perm))
+  })).filter(g => g.items.length);
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: collapsed ? 60 : 214,
+      flex: 'none',
+      background: 'hsl(var(--surface-sunken))',
+      borderRight: '1px solid hsl(var(--border-subtle))',
+      display: 'flex',
+      flexDirection: 'column',
+      transition: 'width .16s ease'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: 'auto',
+      padding: collapsed ? '10px 8px' : '12px 10px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, groups.map((g, gi) => /*#__PURE__*/React.createElement("div", {
+    key: gi,
+    style: {
+      marginBottom: 6
+    }
+  }, !collapsed && /*#__PURE__*/React.createElement(ML, {
+    style: {
+      padding: '8px 8px 4px'
+    }
+  }, g.section), collapsed && gi > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 1,
+      background: 'hsl(var(--border-subtle))',
+      margin: '6px 6px'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, g.items.map(it => /*#__PURE__*/React.createElement(NavItem, {
+    key: it.id,
+    item: it,
+    profile: profile,
+    collapsed: collapsed,
+    active: active === it.id,
+    onClick: () => onNavigate(it)
+  })))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : 10,
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    title: "Slot de sucursal \u2014 reservado para POS/Caja",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      padding: collapsed ? 8 : '8px 10px',
+      borderRadius: 8,
+      border: '1px dashed hsl(var(--border-strong))',
+      color: 'hsl(var(--text-disabled))',
+      fontSize: 12
+    }
+  }, /*#__PURE__*/React.createElement(SIcon, {
+    name: "store",
+    size: 20,
+    style: {
+      flex: 'none',
+      opacity: .7
+    }
+  }), !collapsed && /*#__PURE__*/React.createElement("span", null, "Sucursal \xB7 reservado"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : '8px 10px',
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggle,
+    "aria-label": collapsed ? 'Expandir menú' : 'Colapsar menú',
+    "aria-pressed": collapsed,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      width: '100%',
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      borderRadius: 8,
+      padding: collapsed ? 7 : '7px 10px',
+      cursor: 'pointer',
+      fontSize: 12,
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(SIcon, {
+    name: collapsed ? 'chevrons-right' : 'chevrons-left',
+    size: 16
+  }), !collapsed && 'Colapsar')));
+}
+function CommerceShell({
+  tenant,
+  empresa,
+  profile,
+  mode,
+  onToggleMode,
+  onLogout,
+  activeModule,
+  onNavigate,
+  onChangeCompany,
+  collapsed,
+  onToggleCollapse,
+  children
+}) {
+  const modeIcon = mode === 'dark' ? '☾' : '☀';
+  const empresaObj = tenant.empresas.find(e => e.id === empresa) || tenant.empresas[0];
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid hsl(var(--border-subtle))',
+      borderRadius: 14,
+      overflow: 'hidden',
+      background: 'hsl(var(--surface-base))',
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: 640
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      padding: '0 14px',
+      height: 56,
+      flex: 'none',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement(TenantLogo, {
+    tenant: tenant
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 24,
+      background: 'hsl(var(--border-subtle))'
+    }
+  }), /*#__PURE__*/React.createElement(CompanySelector, {
+    empresas: tenant.empresas,
+    value: empresa,
+    onChange: onChangeCompany
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 12,
+      display: 'none'
+    },
+    className: "hide-sm"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'right',
+      lineHeight: 1.3
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-primary))',
+      fontWeight: 500
+    }
+  }, profile.email), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, tenant.name, " \xB7 ", tenant.product)), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 14
+    }
+  }, modeIcon), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onLogout,
+    style: {
+      height: 32,
+      padding: '0 12px',
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 12,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, "Salir"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flex: 1,
+      minHeight: 0
+    }
+  }, /*#__PURE__*/React.createElement(Sidebar, {
+    nav: window.CommerceData.NAV,
+    profile: profile,
+    active: activeModule,
+    collapsed: collapsed,
+    onToggle: onToggleCollapse,
+    onNavigate: onNavigate
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0,
+      position: 'relative',
+      background: 'hsl(var(--surface-base))',
+      overflow: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1120,
+      margin: '0 auto',
+      padding: '22px 26px 40px'
+    }
+  }, children))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '10px 16px',
+      flex: 'none',
+      borderTop: '1px solid hsl(var(--border-subtle))',
+      background: 'hsl(var(--surface-raised))',
+      display: 'flex',
+      justifyContent: 'space-between',
+      gap: 12,
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))',
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("span", null, empresaObj.legal), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 500,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, "Powered by Noctis Commerce")));
+}
+
+/* Dashboard — placeholder DIGNO (el dashboard KPI real es Fase 2). Sin KPIs falsos. */
+function Dashboard({
+  tenant,
+  profile,
+  onGoProductos,
+  canProductos
+}) {
+  const {
+    Card,
+    Badge,
+    Button
+  } = window.NoctisCommerceDesignSystem_4dfd35;
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 20
+    }
+  }, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 28px/34px var(--font-ui)',
+      letterSpacing: '-.02em',
+      margin: '0 0 8px'
+    }
+  }, "Panel de inicio"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 14,
+      maxWidth: '56ch'
+    }
+  }, "Est\xE1 trabajando en ", /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'hsl(var(--text-primary))'
+    }
+  }, tenant.name), " como ", profile.label.toLowerCase(), ". Desde aqu\xED accede a los m\xF3dulos habilitados para su perfil.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
+      gap: 14,
+      marginBottom: 20
+    }
+  }, canProductos && /*#__PURE__*/React.createElement(Card, {
+    header: "Cat\xE1logo"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      fontSize: 15,
+      marginBottom: 4
+    }
+  }, "Productos"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '0 0 14px',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13
+    }
+  }, "Gestione productos madre, variantes y c\xF3digos de barras."), /*#__PURE__*/React.createElement(Button, {
+    variant: "primary",
+    size: "sm",
+    onClick: onGoProductos
+  }, "Abrir productos")), /*#__PURE__*/React.createElement(Card, {
+    header: "Su perfil"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      fontSize: 15,
+      marginBottom: 4
+    }
+  }, profile.label), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '0 0 12px',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13
+    }
+  }, "Los m\xF3dulos del men\xFA se muestran seg\xFAn sus permisos efectivos."), /*#__PURE__*/React.createElement(Badge, {
+    tone: "neutral"
+  }, profile.perms.length, " permisos"))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 12,
+      alignItems: 'flex-start'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      fontSize: 16,
+      color: 'hsl(var(--text-tertiary))',
+      marginTop: 1
+    }
+  }, "\u25F7"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      fontSize: 14,
+      marginBottom: 2
+    }
+  }, "El tablero con indicadores llega en la Fase 2"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13,
+      maxWidth: '64ch'
+    }
+  }, "Ventas del d\xEDa, productos por vencer y bajo stock aparecer\xE1n aqu\xED. No se muestran cifras hasta tener el dato real \u2014 el hueco se se\xF1ala, no se inventa.")))));
+}
+Object.assign(window, {
+  CommerceShell,
+  Dashboard,
+  CompanySelector
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/_historico/shell.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/client-form.jsx
+try { (() => {
+/* Noctis · commerce — FORM DE CLIENTE compartido (ÚNICA fuente del formulario y su
+   validación es-EC). Lo consumen DOS lugares sin divergir: el picker del POS (dentro del
+   Sheet táctil) y el módulo Clientes (dentro de una Card del shell). Identificación
+   (Cédula 10 díg · RUC 13 díg fin 001 · Pasaporte laxo), nombre y celular obligatorios;
+   correo y dirección opcionales. Emite los datos validados SIN id — el id lo asigna quien
+   lo consume (el POS lo activa en la venta; Clientes lo agrega a la cartera). */
+const FIco = window.PosIcon;
+function validateClient({
+  docTipo,
+  numero,
+  nombre,
+  celular,
+  correo
+}) {
+  const e = {};
+  const num = (numero || '').trim();
+  if (!num) e.numero = 'Ingrese el número de identificación.';else if (docTipo === 'Cédula' && !/^\d{10}$/.test(num)) e.numero = 'La cédula debe tener 10 dígitos.';else if (docTipo === 'RUC' && !(/^\d{13}$/.test(num) && num.endsWith('001'))) e.numero = 'El RUC debe tener 13 dígitos y terminar en 001.';else if (docTipo === 'Pasaporte' && !/^[A-Za-z0-9]{5,}$/.test(num)) e.numero = 'Ingrese un número de pasaporte válido (mínimo 5 caracteres).';
+  if (!(nombre || '').trim()) e.nombre = 'Ingrese el nombre o la razón social.';
+  const cel = (celular || '').trim();
+  if (!cel) e.celular = 'Ingrese el número de celular.';else if (!/^09\d{8}$/.test(cel)) e.celular = 'El celular debe tener 10 dígitos y empezar con 09.';
+  if ((correo || '').trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.trim())) e.correo = 'Ingrese un correo electrónico válido.';
+  return e;
+}
+
+/* `client` → modo edición (precarga). `seed` → alta desde una búsqueda (número o nombre
+   tecleado). `back` → link superior opcional (el POS lo usa para volver a elegir cliente;
+   el shell no). onSubmit recibe los datos validados. */
+function ClientForm({
+  client,
+  seed,
+  onCancel,
+  onSubmit,
+  submitLabel = 'Guardar',
+  submitIcon = 'user-round',
+  back
+}) {
+  const seedDigits = /^\d+$/.test(seed || '');
+  const [docTipo, setDocTipo] = React.useState(client ? client.docTipo : seedDigits ? seed.length === 13 ? 'RUC' : 'Cédula' : 'Cédula');
+  const [numero, setNumero] = React.useState(client ? client.doc : seedDigits ? seed : '');
+  const [nombre, setNombre] = React.useState(client ? client.nombre : seedDigits ? '' : seed || '');
+  const [celular, setCelular] = React.useState(client ? client.celular || '' : '');
+  const [correo, setCorreo] = React.useState(client ? client.correo || '' : '');
+  const [direccion, setDireccion] = React.useState(client ? client.direccion || '' : '');
+  const [errors, setErrors] = React.useState({});
+  const submit = ev => {
+    ev.preventDefault();
+    const e = validateClient({
+      docTipo,
+      numero,
+      nombre,
+      celular,
+      correo
+    });
+    setErrors(e);
+    if (Object.keys(e).length) return;
+    onSubmit({
+      nombre: nombre.trim(),
+      doc: numero.trim(),
+      docTipo,
+      celular: celular.trim(),
+      correo: correo.trim(),
+      direccion: direccion.trim()
+    });
+  };
+  const fieldStyle = err => ({
+    width: '100%',
+    height: 'var(--pos-field-sm)',
+    padding: '0 14px',
+    borderRadius: 12,
+    border: '1px solid ' + (err ? 'hsl(var(--danger-border))' : 'hsl(var(--border-strong))'),
+    background: 'hsl(var(--surface-base))',
+    color: 'hsl(var(--text-primary))',
+    font: '400 16px var(--font-ui)',
+    outline: 'none'
+  });
+  const onF = e => {
+    if (!e.target.dataset.err) {
+      e.target.style.borderColor = 'hsl(var(--focus-ring))';
+      e.target.style.boxShadow = '0 0 0 3px hsl(var(--focus-ring) / .28)';
+    }
+  };
+  const onB = e => {
+    e.target.style.boxShadow = 'none';
+    e.target.style.borderColor = e.target.dataset.err ? 'hsl(var(--danger-border))' : 'hsl(var(--border-strong))';
+  };
+  const wrap = (label, control, error, opcional) => /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 6
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      font: '500 13px var(--font-ui)',
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, label, opcional && /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-tertiary))',
+      fontWeight: 400
+    }
+  }, " \xB7 opcional")), control, error && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--danger-fg))'
+    }
+  }, error));
+  return /*#__PURE__*/React.createElement("form", {
+    onSubmit: submit,
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16,
+      minWidth: 300
+    }
+  }, back && /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: back.onClick,
+    style: {
+      alignSelf: 'flex-start',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
+      border: 0,
+      background: 'none',
+      padding: 0,
+      cursor: 'pointer',
+      color: 'hsl(var(--text-secondary))',
+      font: '500 13px var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(FIco, {
+    name: "chevrons-left",
+    size: 18
+  }), back.label), wrap('Identificación', /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    role: "radiogroup",
+    "aria-label": "Tipo de identificaci\xF3n",
+    style: {
+      display: 'flex',
+      gap: 6
+    }
+  }, ['Cédula', 'RUC', 'Pasaporte'].map(t => {
+    const on = docTipo === t;
+    return /*#__PURE__*/React.createElement("button", {
+      key: t,
+      type: "button",
+      role: "radio",
+      "aria-checked": on,
+      onClick: () => {
+        setDocTipo(t);
+        setErrors(p => ({
+          ...p,
+          numero: undefined
+        }));
+      },
+      className: "pos-btn",
+      style: {
+        flex: 1,
+        height: 'var(--pos-action)',
+        borderRadius: 10,
+        cursor: 'pointer',
+        fontFamily: 'var(--font-ui)',
+        fontSize: 14,
+        fontWeight: 600,
+        border: '1px solid ' + (on ? 'hsl(var(--brand-primary))' : 'hsl(var(--border-strong))'),
+        background: on ? 'hsl(var(--brand-primary))' : 'hsl(var(--surface-base))',
+        color: on ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-secondary))'
+      }
+    }, t);
+  })), /*#__PURE__*/React.createElement("input", {
+    value: numero,
+    inputMode: docTipo === 'Pasaporte' ? 'text' : 'numeric',
+    onChange: e => setNumero(docTipo === 'Pasaporte' ? e.target.value.slice(0, 20) : e.target.value.replace(/\D/g, '').slice(0, 13)),
+    "aria-label": "N\xFAmero de identificaci\xF3n",
+    placeholder: docTipo === 'Cédula' ? '10 dígitos' : docTipo === 'RUC' ? '13 dígitos, termina en 001' : 'Número de pasaporte',
+    "data-err": errors.numero ? '1' : '',
+    style: fieldStyle(errors.numero),
+    onFocus: onF,
+    onBlur: onB
+  })), errors.numero), wrap('Nombre / razón social', /*#__PURE__*/React.createElement("input", {
+    value: nombre,
+    onChange: e => setNombre(e.target.value),
+    "aria-label": "Nombre o raz\xF3n social",
+    placeholder: "Nombre completo o raz\xF3n social",
+    "data-err": errors.nombre ? '1' : '',
+    style: fieldStyle(errors.nombre),
+    onFocus: onF,
+    onBlur: onB
+  }), errors.nombre), wrap('Celular', /*#__PURE__*/React.createElement("input", {
+    value: celular,
+    inputMode: "numeric",
+    onChange: e => setCelular(e.target.value.replace(/\D/g, '').slice(0, 10)),
+    "aria-label": "Celular",
+    placeholder: "09XXXXXXXX",
+    "data-err": errors.celular ? '1' : '',
+    style: fieldStyle(errors.celular),
+    onFocus: onF,
+    onBlur: onB
+  }), errors.celular), wrap('Correo', /*#__PURE__*/React.createElement("input", {
+    value: correo,
+    inputMode: "email",
+    onChange: e => setCorreo(e.target.value),
+    "aria-label": "Correo electr\xF3nico",
+    placeholder: "nombre@correo.ec",
+    "data-err": errors.correo ? '1' : '',
+    style: fieldStyle(errors.correo),
+    onFocus: onF,
+    onBlur: onB
+  }), errors.correo, true), wrap('Dirección de domicilio', /*#__PURE__*/React.createElement("input", {
+    value: direccion,
+    onChange: e => setDireccion(e.target.value),
+    "aria-label": "Direcci\xF3n de domicilio",
+    placeholder: "Calle, n\xFAmero, ciudad",
+    "data-err": "",
+    style: fieldStyle(false),
+    onFocus: onF,
+    onBlur: onB
+  }), null, true), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      marginTop: 4
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onCancel,
+    className: "pos-btn",
+    style: {
+      flex: 'none',
+      minHeight: 'var(--pos-tap-lg)',
+      padding: '0 18px',
+      borderRadius: 12,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontFamily: 'var(--font-ui)',
+      fontSize: 15,
+      fontWeight: 500
+    }
+  }, "Cancelar"), /*#__PURE__*/React.createElement("button", {
+    type: "submit",
+    style: {
+      flex: 1,
+      minHeight: 'var(--pos-tap-lg)',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8,
+      borderRadius: 12,
+      cursor: 'pointer',
+      border: 0,
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      fontFamily: 'var(--font-ui)',
+      fontSize: 16,
+      fontWeight: 600
+    }
+  }, /*#__PURE__*/React.createElement(FIco, {
+    name: submitIcon,
+    size: 20
+  }), submitLabel)));
+}
+Object.assign(window, {
+  ClientForm,
+  validateClient
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/client-form.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/clientes.jsx
+try { (() => {
+/* Noctis · commerce — módulo CLIENTES: lista · detalle · alta/edición. Calca los
+   primitivos y patrones de PRODUCTOS (Table del núcleo, 4 estados + 403, keyset sin
+   páginas, gating de CTA por permiso). FUENTE ÚNICA: la lista lee la MISMA cartera que
+   el picker del POS (window.PosData.CLIENTES, vía el estado del orquestador) y el alta
+   reusa el MISMO ClientForm es-EC — nada de dos formularios divergentes. Consumidor Final
+   NO es fila: es convención fiscal (cédula 9999999999999), no un cliente registrado. */
+const CLNS = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  Button: LBtn,
+  Input: LInput,
+  Table: LTable,
+  Badge: LBadge,
+  Card: LCard
+} = CLNS;
+function EstadoClienteBadge({
+  activo
+}) {
+  const inactivo = activo === false;
+  return /*#__PURE__*/React.createElement(LBadge, {
+    tone: inactivo ? 'neutral' : 'success',
+    dot: !inactivo
+  }, inactivo ? 'Inactivo' : 'Activo');
+}
+
+/* ── /clientes (lista) ──────────────────────────────────────────────────────
+   Búsqueda por nombre O documento (client-side, deuda conocida) + «Cargar más»
+   keyset. CTA «Nuevo cliente» gated por `clientes`. */
+function ClientesList({
+  profile,
+  listState,
+  clientes,
+  onRetry,
+  onNew,
+  onOpen
+}) {
+  const {
+    CanPerm,
+    PageHeader,
+    Crumbs,
+    TableSkeleton,
+    ErrorState,
+    ForbiddenState,
+    ListEmpty
+  } = window;
+  const canWrite = CanPerm(profile, 'clientes');
+  const [q, setQ] = React.useState('');
+  const [visible, setVisible] = React.useState(5);
+  const cols = [{
+    key: 'estado',
+    label: 'Estado',
+    pill: true,
+    w: 90
+  }, {
+    key: 'nombre',
+    label: 'Nombre / razón social',
+    w: '90%'
+  }, {
+    key: 'ident',
+    label: 'Identificación',
+    w: 190
+  }, {
+    key: 'celular',
+    label: 'Celular',
+    w: 130
+  }, {
+    key: 'correo',
+    label: 'Correo',
+    w: '80%'
+  }];
+  const header = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Crumbs, {
+    items: [{
+      label: 'Inicio'
+    }, {
+      label: 'Clientes'
+    }]
+  }), /*#__PURE__*/React.createElement(PageHeader, {
+    title: "Clientes",
+    meta: /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: 'hsl(var(--text-tertiary))'
+      }
+    }, "Cartera registrada del tenant \xB7 la misma que elige el POS"),
+    actions: canWrite ? /*#__PURE__*/React.createElement(LBtn, {
+      variant: "primary",
+      onClick: onNew
+    }, "Nuevo cliente") : null
+  }));
+  const Toolbar = /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 12,
+      maxWidth: 440
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      font: '500 13px var(--font-ui)',
+      marginBottom: 6
+    }
+  }, "Buscar por nombre o documento"), /*#__PURE__*/React.createElement(LInput, {
+    value: q,
+    onChange: e => {
+      setQ(e.target.value);
+      setVisible(5);
+    },
+    placeholder: "Nombre, raz\xF3n social o identificaci\xF3n\u2026",
+    helper: "B\xFAsqueda por nombre o documento en cliente (deuda conocida: el buscador server-side llega despu\xE9s). Consumidor Final no aparece: es convenci\xF3n fiscal, no un cliente registrado."
+  }));
+  if (listState === 'forbidden') return /*#__PURE__*/React.createElement(React.Fragment, null, header, /*#__PURE__*/React.createElement(ForbiddenState, {
+    resource: "los clientes",
+    onHome: onRetry
+  }));
+  if (listState === 'loading') return /*#__PURE__*/React.createElement(React.Fragment, null, header, Toolbar, /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid hsl(var(--border-subtle))',
+      borderRadius: 12,
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement(TableSkeleton, {
+    columns: cols,
+    rows: 5
+  })));
+  if (listState === 'error') return /*#__PURE__*/React.createElement(React.Fragment, null, header, Toolbar, /*#__PURE__*/React.createElement(ErrorState, {
+    errorId: "ERR-CLI-5A21",
+    context: "la lista de clientes",
+    onRetry: onRetry
+  }));
+  let data = clientes || [];
+  const ql = q.trim().toLowerCase();
+  if (ql) data = data.filter(c => c.nombre.toLowerCase().includes(ql) || (c.doc || '').toLowerCase().includes(ql));
+  if (listState === 'empty' || data.length === 0) {
+    const emptyByFilter = !!ql;
+    return /*#__PURE__*/React.createElement(React.Fragment, null, header, Toolbar, /*#__PURE__*/React.createElement(ListEmpty, {
+      title: emptyByFilter ? 'Sin resultados' : 'Aún no hay clientes',
+      description: emptyByFilter ? 'Ningún cliente coincide con el nombre o documento buscado. Ajuste la búsqueda.' : 'Registre el primer cliente. Consumidor Final no cuenta: es una convención fiscal, no un cliente de la cartera.',
+      action: !emptyByFilter && canWrite ? /*#__PURE__*/React.createElement(LBtn, {
+        variant: "primary",
+        size: "sm",
+        onClick: onNew
+      }, "Nuevo cliente") : null
+    }));
+  }
+  const em = /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\u2014");
+  const shown = data.slice(0, visible);
+  const rows = shown.map(c => ({
+    estado: /*#__PURE__*/React.createElement(EstadoClienteBadge, {
+      activo: c.activo
+    }),
+    nombre: /*#__PURE__*/React.createElement("button", {
+      type: "button",
+      onClick: () => onOpen(c.id),
+      style: {
+        border: 0,
+        background: 'none',
+        padding: 0,
+        cursor: 'pointer',
+        color: 'hsl(var(--link))',
+        font: '500 14px var(--font-ui)',
+        textAlign: 'left'
+      }
+    }, c.nombre),
+    ident: /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 13,
+        color: 'hsl(var(--text-secondary))'
+      }
+    }, c.docTipo, " ", c.doc),
+    celular: c.celular ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 13,
+        color: 'hsl(var(--text-secondary))'
+      }
+    }, c.celular) : em,
+    correo: c.correo ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: 'hsl(var(--text-secondary))',
+        fontSize: 13
+      }
+    }, c.correo) : em
+  }));
+  return /*#__PURE__*/React.createElement(React.Fragment, null, header, Toolbar, /*#__PURE__*/React.createElement("div", {
+    style: {
+      border: '1px solid hsl(var(--border-subtle))',
+      borderRadius: 12,
+      overflow: 'hidden',
+      background: 'hsl(var(--surface-raised))'
+    }
+  }, /*#__PURE__*/React.createElement(LTable, {
+    columns: cols,
+    rows: rows,
+    minWidth: 720,
+    footNote: /*#__PURE__*/React.createElement("span", null, "Orden por alta \xB7 keyset, sin n\xFAmeros de p\xE1gina ni total", !canWrite && ' · solo lectura para su perfil'),
+    onLoadMore: visible < data.length ? () => setVisible(v => v + 5) : undefined,
+    loadMoreLabel: "Cargar m\xE1s"
+  })));
+}
+
+/* ── /clientes/[id] (detalle) ───────────────────────────────────────────────
+   Ficha completa (identificación · nombre · celular · correo · dirección). Editar
+   gated. Desactivar/Reactivar por confirm inline de 2 pasos. Histórico de compras =
+   «Pronto» (se señala, no se inventa). */
+function ClientDetail({
+  client,
+  profile,
+  onEdit,
+  onBack,
+  onToast,
+  onToggleActive
+}) {
+  const {
+    CanPerm,
+    ConfirmInline,
+    PageHeader,
+    Crumbs,
+    ListEmpty
+  } = window;
+  const canWrite = CanPerm(profile, 'clientes');
+  if (!client) {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Crumbs, {
+      items: [{
+        label: 'Inicio'
+      }, {
+        label: 'Clientes',
+        onClick: onBack
+      }]
+    }), /*#__PURE__*/React.createElement(ListEmpty, {
+      title: "Cliente no encontrado",
+      description: "El cliente ya no est\xE1 disponible en esta cartera. Vuelva a la lista.",
+      action: /*#__PURE__*/React.createElement(LBtn, {
+        variant: "secondary",
+        size: "sm",
+        onClick: onBack
+      }, "Volver a clientes")
+    }));
+  }
+  const inactive = client.activo === false;
+  const em = /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\u2014");
+  const fields = [['Identificación', /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)'
+    }
+  }, client.docTipo, " ", client.doc)], ['Nombre / razón social', client.nombre], ['Celular', client.celular ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)'
+    }
+  }, client.celular) : em], ['Correo', client.correo || em], ['Dirección de domicilio', client.direccion || em]];
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Crumbs, {
+    items: [{
+      label: 'Inicio'
+    }, {
+      label: 'Clientes',
+      onClick: onBack
+    }, {
+      label: client.nombre
+    }]
+  }), /*#__PURE__*/React.createElement(PageHeader, {
+    title: client.nombre,
+    meta: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(EstadoClienteBadge, {
+      activo: client.activo
+    }), /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: 'hsl(var(--text-tertiary))'
+      }
+    }, "\xB7"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 12
+      }
+    }, client.docTipo, " ", client.doc)),
+    actions: canWrite ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(LBtn, {
+      variant: "secondary",
+      onClick: onEdit
+    }, "Editar"), /*#__PURE__*/React.createElement(ConfirmInline, {
+      label: inactive ? 'Reactivar' : 'Desactivar',
+      tone: inactive ? 'primary' : 'danger',
+      question: inactive ? '¿Reactivar este cliente?' : '¿Desactivar este cliente?',
+      confirmLabel: inactive ? 'Sí, reactivar' : 'Sí, desactivar',
+      size: "md",
+      onConfirm: close => {
+        onToggleActive(client);
+        close();
+      }
+    })) : null
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 640,
+      display: 'grid',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement(LCard, {
+    header: "Ficha del cliente"
+  }, /*#__PURE__*/React.createElement("dl", {
+    style: {
+      margin: 0,
+      display: 'grid',
+      gridTemplateColumns: '180px 1fr',
+      rowGap: 14,
+      columnGap: 16
+    }
+  }, fields.map(([k, v], i) => /*#__PURE__*/React.createElement(React.Fragment, {
+    key: i
+  }, /*#__PURE__*/React.createElement("dt", {
+    style: {
+      margin: 0,
+      fontSize: 13,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, k), /*#__PURE__*/React.createElement("dd", {
+    style: {
+      margin: 0,
+      fontSize: 14,
+      color: 'hsl(var(--text-primary))'
+    }
+  }, v))))), /*#__PURE__*/React.createElement(LCard, {
+    header: "Hist\xF3rico de compras"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 14,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.06em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '3px 10px'
+    }
+  }, "Pronto"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13,
+      maxWidth: '52ch'
+    }
+  }, "El hist\xF3rico de compras de este cliente llega con el m\xF3dulo de Ventas. El hueco se se\xF1ala, no se inventa.")))));
+}
+
+/* ── /clientes/nuevo · /[id]/editar ─────────────────────────────────────────
+   Envuelve el ClientForm compartido (mismo del POS) con crumbs + encabezado del shell. */
+function ClientFormScreen({
+  client,
+  onCancel,
+  onSubmit
+}) {
+  const {
+    PageHeader,
+    Crumbs
+  } = window;
+  const editing = !!client;
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Crumbs, {
+    items: [{
+      label: 'Inicio'
+    }, {
+      label: 'Clientes',
+      onClick: onCancel
+    }, {
+      label: editing ? 'Editar' : 'Nuevo'
+    }]
+  }), /*#__PURE__*/React.createElement(PageHeader, {
+    title: editing ? 'Editar cliente' : 'Nuevo cliente',
+    meta: editing ? /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontFamily: 'var(--font-mono)',
+        fontSize: 12,
+        color: 'hsl(var(--text-tertiary))'
+      }
+    }, client.docTipo, " ", client.doc) : /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: 'hsl(var(--text-tertiary))'
+      }
+    }, "Mismo formulario y validaci\xF3n es-EC que el alta del POS")
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 560
+    }
+  }, /*#__PURE__*/React.createElement(LCard, null, /*#__PURE__*/React.createElement(window.ClientForm, {
+    client: client,
+    onCancel: onCancel,
+    onSubmit: onSubmit,
+    submitLabel: editing ? 'Guardar cambios' : 'Crear cliente',
+    submitIcon: "user-round"
+  }))));
+}
+Object.assign(window, {
+  ClientesList,
+  ClientDetail,
+  ClientFormScreen,
+  EstadoClienteBadge
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/clientes.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/data.js
+try { (() => {
+/* Noctis · commerce — DATOS MOCK UNIFICADOS del prototipo (Fase 2). Un solo esquema:
+   fusiona el mundo de SHELL+PRODUCTOS con el del AMBIENTE DE VENTA (POS/Caja). Expone
+   window.CommerceData (tenants·perfiles·nav·catálogo madre) y window.PosData (catálogo
+   vendible·carrito·clientes) SOBRE LAS MISMAS estructuras — el catálogo del POS se DERIVA
+   de los productos madre: cero divergencia entre "lo que veo" y "lo que vendo".
+
+   Ficción declarada: TODOS los RUC son 1111111111001 (dato obviamente ficticio; el cliente
+   no debe creer que se muestran datos reales). Estados de producto: activo · borrador ·
+   descontinuado SOLO — «en tránsito» es estado de INVENTARIO, jamás de producto.
+   display_name en español siempre; el UUID/SKU nunca es el identificador visual principal. */
+(function () {
+  const RUC = '1111111111001';
+
+  /* ── TENANTS (modelo único) ─────────────────────────────────────────────────
+     Cada tenant lleva AMBAS formas: empresas[] (para CompanySelector del shell) Y
+     cajero+sucursal+ivaDefault (para POS/Caja). El acento viaja como PAR
+     {primary, foreground} curado por el clamp de 3 dim (luminancia·croma·hue OKLCH),
+     acento quirúrgico en 4 puntos; el resto del chrome es neutro de casa. Aguilar
+     mantiene sus 2 empresas. */
+  const TENANTS = {
+    aguilar: {
+      id: 'aguilar',
+      name: 'Librería Aguilar',
+      initials: 'LA',
+      product: 'commerce',
+      accent: '262 60% 42%',
+      fg: '0 0% 100%',
+      accentName: 'Violeta corporativo',
+      ivaDefault: 15,
+      sucursal: 'Matriz — Av. Amazonas',
+      wsRole: 'Administrador · multiempresa',
+      cajero: {
+        nombre: 'Agustina Cando',
+        rol: 'Cajera'
+      },
+      empresas: [{
+        id: 'e1',
+        name: 'Librería Aguilar S.A.',
+        legal: 'Librería Aguilar S.A. · RUC ' + RUC
+      }, {
+        id: 'e2',
+        name: 'Distribuidora Aguilar Cía. Ltda.',
+        legal: 'Distribuidora Aguilar Cía. Ltda. · RUC ' + RUC
+      }]
+    },
+    sanrafael: {
+      id: 'sanrafael',
+      name: 'Farmacia San Rafael',
+      initials: 'FS',
+      product: 'commerce',
+      accent: '184 72% 26%',
+      fg: '0 0% 100%',
+      accentName: 'Teal salud',
+      ivaDefault: 15,
+      sucursal: 'Local Centro — Guayaquil',
+      wsRole: 'Cajero · una empresa',
+      cajero: {
+        nombre: 'Marcos Peñafiel',
+        rol: 'Cajero'
+      },
+      empresas: [{
+        id: 'e1',
+        name: 'Farmacia San Rafael',
+        legal: 'Farmacia San Rafael · RUC ' + RUC
+      }]
+    },
+    rincon: {
+      id: 'rincon',
+      name: 'El Rincón Ferretero',
+      initials: 'RF',
+      product: 'commerce',
+      accent: '54 85% 46%',
+      fg: '240 6% 12%',
+      accentName: 'Oro (foreground near-black)',
+      ivaDefault: 15,
+      sucursal: 'Sucursal Sur — Quito',
+      wsRole: 'Contador · 2 sucursales',
+      cajero: {
+        nombre: 'Luis Tenesaca',
+        rol: 'Cajero'
+      },
+      empresas: [{
+        id: 'e1',
+        name: 'El Rincón Ferretero — Matriz',
+        legal: 'El Rincón Ferretero Cía. Ltda. · RUC ' + RUC
+      }, {
+        id: 'e2',
+        name: 'El Rincón — Sucursal Sur',
+        legal: 'El Rincón Ferretero Cía. Ltda. · RUC ' + RUC
+      }]
+    }
+  };
+  Object.values(TENANTS).forEach(t => {
+    t.empresa = t.empresas[0].name;
+    t.legal = t.empresas[0].legal;
+  });
+
+  /* ── PERFILES (uno solo, con caja/conta.* adentro) ──────────────────────────
+     La cajera suma solo 'caja' (verá únicamente Cierre de caja); admin/contador ven
+     TODO Contabilidad. El sidebar muestra un módulo con ≥1 permiso; las CTA se ocultan. */
+  const PROFILES = {
+    admin: {
+      label: 'Administrador',
+      email: 'agustina@aguilar.ec',
+      perms: ['productos.read', 'productos.write', 'categorias', 'inventario', 'compras', 'precios', 'facturacion', 'clientes', 'ventas', 'pos', 'reportes', 'config.empresa', 'config.usuarios', 'caja', 'conta.balance', 'conta.asientos', 'conta.mayor']
+    },
+    bodeguero: {
+      label: 'Bodeguero',
+      email: 'bodega@aguilar.ec',
+      perms: ['productos.read', 'productos.write', 'categorias', 'inventario', 'compras']
+    },
+    vendedor: {
+      label: 'Vendedor',
+      email: 'ventas@aguilar.ec',
+      perms: ['productos.read', 'ventas', 'pos', 'clientes']
+    },
+    cajero: {
+      label: 'Cajero',
+      email: 'caja@aguilar.ec',
+      perms: ['ventas', 'pos', 'caja']
+    },
+    contador: {
+      label: 'Contador',
+      email: 'contable@aguilar.ec',
+      perms: ['precios', 'facturacion', 'reportes', 'clientes', 'caja', 'conta.balance', 'conta.asientos', 'conta.mayor']
+    }
+  };
+
+  /* ── NAV del corte «Shell + Productos» (index.html) ─────────────────────────
+     La SPA unificada (demo.html) define su PROPIO nav con lo repuesto (POS, Contabilidad).
+     Este queda para el card acotado histórico. */
+  const NAV = [{
+    section: 'Vender',
+    items: [{
+      id: 'pos',
+      label: 'POS',
+      perm: 'pos',
+      built: false
+    }, {
+      id: 'ventas',
+      label: 'Ventas',
+      perm: 'ventas',
+      built: false
+    }]
+  }, {
+    section: 'Catálogo',
+    items: [{
+      id: 'productos',
+      label: 'Productos',
+      perm: 'productos.read',
+      built: true
+    }, {
+      id: 'categorias',
+      label: 'Categorías',
+      perm: 'categorias',
+      built: false
+    }]
+  }, {
+    section: 'Suministro',
+    items: [{
+      id: 'inventario',
+      label: 'Inventario',
+      perm: 'inventario',
+      built: false
+    }, {
+      id: 'compras',
+      label: 'Compras',
+      perm: 'compras',
+      built: false
+    }]
+  }, {
+    section: 'Dinero',
+    items: [{
+      id: 'precios',
+      label: 'Precios',
+      perm: 'precios',
+      built: false
+    }, {
+      id: 'facturacion',
+      label: 'Facturación',
+      perm: 'facturacion',
+      built: false
+    }, {
+      id: 'clientes',
+      label: 'Clientes',
+      perm: 'clientes',
+      built: false
+    }]
+  }, {
+    section: 'Gestión',
+    items: [{
+      id: 'reportes',
+      label: 'Reportes',
+      perm: 'reportes',
+      built: false
+    }]
+  }, {
+    section: 'Configuración',
+    items: [{
+      id: 'config.empresa',
+      label: 'Empresa',
+      perm: 'config.empresa',
+      built: false
+    }, {
+      id: 'config.usuarios',
+      label: 'Usuarios',
+      perm: 'config.usuarios',
+      built: false
+    }]
+  }];
+  const CATEGORIAS = [{
+    value: 'c-pap',
+    label: 'Papelería',
+    meta: '18 productos'
+  }, {
+    value: 'c-esc',
+    label: 'Escritura',
+    meta: '42 productos'
+  }, {
+    value: 'c-ofi',
+    label: 'Oficina',
+    meta: '9 productos'
+  }, {
+    value: 'c-esc2',
+    label: 'Escolar',
+    meta: '31 productos'
+  }, {
+    value: 'c-art',
+    label: 'Arte y manualidades',
+    meta: '12 productos'
+  }, {
+    value: 'c-tec',
+    label: 'Tecnología',
+    meta: '7 productos'
+  }];
+
+  /* ── PRODUCTOS madre (UNIVERSO ÚNICO) ───────────────────────────────────────
+     estado: activo | borrador | descontinuado (terminal). Solo los ACTIVOS son
+     vendibles en el POS (el catálogo vendible se deriva de acá). */
+  const PRODUCTS = [{
+    id: 'p1',
+    nombre: 'Cuaderno universitario 100 hojas',
+    categoria: 'c-pap',
+    categoriaLabel: 'Papelería',
+    iva: '15',
+    estado: 'activo',
+    creado: '04/03/2026',
+    descripcion: 'Cuaderno cosido, cuadros 1 cm, tapa dura.'
+  }, {
+    id: 'p2',
+    nombre: 'Esferográfico punta media',
+    categoria: 'c-esc',
+    categoriaLabel: 'Escritura',
+    iva: '15',
+    estado: 'activo',
+    creado: '11/02/2026',
+    descripcion: 'Tinta de secado rápido, cuerpo hexagonal.'
+  }, {
+    id: 'p3',
+    nombre: 'Marcador permanente negro',
+    categoria: 'c-esc',
+    categoriaLabel: 'Escritura',
+    iva: '15',
+    estado: 'activo',
+    creado: '19/06/2026',
+    descripcion: 'Punta biselada, tinta base alcohol.'
+  }, {
+    id: 'p4',
+    nombre: 'Resma papel bond A4 75 g',
+    categoria: 'c-pap',
+    categoriaLabel: 'Papelería',
+    iva: '15',
+    estado: 'activo',
+    creado: '28/05/2026',
+    descripcion: '500 hojas, blancura 96%.'
+  }, {
+    id: 'p5',
+    nombre: 'Carpeta archivador palanca oficio',
+    categoria: 'c-ofi',
+    categoriaLabel: 'Oficina',
+    iva: '15',
+    estado: 'activo',
+    creado: '02/01/2026',
+    descripcion: 'Lomo 7 cm, cartón forrado.'
+  }, {
+    id: 'p6',
+    nombre: 'Caja de grapas 26/6',
+    categoria: 'c-ofi',
+    categoriaLabel: 'Oficina',
+    iva: '15',
+    estado: 'descontinuado',
+    creado: '15/11/2025',
+    descripcion: 'Caja x 5.000 unidades.'
+  }, {
+    id: 'p7',
+    nombre: 'Set 12 lápices de colores',
+    categoria: 'c-art',
+    categoriaLabel: 'Arte y manualidades',
+    iva: '15',
+    estado: 'activo',
+    creado: '21/04/2026',
+    descripcion: 'Mina resistente, colores vivos.'
+  }, {
+    id: 'p8',
+    nombre: 'Corrector líquido 20 ml',
+    categoria: 'c-esc',
+    categoriaLabel: 'Escritura',
+    iva: '15',
+    estado: 'activo',
+    creado: '09/03/2026',
+    descripcion: 'Aplicador de punta metálica.'
+  }, {
+    id: 'p9',
+    nombre: 'Grapadora metálica media',
+    categoria: 'c-ofi',
+    categoriaLabel: 'Oficina',
+    iva: '15',
+    estado: 'borrador',
+    creado: '01/07/2026',
+    descripcion: ''
+  }];
+
+  /* ── VARIANTES por producto ─────────────────────────────────────────────────
+     Cada variante lleva su presentación de catálogo (nombre·sku·atributos·creado)
+     Y sus datos de venta (precio number|null · barcode primario · posLabel corto).
+     precio null = la variante NO tiene precio en la lista aplicable (SIN PRECIO, que
+     bloquea la venta): null NUNCA es $0. */
+  const VARIANTS = {
+    p1: [{
+      id: 'v1',
+      nombre: 'Cuadros',
+      sku: 'CUA-100-CUAD',
+      atributos: 'Rayado: cuadros · Color tapa: azul',
+      creado: '04/03/2026',
+      precio: 2.15,
+      barcode: '7861234567890',
+      posLabel: 'Cuadros · tapa azul'
+    }, {
+      id: 'v2',
+      nombre: 'Líneas',
+      sku: 'CUA-100-LIN',
+      atributos: 'Rayado: líneas · Color tapa: rojo',
+      creado: '04/03/2026',
+      precio: 2.15,
+      barcode: '7861234500017',
+      posLabel: 'Líneas · tapa roja'
+    }, {
+      id: 'v3',
+      nombre: 'Cuadros grande',
+      sku: 'CUA-100-CUAD-G',
+      atributos: 'Rayado: cuadros 1 cm · Color tapa: verde',
+      creado: '06/03/2026',
+      precio: 2.60,
+      barcode: '7861234500024',
+      posLabel: 'Cuadros grande · tapa verde'
+    }],
+    p2: [{
+      id: 'v4',
+      nombre: 'Azul',
+      sku: 'ESF-PM-AZ',
+      atributos: 'Color tinta: azul',
+      creado: '11/02/2026',
+      precio: 0.45,
+      barcode: '7862220001114',
+      posLabel: 'Azul'
+    }, {
+      id: 'v5',
+      nombre: 'Negro',
+      sku: 'ESF-PM-NE',
+      atributos: 'Color tinta: negro',
+      creado: '11/02/2026',
+      precio: 0.45,
+      barcode: '7862220001121',
+      posLabel: 'Negro'
+    }],
+    p3: [{
+      id: 'v6',
+      nombre: 'Negro',
+      sku: 'MPE-NE',
+      atributos: 'Color tinta: negro',
+      creado: '19/06/2026',
+      precio: null,
+      barcode: '7864440012306',
+      posLabel: 'Negro'
+    }],
+    p4: [{
+      id: 'v7',
+      nombre: '500 hojas',
+      sku: 'RES-A4-75',
+      atributos: 'Presentación: resma 500 · Blancura 96%',
+      creado: '28/05/2026',
+      precio: 4.80,
+      barcode: '7863330045008',
+      posLabel: '500 hojas · blancura 96%'
+    }],
+    p5: [{
+      id: 'v8',
+      nombre: 'Oficio',
+      sku: 'CAR-PAL-OF',
+      atributos: 'Tamaño: oficio · Lomo: 7 cm',
+      creado: '02/01/2026',
+      precio: 2.60,
+      barcode: '7867770021109',
+      posLabel: 'Oficio · lomo 7 cm'
+    }],
+    p7: [{
+      id: 'v9',
+      nombre: 'Estuche cartón',
+      sku: 'LAP-12-CART',
+      atributos: 'Empaque: cartón',
+      creado: '21/04/2026',
+      precio: 3.90,
+      barcode: '7865550098702',
+      posLabel: 'Estuche cartón'
+    }],
+    p8: [{
+      id: 'v10',
+      nombre: 'Punta metálica',
+      sku: 'COR-20',
+      atributos: 'Aplicador: punta metálica',
+      creado: '09/03/2026',
+      precio: 1.25,
+      barcode: '7866660033401',
+      posLabel: 'Punta metálica'
+    }],
+    p9: [{
+      id: 'v12',
+      nombre: '20 hojas',
+      sku: 'GRA-MET-M',
+      atributos: 'Capacidad: 20 hojas',
+      creado: '01/07/2026',
+      precio: 5.35,
+      barcode: '7868880076503',
+      posLabel: 'Media · 20 hojas'
+    }]
+  };
+
+  /* ── CÓDIGOS DE BARRAS por variante. primary = código primario (coincide con el
+     barcode que vende el POS). */
+  const BARCODES = {
+    v1: [{
+      id: 'b1',
+      codigo: '7861234567890',
+      etiqueta: 'EAN caja',
+      primary: true
+    }, {
+      id: 'b2',
+      codigo: '7861234567906',
+      etiqueta: 'EAN unidad',
+      primary: false
+    }],
+    v4: [{
+      id: 'b3',
+      codigo: '7862220001114',
+      etiqueta: 'EAN unidad',
+      primary: true
+    }],
+    v5: []
+  };
+  const IVA_OPTIONS = [{
+    value: '0',
+    label: 'IVA 0%'
+  }, {
+    value: '5',
+    label: 'IVA 5%'
+  }, {
+    value: '15',
+    label: 'IVA 15%'
+  }];
+  const ESTADO_META = {
+    activo: {
+      tone: 'success',
+      dot: true,
+      label: 'Activo'
+    },
+    borrador: {
+      tone: 'neutral',
+      dot: false,
+      label: 'Borrador'
+    },
+    descontinuado: {
+      tone: 'terminal',
+      dot: false,
+      label: 'Descontinuado'
+    }
+  };
+  window.CommerceData = {
+    TENANTS,
+    PROFILES,
+    NAV,
+    CATEGORIAS,
+    PRODUCTS,
+    VARIANTS,
+    BARCODES,
+    IVA_OPTIONS,
+    ESTADO_META
+  };
+
+  /* ═══ POS — DERIVADO del universo único ══════════════════════════════════════
+     El catálogo vendible se ARMA a partir de los productos madre ACTIVOS y sus
+     variantes: el POS vende exactamente lo que el módulo Productos muestra. Los
+     borrador/descontinuado no son vendibles (no aparecen en la búsqueda del POS). */
+  /* IVA a nivel NEGOCIO (config de empresa/tenant), no por producto: el POS aplica esta
+     tarifa única a las líneas de catálogo. El IVA dejó de ser atributo por producto. */
+  const IVA_NEGOCIO = 15;
+  const CATALOG = [];
+  PRODUCTS.forEach(p => {
+    if (p.estado !== 'activo') return;
+    (VARIANTS[p.id] || []).forEach(v => {
+      CATALOG.push({
+        id: v.id,
+        producto: p.nombre,
+        variante: v.posLabel || v.nombre,
+        sku: v.sku,
+        barcode: v.barcode,
+        precio: v.precio,
+        iva: IVA_NEGOCIO
+      });
+    });
+  });
+  const IVA_TARIFFS = [0, 5, 15];
+
+  /* Carrito inicial de demo. Incluye a propósito una línea SIN PRECIO (v6) para mostrar
+     el estado bloqueante; el orquestador la filtra al arrancar. */
+  const INITIAL_CART = [{
+    key: 'l1',
+    ref: 'v1',
+    qty: 2
+  }, {
+    key: 'l2',
+    ref: 'v3',
+    qty: 3
+  }, {
+    key: 'l3',
+    ref: 'v6',
+    qty: 1
+  }];
+  const CONSUMIDOR_FINAL = {
+    id: 'cf',
+    nombre: 'Consumidor Final',
+    doc: '9999999999999',
+    docTipo: 'Cédula',
+    final: true
+  };
+
+  /* Clientes registrados — FUENTE ÚNICA de la cartera: la comparten el picker del POS y
+     el módulo Clientes. Ficha completa (celular · correo · dirección) que captura el alta
+     compartida; datos de mentira pero coherentes es-EC. RUC ficticio 1111111111001 por
+     convención del archivo; `activo` alimenta el estado activo/inactivo del módulo. */
+  const CLIENTES = [{
+    id: 'c1',
+    nombre: 'María Fernanda Loor',
+    doc: '1312445566',
+    docTipo: 'Cédula',
+    celular: '0987654321',
+    correo: 'mf.loor@correo.ec',
+    direccion: 'Av. 4 de Noviembre y Malecón, Manta',
+    activo: true
+  }, {
+    id: 'c2',
+    nombre: 'Comercial El Sol Cía. Ltda.',
+    doc: '1111111111001',
+    docTipo: 'RUC',
+    celular: '0991234567',
+    correo: 'ventas@elsol.com.ec',
+    direccion: 'Av. 9 de Octubre 1234 y Boyacá, Guayaquil',
+    activo: true
+  }, {
+    id: 'c3',
+    nombre: 'Juan Carlos Vera',
+    doc: '0912233445',
+    docTipo: 'Cédula',
+    celular: '0962233445',
+    correo: 'jc.vera@correo.ec',
+    direccion: 'Cdla. La Alborada, Mz. 5 Villa 12, Guayaquil',
+    activo: true
+  }, {
+    id: 'c4',
+    nombre: 'Distribuidora Andina S.A.',
+    doc: '1111111111001',
+    docTipo: 'RUC',
+    celular: '0993456789',
+    correo: 'compras@andina.com.ec',
+    direccion: 'Av. Eloy Alfaro N34-120 y Portugal, Quito',
+    activo: true
+  }, {
+    id: 'c5',
+    nombre: 'Rosa Elena Chávez',
+    doc: '1719988776',
+    docTipo: 'Cédula',
+    celular: '0984567890',
+    correo: 're.chavez@correo.ec',
+    direccion: 'Av. América y Colón, Quito',
+    activo: true
+  }, {
+    id: 'c6',
+    nombre: 'Papelería Central Cía. Ltda.',
+    doc: '1111111111001',
+    docTipo: 'RUC',
+    celular: '0972345678',
+    correo: 'gerencia@papeleriacentral.ec',
+    direccion: 'Rocafuerte 456 y Sucre, Cuenca',
+    activo: false
+  }, {
+    id: 'c7',
+    nombre: 'Diego Armando Sánchez',
+    doc: '0104556677',
+    docTipo: 'Cédula',
+    celular: '0995678901',
+    correo: 'da.sanchez@correo.ec',
+    direccion: 'Av. Ordóñez Lasso y Los Cerezos, Cuenca',
+    activo: true
+  }, {
+    id: 'c8',
+    nombre: 'Andrea Paola Zambrano',
+    doc: '1315667788',
+    docTipo: 'Cédula',
+    celular: '0961122334',
+    correo: 'ap.zambrano@correo.ec',
+    direccion: 'Ciudadela Universitaria, Portoviejo',
+    activo: true
+  }];
+  const byId = id => CATALOG.find(v => v.id === id);
+  const lineView = line => {
+    if (line.generic) return {
+      generic: true,
+      desc: line.desc,
+      sub: null,
+      sku: null,
+      barcode: null,
+      precio: line.precio,
+      iva: line.iva,
+      qty: line.qty
+    };
+    const v = byId(line.ref);
+    return {
+      generic: false,
+      desc: v.variante,
+      sub: v.producto,
+      sku: v.sku,
+      barcode: v.barcode,
+      precio: v.precio,
+      iva: v.iva,
+      qty: line.qty
+    };
+  };
+  const needsPrice = view => view.precio == null || view.precio === 0;
+  window.PosData = {
+    TENANTS,
+    CATALOG,
+    INITIAL_CART,
+    CONSUMIDOR_FINAL,
+    CLIENTES,
+    IVA_TARIFFS,
+    byId,
+    lineView,
+    needsPrice
+  };
+})();
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/data.js", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/demo-app.jsx
+try { (() => {
+/* Noctis · commerce — DEMO NAVEGABLE (Fase 2). UNA sola SPA para clientes PYME:
+   Login → Elegir workspace → Shell (TopBar + Sidebar por permisos + router de módulo).
+   Reconcilia los dos shells previos (base «Shell+Productos» y el integrado «POS inmersivo
+   + Caja») en un solo archivo: TODO el estado vive en memoria, el carrito y el turno de
+   caja sobreviven a la navegación entre módulos. Datos mock, sin backend.
+
+   POS = MODO INMERSIVO del shell (bajo Vender): entrada automática, «Salir de venta»
+   recupera las barras SIN cancelar la venta (el carrito sobrevive con LiveSalePill global
+   + badge «En curso»). Productos = módulo COMPLETO (lista → detalle → variante → código).
+   Contabilidad = Cierre de caja. El resto de módulos: «Pronto» (informativos, reloj).
+
+   Consume el design system Noctis SIN redefinir tokens; la marca del tenant es acento
+   quirúrgico (primary/nav activo/foco/selección); el chrome es neutro de casa. */
+const DNS = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  Icon: CIcon,
+  Toast: CToast,
+  Button: CBtn,
+  Input: CInput,
+  Badge: CBadge,
+  Wordmark: CWord
+} = DNS;
+const CPD = window.PosData;
+const CD = window.CommerceData;
+
+/* NAV UNIFICADO — repone los «Pronto» junto a lo construido. `built` = navegable;
+   el resto es visible-pero-Pronto (informativo). `anyPerm` = visible con ≥1 permiso. */
+const NAV = [{
+  section: 'Vender',
+  items: [{
+    id: 'pos',
+    label: 'POS',
+    perm: 'pos',
+    built: true
+  }, {
+    id: 'ventas',
+    label: 'Ventas',
+    perm: 'ventas',
+    built: false
+  }]
+}, {
+  section: 'Catálogo',
+  items: [{
+    id: 'productos',
+    label: 'Productos',
+    perm: 'productos.read',
+    built: true
+  }, {
+    id: 'categorias',
+    label: 'Categorías',
+    perm: 'categorias',
+    built: false
+  }]
+}, {
+  section: 'Suministro',
+  items: [{
+    id: 'inventario',
+    label: 'Inventario',
+    perm: 'inventario',
+    built: false
+  }, {
+    id: 'compras',
+    label: 'Compras',
+    perm: 'compras',
+    built: false
+  }]
+}, {
+  section: 'Dinero',
+  items: [{
+    id: 'precios',
+    label: 'Precios',
+    perm: 'precios',
+    built: false
+  }, {
+    id: 'facturacion',
+    label: 'Facturación',
+    perm: 'facturacion',
+    built: false
+  }, {
+    id: 'clientes',
+    label: 'Clientes',
+    perm: 'clientes',
+    built: true
+  }]
+}, {
+  section: 'Finanzas',
+  items: [{
+    id: 'contabilidad',
+    label: 'Contabilidad',
+    anyPerm: ['caja', 'conta.balance', 'conta.asientos', 'conta.mayor'],
+    built: true
+  }]
+}, {
+  section: 'Gestión',
+  items: [{
+    id: 'reportes',
+    label: 'Reportes',
+    perm: 'reportes',
+    built: false
+  }]
+}, {
+  section: 'Configuración',
+  items: [{
+    id: 'config.empresa',
+    label: 'Empresa',
+    perm: 'config.empresa',
+    built: false
+  }, {
+    id: 'config.usuarios',
+    label: 'Usuarios',
+    perm: 'config.usuarios',
+    built: false
+  }]
+}];
+const NAV_ITEMS = NAV.flatMap(g => g.items);
+const itemVisible = (prof, it) => it.anyPerm ? it.anyPerm.some(pp => window.CanPerm(prof, pp)) : window.CanPerm(prof, it.perm);
+const moduleLabel = id => {
+  const it = NAV_ITEMS.find(i => i.id === id);
+  return it ? it.label : id;
+};
+/* Módulo de aterrizaje tras elegir workspace: preferimos una vista de shell tranquila. */
+const landingFor = prof => {
+  const order = ['productos', 'contabilidad', 'pos'];
+  for (const id of order) {
+    const it = NAV_ITEMS.find(i => i.id === id);
+    if (it && itemVisible(prof, it)) return id;
+  }
+  const first = NAV_ITEMS.find(i => i.built && itemVisible(prof, i));
+  return first ? first.id : 'pos';
+};
+const SEED_TURNO = {
+  seq: 'T-001-042',
+  fondo: 50.00,
+  aperturaHora: '08:12',
+  ventasEfectivo: 428.75,
+  ventasCount: 23,
+  esperado: 478.75
+};
+const centsNum = cents => parseInt(cents || '0', 10) / 100;
+
+/* Segmented oscuro de la barra de prototipo (andamiaje tipo Storybook, no chrome). */
+function Seg({
+  value,
+  onChange,
+  options,
+  ariaLabel
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    role: "radiogroup",
+    "aria-label": ariaLabel,
+    style: {
+      display: 'inline-flex',
+      gap: 2,
+      padding: 2,
+      borderRadius: 9,
+      background: '#161619',
+      border: '1px solid #2A2A2E'
+    }
+  }, options.map(o => {
+    const active = o.value === value;
+    return /*#__PURE__*/React.createElement("button", {
+      key: o.value,
+      type: "button",
+      role: "radio",
+      "aria-checked": active,
+      onClick: () => onChange(o.value),
+      style: {
+        border: 0,
+        cursor: 'pointer',
+        borderRadius: 7,
+        padding: '6px 11px',
+        fontSize: 12,
+        fontWeight: active ? 600 : 500,
+        fontFamily: 'var(--font-ui)',
+        minHeight: 32,
+        background: active ? '#F5F5F7' : 'transparent',
+        color: active ? '#0A0A0B' : '#AEAEB2'
+      }
+    }, o.label);
+  }));
+}
+
+/* Barra de PROTOTIPO — recorre los ejes de presentación (tenant · perfil · densidad ·
+   turno · estado de Productos · escritura). Es scaffolding, no chrome de la app. */
+function PrototypeBar(p) {
+  return /*#__PURE__*/React.createElement("div", {
+    "data-mode": "dark",
+    style: {
+      flex: 'none',
+      background: '#0A0A0B',
+      borderBottom: '1px solid #26262A',
+      color: '#F5F5F7'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '10px 16px',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      width: 8,
+      height: 8,
+      borderRadius: 999,
+      background: '#8E8E93'
+    },
+    "aria-hidden": "true"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: '#AEAEB2'
+    }
+  }, "Prototipo \xB7 Demo commerce")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Tenant"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Tenant",
+    value: p.tenantId,
+    onChange: p.onChangeTenant,
+    options: [{
+      value: 'aguilar',
+      label: 'Aguilar'
+    }, {
+      value: 'sanrafael',
+      label: 'San Rafael'
+    }, {
+      value: 'rincon',
+      label: 'El Rincón'
+    }]
+  }), /*#__PURE__*/React.createElement("span", {
+    title: 'Acento: ' + p.tenant.accentName,
+    style: {
+      width: 16,
+      height: 16,
+      borderRadius: 5,
+      background: 'hsl(' + p.tenant.accent + ')',
+      border: '1px solid rgba(255,255,255,.2)'
+    },
+    "aria-hidden": "true"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Perfil"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Perfil",
+    value: p.profileKey,
+    onChange: p.onChangeProfile,
+    options: [{
+      value: 'admin',
+      label: 'Admin'
+    }, {
+      value: 'bodeguero',
+      label: 'Bodeguero'
+    }, {
+      value: 'vendedor',
+      label: 'Vendedor'
+    }, {
+      value: 'cajero',
+      label: 'Cajera'
+    }, {
+      value: 'contador',
+      label: 'Contador'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Densidad venta"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Densidad de la venta",
+    value: p.density,
+    onChange: p.onChangeDensity,
+    options: [{
+      value: 'comfortable',
+      label: 'Desktop'
+    }, {
+      value: 'touch',
+      label: 'Táctil'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Turno de caja"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Estado del turno de caja",
+    value: p.cajaPreset,
+    onChange: p.onChangeCajaPreset,
+    options: [{
+      value: 'sin',
+      label: 'Sin turno'
+    }, {
+      value: 'abierto',
+      label: 'Turno abierto'
+    }]
+  })), p.stateEnabled && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, p.stateScope === 'section' ? 'Estado sección' : 'Estado lista'), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Estado de Productos",
+    value: p.stateValue,
+    onChange: p.onChangeState,
+    options: [{
+      value: 'data',
+      label: 'Datos'
+    }, {
+      value: 'loading',
+      label: 'Cargando'
+    }, {
+      value: 'empty',
+      label: 'Vacío'
+    }, {
+      value: 'error',
+      label: 'Error'
+    }, {
+      value: 'forbidden',
+      label: '403'
+    }]
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      marginLeft: 'auto'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#8E8E93'
+    }
+  }, "Escritura"), /*#__PURE__*/React.createElement(Seg, {
+    ariaLabel: "Resultado de la escritura (cobro / cierre)",
+    value: p.outcome,
+    onChange: p.onChangeOutcome,
+    options: [{
+      value: 'success',
+      label: 'Éxito'
+    }, {
+      value: 'fail',
+      label: 'Falla'
+    }]
+  }))));
+}
+
+/* ══ LOGIN — momento negro (reusa el look del núcleo) ══════════════════════════ */
+function LoginScreen({
+  onLogin
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      minHeight: '100vh',
+      display: 'grid',
+      placeItems: 'center',
+      padding: 24,
+      background: 'linear-gradient(150deg,#000 0%,#141416 60%,#1C1C1E 100%)',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 'min(760px,100%)',
+      border: '1px solid hsl(var(--border-subtle))',
+      borderRadius: 16,
+      overflow: 'hidden',
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative',
+      padding: 28,
+      background: 'linear-gradient(150deg,#000 0%,#1C1C1E 65%,#2C2C2E 100%)',
+      overflow: 'hidden'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      background: 'radial-gradient(120% 90% at 90% -20%, rgba(255,255,255,.07), transparent 60%)'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement(CWord, {
+    onDark: true
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '500 22px/1.2 var(--font-ui)',
+      color: '#F5F5F7',
+      marginTop: 18,
+      letterSpacing: '-.01em'
+    }
+  }, "Inicie sesi\xF3n"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 0 0',
+      color: '#AEAEB2',
+      fontSize: 13,
+      maxWidth: '34ch'
+    }
+  }, "Punto de venta, cat\xE1logo y caja para su negocio. Negro y plata en la herramienta; el color es de su marca."))), /*#__PURE__*/React.createElement("form", {
+    onSubmit: e => {
+      e.preventDefault();
+      onLogin();
+    },
+    style: {
+      padding: 24,
+      background: 'hsl(var(--surface-raised))',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement(CInput, {
+    label: "Correo",
+    defaultValue: "agustina@aguilar.ec"
+  }), /*#__PURE__*/React.createElement(CInput, {
+    label: "Contrase\xF1a",
+    type: "password",
+    defaultValue: "claveSegura1"
+  }), /*#__PURE__*/React.createElement(CBtn, {
+    variant: "primary",
+    type: "submit",
+    style: {
+      width: '100%'
+    }
+  }, "Ingresar"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Hueco conocido: \xABolvid\xE9 mi clave\xBB no existe en el roadmap \u2014 se se\xF1ala, no se inventa."))));
+}
+
+/* ══ ELEGIR WORKSPACE — cards por acceso (tenant × producto) ═══════════════════ */
+function WorkspaceScreen({
+  onPick,
+  mode
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    "data-mode": mode,
+    style: {
+      minHeight: '100vh',
+      display: 'grid',
+      placeItems: 'center',
+      padding: 24,
+      background: 'hsl(var(--surface-sunken))',
+      color: 'hsl(var(--text-primary))',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 'min(760px,100%)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      marginBottom: 4
+    }
+  }, /*#__PURE__*/React.createElement(CWord, {
+    size: "sm"
+  })), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 24px/1.2 var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: '10px 0 2px'
+    }
+  }, "Elija un espacio de trabajo"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '0 0 18px',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13
+    }
+  }, "Cards por acceso (tenant \xD7 producto). Elija uno para entrar al panel."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
+      gap: 12
+    }
+  }, Object.values(CD.TENANTS).map(t => /*#__PURE__*/React.createElement("button", {
+    key: t.id,
+    onClick: () => onPick(t.id),
+    style: {
+      textAlign: 'left',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 12,
+      padding: 16,
+      background: 'hsl(var(--surface-raised))',
+      cursor: 'pointer'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 13
+    }
+  }, t.initials), /*#__PURE__*/React.createElement(CBadge, {
+    tone: "neutral"
+  }, t.product), /*#__PURE__*/React.createElement("span", {
+    title: 'Acento: ' + t.accentName,
+    style: {
+      marginLeft: 'auto',
+      width: 14,
+      height: 14,
+      borderRadius: 4,
+      background: 'hsl(' + t.accent + ')',
+      border: '1px solid hsl(var(--border-subtle))'
+    },
+    "aria-hidden": "true"
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      fontSize: 15
+    }
+  }, t.name), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, t.wsRole), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))',
+      marginTop: 8,
+      fontFamily: 'var(--font-mono)'
+    }
+  }, t.empresas.length, " ", t.empresas.length === 1 ? 'empresa' : 'empresas')))), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '18px 2px 0',
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "El acceso real vendr\xEDa del backend por usuario. Ac\xE1 el eje Perfil de la barra de prototipo simula los permisos dentro del panel.")));
+}
+
+/* Chip de contexto (empresa/sucursal, cajera) — neutro de casa. */
+function CtxChip({
+  icon,
+  primary,
+  secondary,
+  small
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 9,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: small ? 28 : 32,
+      height: small ? 28 : 32,
+      flex: 'none',
+      borderRadius: 9,
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))',
+      color: 'hsl(var(--text-secondary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: icon,
+    size: 18
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      minWidth: 0,
+      lineHeight: 1.25
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      fontWeight: 600,
+      color: 'hsl(var(--text-primary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, primary), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11.5,
+      color: 'hsl(var(--text-tertiary))',
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis'
+    }
+  }, secondary)));
+}
+
+/* Selector de empresa — visible solo con >1 empresa (Aguilar, El Rincón). */
+function CompanySelector({
+  empresas,
+  value,
+  onChange
+}) {
+  const [open, setOpen] = React.useState(false);
+  const ref = React.useRef(null);
+  React.useEffect(() => {
+    if (!open) return;
+    const h = e => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener('mousedown', h);
+    return () => document.removeEventListener('mousedown', h);
+  }, [open]);
+  if (!empresas || empresas.length < 2) return null;
+  const current = empresas.find(e => e.id === value) || empresas[0];
+  return /*#__PURE__*/React.createElement("div", {
+    ref: ref,
+    style: {
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: () => setOpen(o => !o),
+    "aria-haspopup": "listbox",
+    "aria-expanded": open,
+    "aria-label": "Cambiar de empresa",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      height: 32,
+      padding: '0 10px',
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-primary))',
+      cursor: 'pointer',
+      font: '500 12px var(--font-ui)',
+      maxWidth: 240
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, current.name), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\u25BE")), open && /*#__PURE__*/React.createElement("div", {
+    role: "listbox",
+    style: {
+      position: 'absolute',
+      top: 38,
+      left: 0,
+      minWidth: 280,
+      padding: 6,
+      borderRadius: 12,
+      background: 'hsl(var(--surface-overlay))',
+      border: '1px solid hsl(var(--border-subtle))',
+      boxShadow: 'var(--shadow-overlay)',
+      zIndex: 60
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '4px 8px 8px'
+    }
+  }, /*#__PURE__*/React.createElement(window.MicroLabel, null, "Empresa")), empresas.map(e => {
+    const active = e.id === value;
+    return /*#__PURE__*/React.createElement("button", {
+      key: e.id,
+      role: "option",
+      "aria-selected": active,
+      onClick: () => {
+        setOpen(false);
+        if (!active) onChange(e.id);
+      },
+      style: {
+        display: 'flex',
+        width: '100%',
+        alignItems: 'center',
+        gap: 8,
+        textAlign: 'left',
+        border: 0,
+        cursor: 'pointer',
+        padding: '8px 10px',
+        borderRadius: 8,
+        background: active ? 'hsl(var(--surface-sunken))' : 'transparent',
+        color: 'hsl(var(--text-primary))',
+        font: 'inherit'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      "aria-hidden": "true",
+      style: {
+        width: 14,
+        color: active ? 'hsl(var(--brand-primary))' : 'transparent'
+      }
+    }, "\u2713"), /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'flex',
+        flexDirection: 'column'
+      }
+    }, /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 13,
+        fontWeight: active ? 600 : 500
+      }
+    }, e.name), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 11,
+        color: 'hsl(var(--text-tertiary))',
+        fontFamily: 'var(--font-mono)'
+      }
+    }, e.legal.split('·')[1]?.trim())));
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '8px 10px 4px',
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))',
+      borderTop: '1px solid hsl(var(--border-subtle))',
+      marginTop: 4
+    }
+  }, "Al cambiar de empresa se limpia la vista y vuelve al cat\xE1logo.")));
+}
+
+/* Píldora «venta en curso» — visible fuera del modo inmersivo cuando el POS tiene carrito
+   vivo. Un clic vuelve a la venta con el carrito intacto. */
+function LiveSalePill({
+  count,
+  total,
+  onResume
+}) {
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    "aria-label": 'Volver a la venta en curso · ' + count + ' ítems · ' + total,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 10,
+      height: 38,
+      padding: '0 8px 0 12px',
+      borderRadius: 999,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--brand-primary))',
+      background: 'hsl(var(--brand-primary) / .1)',
+      color: 'hsl(var(--text-primary))',
+      font: '500 13px var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 7
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'relative',
+      display: 'inline-flex'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 17,
+    style: {
+      color: 'hsl(var(--brand-primary))'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: -3,
+      right: -4,
+      width: 7,
+      height: 7,
+      borderRadius: 999,
+      background: 'hsl(var(--brand-primary))'
+    }
+  })), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontWeight: 600
+    }
+  }, "Venta en curso"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "\xB7 ", count, " ", count === 1 ? 'ítem' : 'ítems', " \xB7 ", /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontVariantNumeric: 'tabular-nums'
+    }
+  }, total))), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 4,
+      height: 28,
+      padding: '0 10px',
+      borderRadius: 999,
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      fontWeight: 600,
+      fontSize: 12
+    }
+  }, "Volver", /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 14
+  })));
+}
+
+/* Ítem de sidebar. Construido = <button> navegable; «Pronto» = informativo (sin foco/href,
+   no tabbable, estado en sr-only). El POS con carrito vivo muestra punto de acento + «En curso». */
+function NavItem({
+  item,
+  active,
+  collapsed,
+  onClick,
+  live
+}) {
+  const disabled = !item.built;
+  const srName = item.label + ' · Pronto (módulo por construir)';
+  const base = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 10,
+    width: '100%',
+    textAlign: 'left',
+    border: 0,
+    padding: collapsed ? 8 : '8px 10px',
+    borderRadius: 8,
+    font: '500 13px var(--font-ui)',
+    justifyContent: collapsed ? 'center' : 'space-between',
+    background: active ? 'hsl(var(--brand-primary))' : 'transparent',
+    color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-secondary))'
+  };
+  const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'relative',
+      display: 'inline-flex',
+      flex: 'none',
+      opacity: collapsed && disabled ? .6 : 1
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    module: item.id,
+    size: 20
+  }), (live || collapsed && disabled) && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      position: 'absolute',
+      top: -3,
+      right: -3,
+      width: 7,
+      height: 7,
+      borderRadius: 999,
+      background: live ? 'hsl(var(--brand-primary))' : active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))',
+      boxShadow: '0 0 0 2px ' + (active ? 'hsl(var(--brand-primary))' : 'hsl(var(--surface-sunken))')
+    }
+  })), !collapsed && /*#__PURE__*/React.createElement("span", {
+    style: {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap'
+    }
+  }, item.label), collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      width: 1,
+      height: 1,
+      padding: 0,
+      margin: -1,
+      overflow: 'hidden',
+      clip: 'rect(0 0 0 0)',
+      whiteSpace: 'nowrap',
+      border: 0
+    }
+  }, srName)), !collapsed && disabled && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 500,
+      padding: '1px 7px',
+      borderRadius: 999,
+      background: 'hsl(var(--surface-base))',
+      border: '1px solid hsl(var(--border-subtle))',
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Pronto"), !collapsed && live && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 600,
+      padding: '1px 7px',
+      borderRadius: 999,
+      background: active ? 'hsl(var(--brand-foreground) / .2)' : 'hsl(var(--brand-primary) / .14)',
+      color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--brand-primary))'
+    }
+  }, "En curso"));
+  if (disabled) return /*#__PURE__*/React.createElement("div", {
+    title: collapsed ? item.label + ' · Pronto' : undefined,
+    style: {
+      ...base,
+      cursor: 'default',
+      position: 'relative'
+    }
+  }, inner);
+  return /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onClick,
+    title: collapsed ? item.label : undefined,
+    "aria-current": active ? 'page' : undefined,
+    "aria-label": collapsed ? item.label : undefined,
+    style: {
+      ...base,
+      cursor: 'pointer',
+      position: 'relative'
+    }
+  }, inner);
+}
+function Sidebar({
+  profile,
+  active,
+  collapsed,
+  onToggle,
+  onNavigate,
+  liveCart
+}) {
+  const groups = NAV.map(g => ({
+    ...g,
+    items: g.items.filter(it => itemVisible(profile, it))
+  })).filter(g => g.items.length);
+  const {
+    MicroLabel: ML
+  } = window;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: collapsed ? 60 : 216,
+      flex: 'none',
+      background: 'hsl(var(--surface-sunken))',
+      borderRight: '1px solid hsl(var(--border-subtle))',
+      display: 'flex',
+      flexDirection: 'column',
+      transition: 'width .16s ease'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      overflowY: 'auto',
+      padding: collapsed ? '10px 8px' : '12px 10px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, groups.map((g, gi) => /*#__PURE__*/React.createElement("div", {
+    key: gi,
+    style: {
+      marginBottom: 6
+    }
+  }, !collapsed && /*#__PURE__*/React.createElement(ML, {
+    style: {
+      padding: '8px 8px 4px'
+    }
+  }, g.section), collapsed && gi > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 1,
+      background: 'hsl(var(--border-subtle))',
+      margin: '6px 6px'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  }, g.items.map(it => /*#__PURE__*/React.createElement(NavItem, {
+    key: it.id,
+    item: it,
+    collapsed: collapsed,
+    active: active === it.id,
+    onClick: () => onNavigate(it),
+    live: it.id === 'pos' && liveCart
+  })))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : 10,
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    title: "Slot de sucursal \u2014 reservado para POS/Caja",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      padding: collapsed ? 8 : '8px 10px',
+      borderRadius: 8,
+      border: '1px dashed hsl(var(--border-strong))',
+      color: 'hsl(var(--text-disabled))',
+      fontSize: 12
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "store",
+    size: 20,
+    style: {
+      flex: 'none',
+      opacity: .7
+    }
+  }), !collapsed && /*#__PURE__*/React.createElement("span", null, "Sucursal \xB7 reservado"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: collapsed ? 8 : '8px 10px',
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggle,
+    "aria-label": collapsed ? 'Expandir menú' : 'Colapsar menú',
+    "aria-pressed": collapsed,
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      width: '100%',
+      justifyContent: collapsed ? 'center' : 'flex-start',
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      borderRadius: 8,
+      padding: collapsed ? 7 : '7px 10px',
+      cursor: 'pointer',
+      fontSize: 12,
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: collapsed ? 'chevrons-right' : 'chevrons-left',
+    size: 16
+  }), !collapsed && 'Colapsar')));
+}
+
+/* Barra superior del shell NORMAL (chrome neutro de casa). Aloja el CompanySelector y la
+   píldora de venta en curso. */
+function TopBar({
+  tenant,
+  empresaObj,
+  empresaId,
+  onChangeCompany,
+  profile,
+  mode,
+  onToggleMode,
+  liveCart,
+  cartCount,
+  cartTotal,
+  onResume,
+  onLogout
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      padding: '0 14px',
+      height: 56,
+      flex: 'none',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 28,
+      height: 28,
+      borderRadius: 8,
+      flex: 'none',
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 11
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 14,
+      fontWeight: 600,
+      letterSpacing: '-.01em',
+      whiteSpace: 'nowrap'
+    }
+  }, tenant.name)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 26,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement(CompanySelector, {
+    empresas: tenant.empresas,
+    value: empresaId,
+    onChange: onChangeCompany
+  }), tenant.empresas.length < 2 && /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "store",
+    primary: empresaObj.name,
+    secondary: tenant.sucursal,
+    small: true
+  }), liveCart && /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 6
+    }
+  }, /*#__PURE__*/React.createElement(LiveSalePill, {
+    count: cartCount,
+    total: cartTotal,
+    onResume: onResume
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'right',
+      lineHeight: 1.3
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-primary))',
+      fontWeight: 500
+    }
+  }, tenant.cajero.nombre), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, profile.label)), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 14
+    }
+  }, mode === 'dark' ? '☾' : '☀'), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onLogout,
+    style: {
+      height: 32,
+      padding: '0 12px',
+      borderRadius: 8,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 12,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, "Salir")));
+}
+
+/* Barra del MODO INMERSIVO — mínima, orientada a la venta. «Salir de venta» RECUPERA las
+   barras (no cierra el POS). */
+function ImmersiveBar({
+  tenant,
+  empresaObj,
+  mode,
+  onToggleMode,
+  onExitSale
+}) {
+  return /*#__PURE__*/React.createElement("header", {
+    style: {
+      flex: 'none',
+      height: 'var(--pos-header)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '0 16px',
+      background: 'hsl(var(--surface-raised))',
+      borderBottom: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onExitSale,
+    className: "pos-btn",
+    "aria-label": "Salir de venta y recuperar las barras del panel",
+    style: {
+      height: 'var(--pos-action)',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '0 14px',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 14,
+      fontWeight: 500,
+      cursor: 'pointer',
+      fontFamily: 'var(--font-ui)'
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-left",
+    size: 20
+  }), "Salir de venta"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 32,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 32,
+      height: 32,
+      borderRadius: 8,
+      flex: 'none',
+      background: 'hsl(var(--text-primary))',
+      color: 'hsl(var(--surface-raised))',
+      display: 'grid',
+      placeItems: 'center',
+      fontWeight: 700,
+      fontSize: 12
+    }
+  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--text-primary))',
+      fontSize: 15,
+      fontWeight: 600,
+      whiteSpace: 'nowrap'
+    }
+  }, tenant.name), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 10,
+      fontWeight: 600,
+      letterSpacing: '.08em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '2px 8px'
+    }
+  }, "Venta")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 1,
+      height: 32,
+      background: 'hsl(var(--border-subtle))',
+      flex: 'none'
+    }
+  }), /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "store",
+    primary: empresaObj.name,
+    secondary: tenant.sucursal
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(CtxChip, {
+    icon: "user-round",
+    primary: tenant.cajero.nombre,
+    secondary: tenant.cajero.rol
+  }), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onToggleMode,
+    className: "pos-btn",
+    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
+    style: {
+      width: 'var(--pos-action)',
+      height: 'var(--pos-action)',
+      flex: 'none',
+      borderRadius: 10,
+      border: '1px solid hsl(var(--border-strong))',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      cursor: 'pointer',
+      fontSize: 18,
+      display: 'grid',
+      placeItems: 'center'
+    }
+  }, mode === 'dark' ? '☾' : '☀')));
+}
+
+/* Pantalla del POS en modo NORMAL (barras visibles). Se llega al «Salir de venta»: el POS
+   sigue abierto y muestra el estado de la venta —en curso (reanudar/cobrar) o sin venta—. */
+function PosResume({
+  lines,
+  totals,
+  customer,
+  onResume,
+  onCobrar,
+  onDescartar
+}) {
+  const alive = lines.length > 0;
+  const count = lines.reduce((s, l) => s + l.qty, 0);
+  const fmt = window.cajaFmtEC;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 720
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "Vender \xB7 POS"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, "Punto de venta"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 0 0',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '58ch'
+    }
+  }, "El POS abre en modo inmersivo para foco total en la venta. Saliste de la venta pero el POS sigue abierto \u2014 ", alive ? 'tu carrito quedó intacto, esperando.' : 'no hay ninguna venta en curso.')), alive ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '20px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--brand-primary) / .4)'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      marginBottom: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 46,
+      height: 46,
+      borderRadius: 12,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--brand-primary) / .12)',
+      color: 'hsl(var(--brand-primary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 24
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 17px/1.2 var(--font-ui)'
+    }
+  }, "Venta en curso"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, count, " ", count === 1 ? 'ítem' : 'ítems', " \xB7 ", lines.length, " ", lines.length === 1 ? 'línea' : 'líneas', " \xB7 ", customer.nombre)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginLeft: 'auto',
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      textTransform: 'uppercase',
+      letterSpacing: '.06em',
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Total"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '700 22px/1 var(--font-ui)',
+      fontVariantNumeric: 'tabular-nums'
+    }
+  }, fmt(totals.total)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    style: {
+      flex: '1 1 200px',
+      height: 48,
+      borderRadius: 12,
+      border: 0,
+      cursor: 'pointer',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      font: '600 15px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 18
+  }), "Volver a la venta"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onCobrar,
+    className: "pos-btn",
+    style: {
+      flex: '0 1 auto',
+      height: 48,
+      padding: '0 18px',
+      borderRadius: 12,
+      border: '1px solid hsl(var(--border-strong))',
+      cursor: 'pointer',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-primary))',
+      font: '500 15px var(--font-ui)'
+    }
+  }, "Ir a cobrar"), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onDescartar,
+    className: "pos-btn",
+    style: {
+      flex: '0 1 auto',
+      height: 48,
+      padding: '0 16px',
+      borderRadius: 12,
+      border: '1px solid hsl(var(--border-subtle))',
+      cursor: 'pointer',
+      background: 'transparent',
+      color: 'hsl(var(--text-tertiary))',
+      font: '500 14px var(--font-ui)'
+    }
+  }, "Descartar")), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '14px 0 0',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      lineHeight: 1.5
+    }
+  }, "Perder una venta a medio armar por salir a consultar es el peor caso \u2014 por eso el carrito sobrevive a la salida.")) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '28px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))',
+      textAlign: 'center',
+      maxWidth: 460
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 60,
+      height: 60,
+      borderRadius: 16,
+      margin: '0 auto 16px',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-strong))',
+      color: 'hsl(var(--text-tertiary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "shopping-cart",
+    size: 28
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 18px/1.3 var(--font-ui)'
+    }
+  }, "Empez\xE1 una venta"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '6px 0 18px',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      lineHeight: 1.5
+    }
+  }, "Entr\xE1 al modo inmersivo para buscar o escanear productos con foco total. Las barras se recuperan cuando salgas."), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onResume,
+    style: {
+      minWidth: 220,
+      height: 48,
+      borderRadius: 12,
+      border: 0,
+      cursor: 'pointer',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      font: '600 15px var(--font-ui)',
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CIcon, {
+    name: "chevrons-right",
+    size: 18
+  }), "Entrar a vender")));
+}
+function ProntoView({
+  label
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 520
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "M\xF3dulo"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: '0 0 8px'
+    }
+  }, label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '24px 20px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))',
+      textAlign: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
+      fontSize: 12,
+      fontWeight: 600,
+      letterSpacing: '.06em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '3px 10px',
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement(window.CajaIcon, {
+    name: "clock",
+    size: 13
+  }), "Pronto"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13,
+      maxWidth: '48ch',
+      marginInline: 'auto'
+    }
+  }, "Ten\xE9s permiso para ", /*#__PURE__*/React.createElement("b", null, label), ", pero este m\xF3dulo a\xFAn no se construye en este corte. El hueco se se\xF1ala, no se inventa.")));
+}
+
+/* ══ ORQUESTADOR ══════════════════════════════════════════════════════════════ */
+function DemoApp() {
+  const [screen, setScreen] = React.useState('login');
+  const [mode, setMode] = React.useState('light');
+  const autoDensity = React.useRef(window.detectDensity()).current;
+  const [density, setDensity] = React.useState(autoDensity);
+  const [tenantId, setTenantId] = React.useState('aguilar');
+  const [empresaId, setEmpresaId] = React.useState('e1');
+  const [profileKey, setProfileKey] = React.useState('admin');
+  const [collapsed, setCollapsed] = React.useState(false);
+  const [activeModule, setActiveModule] = React.useState('productos');
+  const [immersive, setImmersive] = React.useState(false);
+  const [contaView, setContaView] = React.useState('index');
+  const [toast, setToast] = React.useState(null);
+  const [outcome, setOutcome] = React.useState('success');
+
+  // Productos: sub-router en memoria + estados de lista/sección.
+  const [prodRoute, setProdRoute] = React.useState({
+    view: 'productos'
+  });
+  const [listState, setListState] = React.useState('data');
+  const [sectionState, setSectionState] = React.useState('data');
+  const [clientesRoute, setClientesRoute] = React.useState({
+    view: 'lista'
+  });
+
+  // ── Venta (contenido idéntico a POS-a/POS-b) ──────────────────────────────────
+  const [lines, setLines] = React.useState(() => CPD.INITIAL_CART.filter(l => !CPD.needsPrice(CPD.lineView(l))));
+  const [customer, setCustomer] = React.useState(CPD.CONSUMIDOR_FINAL);
+  const [clientes, setClientes] = React.useState(() => CPD.CLIENTES);
+  const [qtyLine, setQtyLine] = React.useState(null);
+  const [genericDraft, setGenericDraft] = React.useState(null);
+  const [pickerOpen, setPickerOpen] = React.useState(false);
+  const [flash, setFlash] = React.useState(null);
+  const [checkoutOpen, setCheckoutOpen] = React.useState(false);
+  const [phase, setPhase] = React.useState('idle');
+  const [received, setReceived] = React.useState('');
+  const [closedSale, setClosedSale] = React.useState(null);
+  const [errorId, setErrorId] = React.useState('ERR-POS-7F09');
+  const flashTimer = React.useRef(null);
+  const seq = React.useRef(100);
+  const compSeq = React.useRef(101);
+  const writeTimer = React.useRef(null);
+
+  // ── Caja (Contabilidad) ────────────────────────────────────────────────────────
+  const [cajaPreset, setCajaPreset] = React.useState('sin');
+  const [cajaTurno, setCajaTurno] = React.useState(null);
+  const [cajaPhase, setCajaPhase] = React.useState('idle');
+  const [contado, setContado] = React.useState('');
+  const [fondo, setFondo] = React.useState('5000');
+  const [cajaClosed, setCajaClosed] = React.useState(null);
+  const [cajaErrorId, setCajaErrorId] = React.useState('ERR-CAJA-3B1');
+  const cajaTimer = React.useRef(null);
+  const tenant = CD.TENANTS[tenantId];
+  const empresaObj = tenant.empresas.find(e => e.id === empresaId) || tenant.empresas[0];
+  const profile = CD.PROFILES[profileKey];
+  const {
+    CanPerm
+  } = window;
+  const totals = window.posTotals(lines);
+  const cartAlive = lines.length > 0 && !closedSale;
+  const doFlash = msg => {
+    setFlash(msg);
+    if (flashTimer.current) clearTimeout(flashTimer.current);
+    flashTimer.current = setTimeout(() => setFlash(null), 2600);
+  };
+
+  // Navegación de módulos: POS entra AUTOMÁTICAMENTE en inmersivo; el resto vive en shell.
+  const onNavigate = item => {
+    if (!item.built) {
+      setActiveModule(item.id);
+      setImmersive(false);
+      return;
+    }
+    if (item.id === 'pos') {
+      setActiveModule('pos');
+      setImmersive(true);
+      return;
+    }
+    if (item.id === 'productos') {
+      setActiveModule('productos');
+      setProdRoute({
+        view: 'productos'
+      });
+      setListState('data');
+      setSectionState('data');
+      setImmersive(false);
+      return;
+    }
+    if (item.id === 'clientes') {
+      setActiveModule('clientes');
+      setClientesRoute({
+        view: 'lista'
+      });
+      setListState('data');
+      setImmersive(false);
+      return;
+    }
+    if (item.id === 'contabilidad') {
+      setActiveModule('contabilidad');
+      setContaView('index');
+      setImmersive(false);
+      return;
+    }
+    setActiveModule(item.id);
+    setImmersive(false);
+  };
+  const exitSale = () => setImmersive(false);
+  const resumeSale = () => {
+    setActiveModule('pos');
+    setImmersive(true);
+  };
+
+  // Handlers de venta (idénticos a POS-b)
+  const onAdd = item => {
+    setLines(prev => {
+      const ex = prev.find(l => l.ref === item.id);
+      if (ex) return prev.map(l => l.ref === item.id ? {
+        ...l,
+        qty: l.qty + 1
+      } : l);
+      return [...prev, {
+        key: 'l' + ++seq.current,
+        ref: item.id,
+        qty: 1
+      }];
+    });
+    doFlash((item.precio == null ? 'Agregado (sin precio, bloquea el cobro): ' : 'Agregado: ') + item.variante);
+  };
+  const onStep = (line, d) => setLines(prev => prev.map(l => l.key === line.key ? {
+    ...l,
+    qty: Math.max(1, l.qty + d)
+  } : l));
+  const onRemove = line => setLines(prev => prev.filter(l => l.key !== line.key));
+  const commitQty = n => {
+    setLines(prev => prev.map(l => l.key === qtyLine.key ? {
+      ...l,
+      qty: n
+    } : l));
+    setQtyLine(null);
+  };
+  const openGeneric = desc => setGenericDraft({
+    desc
+  });
+  const commitGeneric = data => {
+    setLines(prev => [...prev, {
+      key: 'l' + ++seq.current,
+      generic: true,
+      desc: data.desc,
+      precio: data.precio,
+      iva: data.iva,
+      qty: data.qty
+    }]);
+    setGenericDraft(null);
+    doFlash((data.precio === 0 ? 'Ítem rápido agregado (precio en cero, bloquea el cobro): ' : 'Ítem rápido agregado: ') + data.desc);
+  };
+  const onSaveProduct = line => setToast('Abriría el alta de producto con «' + line.desc + '» precargado. Es otro corte: la venta se registra igual.');
+  const pickCustomer = c => {
+    setCustomer(c);
+    setPickerOpen(false);
+  };
+  const createCustomer = data => {
+    const c = {
+      ...data,
+      id: 'nc' + Date.now(),
+      activo: true
+    };
+    setClientes(prev => [c, ...prev]);
+    setCustomer(c);
+    setPickerOpen(false);
+    setToast('Cliente creado: ' + c.nombre + '. Ya es el cliente de esta venta.');
+  };
+  const consumidorFinal = () => {
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setPickerOpen(false);
+  };
+  const isBlocked = () => lines.length === 0 || lines.some(l => CPD.needsPrice(CPD.lineView(l)));
+  const onCobrar = () => {
+    if (isBlocked()) return;
+    setActiveModule('pos');
+    setImmersive(true);
+    setReceived('');
+    setPhase('idle');
+    setCheckoutOpen(true);
+  };
+  const runWrite = () => {
+    if (phase === 'processing') return;
+    setPhase('processing');
+    if (writeTimer.current) clearTimeout(writeTimer.current);
+    writeTimer.current = setTimeout(() => {
+      if (outcome === 'fail') {
+        setErrorId('ERR-POS-' + (7000 + Math.floor(Math.random() * 900)).toString(16).toUpperCase());
+        setPhase('error');
+        return;
+      }
+      const recv = parseInt(received || '0', 10) / 100;
+      const n = compSeq.current++;
+      setClosedSale({
+        secuencial: '001-001-' + String(n).padStart(9, '0'),
+        total: totals.total,
+        received: recv,
+        change: recv - totals.total,
+        customer: customer.nombre
+      });
+      setCheckoutOpen(false);
+      setPhase('idle');
+    }, 1500);
+  };
+  const cancelCheckout = () => {
+    if (phase === 'processing') return;
+    setCheckoutOpen(false);
+    setPhase('idle');
+  };
+  const newSale = () => {
+    setClosedSale(null);
+    setLines([]);
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setReceived('');
+    setPhase('idle');
+  };
+  const discardSale = () => {
+    setLines([]);
+    setCustomer(CPD.CONSUMIDOR_FINAL);
+    setReceived('');
+    setToast('Venta descartada. El carrito quedó vacío.');
+  };
+  const onPrint = () => setToast('Ver / imprimir comprobante es fast-follow (depende del driver/servidor de impresora). La venta ya quedó registrada con su secuencial.');
+
+  // Caja
+  const applyCajaPreset = v => {
+    setCajaPreset(v);
+    setCajaClosed(null);
+    setCajaPhase('idle');
+    setContado('');
+    setCajaTurno(v === 'abierto' ? {
+      ...SEED_TURNO
+    } : null);
+  };
+  const abrirCaja = () => {
+    if (cajaPhase === 'processing') return;
+    setCajaPhase('processing');
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+    cajaTimer.current = setTimeout(() => {
+      setCajaTurno({
+        seq: SEED_TURNO.seq,
+        fondo: centsNum(fondo),
+        aperturaHora: '08:12',
+        ventasEfectivo: 0,
+        ventasCount: 0,
+        esperado: centsNum(fondo)
+      });
+      setCajaPhase('idle');
+      setContado('');
+    }, 1400);
+  };
+  const cerrarCaja = () => {
+    if (cajaPhase === 'processing') return;
+    setCajaPhase('processing');
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+    cajaTimer.current = setTimeout(() => {
+      if (outcome === 'fail') {
+        setCajaErrorId('ERR-CAJA-' + (3000 + Math.floor(Math.random() * 900)).toString(16).toUpperCase());
+        setCajaPhase('error');
+        return;
+      }
+      const cont = centsNum(contado);
+      setCajaClosed({
+        ...cajaTurno,
+        contado: cont,
+        diff: cont - cajaTurno.esperado,
+        cierreHora: '20:47'
+      });
+      setCajaTurno(null);
+      setCajaPhase('idle');
+    }, 1500);
+  };
+  const nuevoTurno = () => {
+    setCajaClosed(null);
+    setCajaTurno(null);
+    setCajaPhase('idle');
+    setContado('');
+    setFondo('5000');
+    setCajaPreset('sin');
+  };
+  const openCaja = () => setContaView('caja');
+
+  // ── Entrar a un workspace (desde la pantalla de selección) ──────────────────
+  const enterWorkspace = id => {
+    setTenantId(id);
+    setEmpresaId('e1');
+    const land = landingFor(profile);
+    setActiveModule(land);
+    setImmersive(land === 'pos');
+    setProdRoute({
+      view: 'productos'
+    });
+    setListState('data');
+    setSectionState('data');
+    setContaView('index');
+    setScreen('shell');
+  };
+  const logout = () => {
+    setScreen('login');
+    setImmersive(false);
+  };
+  const onChangeTenant = id => {
+    setTenantId(id);
+    setEmpresaId('e1');
+  };
+  const onChangeCompany = id => {
+    setEmpresaId(id);
+    setProdRoute({
+      view: 'productos'
+    });
+    setListState('data');
+    setSectionState('data');
+    setClientesRoute({
+      view: 'lista'
+    });
+    setToast('Empresa cambiada · se limpió la vista.');
+  };
+  const moduleVisible = (id, prof) => {
+    const it = NAV_ITEMS.find(i => i.id === id);
+    if (!it) return false;
+    return itemVisible(prof, it);
+  };
+
+  // Gating capa 2 (fail-closed): al cambiar de perfil, si el módulo activo dejó de ser
+  // visible, rebota al primer módulo visible; si el POS deja de ser accesible, sale del
+  // inmersivo. Si Productos deja de ser visible, también rebota.
+  const onChangeProfile = k => {
+    const nextProfile = CD.PROFILES[k];
+    setProfileKey(k);
+    if (!moduleVisible('pos', nextProfile)) setImmersive(false);
+    if (!moduleVisible(activeModule, nextProfile)) {
+      const first = NAV_ITEMS.filter(i => i.built).find(i => moduleVisible(i.id, nextProfile));
+      if (first) {
+        setActiveModule(first.id);
+        setImmersive(first.id === 'pos');
+        if (first.id === 'productos') setProdRoute({
+          view: 'productos'
+        });
+        if (first.id === 'clientes') setClientesRoute({
+          view: 'lista'
+        });
+        if (first.id === 'contabilidad') setContaView('index');
+      }
+    }
+  };
+  React.useEffect(() => {
+    if (screen !== 'shell' || density !== 'comfortable' || !immersive) return;
+    const onKey = e => {
+      if (e.key !== 'F2') return;
+      e.preventDefault();
+      if (!checkoutOpen && !closedSale && !isBlocked()) onCobrar();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [screen, density, immersive, lines, checkoutOpen, closedSale]);
+  React.useEffect(() => () => {
+    if (writeTimer.current) clearTimeout(writeTimer.current);
+    if (cajaTimer.current) clearTimeout(cajaTimer.current);
+  }, []);
+
+  // ── Productos: sub-router ───────────────────────────────────────────────────
+  const goProd = (view, extra = {}) => setProdRoute({
+    view,
+    ...extra
+  });
+  const prod = prodRoute.productId ? CD.PRODUCTS.find(p => p.id === prodRoute.productId) : null;
+  const variant = prodRoute.productId && prodRoute.variantId ? (CD.VARIANTS[prodRoute.productId] || []).find(v => v.id === prodRoute.variantId) : null;
+  const barcode = variant && prodRoute.barcodeId ? (CD.BARCODES[variant.id] || []).find(b => b.id === prodRoute.barcodeId) : null;
+  const backToProductos = () => goProd('productos');
+  const backToProduct = pid => goProd('producto-detalle', {
+    productId: pid
+  });
+  const renderProductos = () => {
+    switch (prodRoute.view) {
+      case 'productos':
+        return /*#__PURE__*/React.createElement(window.ProductsList, {
+          profile: profile,
+          listState: listState,
+          onRetry: () => setListState('data'),
+          onNew: () => goProd('producto-nuevo'),
+          onOpen: id => goProd('producto-detalle', {
+            productId: id
+          })
+        });
+      case 'producto-nuevo':
+        return /*#__PURE__*/React.createElement(window.ProductForm, {
+          scenario: "ok",
+          onCancel: backToProductos,
+          onSaved: m => {
+            setToast(m);
+            backToProductos();
+          }
+        });
+      case 'producto-editar':
+        return /*#__PURE__*/React.createElement(window.ProductForm, {
+          product: prod,
+          scenario: prodRoute.scenario,
+          onCancel: () => backToProduct(prod.id),
+          onSaved: m => {
+            setToast(m);
+            backToProduct(prod.id);
+          }
+        });
+      case 'producto-detalle':
+        return /*#__PURE__*/React.createElement(window.ProductDetail, {
+          product: prod,
+          profile: profile,
+          sectionState: sectionState,
+          onRetry: () => setSectionState('data'),
+          onEdit: () => goProd('producto-editar', {
+            productId: prod.id,
+            scenario: 'ok'
+          }),
+          onBack: backToProductos,
+          onNewVariant: () => goProd('variante-nueva', {
+            productId: prod.id
+          }),
+          onOpenVariant: vid => goProd('variante-detalle', {
+            productId: prod.id,
+            variantId: vid
+          }),
+          onToast: setToast
+        });
+      case 'variante-nueva':
+        return /*#__PURE__*/React.createElement(window.VariantForm, {
+          product: prod,
+          onCancel: () => backToProduct(prod.id),
+          onSaved: m => {
+            setToast(m);
+            backToProduct(prod.id);
+          }
+        });
+      case 'variante-editar':
+        return /*#__PURE__*/React.createElement(window.VariantForm, {
+          product: prod,
+          variant: variant,
+          onCancel: () => goProd('variante-detalle', {
+            productId: prod.id,
+            variantId: variant.id
+          }),
+          onSaved: m => {
+            setToast(m);
+            goProd('variante-detalle', {
+              productId: prod.id,
+              variantId: variant.id
+            });
+          }
+        });
+      case 'variante-detalle':
+        return /*#__PURE__*/React.createElement(window.VariantDetail, {
+          product: prod,
+          variant: variant,
+          profile: profile,
+          sectionState: sectionState,
+          onRetry: () => setSectionState('data'),
+          onBackProduct: () => backToProduct(prod.id),
+          onEdit: () => goProd('variante-editar', {
+            productId: prod.id,
+            variantId: variant.id
+          }),
+          onNewBarcode: () => goProd('barcode-nuevo', {
+            productId: prod.id,
+            variantId: variant.id
+          }),
+          onEditBarcode: bid => goProd('barcode-editar', {
+            productId: prod.id,
+            variantId: variant.id,
+            barcodeId: bid
+          }),
+          onToast: setToast,
+          onDeleted: () => backToProduct(prod.id)
+        });
+      case 'barcode-nuevo':
+        return /*#__PURE__*/React.createElement(window.BarcodeForm, {
+          product: prod,
+          variant: variant,
+          onCancel: () => goProd('variante-detalle', {
+            productId: prod.id,
+            variantId: variant.id
+          }),
+          onSaved: m => {
+            setToast(m);
+            goProd('variante-detalle', {
+              productId: prod.id,
+              variantId: variant.id
+            });
+          }
+        });
+      case 'barcode-editar':
+        return /*#__PURE__*/React.createElement(window.BarcodeForm, {
+          product: prod,
+          variant: variant,
+          barcode: barcode,
+          onCancel: () => goProd('variante-detalle', {
+            productId: prod.id,
+            variantId: variant.id
+          }),
+          onSaved: m => {
+            setToast(m);
+            goProd('variante-detalle', {
+              productId: prod.id,
+              variantId: variant.id
+            });
+          }
+        });
+      default:
+        return null;
+    }
+  };
+
+  // ── Clientes: sub-router + FUENTE ÚNICA (misma cartera que el picker del POS). Un
+  //    cliente creado en el POS aparece aquí y viceversa: ambos leen/escriben `clientes`.
+  const cliente = clientesRoute.clienteId ? clientes.find(c => c.id === clientesRoute.clienteId) : null;
+  const createCliente = data => {
+    const c = {
+      ...data,
+      id: 'nc' + Date.now(),
+      activo: true
+    };
+    setClientes(prev => [c, ...prev]);
+    setToast('Cliente creado: ' + c.nombre + '.');
+    return c;
+  };
+  const updateCliente = (id, data) => {
+    setClientes(prev => prev.map(x => x.id === id ? {
+      ...x,
+      ...data
+    } : x));
+    setToast('Cliente actualizado.');
+  };
+  const toggleClienteActivo = c => {
+    setClientes(prev => prev.map(x => x.id === c.id ? {
+      ...x,
+      activo: c.activo === false
+    } : x));
+    setToast(c.activo === false ? 'Cliente reactivado: ' + c.nombre + '.' : 'Cliente desactivado: ' + c.nombre + '.');
+  };
+  const renderClientes = () => {
+    switch (clientesRoute.view) {
+      case 'lista':
+        return /*#__PURE__*/React.createElement(window.ClientesList, {
+          profile: profile,
+          listState: listState,
+          clientes: clientes,
+          onRetry: () => setListState('data'),
+          onNew: () => setClientesRoute({
+            view: 'nuevo'
+          }),
+          onOpen: id => setClientesRoute({
+            view: 'detalle',
+            clienteId: id
+          })
+        });
+      case 'nuevo':
+        return /*#__PURE__*/React.createElement(window.ClientFormScreen, {
+          onCancel: () => setClientesRoute({
+            view: 'lista'
+          }),
+          onSubmit: data => {
+            const c = createCliente(data);
+            setClientesRoute({
+              view: 'detalle',
+              clienteId: c.id
+            });
+          }
+        });
+      case 'editar':
+        return /*#__PURE__*/React.createElement(window.ClientFormScreen, {
+          client: cliente,
+          onCancel: () => setClientesRoute({
+            view: 'detalle',
+            clienteId: cliente.id
+          }),
+          onSubmit: data => {
+            updateCliente(cliente.id, data);
+            setClientesRoute({
+              view: 'detalle',
+              clienteId: cliente.id
+            });
+          }
+        });
+      case 'detalle':
+        return /*#__PURE__*/React.createElement(window.ClientDetail, {
+          client: cliente,
+          profile: profile,
+          onBack: () => setClientesRoute({
+            view: 'lista'
+          }),
+          onEdit: () => setClientesRoute({
+            view: 'editar',
+            clienteId: cliente.id
+          }),
+          onToggleActive: toggleClienteActivo,
+          onToast: setToast
+        });
+      default:
+        return null;
+    }
+  };
+
+  // Contenido del shell NORMAL por módulo activo.
+  let content;
+  if (activeModule === 'pos') content = /*#__PURE__*/React.createElement(PosResume, {
+    lines: lines,
+    totals: totals,
+    customer: customer,
+    onResume: resumeSale,
+    onCobrar: onCobrar,
+    onDescartar: discardSale
+  });else if (activeModule === 'productos') content = renderProductos();else if (activeModule === 'clientes') content = renderClientes();else if (activeModule === 'contabilidad') content = contaView === 'index' ? /*#__PURE__*/React.createElement(window.ContabilidadIndex, {
+    profile: profile,
+    onOpenCaja: openCaja
+  }) : /*#__PURE__*/React.createElement(window.CajaScreen, {
+    tenant: tenant,
+    cajero: tenant.cajero,
+    turno: cajaTurno,
+    closed: cajaClosed,
+    phase: cajaPhase,
+    errorId: cajaErrorId,
+    contado: contado,
+    onContado: setContado,
+    fondo: fondo,
+    onFondo: setFondo,
+    hora: "08:12",
+    onAbrir: abrirCaja,
+    onCerrar: cerrarCaja,
+    onRetry: cerrarCaja,
+    onNuevoTurno: nuevoTurno,
+    onBack: () => setContaView('index')
+  });else content = /*#__PURE__*/React.createElement(ProntoView, {
+    label: moduleLabel(activeModule)
+  });
+  const accentVars = {
+    '--brand-primary': tenant.accent,
+    '--brand-foreground': tenant.fg
+  };
+
+  // Barra de prototipo: eje de estado de Productos según la vista actual.
+  const listScreens = ['productos'];
+  const sectionScreens = ['producto-detalle', 'variante-detalle'];
+  const stateInList = activeModule === 'productos' && !immersive && listScreens.includes(prodRoute.view) || activeModule === 'clientes' && !immersive && clientesRoute.view === 'lista';
+  const stateInSection = activeModule === 'productos' && !immersive && sectionScreens.includes(prodRoute.view);
+
+  // Pantallas de momento (login / workspace): sin barra de prototipo, full screen.
+  if (screen === 'login') return /*#__PURE__*/React.createElement(LoginScreen, {
+    onLogin: () => setScreen('workspace')
+  });
+  if (screen === 'workspace') return /*#__PURE__*/React.createElement(WorkspaceScreen, {
+    mode: mode,
+    onPick: enterWorkspace
+  });
+  const ventaContent = closedSale ? /*#__PURE__*/React.createElement(window.SaleClosedScreen, {
+    sale: closedSale,
+    onNewSale: newSale,
+    onPrint: onPrint,
+    density: density
+  }) : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(window.ProductSearch, {
+    searchState: "data",
+    onAdd: onAdd,
+    onAddGeneric: openGeneric,
+    onRetry: () => {},
+    onExit: exitSale,
+    flash: flash
+  }), /*#__PURE__*/React.createElement(window.Cart, {
+    lines: lines,
+    customer: customer,
+    onOpenQty: setQtyLine,
+    onStep: onStep,
+    onRemove: onRemove,
+    onSaveProduct: onSaveProduct,
+    onConsumidorFinal: consumidorFinal,
+    onOpenPicker: () => setPickerOpen(true),
+    onCobrar: onCobrar
+  }));
+  return /*#__PURE__*/React.createElement(window.PosDensityCtx.Provider, {
+    value: density
+  }, /*#__PURE__*/React.createElement("div", {
+    "data-mode": mode,
+    "data-density": density,
+    style: {
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      background: 'hsl(var(--surface-sunken))',
+      color: 'hsl(var(--text-primary))',
+      fontFamily: 'var(--font-ui)',
+      ...accentVars
+    }
+  }, /*#__PURE__*/React.createElement(PrototypeBar, {
+    tenantId: tenantId,
+    onChangeTenant: onChangeTenant,
+    profileKey: profileKey,
+    onChangeProfile: onChangeProfile,
+    density: density,
+    onChangeDensity: setDensity,
+    cajaPreset: cajaPreset,
+    onChangeCajaPreset: applyCajaPreset,
+    outcome: outcome,
+    onChangeOutcome: setOutcome,
+    tenant: tenant,
+    stateEnabled: stateInList || stateInSection,
+    stateScope: stateInSection ? 'section' : 'list',
+    stateValue: stateInSection ? sectionState : listState,
+    onChangeState: stateInSection ? setSectionState : setListState
+  }), immersive ? /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, /*#__PURE__*/React.createElement(ImmersiveBar, {
+    tenant: tenant,
+    empresaObj: empresaObj,
+    mode: mode,
+    onToggleMode: () => setMode(m => m === 'light' ? 'dark' : 'light'),
+    onExitSale: exitSale
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      justifyContent: 'center',
+      background: 'hsl(var(--surface-base))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0,
+      maxWidth: 1300,
+      display: 'flex'
+    }
+  }, ventaContent))) : /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, /*#__PURE__*/React.createElement(TopBar, {
+    tenant: tenant,
+    empresaObj: empresaObj,
+    empresaId: empresaId,
+    onChangeCompany: onChangeCompany,
+    profile: profile,
+    mode: mode,
+    onToggleMode: () => setMode(m => m === 'light' ? 'dark' : 'light'),
+    liveCart: cartAlive,
+    cartCount: lines.reduce((s, l) => s + l.qty, 0),
+    cartTotal: window.cajaFmtEC(totals.total),
+    onResume: resumeSale,
+    onLogout: logout
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex'
+    }
+  }, /*#__PURE__*/React.createElement(Sidebar, {
+    profile: profile,
+    active: activeModule,
+    collapsed: collapsed,
+    onToggle: () => setCollapsed(c => !c),
+    onNavigate: onNavigate,
+    liveCart: cartAlive
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0,
+      overflow: 'auto',
+      background: 'hsl(var(--surface-base))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 1120,
+      margin: '0 auto',
+      padding: '24px 28px 48px'
+    }
+  }, content)))), /*#__PURE__*/React.createElement(window.QtySheet, {
+    line: qtyLine,
+    onClose: () => setQtyLine(null),
+    onCommit: commitQty
+  }), /*#__PURE__*/React.createElement(window.GenericItemSheet, {
+    draft: genericDraft,
+    ivaDefault: tenant.ivaDefault,
+    onClose: () => setGenericDraft(null),
+    onCommit: commitGeneric
+  }), /*#__PURE__*/React.createElement(window.ClientPicker, {
+    open: pickerOpen,
+    onClose: () => setPickerOpen(false),
+    onPick: pickCustomer,
+    onConsumidorFinal: consumidorFinal,
+    activeId: customer.id,
+    clientes: clientes,
+    onCreate: createCustomer
+  }), /*#__PURE__*/React.createElement(window.CheckoutSheet, {
+    open: checkoutOpen,
+    phase: phase,
+    totals: totals,
+    received: received,
+    onReceived: setReceived,
+    onConfirm: runWrite,
+    onRetry: runWrite,
+    onCancel: cancelCheckout,
+    errorId: errorId,
+    density: density
+  }), toast && /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'fixed',
+      left: 0,
+      right: 0,
+      bottom: 22,
+      display: 'flex',
+      justifyContent: 'center',
+      zIndex: 90,
+      pointerEvents: 'none'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      pointerEvents: 'auto',
+      maxWidth: 520,
+      margin: '0 16px'
+    }
+  }, /*#__PURE__*/React.createElement(CToast, {
+    onDismiss: () => setToast(null)
+  }, toast)))));
+}
+window.DemoApp = DemoApp;
+ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(DemoApp, null));
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/demo-app.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/kit.jsx
+try { (() => {
+/* Noctis · commerce — kit compartido del prototipo: helpers de gating, confirm
+   inline de 2 pasos, y los CUATRO estados por pantalla (vacío · cargando · error
+   · 403) construidos SOBRE los primitivos del núcleo. No reimplementa primitivos. */
+const NS = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  Button,
+  Badge,
+  Card,
+  Alert,
+  EmptyState,
+  Skeleton,
+  Spinner,
+  Table
+} = NS;
+
+/* ── gating ───────────────────────────────────────────────────────────────
+   Tres capas: sidebar (módulo con >=1 permiso) → sección (fail-closed: bounce a
+   /dashboard) → pantalla/CTA (ocultar, no deshabilitar). */
+const can = (profile, perm) => !perm || profile.perms.includes(perm);
+
+/* ── micro-label de sección (VENDER, MODO) — mayúsculas + tracking ─────────── */
+function MicroLabel({
+  children,
+  style
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 10,
+      textTransform: 'uppercase',
+      letterSpacing: '.09em',
+      color: 'hsl(var(--text-tertiary))',
+      fontWeight: 600,
+      ...style
+    }
+  }, children);
+}
+
+/* ── breadcrumb ───────────────────────────────────────────────────────────── */
+function Crumbs({
+  items
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 6,
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 10,
+      flexWrap: 'wrap'
+    }
+  }, items.map((c, i) => /*#__PURE__*/React.createElement(React.Fragment, {
+    key: i
+  }, i > 0 && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true"
+  }, "\u203A"), c.onClick ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: c.onClick,
+    style: {
+      border: 0,
+      background: 'none',
+      padding: 0,
+      cursor: 'pointer',
+      color: 'hsl(var(--link))',
+      font: 'inherit'
+    }
+  }, c.label) : /*#__PURE__*/React.createElement("span", {
+    style: i === items.length - 1 ? {
+      color: 'hsl(var(--text-secondary))'
+    } : undefined
+  }, c.label))));
+}
+
+/* ── encabezado de página ─────────────────────────────────────────────────── */
+function PageHeader({
+  title,
+  meta,
+  actions
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      gap: 16,
+      marginBottom: 16,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 24px/30px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, title), meta && /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 6,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 10,
+      flexWrap: 'wrap',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13
+    }
+  }, meta)), actions && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 8,
+      flexShrink: 0
+    }
+  }, actions));
+}
+
+/* ── confirm inline de 2 pasos (destructivas) — NUNCA Dialog ────────────────
+   Paso 1: botón peligro-fantasma. Paso 2 (armado): pregunta + confirmar/cancelar
+   en la misma fila/Card. `pending` muestra spinner en confirmar. */
+function ConfirmInline({
+  label,
+  question,
+  confirmLabel = 'Confirmar',
+  onConfirm,
+  pending,
+  size = 'sm',
+  tone = 'danger',
+  compact
+}) {
+  const [armed, setArmed] = React.useState(false);
+  if (!armed) {
+    return /*#__PURE__*/React.createElement(Button, {
+      variant: tone === 'danger' ? 'danger-ghost' : 'ghost',
+      size: size,
+      onClick: () => setArmed(true)
+    }, label);
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    role: "group",
+    "aria-label": question,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 8,
+      flexWrap: 'wrap'
+    }
+  }, !compact && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, question), /*#__PURE__*/React.createElement(Button, {
+    variant: tone === 'danger' ? 'danger' : 'primary',
+    size: size,
+    loading: pending,
+    onClick: () => onConfirm && onConfirm(() => setArmed(false))
+  }, confirmLabel), /*#__PURE__*/React.createElement(Button, {
+    variant: "ghost",
+    size: size,
+    disabled: pending,
+    onClick: () => setArmed(false)
+  }, "Cancelar"));
+}
+
+/* ── KIT DE ESTADOS ─────────────────────────────────────────────────────────
+   Cargando: Skeleton para listas/tablas. */
+function TableSkeleton({
+  columns,
+  rows = 5
+}) {
+  const skRows = Array.from({
+    length: rows
+  }, () => Object.fromEntries(columns.map(c => [c.key, /*#__PURE__*/React.createElement(Skeleton, {
+    variant: c.pill ? 'pill' : 'line',
+    width: c.w || '80%'
+  })])));
+  return /*#__PURE__*/React.createElement(Table, {
+    columns: columns,
+    rows: skRows,
+    footNote: /*#__PURE__*/React.createElement("span", {
+      style: {
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 8
+      }
+    }, /*#__PURE__*/React.createElement(Spinner, {
+      size: "sm"
+    }), " Cargando\u2026")
+  });
+}
+
+/* Error con errorId visible + reintento. El error NUNCA va por toast. */
+function ErrorState({
+  errorId = 'ERR-7F3A2',
+  onRetry,
+  context = 'la sección'
+}) {
+  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement(Alert, {
+    tone: "danger"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      marginBottom: 4
+    }
+  }, "No se pudo cargar ", context), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13
+    }
+  }, "Intente nuevamente. Si persiste, comparta el c\xF3digo con soporte."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      marginTop: 12,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement(Button, {
+    variant: "secondary",
+    size: "sm",
+    onClick: onRetry
+  }, "Reintentar"), /*#__PURE__*/React.createElement("code", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "errorId: ", errorId))));
+}
+
+/* 403 sin permiso — se ESCONDE lo no permitido; a nivel sección hace fail-closed. */
+function ForbiddenState({
+  onHome,
+  resource = 'esta sección'
+}) {
+  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '28px 8px',
+      textAlign: 'center',
+      maxWidth: 420,
+      margin: '0 auto'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 40,
+      height: 40,
+      borderRadius: 10,
+      margin: '0 auto 14px',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-strong))',
+      color: 'hsl(var(--text-tertiary))',
+      fontSize: 18
+    },
+    "aria-hidden": "true"
+  }, "\u26A0"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 16px/22px var(--font-ui)'
+    }
+  }, "No tiene permiso para ver ", resource), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '6px 0 16px',
+      color: 'hsl(var(--text-secondary))',
+      fontSize: 13
+    }
+  }, "Su perfil no incluye este acceso. Si cree que es un error, solic\xEDtelo a un administrador de su empresa."), /*#__PURE__*/React.createElement(Button, {
+    variant: "secondary",
+    size: "sm",
+    onClick: onHome
+  }, "Volver al inicio")));
+}
+
+/* Vacío con la marca de casa. */
+function ListEmpty({
+  title,
+  description,
+  action
+}) {
+  return /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '20px 8px'
+    }
+  }, /*#__PURE__*/React.createElement(EmptyState, {
+    title: title,
+    description: description,
+    action: action
+  })));
+}
+
+/* Overlay de gate/submit (spinner puntual sin layout). */
+function GateOverlay({
+  text
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: 'absolute',
+      inset: 0,
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-base) / .72)',
+      backdropFilter: 'blur(2px)',
+      zIndex: 20
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement(Spinner, {
+    size: "lg"
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, text)));
+}
+
+/* Segmented control genérico (toolbar de prototipo + selector de estado demo). */
+function Segmented({
+  value,
+  onChange,
+  options,
+  ariaLabel
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    role: "radiogroup",
+    "aria-label": ariaLabel,
+    style: {
+      display: 'inline-flex',
+      gap: 2,
+      padding: 2,
+      borderRadius: 8,
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, options.map(o => {
+    const active = o.value === value;
+    return /*#__PURE__*/React.createElement("button", {
+      key: o.value,
+      type: "button",
+      role: "radio",
+      "aria-checked": active,
+      onClick: () => onChange(o.value),
+      style: {
+        border: 0,
+        cursor: 'pointer',
+        borderRadius: 6,
+        padding: '5px 10px',
+        fontSize: 12,
+        fontWeight: active ? 600 : 500,
+        fontFamily: 'var(--font-ui)',
+        background: active ? 'hsl(var(--surface-raised))' : 'transparent',
+        color: active ? 'hsl(var(--text-primary))' : 'hsl(var(--text-secondary))',
+        boxShadow: active ? '0 1px 2px hsl(240 6% 10% / .08)' : 'none'
+      }
+    }, o.label);
+  }));
+}
+Object.assign(window, {
+  CanPerm: can,
+  MicroLabel,
+  Crumbs,
+  PageHeader,
+  ConfirmInline,
+  TableSkeleton,
+  ErrorState,
+  ForbiddenState,
+  ListEmpty,
+  GateOverlay,
+  Segmented
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/kit.jsx", error: String((e && e.message) || e) }); }
+
+// ui_kits/commerce/pos-caja.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+/* Noctis · commerce — CONTABILIDAD naciente + CAJA (apertura / cierre). El cierre de
+   caja es un HECHO CONTABLE (cuadra efectivo, registra diferencia), no un paso de la
+   venta: por eso vive en el módulo CONTABILIDAD como submódulo, NO bajo Vender. Este
+   corte hace NACER Contabilidad en la sidebar con la caja; el resto de submódulos
+   contables sigue siendo horizonte ("Pronto", reloj).
+
+   GATING de tres capas (heredado): módulo visible con ≥1 permiso efectivo → submódulo
+   OCULTO si no hay permiso (no deshabilitado) → CTA se oculta. La CAJERA ve Contabilidad
+   pero al abrirlo SOLO aparece "Cierre de caja"; un administrador vería todos los
+   submódulos. La vista de índice se dibuja TAL COMO LA VE quien la abre.
+
+   DENSIDAD NORMAL (no táctil): el cuadre se hace SENTADO contando efectivo, no en el
+   fragor de la venta. SUPUESTO declarado — si debe ser táctil, se avisa.
+
+   DINERO: montos como string es-EC $1.234,56 (coma decimal), MoneyDisplay del núcleo.
+   El ESPERADO viene RESUELTO del backend (esperado = fondo inicial + cobros en efectivo);
+   el front NO lo calcula — lo muestra como dato dado. La única aritmética de cliente es
+   la DIFERENCIA (contado − esperado), auxiliar del cuadre. */
+const CJNS = window.NoctisCommerceDesignSystem_4dfd35;
+const {
+  MoneyDisplay: CjMoney,
+  Button: CjBtn,
+  Badge: CjBadge,
+  Spinner: CjSpinner
+} = CJNS;
+
+/* Íconos de caja/contabilidad. Reusa el del núcleo vía PosIcon; agrega los glifos que el
+   bundle aún no expone (mismo peso/grilla Lucide, misma API). Ventana de rebuild, mismo
+   criterio que el fallback de POS-a/POS-b. */
+const CJ_ICON_PATHS = {
+  'lock': '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+  'lock-open': '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/>',
+  'calculator': '<rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/>',
+  'landmark': '<path d="M10 18v-7"/><path d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.29.949-.24.949H3.5c-.53 0-.716-.716-.24-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/>',
+  'wallet': '<path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 1 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/>',
+  'banknote': '<rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/>',
+  'chevron-right': '<path d="m9 18 6-6-6-6"/>',
+  'triangle-alert': '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+  'trending-up': '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+  'trending-down': '<polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/>',
+  'equal': '<line x1="5" x2="19" y1="9" y2="9"/><line x1="5" x2="19" y1="15" y2="15"/>',
+  'circle-check': '<path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/>',
+  'clock': '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+  'rotate-cw': '<path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/>',
+  'check': '<path d="M20 6 9 17l-5-5"/>',
+  'x': '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  'info': '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+  'receipt': '<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/>',
+  'user-round': '<circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>',
+  'delete': '<path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/>'
+};
+function CjIcon({
+  name,
+  size = 20,
+  strokeWidth = 2,
+  title,
+  style,
+  ...rest
+}) {
+  const core = window.PosIcon ? window.PosIcon({
+    name,
+    size,
+    strokeWidth,
+    title,
+    style,
+    ...rest
+  }) : null;
+  if (core) return core;
+  const inner = CJ_ICON_PATHS[name];
+  if (!inner) return null;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    width: size,
+    height: size,
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: strokeWidth,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    role: title ? 'img' : undefined,
+    "aria-hidden": title ? undefined : 'true',
+    "aria-label": title,
+    style: {
+      display: 'block',
+      flex: 'none',
+      ...style
+    },
+    dangerouslySetInnerHTML: {
+      __html: (title ? '<title>' + title + '</title>' : '') + inner
+    }
+  }, rest));
+}
+window.CajaIcon = CjIcon;
+
+/* Formato es-EC ($1.234,56 · coma decimal). Fuente de formato de la caja. */
+function fmtEC(n) {
+  const neg = n < 0;
+  const [ent, dec] = Math.abs(n).toFixed(2).split('.');
+  return (neg ? '−' : '') + '$' + ent.replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + dec;
+}
+const cToN = cents => parseInt(cents || '0', 10) / 100;
+window.cajaFmtEC = fmtEC;
+
+/* ── Campo de monto a DENSIDAD NORMAL ────────────────────────────────────────────
+   El cuadre se hace con teclado físico, sentado. Campo enfocable que captura dígitos
+   (centavos) y muestra el monto en formato es-EC. No es keypad táctil (esa es la venta):
+   coherente con la entrada desktop del cobro, distinta superficie de contexto. */
+function MoneyField({
+  value,
+  onChange,
+  ariaLabel,
+  autoFocus,
+  tone
+}) {
+  const ref = React.useRef(null);
+  const [focus, setFocus] = React.useState(false);
+  React.useEffect(() => {
+    if (autoFocus && ref.current) ref.current.focus();
+  }, [autoFocus]);
+  const empty = value === '' || value == null;
+  const ringVar = tone === 'danger' ? '--danger-fg' : '--focus-ring';
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 56,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 12,
+      padding: '0 16px',
+      borderRadius: 12,
+      border: '1px solid ' + (focus ? 'hsl(var(' + ringVar + '))' : 'hsl(var(--border-strong))'),
+      boxShadow: focus ? '0 0 0 3px hsl(var(' + ringVar + ') / .28)' : 'none',
+      background: 'hsl(var(--surface-base))'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      color: 'hsl(var(--text-tertiary))',
+      flex: 'none'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "banknote",
+    size: 20
+  })), /*#__PURE__*/React.createElement("input", {
+    ref: ref,
+    inputMode: "numeric",
+    "aria-label": ariaLabel,
+    value: fmtEC(cToN(value)),
+    onFocus: () => setFocus(true),
+    onBlur: () => setFocus(false),
+    onChange: e => onChange(e.target.value.replace(/\D/g, '').replace(/^0+(?=\d)/, '').slice(0, 9)),
+    style: {
+      flex: 1,
+      minWidth: 0,
+      textAlign: 'right',
+      border: 0,
+      outline: 'none',
+      background: 'transparent',
+      font: '700 30px/1 var(--font-ui)',
+      fontVariantNumeric: 'tabular-nums',
+      color: empty ? 'hsl(var(--text-tertiary))' : 'hsl(var(--text-primary))'
+    }
+  }));
+}
+
+/* Encabezado de submódulo de caja: micro-eyebrow del módulo padre (Contabilidad) +
+   título + chip de estado de turno. */
+function CajaHeader({
+  title,
+  meta,
+  onBack,
+  backLabel
+}) {
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 18
+    }
+  }, onBack && /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onBack,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
+      border: 0,
+      background: 'none',
+      padding: 0,
+      cursor: 'pointer',
+      color: 'hsl(var(--link))',
+      font: '500 13px var(--font-ui)',
+      marginBottom: 10
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "chevron-right",
+    size: 15,
+    style: {
+      transform: 'rotate(180deg)'
+    }
+  }), backLabel || 'Contabilidad'), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      gap: 16,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 4
+    }
+  }, "Contabilidad \xB7 Caja"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, title)), meta));
+}
+
+/* Chip de estado del turno (abierta / cerrada). */
+function TurnoChip({
+  open,
+  seq
+}) {
+  return /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '7px 12px',
+      borderRadius: 999,
+      fontSize: 13,
+      fontWeight: 600,
+      background: open ? 'hsl(var(--success-bg))' : 'hsl(var(--surface-sunken))',
+      border: '1px solid ' + (open ? 'hsl(var(--success-border))' : 'hsl(var(--border-strong))'),
+      color: open ? 'hsl(var(--success-fg))' : 'hsl(var(--text-secondary))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: open ? 'lock-open' : 'lock',
+    size: 16
+  }), open ? 'Caja abierta' : 'Caja cerrada', seq && /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontWeight: 500,
+      opacity: .8
+    }
+  }, "\xB7 ", seq));
+}
+
+/* Panel de dato (etiqueta + monto), reusado por esperado / resumen. */
+function DataRow({
+  label,
+  children,
+  hint,
+  strong,
+  tone
+}) {
+  const color = tone === 'danger' ? 'hsl(var(--danger-fg))' : tone === 'success' ? 'hsl(var(--success-fg))' : 'hsl(var(--text-primary))';
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'baseline',
+      justifyContent: 'space-between',
+      gap: 14,
+      padding: '11px 0',
+      borderTop: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      fontWeight: strong ? 600 : 500
+    }
+  }, label, hint && /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      fontWeight: 400
+    }
+  }, hint)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      font: (strong ? '700 20px' : '600 16px') + '/1 var(--font-ui)',
+      fontVariantNumeric: 'tabular-nums',
+      color
+    }
+  }, children));
+}
+
+/* ── APERTURA DE CAJA ─────────────────────────────────────────────────────────────
+   Estado inicial (sin turno abierto): la cajera registra el FONDO INICIAL (base para
+   dar vuelto) y abre el turno. `phase` = 'processing' durante la escritura. */
+function AperturaCaja({
+  tenant,
+  cajero,
+  fondo,
+  onFondo,
+  onAbrir,
+  phase,
+  hora
+}) {
+  const processing = phase === 'processing';
+  const canOpen = fondo !== '' && cToN(fondo) >= 0;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 560
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '22px 22px 24px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 14,
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 52,
+      height: 52,
+      borderRadius: 14,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-strong))',
+      color: 'hsl(var(--text-secondary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "lock",
+    size: 26,
+    strokeWidth: 1.8
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 18px/1.3 var(--font-ui)',
+      color: 'hsl(var(--text-primary))'
+    }
+  }, "Inici\xE1 el turno"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '3px 0 0',
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '48ch'
+    }
+  }, "Registr\xE1 el ", /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'hsl(var(--text-primary))'
+    }
+  }, "fondo inicial"), " \u2014 la base de efectivo con la que arranc\xE1s para dar vuelto. Queda como punto de partida del cuadre al cierre."))), /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 13,
+      fontWeight: 600,
+      color: 'hsl(var(--text-secondary))',
+      marginBottom: 8
+    }
+  }, "Fondo inicial"), /*#__PURE__*/React.createElement(MoneyField, {
+    value: fondo,
+    onChange: onFondo,
+    ariaLabel: "Fondo inicial de caja",
+    autoFocus: true
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 10,
+      display: 'flex',
+      gap: 8,
+      flexWrap: 'wrap'
+    }
+  }, ['5000', '10000', '20000'].map(c => /*#__PURE__*/React.createElement("button", {
+    key: c,
+    type: "button",
+    onClick: () => onFondo(c),
+    className: "pos-btn",
+    style: {
+      padding: '7px 14px',
+      borderRadius: 10,
+      cursor: 'pointer',
+      border: '1px solid ' + (fondo === c ? 'hsl(var(--brand-primary))' : 'hsl(var(--border-strong))'),
+      background: fondo === c ? 'hsl(var(--brand-primary) / .08)' : 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-primary))',
+      font: '600 14px var(--font-ui)'
+    }
+  }, fmtEC(cToN(c))))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 18,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12,
+      flexWrap: 'wrap',
+      padding: '12px 14px',
+      borderRadius: 12,
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 7,
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "user-round",
+    size: 16,
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }), cajero.nombre), /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: 'hsl(var(--border-strong))'
+    },
+    "aria-hidden": "true"
+  }, "\xB7"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 7,
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "clock",
+    size: 16,
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }), "Apertura ", hora)), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: processing || !canOpen ? undefined : onAbrir,
+    disabled: processing || !canOpen,
+    "aria-busy": processing || undefined,
+    style: {
+      marginTop: 20,
+      width: '100%',
+      height: 52,
+      borderRadius: 14,
+      cursor: processing || !canOpen ? 'default' : 'pointer',
+      font: '600 16px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 10,
+      border: !canOpen && !processing ? '1px solid hsl(var(--border-subtle))' : 0,
+      background: !canOpen && !processing ? 'hsl(var(--surface-sunken))' : 'hsl(var(--brand-primary))',
+      color: !canOpen && !processing ? 'hsl(var(--text-disabled))' : 'hsl(var(--brand-foreground))'
+    }
+  }, processing ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+    className: "noctis-btn__spin",
+    "aria-hidden": "true"
+  }), "Abriendo caja\u2026") : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "lock-open",
+    size: 20
+  }), "Abrir caja con ", fmtEC(cToN(fondo || '0'))))));
+}
+
+/* ── CIERRE DE CAJA ───────────────────────────────────────────────────────────────
+   Turno abierto: el sistema muestra el ESPERADO (resuelto por backend = fondo + cobros en
+   efectivo). La cajera cuenta el efectivo REAL, lo ingresa, y se calcula la DIFERENCIA
+   (sobra / falta / cuadra), inequívoca. `phase` = processing (escritura) · error. */
+function DiffState({
+  diff,
+  counted
+}) {
+  if (!counted) {
+    return /*#__PURE__*/React.createElement("div", {
+      style: {
+        padding: '18px 20px',
+        borderRadius: 14,
+        background: 'hsl(var(--surface-sunken))',
+        border: '1px dashed hsl(var(--border-strong))',
+        display: 'flex',
+        alignItems: 'center',
+        gap: 12,
+        color: 'hsl(var(--text-tertiary))'
+      }
+    }, /*#__PURE__*/React.createElement(CjIcon, {
+      name: "calculator",
+      size: 22
+    }), /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 14
+      }
+    }, "Ingres\xE1 el efectivo contado para ver la diferencia."));
+  }
+  const cuadra = Math.abs(diff) < 0.005;
+  const sobra = diff > 0;
+  const cfg = cuadra ? {
+    label: 'Cuadra',
+    icon: 'circle-check',
+    tone: 'success',
+    desc: 'El efectivo contado coincide con lo esperado.'
+  } : sobra ? {
+    label: 'Sobra',
+    icon: 'trending-up',
+    tone: 'success',
+    desc: 'Hay más efectivo del esperado. Se registra la diferencia.'
+  } : {
+    label: 'Falta',
+    icon: 'trending-down',
+    tone: 'danger',
+    desc: 'Falta efectivo respecto de lo esperado. Se registra la diferencia.'
+  };
+  const bg = cfg.tone === 'danger' ? 'hsl(var(--danger-bg))' : 'hsl(var(--success-bg))';
+  const bd = cfg.tone === 'danger' ? 'hsl(var(--danger-border))' : 'hsl(var(--success-border))';
+  const fg = cfg.tone === 'danger' ? 'hsl(var(--danger-fg))' : 'hsl(var(--success-fg))';
+  return /*#__PURE__*/React.createElement("div", {
+    role: "status",
+    style: {
+      padding: '18px 20px',
+      borderRadius: 14,
+      background: bg,
+      border: '1px solid ' + bd
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 14,
+      flexWrap: 'wrap'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 12
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 12,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-base))',
+      border: '1px solid ' + bd,
+      color: fg
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: cfg.icon,
+    size: 24
+  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '700 18px/1.1 var(--font-ui)',
+      color: fg
+    }
+  }, cfg.label), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '3px 0 0',
+      fontSize: 12.5,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '34ch'
+    }
+  }, cfg.desc))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'right'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      textTransform: 'uppercase',
+      letterSpacing: '.06em',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 2
+    }
+  }, "Diferencia"), /*#__PURE__*/React.createElement(CjMoney, {
+    value: cuadra ? 0 : diff,
+    size: "display",
+    style: {
+      color: fg
+    }
+  }))));
+}
+function CierreCaja({
+  turno,
+  contado,
+  onContado,
+  onCerrar,
+  phase,
+  errorId,
+  onRetry
+}) {
+  const processing = phase === 'processing';
+  const errored = phase === 'error';
+  const counted = contado !== '' && contado != null;
+  const diff = cToN(contado) - turno.esperado;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)',
+      gap: 18,
+      alignItems: 'start'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '20px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      textTransform: 'uppercase',
+      letterSpacing: '.06em',
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, "Esperado en caja"), /*#__PURE__*/React.createElement("span", {
+    title: "Lo calcula el sistema (backend), no el punto de venta",
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 4,
+      fontSize: 11,
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-subtle))',
+      borderRadius: 999,
+      padding: '1px 8px'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "info",
+    size: 12
+  }), "Resuelto por el sistema")), /*#__PURE__*/React.createElement(CjMoney, {
+    value: turno.esperado,
+    size: "display"
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 14
+    }
+  }, /*#__PURE__*/React.createElement(DataRow, {
+    label: "Fondo inicial",
+    hint: 'Apertura ' + turno.aperturaHora
+  }, fmtEC(turno.fondo)), /*#__PURE__*/React.createElement(DataRow, {
+    label: "Ventas en efectivo",
+    hint: turno.ventasCount + ' ventas del turno'
+  }, fmtEC(turno.ventasEfectivo)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'baseline',
+      justifyContent: 'space-between',
+      gap: 14,
+      padding: '11px 0 0',
+      borderTop: '1px solid hsl(var(--border-strong))',
+      marginTop: 2
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 6,
+      fontSize: 13,
+      fontWeight: 600,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "equal",
+    size: 15
+  }), "Esperado"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      font: '700 18px/1 var(--font-ui)',
+      fontVariantNumeric: 'tabular-nums'
+    }
+  }, fmtEC(turno.esperado)))), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '12px 0 0',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      lineHeight: 1.5
+    }
+  }, "El punto de venta no recalcula la venta: fondo, ventas y esperado llegan resueltos del sistema.")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '20px 22px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-raised))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement("label", {
+    style: {
+      display: 'block',
+      fontSize: 12,
+      fontWeight: 600,
+      textTransform: 'uppercase',
+      letterSpacing: '.06em',
+      color: 'hsl(var(--text-secondary))',
+      marginBottom: 8
+    }
+  }, "Efectivo contado"), /*#__PURE__*/React.createElement(MoneyField, {
+    value: contado,
+    onChange: onContado,
+    ariaLabel: "Efectivo real contado en caja",
+    tone: counted && diff < -0.005 ? 'danger' : undefined
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 2px 0',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Cont\xE1 el efectivo real de la caja e ingresalo. Formato $1.234,56.")), /*#__PURE__*/React.createElement(DiffState, {
+    diff: diff,
+    counted: counted
+  }), errored && /*#__PURE__*/React.createElement("div", {
+    role: "alert",
+    style: {
+      padding: '14px 16px',
+      borderRadius: 12,
+      background: 'hsl(var(--danger-bg))',
+      border: '1px solid hsl(var(--danger-border))',
+      color: 'hsl(var(--danger-fg))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontWeight: 600,
+      fontSize: 14,
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "triangle-alert",
+    size: 17
+  }), "No se pudo cerrar el turno"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '6px 0 8px',
+      fontSize: 13,
+      lineHeight: 1.5
+    }
+  }, "El esperado y el efectivo contado siguen intactos. Reintent\xE1 el cierre; si persiste, compart\xED el c\xF3digo con soporte."), /*#__PURE__*/React.createElement("code", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 13
+    }
+  }, "errorId: ", errorId)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      gap: 10
+    }
+  }, errored ? /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onRetry,
+    style: {
+      flex: 1,
+      height: 52,
+      borderRadius: 14,
+      border: 0,
+      cursor: 'pointer',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      font: '600 16px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 10
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "rotate-cw",
+    size: 20
+  }), "Reintentar cierre") : /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: processing || !counted ? undefined : onCerrar,
+    disabled: processing || !counted,
+    "aria-busy": processing || undefined,
+    style: {
+      flex: 1,
+      height: 52,
+      borderRadius: 14,
+      cursor: processing || !counted ? 'default' : 'pointer',
+      font: '600 16px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 10,
+      border: !counted && !processing ? '1px solid hsl(var(--border-subtle))' : 0,
+      background: !counted && !processing ? 'hsl(var(--surface-sunken))' : 'hsl(var(--brand-primary))',
+      color: !counted && !processing ? 'hsl(var(--text-disabled))' : 'hsl(var(--brand-foreground))'
+    }
+  }, processing ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
+    className: "noctis-btn__spin",
+    "aria-hidden": "true"
+  }), "Registrando el cierre\u2026") : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "lock",
+    size: 20
+  }), "Cerrar caja y registrar")))));
+}
+
+/* ── RESUMEN DEL TURNO CERRADO ────────────────────────────────────────────────────
+   Éxito del cierre: pantalla de resumen con fondo, ventas, esperado, contado, diferencia
+   (con su estado), hora de cierre y secuencial de turno. */
+function CierreResumen({
+  closed,
+  onNuevoTurno
+}) {
+  const cuadra = Math.abs(closed.diff) < 0.005;
+  const sobra = closed.diff > 0;
+  const tone = cuadra || sobra ? 'success' : 'danger';
+  const fg = tone === 'danger' ? 'hsl(var(--danger-fg))' : 'hsl(var(--success-fg))';
+  const label = cuadra ? 'Cuadró' : sobra ? 'Sobró' : 'Faltó';
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 520
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      textAlign: 'center',
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 68,
+      height: 68,
+      borderRadius: 20,
+      margin: '0 auto 14px',
+      display: 'grid',
+      placeItems: 'center',
+      background: tone === 'danger' ? 'hsl(var(--danger-bg))' : 'hsl(var(--success-bg))',
+      border: '1px solid ' + (tone === 'danger' ? 'hsl(var(--danger-border))' : 'hsl(var(--success-border))'),
+      color: fg
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: cuadra ? 'circle-check' : sobra ? 'trending-up' : 'trending-down',
+    size: 34,
+    strokeWidth: 1.9
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '700 22px/1.2 var(--font-ui)',
+      letterSpacing: '-.01em'
+    }
+  }, "Turno cerrado"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      margin: '8px 0 0',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 8,
+      padding: '6px 14px',
+      borderRadius: 999,
+      background: 'hsl(var(--surface-base))',
+      border: '1px solid hsl(var(--border-strong))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "receipt",
+    size: 16,
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 12,
+      fontWeight: 600,
+      letterSpacing: '.04em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, "Turno"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontFamily: 'var(--font-mono)',
+      fontSize: 15,
+      fontWeight: 600,
+      letterSpacing: '.02em'
+    }
+  }, closed.seq))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      padding: '6px 22px 14px',
+      borderRadius: 16,
+      background: 'hsl(var(--surface-base))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement(DataRow, {
+    label: "Fondo inicial",
+    hint: 'Apertura ' + closed.aperturaHora
+  }, fmtEC(closed.fondo)), /*#__PURE__*/React.createElement(DataRow, {
+    label: "Ventas en efectivo",
+    hint: closed.ventasCount + ' ventas'
+  }, fmtEC(closed.ventasEfectivo)), /*#__PURE__*/React.createElement(DataRow, {
+    label: "Esperado",
+    strong: true
+  }, fmtEC(closed.esperado)), /*#__PURE__*/React.createElement(DataRow, {
+    label: "Efectivo contado",
+    strong: true
+  }, fmtEC(closed.contado)), /*#__PURE__*/React.createElement(DataRow, {
+    label: label,
+    strong: true,
+    tone: tone
+  }, cuadra ? fmtEC(0) : fmtEC(closed.diff)), /*#__PURE__*/React.createElement(DataRow, {
+    label: "Hora de cierre"
+  }, closed.cierreHora)), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '12px 2px 0',
+      fontSize: 12,
+      color: 'hsl(var(--text-tertiary))',
+      textAlign: 'center',
+      lineHeight: 1.5
+    }
+  }, "La diferencia qued\xF3 registrada como hecho contable. El asiento y su conciliaci\xF3n viven en el resto de Contabilidad."), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: onNuevoTurno,
+    className: "pos-btn",
+    style: {
+      marginTop: 16,
+      width: '100%',
+      height: 48,
+      borderRadius: 12,
+      border: '1px solid hsl(var(--border-strong))',
+      cursor: 'pointer',
+      background: 'hsl(var(--surface-base))',
+      color: 'hsl(var(--text-secondary))',
+      font: '500 15px var(--font-ui)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "lock-open",
+    size: 18
+  }), "Abrir un nuevo turno"));
+}
+
+/* ── ÍNDICE DE CONTABILIDAD (gating de submódulo) ─────────────────────────────────
+   Se dibuja TAL COMO LO VE quien lo abre: solo aparecen los submódulos con permiso
+   efectivo. La cajera ve SOLO "Cierre de caja"; el resto queda OCULTO (no deshabilitado).
+   Un administrador vería todos. Los submódulos no construidos son informativos ("Pronto"). */
+const CONTA_SUBMODULES = [{
+  id: 'caja',
+  perm: 'caja',
+  built: true,
+  icon: 'wallet',
+  label: 'Cierre de caja',
+  desc: 'Apertura, cierre y cuadre de efectivo del turno.'
+}, {
+  id: 'balance',
+  perm: 'conta.balance',
+  built: false,
+  icon: 'landmark',
+  label: 'Balance general',
+  desc: 'Estado de situación de la empresa.'
+}, {
+  id: 'asientos',
+  perm: 'conta.asientos',
+  built: false,
+  icon: 'receipt',
+  label: 'Asientos contables',
+  desc: 'Libro diario y registro de asientos.'
+}, {
+  id: 'mayor',
+  perm: 'conta.mayor',
+  built: false,
+  icon: 'calculator',
+  label: 'Libro mayor',
+  desc: 'Saldos por cuenta contable.'
+}];
+function ContabilidadIndex({
+  profile,
+  onOpenCaja
+}) {
+  const {
+    CanPerm
+  } = window;
+  const visible = CONTA_SUBMODULES.filter(s => CanPerm(profile, s.perm));
+  const hidden = CONTA_SUBMODULES.length - visible.length;
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      maxWidth: 720
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.09em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      marginBottom: 6
+    }
+  }, "M\xF3dulo"), /*#__PURE__*/React.createElement("h1", {
+    style: {
+      font: '600 26px/32px var(--font-ui)',
+      letterSpacing: '-.015em',
+      margin: 0
+    }
+  }, "Contabilidad"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: '8px 0 0',
+      fontSize: 14,
+      color: 'hsl(var(--text-secondary))',
+      maxWidth: '58ch'
+    }
+  }, "Los subm\xF3dulos que ves dependen de tus permisos. ", hidden > 0 ? 'Otros roles ven más de este módulo.' : 'Tu rol ve el módulo completo.')), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10
+    }
+  }, visible.map(s => s.built ? /*#__PURE__*/React.createElement("button", {
+    key: s.id,
+    type: "button",
+    onClick: onOpenCaja,
+    className: "pos-btn",
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      textAlign: 'left',
+      padding: '16px 18px',
+      borderRadius: 14,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--border-subtle))',
+      background: 'hsl(var(--surface-raised))',
+      color: 'hsl(var(--text-primary))'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 12,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--brand-primary) / .1)',
+      color: 'hsl(var(--brand-primary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: s.icon,
+    size: 22
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 16px/1.3 var(--font-ui)'
+    }
+  }, s.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, s.desc)), /*#__PURE__*/React.createElement(CjIcon, {
+    name: "chevron-right",
+    size: 20,
+    style: {
+      color: 'hsl(var(--text-tertiary))'
+    }
+  })) : /*#__PURE__*/React.createElement("div", {
+    key: s.id,
+    title: s.label + ' · Pronto (submódulo por construir)',
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 16,
+      padding: '16px 18px',
+      borderRadius: 14,
+      border: '1px solid hsl(var(--border-subtle))',
+      background: 'hsl(var(--surface-base))',
+      position: 'relative'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      width: 44,
+      height: 44,
+      borderRadius: 12,
+      flex: 'none',
+      display: 'grid',
+      placeItems: 'center',
+      background: 'hsl(var(--surface-sunken))',
+      color: 'hsl(var(--text-tertiary))'
+    },
+    "aria-hidden": "true"
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: s.icon,
+    size: 22
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minWidth: 0
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      font: '600 16px/1.3 var(--font-ui)',
+      color: 'hsl(var(--text-secondary))'
+    }
+  }, s.label), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 13,
+      color: 'hsl(var(--text-tertiary))'
+    }
+  }, s.desc)), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 5,
+      fontSize: 11,
+      fontWeight: 600,
+      letterSpacing: '.06em',
+      textTransform: 'uppercase',
+      color: 'hsl(var(--text-tertiary))',
+      border: '1px solid hsl(var(--border-strong))',
+      borderRadius: 999,
+      padding: '3px 9px'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "clock",
+    size: 12
+  }), "Pronto"), /*#__PURE__*/React.createElement("span", {
+    style: {
+      position: 'absolute',
+      width: 1,
+      height: 1,
+      padding: 0,
+      margin: -1,
+      overflow: 'hidden',
+      clip: 'rect(0 0 0 0)',
+      whiteSpace: 'nowrap',
+      border: 0
+    }
+  }, s.label, " \xB7 Pronto, subm\xF3dulo por construir")))), hidden > 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      marginTop: 14,
+      display: 'flex',
+      alignItems: 'flex-start',
+      gap: 10,
+      padding: '12px 14px',
+      borderRadius: 12,
+      background: 'hsl(var(--surface-sunken))',
+      border: '1px solid hsl(var(--border-subtle))'
+    }
+  }, /*#__PURE__*/React.createElement(CjIcon, {
+    name: "lock",
+    size: 16,
+    style: {
+      color: 'hsl(var(--text-tertiary))',
+      marginTop: 1
+    }
+  }), /*#__PURE__*/React.createElement("p", {
+    style: {
+      margin: 0,
+      fontSize: 12.5,
+      color: 'hsl(var(--text-secondary))',
+      lineHeight: 1.5
+    }
+  }, /*#__PURE__*/React.createElement("b", {
+    style: {
+      color: 'hsl(var(--text-primary))'
+    }
+  }, hidden, " ", hidden === 1 ? 'submódulo oculto' : 'submódulos ocultos'), " por permisos. Tu rol no incluye el resto de Contabilidad \u2014 no se deshabilitan, se ocultan. Un administrador ver\xEDa el m\xF3dulo completo.")));
+}
+
+/* Vista de CAJA (submódulo): enruta apertura / cierre / resumen según el turno y la fase. */
+function CajaScreen(props) {
+  const {
+    turno,
+    closed
+  } = props;
+  let body, chip;
+  if (closed) {
+    body = /*#__PURE__*/React.createElement(CierreResumen, {
+      closed: closed,
+      onNuevoTurno: props.onNuevoTurno
+    });
+    chip = /*#__PURE__*/React.createElement(TurnoChip, {
+      open: false,
+      seq: closed.seq
+    });
+  } else if (turno) {
+    body = /*#__PURE__*/React.createElement(CierreCaja, {
+      turno: turno,
+      contado: props.contado,
+      onContado: props.onContado,
+      onCerrar: props.onCerrar,
+      phase: props.phase,
+      errorId: props.errorId,
+      onRetry: props.onRetry
+    });
+    chip = /*#__PURE__*/React.createElement(TurnoChip, {
+      open: true,
+      seq: turno.seq
+    });
+  } else {
+    body = /*#__PURE__*/React.createElement(AperturaCaja, {
+      tenant: props.tenant,
+      cajero: props.cajero,
+      fondo: props.fondo,
+      onFondo: props.onFondo,
+      onAbrir: props.onAbrir,
+      phase: props.phase,
+      hora: props.hora
+    });
+    chip = /*#__PURE__*/React.createElement(TurnoChip, {
+      open: false
+    });
+  }
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(CajaHeader, {
+    title: closed ? 'Turno cerrado' : turno ? 'Cierre de caja' : 'Apertura de caja',
+    meta: chip,
+    onBack: props.onBack,
+    backLabel: "Contabilidad"
+  }), body);
+}
+Object.assign(window, {
+  ContabilidadIndex,
+  CajaScreen
+});
+})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-caja.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/commerce/pos-cart.jsx
 try { (() => {
@@ -9438,27 +17042,47 @@ function CustomerBar({
   }, customer.docTipo, " ", customer.doc))));
 }
 
-/* Picker de cliente registrado — Sheet bottom (táctil). Búsqueda + filas grandes.
-   Incluye acceso a Consumidor Final para volver al camino rápido desde el picker. */
+/* Picker de cliente registrado — Sheet bottom (táctil). Dos modos dentro del MISMO Sheet
+   del núcleo (sin Dialog nuevo): `list` (buscar/elegir) y `create` (alta inline). El alta
+   siempre está disponible («Nuevo cliente»); sin coincidencias, el CTA precarga lo tecleado. */
 function ClientPicker({
   open,
   onClose,
   onPick,
   onConsumidorFinal,
-  activeId
+  activeId,
+  clientes,
+  onCreate
 }) {
   const [q, setQ] = React.useState('');
+  const [mode, setMode] = React.useState('list');
   React.useEffect(() => {
-    if (!open) setQ('');
+    if (!open) {
+      setQ('');
+      setMode('list');
+    }
   }, [open]);
   const ql = q.trim().toLowerCase();
-  const list = window.PosData.CLIENTES.filter(c => !ql || c.nombre.toLowerCase().includes(ql) || c.doc.includes(ql));
+  const source = clientes || window.PosData.CLIENTES;
+  const list = source.filter(c => !ql || c.nombre.toLowerCase().includes(ql) || c.doc.includes(ql));
+  const creating = mode === 'create';
+  const startCreate = () => setMode('create');
   return /*#__PURE__*/React.createElement(CSheet, {
     open: open,
     onClose: onClose,
     placement: "bottom",
-    title: "Elegir cliente"
-  }, /*#__PURE__*/React.createElement("div", {
+    title: creating ? 'Nuevo cliente' : 'Elegir cliente'
+  }, creating ? /*#__PURE__*/React.createElement(window.ClientForm, {
+    seed: q.trim(),
+    onCancel: () => setMode('list'),
+    onSubmit: data => onCreate(data),
+    submitLabel: "Crear y usar en la venta",
+    submitIcon: "user-round",
+    back: {
+      label: 'Volver a elegir cliente',
+      onClick: () => setMode('list')
+    }
+  }) : /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
       flexDirection: 'column',
@@ -9502,9 +17126,16 @@ function ClientPicker({
     }
   }, "C\xE9dula 9999999999999 \xB7 venta r\xE1pida"))), /*#__PURE__*/React.createElement("div", {
     style: {
+      display: 'flex',
+      gap: 10,
+      alignItems: 'center'
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
       position: 'relative',
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
+      flex: 1
     }
   }, /*#__PURE__*/React.createElement("span", {
     style: {
@@ -9540,7 +17171,32 @@ function ClientPicker({
       e.target.style.borderColor = 'hsl(var(--border-strong))';
       e.target.style.boxShadow = 'none';
     }
-  })), /*#__PURE__*/React.createElement("div", {
+  })), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: startCreate,
+    className: "pos-btn",
+    "aria-label": "Crear un cliente nuevo",
+    style: {
+      flex: 'none',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 8,
+      height: 'var(--pos-field-sm)',
+      padding: '0 16px',
+      borderRadius: 12,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--brand-primary))',
+      background: 'hsl(var(--brand-primary) / .1)',
+      color: 'hsl(var(--brand-primary))',
+      fontFamily: 'var(--font-ui)',
+      fontSize: 14,
+      fontWeight: 600,
+      whiteSpace: 'nowrap'
+    }
+  }, /*#__PURE__*/React.createElement(CIco, {
+    name: "plus",
+    size: 20
+  }), "Nuevo cliente")), /*#__PURE__*/React.createElement("div", {
     style: {
       maxHeight: 300,
       overflowY: 'auto',
@@ -9550,12 +17206,41 @@ function ClientPicker({
     }
   }, list.length === 0 && /*#__PURE__*/React.createElement("div", {
     style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 12,
       padding: '20px 8px',
-      textAlign: 'center',
-      color: 'hsl(var(--text-tertiary))',
-      fontSize: 14
+      textAlign: 'center'
     }
-  }, "Sin coincidencias. La alta de cliente vive en el m\xF3dulo Clientes (fuera del POS)."), list.map(c => {
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: 'hsl(var(--text-tertiary))',
+      fontSize: 14,
+      maxWidth: '40ch'
+    }
+  }, "Sin coincidencias. Puede crear el cliente aqu\xED mismo y continuar la venta."), /*#__PURE__*/React.createElement("button", {
+    type: "button",
+    onClick: startCreate,
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: 10,
+      minHeight: 'var(--pos-tap-lg)',
+      padding: '0 18px',
+      borderRadius: 12,
+      cursor: 'pointer',
+      border: '1px solid hsl(var(--brand-primary))',
+      background: 'hsl(var(--brand-primary))',
+      color: 'hsl(var(--brand-foreground))',
+      fontFamily: 'var(--font-ui)',
+      fontSize: 15,
+      fontWeight: 600
+    }
+  }, /*#__PURE__*/React.createElement(CIco, {
+    name: "plus",
+    size: 20
+  }), q.trim() ? 'Crear cliente «' + q.trim() + '»' : 'Crear cliente')), list.map(c => {
     const active = c.id === activeId;
     return /*#__PURE__*/React.createElement("button", {
       key: c.id,
@@ -9605,7 +17290,7 @@ function ClientPicker({
         color: 'hsl(var(--text-tertiary))',
         fontFamily: 'var(--font-mono)'
       }
-    }, c.docTipo, " ", c.doc)));
+    }, c.docTipo, " ", c.doc, c.celular ? ' · ' + c.celular : '')));
   }))));
 }
 Object.assign(window, {
@@ -9613,259 +17298,6 @@ Object.assign(window, {
   ClientPicker
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-customer.jsx", error: String((e && e.message) || e) }); }
-
-// ui_kits/commerce/pos-data.js
-try { (() => {
-/* Noctis · commerce POS-a — datos mock del AMBIENTE DE VENTA. Solo lo que POS-a
-   necesita: contexto (tenant/empresa/sucursal/cajero), catálogo buscable, carrito
-   inicial y clientes. display_name en español SIEMPRE; el UUID/SKU nunca es el
-   identificador visual principal. Los montos son numbers que "vienen del backend";
-   el cliente los RENDEREA (MoneyDisplay), no es la fuente de verdad del precio. */
-(function () {
-  /* Tenants — el acento viaja como PAR {primary, foreground}, igual que en el resto
-     de commerce. En el POS el catálogo es el mismo (papelería): el tenant solo mueve
-     el acento quirúrgico; no hay catálogos por rubro en este corte. */
-  const TENANTS = {
-    aguilar: {
-      id: 'aguilar',
-      name: 'Librería Aguilar',
-      initials: 'LA',
-      empresa: 'Librería Aguilar S.A.',
-      sucursal: 'Matriz — Av. Amazonas',
-      cajero: {
-        nombre: 'Agustina Cando',
-        rol: 'Cajera'
-      },
-      accent: '262 60% 42%',
-      fg: '0 0% 100%',
-      accentName: 'Violeta corporativo',
-      ivaDefault: 15
-    },
-    sanrafael: {
-      id: 'sanrafael',
-      name: 'Farmacia San Rafael',
-      initials: 'FS',
-      empresa: 'Farmacia San Rafael',
-      sucursal: 'Local Centro — Guayaquil',
-      cajero: {
-        nombre: 'Marcos Peñafiel',
-        rol: 'Cajero'
-      },
-      accent: '184 72% 26%',
-      fg: '0 0% 100%',
-      accentName: 'Teal salud',
-      ivaDefault: 15
-    },
-    rincon: {
-      id: 'rincon',
-      name: 'El Rincón Ferretero',
-      initials: 'RF',
-      empresa: 'El Rincón Ferretero Cía. Ltda.',
-      sucursal: 'Sucursal Sur — Quito',
-      cajero: {
-        nombre: 'Luis Tenesaca',
-        rol: 'Cajero'
-      },
-      accent: '54 85% 46%',
-      fg: '240 6% 12%',
-      accentName: 'Oro (foreground near-black)',
-      ivaDefault: 15
-    }
-  };
-
-  /* Tarifas de IVA vigentes en Ecuador para el selector de la línea genérica. La
-     línea NACE con el default del perfil fiscal del tenant; es corregible por línea
-     (farmacia: medicamento 0% / perfume 15%). */
-  const IVA_TARIFFS = [0, 5, 15];
-
-  /* Catálogo buscable (variantes vendibles). `precio` es number|null:
-     null = la variante NO tiene precio en la lista de precios aplicable → estado
-     SIN PRECIO, que BLOQUEA la línea (null NUNCA es $0). `iva` en % para el render
-     de totales (que en producción también vendría resuelto del backend). */
-  const CATALOG = [{
-    id: 'v1',
-    producto: 'Cuaderno universitario 100 hojas',
-    variante: 'Cuadros · tapa azul',
-    sku: 'CUA-100-CUAD',
-    barcode: '7861234567890',
-    precio: 2.15,
-    iva: 15
-  }, {
-    id: 'v2',
-    producto: 'Cuaderno universitario 100 hojas',
-    variante: 'Líneas · tapa roja',
-    sku: 'CUA-100-LIN',
-    barcode: '7861234500017',
-    precio: 2.15,
-    iva: 15
-  }, {
-    id: 'v3',
-    producto: 'Esferográfico punta media',
-    variante: 'Azul',
-    sku: 'ESF-PM-AZ',
-    barcode: '7862220001114',
-    precio: 0.45,
-    iva: 15
-  }, {
-    id: 'v4',
-    producto: 'Esferográfico punta media',
-    variante: 'Negro',
-    sku: 'ESF-PM-NE',
-    barcode: '7862220001121',
-    precio: 0.45,
-    iva: 15
-  }, {
-    id: 'v5',
-    producto: 'Resma papel bond A4 75 g',
-    variante: '500 hojas · blancura 96%',
-    sku: 'RES-A4-75',
-    barcode: '7863330045008',
-    precio: 4.80,
-    iva: 15
-  }, {
-    id: 'v6',
-    producto: 'Marcador permanente',
-    variante: 'Negro',
-    sku: 'MPE-NE',
-    barcode: '7864440012306',
-    precio: null,
-    iva: 15
-  }, {
-    id: 'v7',
-    producto: 'Set 12 lápices de colores',
-    variante: 'Estuche cartón',
-    sku: 'LAP-12-CART',
-    barcode: '7865550098702',
-    precio: 3.90,
-    iva: 15
-  }, {
-    id: 'v8',
-    producto: 'Corrector líquido 20 ml',
-    variante: 'Punta metálica',
-    sku: 'COR-20',
-    barcode: '7866660033401',
-    precio: 1.25,
-    iva: 15
-  }, {
-    id: 'v9',
-    producto: 'Carpeta archivador palanca',
-    variante: 'Oficio · lomo 7 cm',
-    sku: 'CAR-PAL-OF',
-    barcode: '7867770021109',
-    precio: 2.60,
-    iva: 15
-  }, {
-    id: 'v10',
-    producto: 'Grapadora metálica',
-    variante: 'Media · 20 hojas',
-    sku: 'GRA-MET-M',
-    barcode: '7868880076503',
-    precio: 5.35,
-    iva: 15
-  }];
-
-  /* Carrito inicial de demo. Incluye a propósito una línea SIN PRECIO (v6) para
-     mostrar el estado bloqueante. `qty` es lo único editable en POS-a (por keypad). */
-  const INITIAL_CART = [{
-    key: 'l1',
-    ref: 'v1',
-    qty: 2
-  }, {
-    key: 'l2',
-    ref: 'v3',
-    qty: 3
-  }, {
-    key: 'l3',
-    ref: 'v6',
-    qty: 1
-  } // SIN PRECIO — bloquea el avance a cobro
-  ];
-
-  /* Consumidor Final: convención fiscal EC (cédula 9999999999999). Es el caso
-     mayoritario en una PYME — su botón es el camino de UN TOQUE. */
-  const CONSUMIDOR_FINAL = {
-    id: 'cf',
-    nombre: 'Consumidor Final',
-    doc: '9999999999999',
-    docTipo: 'Cédula',
-    final: true
-  };
-
-  /* Clientes registrados (camino secundario, por picker). */
-  const CLIENTES = [{
-    id: 'c1',
-    nombre: 'María Fernanda Loor',
-    doc: '1312445566',
-    docTipo: 'Cédula'
-  }, {
-    id: 'c2',
-    nombre: 'Comercial El Sol Cía. Ltda.',
-    doc: '1391234567001',
-    docTipo: 'RUC'
-  }, {
-    id: 'c3',
-    nombre: 'Juan Carlos Vera',
-    doc: '0912233445',
-    docTipo: 'Cédula'
-  }, {
-    id: 'c4',
-    nombre: 'Distribuidora Andina S.A.',
-    doc: '1790055443001',
-    docTipo: 'RUC'
-  }, {
-    id: 'c5',
-    nombre: 'Rosa Elena Chávez',
-    doc: '1719988776',
-    docTipo: 'Cédula'
-  }];
-  const byId = id => CATALOG.find(v => v.id === id);
-
-  /* Vista unificada de una línea del carrito (catálogo o genérica). El carrito y los
-     totales consumen SIEMPRE esto, para que ambos tipos convivan sin ramas duplicadas.
-     · catálogo: identidad de variante (desc + sub + sku/barcode), precio/iva de lista.
-     · genérica: descripción libre, sin SKU ni stock, precio/iva definidos al crearla. */
-  const lineView = line => {
-    if (line.generic) return {
-      generic: true,
-      desc: line.desc,
-      sub: null,
-      sku: null,
-      barcode: null,
-      precio: line.precio,
-      iva: line.iva,
-      qty: line.qty
-    };
-    const v = byId(line.ref);
-    return {
-      generic: false,
-      desc: v.variante,
-      sub: v.producto,
-      sku: v.sku,
-      barcode: v.barcode,
-      precio: v.precio,
-      iva: v.iva,
-      qty: line.qty
-    };
-  };
-
-  /* Regla unificada de precio a resolver antes de cobrar:
-     · catálogo: precio null (SIN PRECIO en la lista) — null NUNCA es $0.
-     · genérica: precio en cero — el cajero debe asignarle un precio.
-     Ambos bloquean el cobro; se distinguen sólo en el copy. */
-  const needsPrice = view => view.precio == null || view.precio === 0;
-  window.PosData = {
-    TENANTS,
-    CATALOG,
-    INITIAL_CART,
-    CONSUMIDOR_FINAL,
-    CLIENTES,
-    IVA_TARIFFS,
-    byId,
-    lineView,
-    needsPrice
-  };
-})();
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-data.js", error: String((e && e.message) || e) }); }
 
 // ui_kits/commerce/pos-kit.jsx
 try { (() => {
@@ -10481,226 +17913,6 @@ function ProductSearch({
 window.ProductSearch = ProductSearch;
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-search.jsx", error: String((e && e.message) || e) }); }
 
-// ui_kits/commerce/pos-shell.jsx
-try { (() => {
-/* Noctis · commerce POS-a — SHELL POS. Contexto de PANTALLA COMPLETA que REEMPLAZA
-   el shell administrativo (topbar + sidebar de módulos + breadcrumbs + footer): un
-   cajero clavado en una sola tarea no usa la navegación de módulos. Barra superior
-   mínima, orientada a la tarea, con identidad discreta: logo pequeño, empresa ·
-   sucursal activa, cajero, y salida clara del POS. SIN sidebar de módulos, SIN
-   breadcrumbs. La marca del tenant sigue siendo acento quirúrgico; el chrome es
-   neutro de casa. */
-const SHIcon = window.PosIcon;
-
-/* Logo pequeño del tenant (chip neutro de casa, NO usa el acento — la marca es
-   quirúrgica y vive en primary/activo/foco/selección del contenido). */
-function PosBrand({
-  tenant
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 10,
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 32,
-      height: 32,
-      borderRadius: 8,
-      flex: 'none',
-      background: 'hsl(var(--text-primary))',
-      color: 'hsl(var(--surface-raised))',
-      display: 'grid',
-      placeItems: 'center',
-      fontWeight: 700,
-      fontSize: 12,
-      letterSpacing: '.02em'
-    }
-  }, tenant.initials), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8,
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'hsl(var(--text-primary))',
-      fontSize: 15,
-      fontWeight: 600,
-      letterSpacing: '-.01em',
-      whiteSpace: 'nowrap'
-    }
-  }, tenant.name), /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 10,
-      fontWeight: 600,
-      letterSpacing: '.08em',
-      textTransform: 'uppercase',
-      color: 'hsl(var(--text-tertiary))',
-      border: '1px solid hsl(var(--border-strong))',
-      borderRadius: 999,
-      padding: '2px 8px'
-    }
-  }, "POS")));
-}
-function ContextChip({
-  icon,
-  primary,
-  secondary
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 10,
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 'var(--pos-chip)',
-      height: 'var(--pos-chip)',
-      flex: 'none',
-      borderRadius: 9,
-      display: 'grid',
-      placeItems: 'center',
-      background: 'hsl(var(--surface-sunken))',
-      border: '1px solid hsl(var(--border-subtle))',
-      color: 'hsl(var(--text-secondary))'
-    },
-    "aria-hidden": "true"
-  }, /*#__PURE__*/React.createElement(SHIcon, {
-    name: icon,
-    size: 20
-  })), /*#__PURE__*/React.createElement("div", {
-    style: {
-      minWidth: 0,
-      lineHeight: 1.25
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 13,
-      fontWeight: 600,
-      color: 'hsl(var(--text-primary))',
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis'
-    }
-  }, primary), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 12,
-      color: 'hsl(var(--text-tertiary))',
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis'
-    }
-  }, secondary)));
-}
-function PosShell({
-  tenant,
-  mode,
-  onToggleMode,
-  onExit,
-  children
-}) {
-  const modeIcon = mode === 'dark' ? '☾' : '☀';
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      background: 'hsl(var(--surface-sunken))',
-      overflow: 'hidden'
-    }
-  }, /*#__PURE__*/React.createElement("header", {
-    style: {
-      flex: 'none',
-      height: 'var(--pos-header)',
-      display: 'flex',
-      alignItems: 'center',
-      gap: 16,
-      padding: '0 16px',
-      background: 'hsl(var(--surface-raised))',
-      borderBottom: '1px solid hsl(var(--border-subtle))'
-    }
-  }, /*#__PURE__*/React.createElement(PosBrand, {
-    tenant: tenant
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 1,
-      height: 32,
-      background: 'hsl(var(--border-subtle))',
-      flex: 'none'
-    }
-  }), /*#__PURE__*/React.createElement(ContextChip, {
-    icon: "store",
-    primary: tenant.empresa,
-    secondary: tenant.sucursal
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginLeft: 'auto',
-      display: 'flex',
-      alignItems: 'center',
-      gap: 12
-    }
-  }, /*#__PURE__*/React.createElement(ContextChip, {
-    icon: "user-round",
-    primary: tenant.cajero.nombre,
-    secondary: tenant.cajero.rol
-  }), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onToggleMode,
-    className: "pos-btn",
-    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
-    style: {
-      width: 'var(--pos-action)',
-      height: 'var(--pos-action)',
-      flex: 'none',
-      borderRadius: 10,
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-secondary))',
-      cursor: 'pointer',
-      fontSize: 18,
-      display: 'grid',
-      placeItems: 'center'
-    }
-  }, modeIcon), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onExit,
-    className: "pos-btn",
-    "aria-label": "Salir del POS",
-    style: {
-      height: 'var(--pos-action)',
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8,
-      padding: '0 14px',
-      borderRadius: 10,
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 14,
-      fontWeight: 500,
-      cursor: 'pointer',
-      fontFamily: 'var(--font-ui)'
-    }
-  }, /*#__PURE__*/React.createElement(SHIcon, {
-    name: "log-out",
-    size: 20
-  }), "Salir del POS"))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      flex: 1,
-      minHeight: 0,
-      display: 'flex'
-    }
-  }, children));
-}
-window.PosShell = PosShell;
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/pos-shell.jsx", error: String((e && e.message) || e) }); }
-
 // ui_kits/commerce/productos.jsx
 try { (() => {
 /* Noctis · commerce — módulo PRODUCTOS: lista · form (nuevo/editar) · detalle madre
@@ -10929,7 +18141,8 @@ function ProductsList({
 }
 
 /* ── /productos/nuevo · /[id]/editar (form) ─────────────────────────────────
-   Espejo del schema: nombre, categoría (Combobox, NUNCA UUID), IVA, descripción.
+   Espejo del schema: nombre, categoría (Combobox, NUNCA UUID), descripción. El IVA
+   es config de negocio (empresa/tenant), no atributo por producto: no se elige acá.
    Error por campo + error root en banner (Alert) para el 404 de categoría. */
 function ProductForm({
   product,
@@ -10940,7 +18153,6 @@ function ProductForm({
   const editing = !!product;
   const [nombre, setNombre] = React.useState(product?.nombre || '');
   const [categoria, setCategoria] = React.useState(product?.categoria || '');
-  const [iva, setIva] = React.useState(product?.iva || '15');
   const [desc, setDesc] = React.useState(product?.descripcion || '');
   const [errors, setErrors] = React.useState({});
   const [rootError, setRootError] = React.useState('');
@@ -11030,22 +18242,7 @@ function ProductForm({
       fontSize: 12,
       color: 'hsl(var(--text-tertiary))'
     }
-  }, "Elegible por nombre \u2014 nunca se ingresa el identificador a mano.")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 200
-    }
-  }, /*#__PURE__*/React.createElement("label", {
-    style: {
-      display: 'block',
-      font: '500 13px var(--font-ui)',
-      marginBottom: 6
-    }
-  }, "IVA"), /*#__PURE__*/React.createElement(PSelect, {
-    value: iva,
-    onChange: e => setIva(e.target.value),
-    options: window.CommerceData.IVA_OPTIONS,
-    disabled: pending
-  })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+  }, "Elegible por nombre \u2014 nunca se ingresa el identificador a mano.")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     style: {
       display: 'block',
       font: '500 13px var(--font-ui)',
@@ -11292,15 +18489,6 @@ function ProductDetail({
         fontFamily: 'var(--font-mono)',
         fontSize: 12
       }
-    }, "IVA ", product.iva, "%"), /*#__PURE__*/React.createElement("span", {
-      style: {
-        color: 'hsl(var(--text-tertiary))'
-      }
-    }, "\xB7"), /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontFamily: 'var(--font-mono)',
-        fontSize: 12
-      }
     }, "Creado ", product.creado)),
     actions: canWrite ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(PBtn, {
       variant: "secondary",
@@ -11349,684 +18537,6 @@ Object.assign(window, {
   EstadoBadge
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/productos.jsx", error: String((e && e.message) || e) }); }
-
-// ui_kits/commerce/shell.jsx
-try { (() => {
-/* Noctis · commerce — SHELL. Viste los slots que el núcleo dejó abiertos: logo
-   del tenant (fallback a Noctis), CompanySelector, sidebar POR PERMISOS colapsable,
-   slot de branch reservado, footer legal. Chrome SIEMPRE neutro de casa; el acento
-   del tenant aparece solo en el ítem de nav activo (los otros 3 puntos —primary,
-   foco, selección— viven en el contenido). Réplica del contrato visual del Shell
-   primitivo, extendida con la interacción que el prototipo necesita. */
-const {
-  Wordmark: SWordmark,
-  Badge: SBadge,
-  Icon: SIcon
-} = window.NoctisCommerceDesignSystem_4dfd35;
-const {
-  MicroLabel: ML
-} = window;
-
-/* Logo del tenant (variable) con fallback al logo de casa Noctis. */
-function TenantLogo({
-  tenant
-}) {
-  if (!tenant) return /*#__PURE__*/React.createElement(SWordmark, {
-    size: "sm"
-  });
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 26,
-      height: 26,
-      borderRadius: 7,
-      background: 'hsl(var(--text-primary))',
-      color: 'hsl(var(--surface-raised))',
-      display: 'grid',
-      placeItems: 'center',
-      fontWeight: 700,
-      fontSize: 11,
-      letterSpacing: '.02em'
-    }
-  }, tenant.initials), /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'hsl(var(--text-primary))',
-      fontSize: 13,
-      fontWeight: 600,
-      letterSpacing: '-.01em'
-    }
-  }, tenant.name));
-}
-
-/* CompanySelector — VISIBLE solo con >1 empresa. Cambiar empresa limpia el estado
-   y vuelve a /dashboard (transición manejada por el orquestador). */
-function CompanySelector({
-  empresas,
-  value,
-  onChange
-}) {
-  const [open, setOpen] = React.useState(false);
-  const ref = React.useRef(null);
-  React.useEffect(() => {
-    if (!open) return;
-    const h = e => {
-      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
-    };
-    document.addEventListener('mousedown', h);
-    return () => document.removeEventListener('mousedown', h);
-  }, [open]);
-  if (!empresas || empresas.length < 2) return null; // con una sola empresa es invisible
-  const current = empresas.find(e => e.id === value) || empresas[0];
-  return /*#__PURE__*/React.createElement("div", {
-    ref: ref,
-    style: {
-      position: 'relative'
-    }
-  }, /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: () => setOpen(o => !o),
-    "aria-haspopup": "listbox",
-    "aria-expanded": open,
-    "aria-label": "Cambiar de empresa",
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8,
-      height: 32,
-      padding: '0 10px',
-      borderRadius: 8,
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-primary))',
-      cursor: 'pointer',
-      font: '500 12px var(--font-ui)',
-      maxWidth: 220
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      whiteSpace: 'nowrap'
-    }
-  }, current.name), /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true",
-    style: {
-      color: 'hsl(var(--text-tertiary))'
-    }
-  }, "\u25BE")), open && /*#__PURE__*/React.createElement("div", {
-    role: "listbox",
-    style: {
-      position: 'absolute',
-      top: 38,
-      left: 0,
-      minWidth: 260,
-      padding: 6,
-      borderRadius: 12,
-      background: 'hsl(var(--surface-overlay))',
-      border: '1px solid hsl(var(--border-subtle))',
-      boxShadow: 'var(--shadow-overlay)',
-      zIndex: 40
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '4px 8px 8px'
-    }
-  }, /*#__PURE__*/React.createElement(ML, null, "Empresa")), empresas.map(e => {
-    const active = e.id === value;
-    return /*#__PURE__*/React.createElement("button", {
-      key: e.id,
-      role: "option",
-      "aria-selected": active,
-      onClick: () => {
-        setOpen(false);
-        if (!active) onChange(e.id);
-      },
-      style: {
-        display: 'flex',
-        width: '100%',
-        alignItems: 'center',
-        gap: 8,
-        textAlign: 'left',
-        border: 0,
-        cursor: 'pointer',
-        padding: '8px 10px',
-        borderRadius: 8,
-        background: active ? 'hsl(var(--surface-sunken))' : 'transparent',
-        color: 'hsl(var(--text-primary))',
-        font: 'inherit'
-      }
-    }, /*#__PURE__*/React.createElement("span", {
-      "aria-hidden": "true",
-      style: {
-        width: 14,
-        color: active ? 'hsl(var(--brand-primary))' : 'transparent'
-      }
-    }, "\u2713"), /*#__PURE__*/React.createElement("span", {
-      style: {
-        display: 'flex',
-        flexDirection: 'column'
-      }
-    }, /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontSize: 13,
-        fontWeight: active ? 600 : 500
-      }
-    }, e.name), /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontSize: 11,
-        color: 'hsl(var(--text-tertiary))',
-        fontFamily: 'var(--font-mono)'
-      }
-    }, e.legal.split('·')[1]?.trim())));
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '8px 10px 4px',
-      fontSize: 11,
-      color: 'hsl(var(--text-tertiary))',
-      borderTop: '1px solid hsl(var(--border-subtle))',
-      marginTop: 4
-    }
-  }, "Al cambiar de empresa se limpia el estado y vuelve al inicio.")));
-}
-
-/* Ítem de sidebar. Ícono Lucide del sistema por id de módulo (mismo set que backoffice).
-   Decisión declarada: los módulos "Pronto" (no construidos) son INFORMATIVOS PUROS —no un control
-   deshabilitado ni un link con handler nulo—: se renderizan como <div> sin href/ruta, sin onClick,
-   sin foco (no tabbable) y sin aria-disabled. El estado viaja en texto sr-only siempre presente +
-   title, así se percibe sin vista y en ambos modos. Solo los construidos son <button> navegable. */
-function NavItem({
-  item,
-  active,
-  collapsed,
-  onClick,
-  profile
-}) {
-  const disabled = !item.built; // visible-pero-Pronto (informativo)
-  const srName = item.label + ' · Pronto (módulo por construir)';
-  const inner = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 10,
-      minWidth: 0
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      position: 'relative',
-      display: 'inline-flex',
-      flex: 'none',
-      opacity: collapsed && disabled ? .5 : 1
-    }
-  }, /*#__PURE__*/React.createElement(SIcon, {
-    module: item.id,
-    size: 20,
-    style: {
-      flex: 'none'
-    }
-  }), collapsed && disabled && /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true",
-    style: {
-      position: 'absolute',
-      top: -2,
-      right: -2,
-      width: 6,
-      height: 6,
-      borderRadius: 999,
-      background: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))',
-      boxShadow: '0 0 0 2px ' + (active ? 'hsl(var(--brand-primary))' : 'hsl(var(--surface-sunken))')
-    }
-  })), !collapsed && /*#__PURE__*/React.createElement("span", {
-    style: {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      whiteSpace: 'nowrap'
-    }
-  }, item.label), collapsed && disabled && /*#__PURE__*/React.createElement("span", {
-    style: {
-      position: 'absolute',
-      width: 1,
-      height: 1,
-      padding: 0,
-      margin: -1,
-      overflow: 'hidden',
-      clip: 'rect(0 0 0 0)',
-      whiteSpace: 'nowrap',
-      border: 0
-    }
-  }, srName)), !collapsed && disabled && /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontSize: 10,
-      fontWeight: 500,
-      padding: '1px 7px',
-      borderRadius: 999,
-      background: active ? 'hsl(var(--brand-foreground) / .2)' : 'hsl(var(--surface-base))',
-      border: active ? 0 : '1px solid hsl(var(--border-subtle))',
-      color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-tertiary))'
-    }
-  }, "Pronto"));
-  const baseStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 10,
-    width: '100%',
-    textAlign: 'left',
-    border: 0,
-    padding: collapsed ? 8 : '8px 10px',
-    borderRadius: 8,
-    font: '500 13px var(--font-ui)',
-    justifyContent: collapsed ? 'center' : 'space-between',
-    background: active ? 'hsl(var(--brand-primary))' : 'transparent',
-    color: active ? 'hsl(var(--brand-foreground))' : 'hsl(var(--text-secondary))'
-  };
-  if (disabled) {
-    return /*#__PURE__*/React.createElement("div", {
-      title: collapsed ? item.label + ' · Pronto' : undefined,
-      style: {
-        ...baseStyle,
-        cursor: 'default',
-        position: 'relative'
-      }
-    }, inner);
-  }
-  return /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onClick,
-    title: collapsed ? item.label : undefined,
-    "aria-current": active ? 'page' : undefined,
-    "aria-label": collapsed ? item.label : undefined,
-    style: {
-      ...baseStyle,
-      cursor: 'pointer',
-      position: 'relative'
-    }
-  }, inner);
-}
-function Sidebar({
-  nav,
-  profile,
-  active,
-  collapsed,
-  onToggle,
-  onNavigate
-}) {
-  const {
-    CanPerm
-  } = window;
-  // gating capa 1: módulo visible solo con >=1 permiso efectivo
-  const groups = nav.map(g => ({
-    ...g,
-    items: g.items.filter(it => CanPerm(profile, it.perm))
-  })).filter(g => g.items.length);
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: collapsed ? 60 : 214,
-      flex: 'none',
-      background: 'hsl(var(--surface-sunken))',
-      borderRight: '1px solid hsl(var(--border-subtle))',
-      display: 'flex',
-      flexDirection: 'column',
-      transition: 'width .16s ease'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      flex: 1,
-      overflowY: 'auto',
-      padding: collapsed ? '10px 8px' : '12px 10px',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 2
-    }
-  }, groups.map((g, gi) => /*#__PURE__*/React.createElement("div", {
-    key: gi,
-    style: {
-      marginBottom: 6
-    }
-  }, !collapsed && /*#__PURE__*/React.createElement(ML, {
-    style: {
-      padding: '8px 8px 4px'
-    }
-  }, g.section), collapsed && gi > 0 && /*#__PURE__*/React.createElement("div", {
-    style: {
-      height: 1,
-      background: 'hsl(var(--border-subtle))',
-      margin: '6px 6px'
-    }
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 2
-    }
-  }, g.items.map(it => /*#__PURE__*/React.createElement(NavItem, {
-    key: it.id,
-    item: it,
-    profile: profile,
-    collapsed: collapsed,
-    active: active === it.id,
-    onClick: () => onNavigate(it)
-  })))))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: collapsed ? 8 : 10,
-      borderTop: '1px solid hsl(var(--border-subtle))'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    title: "Slot de sucursal \u2014 reservado para POS/Caja",
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8,
-      justifyContent: collapsed ? 'center' : 'flex-start',
-      padding: collapsed ? 8 : '8px 10px',
-      borderRadius: 8,
-      border: '1px dashed hsl(var(--border-strong))',
-      color: 'hsl(var(--text-disabled))',
-      fontSize: 12
-    }
-  }, /*#__PURE__*/React.createElement(SIcon, {
-    name: "store",
-    size: 20,
-    style: {
-      flex: 'none',
-      opacity: .7
-    }
-  }), !collapsed && /*#__PURE__*/React.createElement("span", null, "Sucursal \xB7 reservado"))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: collapsed ? 8 : '8px 10px',
-      borderTop: '1px solid hsl(var(--border-subtle))'
-    }
-  }, /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onToggle,
-    "aria-label": collapsed ? 'Expandir menú' : 'Colapsar menú',
-    "aria-pressed": collapsed,
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 8,
-      width: '100%',
-      justifyContent: collapsed ? 'center' : 'flex-start',
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-secondary))',
-      borderRadius: 8,
-      padding: collapsed ? 7 : '7px 10px',
-      cursor: 'pointer',
-      fontSize: 12,
-      fontFamily: 'var(--font-ui)'
-    }
-  }, /*#__PURE__*/React.createElement(SIcon, {
-    name: collapsed ? 'chevrons-right' : 'chevrons-left',
-    size: 16
-  }), !collapsed && 'Colapsar')));
-}
-function CommerceShell({
-  tenant,
-  empresa,
-  profile,
-  mode,
-  onToggleMode,
-  onLogout,
-  activeModule,
-  onNavigate,
-  onChangeCompany,
-  collapsed,
-  onToggleCollapse,
-  children
-}) {
-  const modeIcon = mode === 'dark' ? '☾' : '☀';
-  const empresaObj = tenant.empresas.find(e => e.id === empresa) || tenant.empresas[0];
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      border: '1px solid hsl(var(--border-subtle))',
-      borderRadius: 14,
-      overflow: 'hidden',
-      background: 'hsl(var(--surface-base))',
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: 640
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: 12,
-      padding: '0 14px',
-      height: 56,
-      flex: 'none',
-      background: 'hsl(var(--surface-raised))',
-      borderBottom: '1px solid hsl(var(--border-subtle))'
-    }
-  }, /*#__PURE__*/React.createElement(TenantLogo, {
-    tenant: tenant
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 1,
-      height: 24,
-      background: 'hsl(var(--border-subtle))'
-    }
-  }), /*#__PURE__*/React.createElement(CompanySelector, {
-    empresas: tenant.empresas,
-    value: empresa,
-    onChange: onChangeCompany
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginLeft: 'auto',
-      display: 'flex',
-      alignItems: 'center',
-      gap: 10
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 12,
-      display: 'none'
-    },
-    className: "hide-sm"
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      textAlign: 'right',
-      lineHeight: 1.3
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 12,
-      color: 'hsl(var(--text-primary))',
-      fontWeight: 500
-    }
-  }, profile.email), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 11,
-      color: 'hsl(var(--text-tertiary))'
-    }
-  }, tenant.name, " \xB7 ", tenant.product)), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onToggleMode,
-    "aria-label": mode === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro',
-    style: {
-      width: 32,
-      height: 32,
-      borderRadius: 8,
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-secondary))',
-      cursor: 'pointer',
-      fontSize: 14
-    }
-  }, modeIcon), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    onClick: onLogout,
-    style: {
-      height: 32,
-      padding: '0 12px',
-      borderRadius: 8,
-      border: '1px solid hsl(var(--border-strong))',
-      background: 'hsl(var(--surface-base))',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 12,
-      cursor: 'pointer',
-      fontFamily: 'var(--font-ui)'
-    }
-  }, "Salir"))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      flex: 1,
-      minHeight: 0
-    }
-  }, /*#__PURE__*/React.createElement(Sidebar, {
-    nav: window.CommerceData.NAV,
-    profile: profile,
-    active: activeModule,
-    collapsed: collapsed,
-    onToggle: onToggleCollapse,
-    onNavigate: onNavigate
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      flex: 1,
-      minWidth: 0,
-      position: 'relative',
-      background: 'hsl(var(--surface-base))',
-      overflow: 'auto'
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      maxWidth: 1120,
-      margin: '0 auto',
-      padding: '22px 26px 40px'
-    }
-  }, children))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      padding: '10px 16px',
-      flex: 'none',
-      borderTop: '1px solid hsl(var(--border-subtle))',
-      background: 'hsl(var(--surface-raised))',
-      display: 'flex',
-      justifyContent: 'space-between',
-      gap: 12,
-      fontSize: 11,
-      color: 'hsl(var(--text-tertiary))',
-      flexWrap: 'wrap'
-    }
-  }, /*#__PURE__*/React.createElement("span", null, empresaObj.legal), /*#__PURE__*/React.createElement("span", {
-    style: {
-      fontWeight: 500,
-      color: 'hsl(var(--text-secondary))'
-    }
-  }, "Powered by Noctis Commerce")));
-}
-
-/* Dashboard — placeholder DIGNO (el dashboard KPI real es Fase 2). Sin KPIs falsos. */
-function Dashboard({
-  tenant,
-  profile,
-  onGoProductos,
-  canProductos
-}) {
-  const {
-    Card,
-    Badge,
-    Button
-  } = window.NoctisCommerceDesignSystem_4dfd35;
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginBottom: 20
-    }
-  }, /*#__PURE__*/React.createElement("h1", {
-    style: {
-      font: '600 28px/34px var(--font-ui)',
-      letterSpacing: '-.02em',
-      margin: '0 0 8px'
-    }
-  }, "Panel de inicio"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      margin: 0,
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 14,
-      maxWidth: '56ch'
-    }
-  }, "Est\xE1 trabajando en ", /*#__PURE__*/React.createElement("b", {
-    style: {
-      color: 'hsl(var(--text-primary))'
-    }
-  }, tenant.name), " como ", profile.label.toLowerCase(), ". Desde aqu\xED accede a los m\xF3dulos habilitados para su perfil.")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))',
-      gap: 14,
-      marginBottom: 20
-    }
-  }, canProductos && /*#__PURE__*/React.createElement(Card, {
-    header: "Cat\xE1logo"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 600,
-      fontSize: 15,
-      marginBottom: 4
-    }
-  }, "Productos"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      margin: '0 0 14px',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 13
-    }
-  }, "Gestione productos madre, variantes y c\xF3digos de barras."), /*#__PURE__*/React.createElement(Button, {
-    variant: "primary",
-    size: "sm",
-    onClick: onGoProductos
-  }, "Abrir productos")), /*#__PURE__*/React.createElement(Card, {
-    header: "Su perfil"
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 600,
-      fontSize: 15,
-      marginBottom: 4
-    }
-  }, profile.label), /*#__PURE__*/React.createElement("p", {
-    style: {
-      margin: '0 0 12px',
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 13
-    }
-  }, "Los m\xF3dulos del men\xFA se muestran seg\xFAn sus permisos efectivos."), /*#__PURE__*/React.createElement(Badge, {
-    tone: "neutral"
-  }, profile.perms.length, " permisos"))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      gap: 12,
-      alignItems: 'flex-start'
-    }
-  }, /*#__PURE__*/React.createElement("span", {
-    "aria-hidden": "true",
-    style: {
-      fontSize: 16,
-      color: 'hsl(var(--text-tertiary))',
-      marginTop: 1
-    }
-  }, "\u25F7"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontWeight: 600,
-      fontSize: 14,
-      marginBottom: 2
-    }
-  }, "El tablero con indicadores llega en la Fase 2"), /*#__PURE__*/React.createElement("p", {
-    style: {
-      margin: 0,
-      color: 'hsl(var(--text-secondary))',
-      fontSize: 13,
-      maxWidth: '64ch'
-    }
-  }, "Ventas del d\xEDa, productos por vencer y bajo stock aparecer\xE1n aqu\xED. No se muestran cifras hasta tener el dato real \u2014 el hueco se se\xF1ala, no se inventa.")))));
-}
-Object.assign(window, {
-  CommerceShell,
-  Dashboard,
-  CompanySelector
-});
-})(); } catch (e) { __ds_ns.__errors.push({ path: "ui_kits/commerce/shell.jsx", error: String((e && e.message) || e) }); }
 
 // ui_kits/commerce/variantes.jsx
 try { (() => {

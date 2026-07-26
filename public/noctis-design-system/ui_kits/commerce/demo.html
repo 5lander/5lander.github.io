@@ -1,10 +1,10 @@
-<!-- @dsCard group="Apps" viewport="1280x940" name="commerce · POS-b (cobro y cierre)" subtitle="Continúa el Cobrar de POS-a · cobro sobre Sheet, efectivo (único funcional) + slots Deuna/Tarjeta «Pronto» · vuelto auxiliar en vivo · procesando con anti doble-submit · error sin perder carrito/monto · cierre con secuencial + Nueva venta · ambas densidades (teclado físico desktop / keypad táctil)" -->
+<!-- @dsCard group="Apps" viewport="1360x940" name="commerce · Demo navegable (PYME)" subtitle="UNA sola SPA para clientes PYME: Login → Elegir workspace → Shell. POS como MODO INMERSIVO del shell (entrada automática, «Salir de venta» recupera las barras y el carrito sobrevive con LiveSalePill + badge «En curso»); Productos completo (lista → detalle → variante → código, 4 estados + 403); Contabilidad con Cierre de caja; el resto «Pronto». Un solo universo de producto: lo que muestra el catálogo es lo que vende el POS. Gating de 3 capas por perfil, ambos modos claro/oscuro, doble densidad, es-EC, RUC ficticio 1111111111001." -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noctis · commerce — POS-b (cobro y cierre)</title>
+<title>Noctis · commerce — Demo navegable</title>
 <link rel="stylesheet" href="../../styles.css">
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -14,13 +14,18 @@
 </head>
 <body>
 <div id="root"></div>
-<script src="./pos-data.js"></script>
+<script src="./data.js"></script>
+<script type="text/babel" data-presets="react" src="./kit.jsx"></script>
 <script type="text/babel" data-presets="react" src="./pos-kit.jsx"></script>
-<script type="text/babel" data-presets="react" src="./pos-shell.jsx"></script>
+<script type="text/babel" data-presets="react" src="./client-form.jsx"></script>
 <script type="text/babel" data-presets="react" src="./pos-search.jsx"></script>
 <script type="text/babel" data-presets="react" src="./pos-customer.jsx"></script>
 <script type="text/babel" data-presets="react" src="./pos-cart.jsx"></script>
 <script type="text/babel" data-presets="react" src="./pos-checkout.jsx"></script>
-<script type="text/babel" data-presets="react" src="./pos-b-app.jsx"></script>
+<script type="text/babel" data-presets="react" src="./pos-caja.jsx"></script>
+<script type="text/babel" data-presets="react" src="./productos.jsx"></script>
+<script type="text/babel" data-presets="react" src="./clientes.jsx"></script>
+<script type="text/babel" data-presets="react" src="./variantes.jsx"></script>
+<script type="text/babel" data-presets="react" src="./demo-app.jsx"></script>
 </body>
 </html>
