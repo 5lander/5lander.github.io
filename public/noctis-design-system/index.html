@@ -52,6 +52,8 @@
   }
   .apps .card{padding:20px;}
   .apps .card b{font-size:15px;}
+  .apps .lead{grid-column:1/-1;}
+  .apps .lead b{font-size:16px;}
   .note{margin:14px 0 0;font-size:12px;color:hsl(var(--text-tertiary));}
 </style>
 </head>
@@ -70,19 +72,15 @@
     <p class="section-h">LA APP POR DENTRO</p>
     <p class="section-sub">Prototipos de pantalla completa · pensados para verse en escritorio</p>
     <div class="grid">
-      <a class="card" href="ui_kits/commerce/pos.html">
-        <b>POS · ambiente de venta</b>
-        <span>Shell POS pantalla completa, doble densidad autodetectada por puntero (desktop + táctil), carrito y catálogo.</span>
-        <em>commerce</em>
-      </a>
-      <a class="card" href="ui_kits/commerce/pos-b.html">
-        <b>POS · cobro y cierre</b>
-        <span>Continúa el «Cobrar» del ambiente de venta: cobro sobre Sheet, efectivo funcional y slots de otros medios.</span>
-        <em>commerce</em>
-      </a>
-      <a class="card" href="ui_kits/commerce/index.html">
-        <b>Shell + Productos</b>
-        <span>La piel de la app themeable por tenant: shell, dashboard y el módulo Productos con sus variantes.</span>
+      <a class="card lead" href="ui_kits/commerce/demo.html">
+        <b>Demo navegable · la app de commerce</b>
+        <span>
+          Una sola SPA, de punta a punta: login → elegir workspace → shell. El POS vive como
+          modo inmersivo del panel —«Salir de venta» recupera las barras sin cancelar nada y el
+          carrito sobrevive—, Productos baja hasta el código de variante con sus cuatro estados,
+          y están Clientes y el cierre de caja. Los permisos se ven de verdad: el perfil recorta
+          el menú. Ambos modos, doble densidad, es-EC.
+        </span>
         <em>commerce</em>
       </a>
       <a class="card" href="ui_kits/backoffice/index.html">

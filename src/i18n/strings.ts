@@ -110,8 +110,8 @@ export const strings = {
         dsV: 'View it live →',
         flowK: 'HOW IT WORKS',
         flowV: 'Login → shell walkthrough →',
-        posK: 'CASHIER ROLE',
-        posV: 'Open the POS →',
+        posK: 'THE APP ITSELF',
+        posV: 'Open the navigable demo →',
       },
       s1: {
         eyebrow: '01 — CONTEXT & PRODUCT',
@@ -289,8 +289,8 @@ export const strings = {
         dsV: 'Verlo en vivo →',
         flowK: 'CÓMO FUNCIONA',
         flowV: 'Recorrido login → shell →',
-        posK: 'ROL DE CAJERO',
-        posV: 'Abrir el POS →',
+        posK: 'LA APP POR DENTRO',
+        posV: 'Abrir la demo navegable →',
       },
       s1: {
         eyebrow: '01 — CONTEXTO Y PRODUCTO',

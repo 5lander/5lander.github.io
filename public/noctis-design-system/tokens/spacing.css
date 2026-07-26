@@ -37,7 +37,7 @@
   --pos-field-px:14px;  /* padding horizontal del campo de búsqueda */
   --pos-row-py:10px;    /* padding vertical de la fila de resultado */
   --pos-row-px:12px;    /* padding horizontal de la fila de resultado */
-  --pos-cart-w:404px;   /* ancho de la columna de carrito */
+  --pos-cart-w:500px;   /* ancho de la columna de carrito/pago (columna par, no sidebar) */
   --pos-ico:18px;       /* glifo de ícono en superficie táctil (papelera) */
   --kp-key:56px;        /* tecla del NumericKeypad */
 }
@@ -64,7 +64,7 @@
   --pos-field-px:16px;
   --pos-row-py:12px;
   --pos-row-px:14px;
-  --pos-cart-w:452px;
+  --pos-cart-w:544px;
   --pos-ico:20px;
   --kp-key:64px;
 }

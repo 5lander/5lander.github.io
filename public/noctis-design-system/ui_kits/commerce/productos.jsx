@@ -95,13 +95,13 @@ function ProductsList({ profile, listState, onRetry, onNew, onOpen }) {
 }
 
 /* ── /productos/nuevo · /[id]/editar (form) ─────────────────────────────────
-   Espejo del schema: nombre, categoría (Combobox, NUNCA UUID), IVA, descripción.
+   Espejo del schema: nombre, categoría (Combobox, NUNCA UUID), descripción. El IVA
+   es config de negocio (empresa/tenant), no atributo por producto: no se elige acá.
    Error por campo + error root en banner (Alert) para el 404 de categoría. */
 function ProductForm({ product, scenario, onCancel, onSaved }) {
   const editing = !!product;
   const [nombre, setNombre] = React.useState(product?.nombre || '');
   const [categoria, setCategoria] = React.useState(product?.categoria || '');
-  const [iva, setIva] = React.useState(product?.iva || '15');
   const [desc, setDesc] = React.useState(product?.descripcion || '');
   const [errors, setErrors] = React.useState({});
   const [rootError, setRootError] = React.useState('');
@@ -140,10 +140,6 @@ function ProductForm({ product, scenario, onCancel, onSaved }) {
               {errors.categoria
                 ? <div style={{ marginTop: 6, fontSize: 12, color: 'hsl(var(--danger-fg))' }}>{errors.categoria}</div>
                 : <div style={{ marginTop: 6, fontSize: 12, color: 'hsl(var(--text-tertiary))' }}>Elegible por nombre — nunca se ingresa el identificador a mano.</div>}
-            </div>
-            <div style={{ width: 200 }}>
-              <label style={{ display: 'block', font: '500 13px var(--font-ui)', marginBottom: 6 }}>IVA</label>
-              <PSelect value={iva} onChange={(e) => setIva(e.target.value)} options={window.CommerceData.IVA_OPTIONS} disabled={pending} />
             </div>
             <div>
               <label style={{ display: 'block', font: '500 13px var(--font-ui)', marginBottom: 6 }}>Descripción <span style={{ color: 'hsl(var(--text-tertiary))', fontWeight: 400 }}>· opcional</span></label>
@@ -231,8 +227,6 @@ function ProductDetail({ product, profile, sectionState, onRetry, onEdit, onBack
           <EstadoBadge estado={estado} />
           <span style={{ color: 'hsl(var(--text-tertiary))' }}>·</span>
           <span>{product.categoriaLabel}</span>
-          <span style={{ color: 'hsl(var(--text-tertiary))' }}>·</span>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12 }}>IVA {product.iva}%</span>
           <span style={{ color: 'hsl(var(--text-tertiary))' }}>·</span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12 }}>Creado {product.creado}</span>
         </>}
